@@ -50,11 +50,17 @@
 }
 /* NAVBAR OTURUM AÇ BUTONUNA TIKLANDIĞINDA ÇIKAN BÖLÜMÜN CSS KODLARI */
 .navbar-login-side {
-  background: yellow;
+  background: green;
   width: 450px;
+  height: 620px;
   margin: auto;
   text-align: center;
   border-radius: 40px;
+}
+.exit-button {
+  position: relative;
+  left: 45%;
+  top: 9%;
 }
 .navbar-login-upper-side {
   padding-top: 15px;
@@ -77,10 +83,11 @@
   margin-top: 2px;
 }
 .navbar-login-form-side label {
-  margin-left: -180px;
+  margin-left: -185px;
+  font-size: 14px;
 }
 .navbar-login-form-side label[for="password"] {
-  margin-left: -190px !important;
+  margin-left: -195px !important;
   padding-top: 5px;
 }
 ::placeholder {
@@ -90,7 +97,9 @@
 .navbar-login-form-side form a span {
   margin-left: -92px;
   color: black;
+
   text-decoration: none !important;
+  font-size: 14px;
 }
 .navbar-login-form-side form a {
   text-decoration: none;
@@ -158,4 +167,34 @@
   font-weight: 500;
   margin-top: 11px;
   border: 1px solid #dadce0;
+}
+.policy-ahref {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.navbar-policy-side-text-first {
+  font-size: 11px;
+  margin: 15px auto;
+  width: 290px;
+  color: #767676;
+}
+.forborder {
+  width: 120px;
+  border-top: 1px solid #767676;
+  margin: 0 auto;
+}
+
+.navbar-policy-side-text-second-a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 11px;
+}
+.navbar-policy-side-text-third {
+  font-size: 12px;
+  margin-top: -12px;
+}
+.navbar-policy-side-text-third a {
+  font-size: 14px;
 }
