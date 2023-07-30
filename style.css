@@ -50,40 +50,83 @@
 }
 /* NAVBAR OTURUM AÇ BUTONUNA TIKLANDIĞINDA ÇIKAN BÖLÜMÜN CSS KODLARI */
 .navbar-login-side {
-  background: red;
-  width: 500px;
+  background: yellow;
+  width: 450px;
   height: 600px;
   margin: auto;
   text-align: center;
   border-radius: 40px;
 }
 .navbar-login-upper-side {
-  padding-top: 25px;
+  padding-top: 15px;
 }
 .navbar-login-upper-side h1 {
-  padding-top: 15px;
+  padding-top: 12px;
   font-size: 30px;
 }
 .navbar-login-form-side form {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 }
 .navbar-login-form-side input {
   width: 250px;
   height: 40px;
-  border-radius: 16px;
+  border-radius: 14px;
   margin: auto;
   border: 1px solid #767676;
-  margin-top: 6px;
+  margin-top: 2px;
 }
 .navbar-login-form-side label {
   margin-left: -180px;
 }
 .navbar-login-form-side label[for="password"] {
   margin-left: -190px !important;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 ::placeholder {
   padding-left: 8px;
   color: #767676;
+}
+.navbar-login-form-side form a span {
+  margin-left: -92px;
+  color: black;
+  text-decoration: none !important;
+}
+.navbar-login-form-side form a {
+  text-decoration: none;
+  margin-top: 5px;
+}
+.navbar-login-form-side form a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.navbar-login-button-side {
+  width: 450px;
+  margin: auto;
+}
+.navbar-login-button-side .navbar-login-btn {
+  background: rgb(230, 0, 35);
+  color: #fff;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.navbar-login-button-side .navbar-login-btn:hover {
+  background: #bb061b;
+}
+.navbar-login-button-side-span-div span {
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-login-button-side-button-facebook-div .navbar-facebook-btn {
+  color: white;
+  background: rgba(25, 118, 242, 255);
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 700;
 }
