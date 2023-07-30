@@ -52,7 +52,6 @@
 .navbar-login-side {
   background: yellow;
   width: 450px;
-  height: 600px;
   margin: auto;
   text-align: center;
   border-radius: 40px;
@@ -113,20 +112,50 @@
   border-radius: 20px;
   font-weight: 700;
   margin-top: 20px;
+  border: none;
 }
 .navbar-login-button-side .navbar-login-btn:hover {
   background: #bb061b;
+}
+.navbar-login-button-side-span-div {
+  margin: 8px 0;
 }
 .navbar-login-button-side-span-div span {
   color: black;
   font-weight: bold;
 }
-
+.social-btn {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 10px;
+}
+.social-btn-icon {
+  margin-left: 15px;
+  width: 10%;
+}
+.social-btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 .navbar-login-button-side-button-facebook-div .navbar-facebook-btn {
   color: white;
   background: rgba(25, 118, 242, 255);
   width: 250px;
   height: 40px;
   border-radius: 20px;
-  font-weight: 700;
+  font-weight: 500;
+  border: none;
+}
+.navbar-login-button-side-button-google-div .navbar-google-btn {
+  background-color: white;
+  color: #3c4043;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-top: 11px;
+  border: 1px solid #dadce0;
 }
