@@ -27,3 +27,13 @@
 .navbar-nav li a:hover {
   text-decoration: underline;
 }
+.nav-oturum-ac {
+  color: white;
+  background: #e60023;
+  border-radius: 50px;
+}
+.nav-oturum-ac:hover {
+  text-decoration: none !important;
+  color: white;
+  background: #ad081b;
+}
