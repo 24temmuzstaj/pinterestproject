@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+/* Fatih NAVBAR CSS SIDE */
+.navbar-logo-image {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+.navbar-logo-text {
+  font-size: 19px;
+  color: #cc0000;
+  margin: 0px;
+  padding: 0;
+  margin-left: -13px;
+  font-weight: 500;
+}
