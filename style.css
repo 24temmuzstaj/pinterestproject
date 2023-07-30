@@ -55,10 +55,35 @@
   height: 600px;
   margin: auto;
   text-align: center;
+  border-radius: 40px;
 }
 .navbar-login-upper-side {
   padding-top: 25px;
 }
 .navbar-login-upper-side h1 {
+  padding-top: 15px;
   font-size: 30px;
+}
+.navbar-login-form-side form {
+  display: flex;
+  flex-direction: column;
+}
+.navbar-login-form-side input {
+  width: 250px;
+  height: 40px;
+  border-radius: 16px;
+  margin: auto;
+  border: 1px solid #767676;
+  margin-top: 6px;
+}
+.navbar-login-form-side label {
+  margin-left: -180px;
+}
+.navbar-login-form-side label[for="password"] {
+  margin-left: -190px !important;
+  padding-top: 10px;
+}
+::placeholder {
+  padding-left: 8px;
+  color: #767676;
 }
