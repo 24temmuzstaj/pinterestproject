@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none !important;
+  text-decoration: none;
   box-sizing: border-box;
 }
 /* Fatih NAVBAR CSS SIDE */
@@ -14,13 +14,16 @@
   font-size: 19px;
   color: #cc0000;
   margin: 0px;
-  margin-top: 10px;
   padding: 0;
-  margin-left: -13px;
+  margin-top: 5px;
+  margin-left: 3px;
+  float: right;
   font-weight: 500;
 }
-.navbar-logo-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.navbar-nav li a {
+  margin-left: 10px;
+  font-weight: 600;
+}
+.navbar-nav li a:hover {
+  text-decoration: underline;
 }
