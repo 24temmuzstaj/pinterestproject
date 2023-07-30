@@ -4,7 +4,7 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-/* Fatih NAVBAR CSS SIDE */
+/* FATİH NAVBAR LOGO VE LİNKLERİN CSS KODLARI*/
 .navbar-logo-image {
   width: 32px;
   height: 32px;
@@ -22,13 +22,14 @@
 }
 .navbar-nav li a {
   margin-left: 10px;
-  font-weight: 600;
+  font-weight: 500;
+  color: black;
 }
 .navbar-nav li a:hover {
   text-decoration: underline;
 }
 .nav-oturum-ac {
-  color: white;
+  color: white !important;
   background: #e60023;
   border-radius: 50px;
 }
@@ -36,4 +37,28 @@
   text-decoration: none !important;
   color: white;
   background: #ad081b;
+}
+
+.nav-kaydol {
+  color: black;
+  background: #efefef;
+  border-radius: 50px;
+}
+.nav-kaydol:hover {
+  text-decoration: none !important;
+  background: #e2e2e2;
+}
+/* NAVBAR OTURUM AÇ BUTONUNA TIKLANDIĞINDA ÇIKAN BÖLÜMÜN CSS KODLARI */
+.navbar-login-side {
+  background: red;
+  width: 500px;
+  height: 600px;
+  margin: auto;
+  text-align: center;
+}
+.navbar-login-upper-side {
+  padding-top: 25px;
+}
+.navbar-login-upper-side h1 {
+  font-size: 30px;
 }
