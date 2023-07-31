@@ -6,7 +6,7 @@
 }
 .body {
   /* background-color: rgba(0, 0, 0, 0.6); */
-  filter: brightness(80%);
+  /* filter: brightness(80%); */
 }
 /* FATİH NAVBAR LOGO VE LİNKLERİN CSS KODLARI*/
 .navbar-logo-image {
@@ -58,6 +58,7 @@
   width: 450px;
   height: 620px;
   margin: auto;
+  margin-top: 100px;
   text-align: center;
   border-radius: 40px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
@@ -90,6 +91,11 @@
   margin: auto;
   border: 1px solid #767676;
   margin-top: 2px;
+}
+.eye {
+  position: relative;
+  left: 100px;
+  bottom: 20px;
 }
 .navbar-login-form-side label {
   margin-left: -185px;
