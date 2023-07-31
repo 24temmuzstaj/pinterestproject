@@ -4,10 +4,11 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-.body {
-  /* background-color: rgba(0, 0, 0, 0.6); */
-  /* filter: brightness(80%); */
-}
+
+/* body {
+  background-color: rgba(0, 0, 0, 0.6);
+  filter: brightness(50%);
+} */
 /* FATİH NAVBAR LOGO VE LİNKLERİN CSS KODLARI*/
 .navbar-logo-image {
   width: 32px;
@@ -63,18 +64,57 @@
   border-radius: 40px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
   z-index: 1000;
+  position: relative;
 }
+
 .show {
   display: none;
 }
+
 .exit-button {
-  position: relative;
-  left: 45%;
-  top: 9%;
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  padding-top: 10px;
+  padding-left: 1px;
+}
+.exit-button-side {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: absolute;
+  left: 90%;
+  top: 2%;
+}
+.exit-button-side:hover {
+  background-color: #e2e2e2;
+}
+.register-exit-button {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  padding-top: 10px;
+  padding-left: 1px;
+}
+.register-exit-button-side {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: absolute;
+  left: 90%;
+  top: 2%;
+}
+.register-exit-button-side:hover {
+  background-color: #e2e2e2;
 }
 .navbar-login-upper-side {
   padding-top: 15px;
 }
+
 .navbar-login-upper-side h1 {
   padding-top: 12px;
   font-size: 30px;
@@ -188,6 +228,9 @@
   color: black;
   font-weight: 500;
 }
+.policy-ahref:hover {
+  text-decoration: underline;
+}
 .navbar-policy-side-text-first {
   font-size: 11px;
   margin: 15px auto;
@@ -217,13 +260,13 @@
 .navbar-register-side {
   background: #fff;
   width: 450px;
-
   margin: auto;
   margin-top: 70px;
   text-align: center;
   border-radius: 40px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
   z-index: 1000;
+  position: relative;
 }
 .navbar-register-upper-side {
   padding-top: 15px;
