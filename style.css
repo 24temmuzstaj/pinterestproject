@@ -213,3 +213,103 @@
 .navbar-policy-side-text-third a {
   font-size: 14px;
 }
+/* NAVBAR KAYDOL BUTONUNA TIKLANDIĞINDA ÇIKAN BÖLÜMÜN CSS KODLARI */
+.navbar-register-side {
+  background: #fff;
+  width: 450px;
+  height: 620px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  z-index: 1000;
+}
+.navbar-register-upper-side {
+  padding-top: 15px;
+}
+.navbar-register-side h1 {
+  padding-top: 12px;
+  font-size: 30px;
+}
+.navbar-register-form-side form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.navbar-register-form-side input {
+  width: 250px;
+  height: 40px;
+  border-radius: 14px;
+  margin: auto;
+  border: 1px solid #767676;
+  margin-top: 2px;
+}
+
+.navbar-register-form-side label {
+  margin-left: -185px;
+  font-size: 14px;
+}
+.navbar-register-form-side label[for="password"] {
+  margin-left: -195px !important;
+  padding-top: 5px;
+}
+
+.navbar-register-form-side form a span {
+  margin-left: -92px;
+  color: black;
+
+  text-decoration: none !important;
+  font-size: 14px;
+}
+.navbar-register-form-side form a {
+  text-decoration: none;
+  margin-top: 5px;
+}
+.navbar-register-form-side form a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.navbar-register-button-side {
+  width: 450px;
+  margin: auto;
+}
+.navbar-register-button-side .navbar-register-btn {
+  background: rgb(230, 0, 35);
+  color: #fff;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+}
+.navbar-register-button-side .navbar-register-btn:hover {
+  background: #bb061b;
+}
+.navbar-register-button-side-span-div {
+  margin: 8px 0;
+}
+.navbar-register-button-side-span-div span {
+  color: black;
+  font-weight: bold;
+}
+.navbar-register-button-side-button-facebook-div .navbar-facebook-btn {
+  color: white;
+  background: rgba(25, 118, 242, 255);
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: none;
+}
+.navbar-register-button-side-button-google-div .navbar-google-btn {
+  background-color: white;
+  color: #3c4043;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-top: 11px;
+  border: 1px solid #dadce0;
+}
