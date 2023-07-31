@@ -323,3 +323,13 @@
   margin-top: 11px;
   border: 1px solid #dadce0;
 }
+.navbar-policy-side-text-businessaccount {
+  background: #e9e9e9;
+  height: 60px;
+  border-end-end-radius: 40px;
+  border-end-start-radius: 40px;
+}
+.navbar-policy-side-text-businessaccount h3 {
+  padding: 20px 20px;
+  font-size: 16px;
+}
