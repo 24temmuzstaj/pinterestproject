@@ -204,7 +204,7 @@
   text-decoration: none;
   color: black;
   font-weight: 500;
-  font-size: 11px;
+  font-size: 12px;
 }
 .navbar-policy-side-text-third {
   font-size: 12px;
@@ -217,9 +217,9 @@
 .navbar-register-side {
   background: #fff;
   width: 450px;
-  height: 620px;
+
   margin: auto;
-  margin-top: 100px;
+  margin-top: 70px;
   text-align: center;
   border-radius: 40px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
@@ -254,7 +254,17 @@
   margin-left: -195px !important;
   padding-top: 5px;
 }
-
+.navbar-register-form-side label[for="date"] {
+  margin-left: -152px !important;
+  padding-top: 5px;
+}
+::-webkit-datetime-edit {
+  padding: 0.5em;
+  color: #767676;
+}
+::-webkit-calendar-picker-indicator {
+  padding-right: 1rem;
+}
 .navbar-register-form-side form a span {
   margin-left: -92px;
   color: black;
