@@ -1,0 +1,101 @@
+#carouselExampleCaptions {
+    height: 500px;
+    background-color: #f1f1f3; /* Örnek olarak gri bir renk */
+}
+.still{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tittle{
+    margin-top:100px;
+}
+/*  Daire Butonlar */
+.btn{
+    border-radius: 75%;
+    margin-bottom: 150px;
+    
+}
+/* NOKTALARIN STİLL ÖZELLİKLERİ */
+#btnzero {
+    background-color: #e2aa31; /* Nokta rengi */
+    border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
+    width: 12px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+    margin-right: 5px; /* Sağ boşluk */
+    margin-left: 5px; /* Sol boşluk */
+    border: none; /* Kenarlık yok */
+    cursor: pointer;
+}
+#btnone {
+    background-color:  #3a28e2; /* Nokta rengi */
+    border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
+    width: 12px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+    margin-right: 5px; /* Sağ boşluk */
+    margin-left: 5px; /* Sol boşluk */
+    border: none; /* Kenarlık yok */
+    cursor: pointer;
+}
+#btntwo {
+    background-color:blue; /* Nokta rengi */
+    border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
+    width: 12px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+    margin-right: 5px; /* Sağ boşluk */
+    margin-left: 5px; /* Sol boşluk */
+    border: none; /* Kenarlık yok */
+    cursor: pointer;
+}
+#btntree {
+    background-color: #077c4f; /* Nokta rengi */
+    border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
+    width: 12px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+    margin-right: 5px; /* Sağ boşluk */
+    margin-left: 5px; /* Sol boşluk */
+    border: none; /* Kenarlık yok */
+    cursor: pointer;
+}
+
+/* SLİDER GEÇİŞLERİ */
+/***** 1.Slider'ın içeriği ******/
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.note{
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: auto;
+}
+.display-note-text {
+    font-size: 50px;
+    font-weight: bold;
+}
+/* 1.slider'ın yazı tipi ve rengi */
+.text{
+    color: #e2aa31;
+    font-size: 50px;
+    font-weight:500;
+}
+/****** 1.Slider Fotoğraflar ******/
+.dinnerslider{
+    display:inline-block;
+}
+
+/* 1slider'ın imgleri */
+#pngone{
+    margin-left: -40px;
+}
+#pngseven{
+   float: right;
+   margin-right: 20px;
+   margin: 0;
+   margin-left: auto;
+}
+.row {
+    display: flex;
+}
