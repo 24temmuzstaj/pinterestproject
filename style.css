@@ -1,6 +1,6 @@
 #carouselExampleCaptions {
-    height: 500px;
-    background-color: #f1f1f3; /* Örnek olarak gri bir renk */
+    height: 100vh;
+    background-color: white; /* Örnek olarak gri bir renk */
 }
 .still{
     text-align: center;
@@ -13,7 +13,7 @@
 /*  DAİRE BUTONLAR */
 .btn{
     border-radius: 75%;
-    margin-bottom: 150px;
+    margin-bottom: 300px;
     
 }
 /* NOKTALARIN STİLL ÖZELLİKLERİ */
@@ -78,8 +78,8 @@
 /* 1.slider'ın yazı tipi ve rengi */
 .text{
     color: #c28b00 ;
-    font-size: 50px;
-    font-weight:500;
+    font-size: 55px;
+    font-weight:530;
 }
 /****** 1.Slider Fotoğraflar ******/
 .dinnerslider{
@@ -88,14 +88,43 @@
 
 /* 1slider'ın imgleri */
 #pngone{
-    margin-left: -100px;
+    margin-left: -110px;
+}
+#pngtwo img{
+    width: 220px;
+    height: 340px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 23px;
+}
+#pngtree img{
+    width: 180px;
+    height: 230px;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 23px;
+}
+#pngfour img{
+    width: 180px;
+    height: 240px;
+    position: relative;
+    margin-top: 200px;
+}
+#pngfive img{
+    width: 170px;
+    height: 230px;
+    position: relative;
+    margin-top: 150px;
+    margin-left: -27px;
+}
+#pngsix img{
+    width: 210px;
+    height: 280px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 45px;
 }
 #pngseven{
-    float: right;
-    margin-right: 20px;
-    margin: 0;
-    margin-left: auto;
-}
-.row {
-    display: flex;
+    height: 150px;
+    margin-left: 40px;
 }
