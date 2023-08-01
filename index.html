@@ -4,14 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <title>Scroll to Top Button</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://kit.fontawesome.com/e9ae45637b.js" crossorigin="anonymous"></script>
+
   </head>
+
+
   <body>
     <!-- pinterest index page 5 -->
-    <!-- 
-      git config --global core.editor "code --wait"
-      yukarıdaki kod ile git configuration denemesi, ilgili link:
-      https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config
 
-     -->
+  <div class="page5-container">
+
+    <!-- Page5 description -->
+    <div class="page5-info section">
+        Fikirlerinizi <br>
+        bulmak için <br>
+        kaydolun
+    </div>
+
+      <!-- page5 Sign Up -->
+    <div class="sign-up section">
+        Pinterest'e Hoş Geldiniz
+    </div>
+  
+
+    <!-- button to go back at the top of the index page -->
+    <div class="scroll-to-top" onclick="scrollToTop()">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- js code of the button -->
+    <script>
+      function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth'});
+      }
+    </script>
+
+  
+  </div>
+
+
+    
+
   </body>
 </html>
