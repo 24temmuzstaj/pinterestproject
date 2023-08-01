@@ -1,7 +1,9 @@
+/***** Slider ****/
 #carouselExampleCaptions {
     height: 100vh;
     background-color: white; /* Örnek olarak gri bir renk */
 }
+/**** fixed header ***/
 .still{
     text-align: center;
     font-size: 50px;
@@ -10,13 +12,13 @@
 .tittle{
     margin-top:100px;
 }
-/*  DAİRE BUTONLAR */
+/*  circle buttons */
 .btn{
     border-radius: 75%;
     margin-bottom: 300px;
     
 }
-/* NOKTALARIN STİLL ÖZELLİKLERİ */
+/* still properties of points */
 #btnzero {
     background-color: #c28b00 ; /* Nokta rengi */
     border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
@@ -58,8 +60,8 @@
     cursor: pointer;
 }
 
-/* SLİDER GEÇİŞLERİ */
-/***** 1.Slider'ın içeriği ******/
+/* slider transitions */
+/***** slider one content ******/
 .notes-container {
     display: flex;
     flex-direction: column;
@@ -75,18 +77,19 @@
     font-size: 50px;
     font-weight: bold;
 }
-/* 1.slider'ın yazı tipi ve rengi */
+/* slider one font and color */
 .text{
     color: #c28b00 ;
     font-size: 55px;
     font-weight:530;
 }
-/****** 1.Slider Fotoğraflar ******/
+
+/******    slider one photo   ******/
 .dinnerslider{
     display:inline-block;
 }
 
-/***** 1slider'ın imgleri **********/
+/*****  slider photo locations **********/
 #pngone{
     margin-left: -110px;
 }
@@ -129,7 +132,8 @@
     height: 150px;
     margin-left: 40px;
 }
-/* ******** ANİMASYON CSSİ **** */
+/* ******** ANnimation**** */
+
 .carousel-inner .frame {
     opacity: 0.5; /* Başlangıçta yarı transparan yapabilirsiniz */
     transform: translateY(100%); /* Resimleri başlangıçta aşağıdan dışarı taşıyın */
