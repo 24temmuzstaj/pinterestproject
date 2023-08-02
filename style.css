@@ -77,12 +77,33 @@
     font-size: 50px;
     font-weight: bold;
 }
-/* slider one font and color */
+
+
+/******* slider-one font and color *****/
 .text{
     color: #c28b00 ;
     font-size: 55px;
     font-weight:530;
 }
+/******* slider-two font and color ******/
+.texttwo{
+    color: #618c7b ;
+    font-size: 55px;
+    font-weight:530;
+}
+/******* slider-three font and color ******/
+.textthree{
+    color: #0076d3 ;
+    font-size: 55px;
+    font-weight:530;
+}
+/******* slider-four font and color ******/
+.textfour{
+    color: #407a57;
+    font-size: 55px;
+    font-weight:530;
+}
+
 
 /******    slider one photo   ******/
 .dinnerslider{
@@ -92,6 +113,7 @@
 /*****  slider photo locations **********/
 #pngone{
     margin-left: -110px;
+    opacity: 0.9;
 }
 #pngtwo img{
     width: 220px;
@@ -99,17 +121,19 @@
     position: relative;
     margin-top: 50px;
     margin-left: 20px;
+    opacity: 0.9;
 }
-#pngtree img{
+#pngthree img{
     width: 180px;
     height: 230px;
     position: relative;
     margin-top: 150px;
     margin-left: 23px;
+    opacity: 0.9;
 }
 #pngfour img{
-    width: 180px;
-    height: 280px;
+    width: 160px;
+    height: 300px;
     position: relative;
     margin-top: 270px;
     opacity: 0.3;
@@ -120,17 +144,20 @@
     position: relative;
     margin-top: 150px;
     margin-left: -27px;
+    opacity: 0.9;
 }
 #pngsix img{
-    width: 210px;
+    width: 200px;
     height: 280px;
     position: relative;
     margin-top: 50px;
-    margin-left: 45px;
+    margin-left: 55px;
+    opacity: 0.9;
 }
 #pngseven{
     height: 150px;
     margin-left: 40px;
+    opacity: 0.9;
 }
 /* ******** ANnimation**** */
 
