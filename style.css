@@ -115,7 +115,7 @@
 }
 
 /*****  sliderone photo locations **********/
-#pngone{
+#pngone img{
     margin-left: -110px;
     opacity: 0.9;
 }
@@ -158,14 +158,14 @@
     margin-left: 55px;
     opacity: 0.9;
 }
-#pngseven{
+#pngseven img{
     height: 150px;
     margin-left: 40px;
     opacity: 0.9;
 }
 
 /*****  slidertwo photo locations **********/
-#pngonex{
+#pngonex img{
     margin-left: -110px;
     opacity: 0.9;
 }
@@ -214,7 +214,7 @@
     opacity: 0.9;
 }
 /*****  sliderthree photo locations **********/
-#pngoney{
+#pngoney img{
     margin-left: -110px;
     opacity: 0.9;
 }
@@ -263,7 +263,7 @@
     opacity: 0.9;
 }
 /*****  sliderfour photo locations **********/
-#pngonez{
+#pngonez img{
     margin-left: -110px;
     opacity: 0.9;
 }
@@ -313,11 +313,8 @@
 }
 
 
-
-
 /* ******** Animation**** */
 
-/* ******** ANİMASYON CSSİ **** */
 .carousel-inner .frame {
     opacity: 0.5; /* Başlangıçta yarı transparan yapabilirsiniz */
     transform: translateY(100%); /* Resimleri başlangıçta aşağıdan dışarı taşıyın */
@@ -333,12 +330,4 @@
     transform: translateY(100%);
     transition: opacity 0.7s ease, transform 1s ease;
 }
-
-
-
-
-
-
-
-
 
