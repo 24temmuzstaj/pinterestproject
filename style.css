@@ -5,8 +5,6 @@
     overflow: hidden; /* Slider içeriklerinin sınırlar içinde kalmasını sağlamak için */
     position: relative; /* Resimlerin mutlak pozisyonunu kullanabilmek için */
   }
-
-/**** fixed header ***/
 .still{
     text-align: center;
     font-size: 50px;
@@ -15,14 +13,13 @@
 .tittle{
     margin-top:100px;
 }
-
-/*  circle buttons */
+/*  DAİRE BUTONLAR */
 .btn{
     border-radius: 75%;
     margin-bottom: 300px;
     
 }
-/* still properties of points */
+/* NOKTALARIN STİLL ÖZELLİKLERİ */
 #btnzero {
     background-color: #c28b00 ; /* Nokta rengi */
     border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
@@ -34,7 +31,7 @@
     cursor: pointer;
 }
 #btnone {
-    background-color:  #467c66 ; /* Nokta rengi */
+    background-color:  #618c7b ; /* Nokta rengi */
     border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
     width: 12px; /* Genişlik */
     height: 12px; /* Yükseklik */
@@ -64,8 +61,8 @@
     cursor: pointer;
 }
 
-/* slider transitions */
-/***** slider one content ******/
+/* SLİDER GEÇİŞLERİ */
+/***** 1.Slider'ın içeriği ******/
 .notes-container {
     display: flex;
     flex-direction: column;
@@ -81,9 +78,7 @@
     font-size: 50px;
     font-weight: bold;
 }
-
-
-/******* slider-one font and color *****/
+/* 1.slider'ın yazı tipi ve rengi */
 .text{
     color: #c28b00 ;
     font-size: 55px;
@@ -109,15 +104,14 @@
 }
 
 
-/******    slider one photo   ******/
+/****** 1.Slider Fotoğraflar ******/
 .dinnerslider{
     display:inline-block;
 }
 
-/*****  sliderone photo locations **********/
-#pngone img{
+/***** 1slider'ın imgleri **********/
+#pngone{
     margin-left: -110px;
-    opacity: 0.9;
 }
 #pngtwo img{
     width: 220px;
@@ -125,19 +119,17 @@
     position: relative;
     margin-top: 50px;
     margin-left: 20px;
-    opacity: 0.9;
 }
-#pngthree img{
+#pngtree img{
     width: 180px;
     height: 230px;
     position: relative;
     margin-top: 150px;
     margin-left: 23px;
-    opacity: 0.9;
 }
 #pngfour img{
-    width: 160px;
-    height: 300px;
+    width: 180px;
+    height: 280px;
     position: relative;
     margin-top: 270px;
     opacity: 0.3;
@@ -148,24 +140,21 @@
     position: relative;
     margin-top: 150px;
     margin-left: -27px;
-    opacity: 0.9;
 }
 #pngsix img{
-    width: 200px;
+    width: 210px;
     height: 280px;
     position: relative;
     margin-top: 50px;
-    margin-left: 55px;
-    opacity: 0.9;
+    margin-left: 45px;
 }
-#pngseven img{
+#pngseven{
     height: 150px;
     margin-left: 40px;
-    opacity: 0.9;
 }
 
 /*****  slidertwo photo locations **********/
-#pngonex img{
+#pngonex{
     margin-left: -110px;
     opacity: 0.9;
 }
@@ -213,8 +202,10 @@
     margin-left: 40px;
     opacity: 0.9;
 }
+
+
 /*****  sliderthree photo locations **********/
-#pngoney img{
+#pngoney{
     margin-left: -110px;
     opacity: 0.9;
 }
@@ -262,59 +253,57 @@
     margin-left: 40px;
     opacity: 0.9;
 }
+
 /*****  sliderfour photo locations **********/
-#pngonez img{
+#pngonez{
     margin-left: -110px;
-    opacity: 0.9;
 }
 #pngtwoz img{
-    width: 220px;
+    width: 200px;
     height: 340px;
     position: relative;
-    margin-top: 50px;
-    margin-left: 20px;
-    opacity: 0.9;
+    margin-top: 95px;
+    margin-left: 15px;
 }
 #pngthreez img{
     width: 180px;
     height: 230px;
     position: relative;
-    margin-top: 150px;
-    margin-left: 23px;
-    opacity: 0.9;
+    margin-top: 200px;
+    margin-left: 20px;
 }
 #pngfourz img{
-    width: 160px;
+    width: 190px;
     height: 300px;
     position: relative;
-    margin-top: 270px;
+    margin-top: 300px;
     opacity: 0.3;
 }
 #pngfivez img{
     width: 190px;
     height: 250px;
     position: relative;
-    margin-top: 150px;
+    margin-top: 190px;
     margin-left: -27px;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 #pngsixz img{
     width: 200px;
-    height: 280px;
+    height: 330px;
     position: relative;
-    margin-top: 50px;
-    margin-left: 55px;
-    opacity: 0.9;
+    margin-top: 95px;
+    margin-left: 65px;
+    
 }
 #pngsevenz img{
-    height: 150px;
-    margin-left: 40px;
-    opacity: 0.9;
+    height: 350px;
+    width: 200px;
+    margin-left: 55px;
+    
 }
 
 
-/* ******** Animation**** */
-
+/* ******** ANİMASYON CSSİ **** */
 .carousel-inner .frame {
     opacity: 0.5; /* Başlangıçta yarı transparan yapabilirsiniz */
     transform: translateY(100%); /* Resimleri başlangıçta aşağıdan dışarı taşıyın */
@@ -325,9 +314,7 @@
     transform: translateY(0); /* Aktif resimler yavaşça orijinal konumuna gelecek */
 }
 
-.carousel-inner .carousel-item:not(.active) .frame {
-    opacity: 0.5;
-    transform: translateY(100%);
-    transition: opacity 0.7s ease, transform 1s ease;
-}
+
+
+
 
