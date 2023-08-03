@@ -316,6 +316,37 @@
 }
 
 
+/* CSS */
+@keyframes slideFromBottom {
+    from {
+    transform: translateY(100%);
+    }
+    to {
+    transform: translateY(0);
+    }
+}
+.textone {
+    color: #c28b00;
+    font-size: 55px;
+    font-weight: 530;
+    animation: slideFromBottom 1s ease;
+}
+.texttwo {
+    color: #467c66;
+    font-size: 55px;
+    font-weight: 530;
+    animation: slideFromBottom 1s ease;
+}
+.textthree {
+    color: #0076d3;
+    font-size: 55px;
+    font-weight: 530;
+    animation: slideFromBottom 1s ease;
+}
 
-
-
+.textfour {
+    color: #407a57;
+    font-size: 55px;
+    font-weight: 530;
+    animation: slideFromBottom 1s ease;
+}

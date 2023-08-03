@@ -5,9 +5,12 @@ $(document).ready(function() {
 
     // Otomatik geçiş için fonksiyon
     function nextSlide() {
-        $('#carouselExampleCaptions').carousel('next');
+        var activeIndex = $('.carousel-item.active').index();
+        var slideCount = $('.carousel-item').length;
+        var nextIndex = (activeIndex + 1) % slideCount;
+        $('#carouselExampleCaptions').carousel(nextIndex);
     }
 
     // Otomatik geçiş aralığı (3 saniye)
-    var interval = setInterval(nextSlide, 3000);
+    var interval = setInterval(nextSlide, 5000);
 });
