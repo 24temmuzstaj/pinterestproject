@@ -117,40 +117,40 @@
     width: 220px;
     height: 340px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 20px;
 }
 #pngtree img{
     width: 180px;
     height: 230px;
     position: relative;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-left: 23px;
 }
 #pngfour img{
     width: 180px;
     height: 280px;
     position: relative;
-    margin-top: 270px;
+    margin-top: 300px;
     opacity: 0.3;
 }
 #pngfive img{
     width: 190px;
     height: 250px;
     position: relative;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-left: -27px;
 }
 #pngsix img{
     width: 210px;
     height: 280px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 45px;
 }
 #pngseven{
     height: 150px;
-    margin-left: 40px;
+    margin-left: 55px;
 }
 
 /*****  slidertwo photo locations **********/
@@ -162,7 +162,7 @@
     width: 220px;
     height: 340px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-left: 20px;
     opacity: 0.9;
 }
@@ -170,37 +170,37 @@
     width: 180px;
     height: 230px;
     position: relative;
-    margin-top: 150px;
+    margin-top: 250px;
     margin-left: 23px;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 #pngfourx img{
-    width: 160px;
+    width: 190px;
     height: 300px;
     position: relative;
-    margin-top: 270px;
+    margin-top: 330px;
     opacity: 0.3;
 }
 #pngfivex img{
-    width: 190px;
+    width: 200px;
     height: 250px;
     position: relative;
-    margin-top: 150px;
+    margin-top: 250px;
     margin-left: -27px;
     opacity: 0.9;
 }
 #pngsixx img{
-    width: 200px;
+    width: 210px;
     height: 280px;
     position: relative;
-    margin-top: 50px;
-    margin-left: 55px;
+    margin-top: 150px;
+    margin-left: 65px;
     opacity: 0.9;
 }
 #pngsevenx img{
-    height: 150px;
-    margin-left: 40px;
-    opacity: 0.9;
+    width: 300px;
+    height: 360px;
+    margin-left: 70px;
 }
 
 
@@ -213,45 +213,46 @@
     width: 220px;
     height: 340px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 120px;
     margin-left: 20px;
     opacity: 0.9;
 }
 #pngthreey img{
-    width: 180px;
-    height: 230px;
+    width: 200px;
+    height: 250px;
     position: relative;
-    margin-top: 150px;
-    margin-left: 23px;
+    margin-top: 200px;
+    margin-left: 35px;
     opacity: 0.9;
 }
 #pngfoury img{
-    width: 160px;
+    width: 200px;
     height: 300px;
     position: relative;
-    margin-top: 270px;
+    margin-top: 330px;
     opacity: 0.3;
 }
 #pngfivey img{
     width: 190px;
-    height: 250px;
+    height: 280px;
     position: relative;
-    margin-top: 150px;
-    margin-left: -27px;
+    margin-top: 220px;
+    margin-left: -15px;
     opacity: 0.9;
 }
 #pngsixy img{
-    width: 200px;
-    height: 280px;
+    width: 230px;
+    height: 350px;
     position: relative;
-    margin-top: 50px;
-    margin-left: 55px;
+    margin-top: 110px;
+    margin-left: 75px;
     opacity: 0.9;
+
 }
 #pngseveny img{
-    height: 150px;
-    margin-left: 40px;
-    opacity: 0.9;
+    height: 350px;
+    margin-left: 90px;
+
 }
 
 /*****  sliderfour photo locations **********/
@@ -266,14 +267,14 @@
     margin-left: 15px;
 }
 #pngthreez img{
-    width: 180px;
+    width: 190px;
     height: 230px;
     position: relative;
     margin-top: 200px;
     margin-left: 20px;
 }
 #pngfourz img{
-    width: 190px;
+    width: 200px;
     height: 300px;
     position: relative;
     margin-top: 300px;
@@ -284,7 +285,7 @@
     height: 250px;
     position: relative;
     margin-top: 190px;
-    margin-left: -27px;
+    margin-left: 10px;
     opacity: 0.8;
 }
 #pngsixz img{
@@ -292,13 +293,13 @@
     height: 330px;
     position: relative;
     margin-top: 95px;
-    margin-left: 65px;
+    margin-left: 100px;
     
 }
 #pngsevenz img{
     height: 350px;
     width: 200px;
-    margin-left: 55px;
+    margin-left: 95px;
     
 }
 
@@ -307,7 +308,7 @@
 .carousel-inner .frame {
     opacity: 0.5; /* Başlangıçta yarı transparan yapabilirsiniz */
     transform: translateY(100%); /* Resimleri başlangıçta aşağıdan dışarı taşıyın */
-    transition: opacity 0.7s ease, transform 1s ease; /* Geçiş efektlerini tanımlayın (süre ve geçiş türü) */
+    transition: opacity 0.8s ease, transform 1s ease; /* Geçiş efektlerini tanımlayın (süre ve geçiş türü) */
 }
 .carousel-inner .carousel-item.active .frame {
     opacity: 0.9; /* Aktif resimler tamamen opak olacak */
