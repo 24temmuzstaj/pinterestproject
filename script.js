@@ -14,3 +14,4 @@ $(document).ready(function() {
     // Otomatik geçiş aralığı (3 saniye)
     var interval = setInterval(nextSlide, 5000);
 });
+

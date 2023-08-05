@@ -14,7 +14,7 @@
     margin-top:100px;
 }
 /*  DAİRE BUTONLAR */
-.btn{
+.btnpoint{
     border-radius: 75%;
     margin-bottom: 300px;
     
@@ -349,4 +349,17 @@
     font-size: 55px;
     font-weight: 530;
     animation: slideFromBottom 1s ease;
+}
+
+/**************** ABOUT.CSS ***************/
+.bluenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    background-color: #d7edff;
+    font-size: 16px;
+    z-index: 100; 
+
 }
