@@ -132,6 +132,7 @@
 }
 /* SAĞ ÜSTTEKİ BİLDİRİMLERE TIKLAYINCA AÇILIN BÖLÜMÜN CSS KODLARI */
 .update-container {
+  margin-left: 150px;
   width: 358px;
   height: 100%;
   border-radius: 10px;
@@ -143,6 +144,9 @@
 .update-upper {
   display: flex;
   align-items: center;
+  padding-left: 7px;
+  /* background: #878787;
+  border-radius: 10px; */
 }
 .update-upper span {
   font-size: 16px;
@@ -154,6 +158,41 @@
 .update-upper:hover {
   background: #878787;
   border-radius: 10px;
+}
+.update-upper:has(.moreicon:hover) {
+  background-color: unset;
+}
+
+.moreicon:hover {
+  color: #111111 !important;
+}
+.update-lower {
+  display: grid;
+  width: 342px;
+  padding-left: 7px;
+  border-radius: 10px;
+}
+.update-lower:hover {
+  background: #878787;
+}
+.update-lower span {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.updateimage {
+  width: 110px;
+  height: 145px;
+  float: left;
+  border: 0.1px solid transparent;
+}
+.updateimage:nth-child(1) {
+  border-start-start-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.updateimage:nth-child(3) {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 /*SAĞ ÜSTTEKİ ACCOUNT A TIKLANINCA AÇILAN BÖLÜMÜN CSS KODLARI */
 
