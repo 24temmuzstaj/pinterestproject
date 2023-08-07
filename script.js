@@ -22,9 +22,10 @@ hugething.addEventListener("click", () => {
 accountopener.addEventListener("click", () => {
   $(accountcontainer).toggleClass("showy");
 });
-updateupper.addEventListener("mouseenter", () => {
+/* updateupper.addEventListener("mouseenter", () => {
   $(moreicon).toggleClass("showy");
 });
 updateupper.addEventListener("mouseleave", () => {
   $(moreicon).toggleClass("showy");
 });
+ */
