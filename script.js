@@ -4,8 +4,11 @@ const cancelicon = document.querySelector(".cancel-icon");
 const hugething = document.querySelector(".hugething");
 const accountopener = document.querySelector(".account-opener");
 const accountcontainer = document.querySelector(".account-container");
-const updateupper = document.querySelector(".update-upper");
-const moreicon = document.querySelector(".moreicon");
+const updateopener = document.querySelector(".update-opener");
+const updatecontainer = document.querySelector(".update-container");
+const image = document.querySelector(".picture-container-image");
+const imageparent = document.querySelector(".picture-container");
+
 searchinput.addEventListener("click", () => {
   $(searchbox).toggleClass("showy");
   $(cancelicon).toggleClass("showy");
@@ -22,10 +25,14 @@ hugething.addEventListener("click", () => {
 accountopener.addEventListener("click", () => {
   $(accountcontainer).toggleClass("showy");
 });
-/* updateupper.addEventListener("mouseenter", () => {
-  $(moreicon).toggleClass("showy");
+
+updateopener.addEventListener("click", () => {
+  $(updatecontainer).toggleClass("showy");
 });
-updateupper.addEventListener("mouseleave", () => {
-  $(moreicon).toggleClass("showy");
-});
- */
+
+if (!updatecontainer.classList.contains("showy")) {
+  document.addEventListener("click", function (e) {
+    $(updatecontainer).toggleClass("showy");
+    console.log("selam");
+  });
+}
