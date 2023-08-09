@@ -65,17 +65,25 @@
           <div class="searchinput-container">
             <i class="fa-solid fa-magnifying-glass nav-eye-icon"></i>
             <input
-              class="form-control searchinput"
+              class="form-control searchinput boxy"
               type="search"
               placeholder="Ara"
               aria-label="Search"
+              data-target=".opened-searchbox-container"
             />
-            <i class="fa-solid fa-circle-xmark cancel-icon showy"></i>
+            <i class="fa-solid fa-circle-xmark cancel-icon"></i>
           </div>
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><i class="fa-solid fa-bell nav-icon ps-3 update-opener"></i
-            ></a>
+            <button
+              class="nav-link boxy update-opener"
+              href="#"
+              data-target=".update-container"
+            >
+              <i
+                data-target=".update-container"
+                class="fa-solid fa-bell nav-icon ps-3 update-opener iconicon"
+              ></i>
+            </button>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"
@@ -88,15 +96,21 @@
             ></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><i class="fa-solid fa-angle-down nav-icon account-opener"></i
+            <a class="nav-link boxy account-opener" href="#"
+              ><i
+                data-target=".account-container"
+                class="fa-solid fa-angle-down nav-icon account-opener iconicon"
+              ></i
             ></a>
           </li>
         </div>
       </div>
     </nav>
     <div class="hugething"></div>
-    <div class="opened-searchbox-container">
+    <div
+      class="opened-searchbox-container selam"
+      data-target="opened-searchbox-container"
+    >
       <div class="searchbox-upper">
         <h5 class="pt-2">Son Aramalar</h5>
         <div class="searchbox-opening-links pt-2">
@@ -158,7 +172,7 @@
         </div>
       </div>
     </div>
-    <div class="account-container p-2">
+    <div class="account-container selam p-2" data-target="account-container">
       <div class="account-header">
         <p class="p-2 pb-0 headings">Şu anda kullanılan hesap</p>
       </div>
@@ -190,7 +204,10 @@
         <h5 class="p-2 mb-0">Çıkış yap</h5>
       </div>
     </div>
-    <div class="update-container p-2 me-2 mb-3">
+    <div
+      class="update-container selam p-2 me-2 mb-3"
+      data-target="update-container"
+    >
       <div class="update-headerr" style="padding: 23px 0px">
         <h5 class="fs-6">Güncellemeler</h5>
       </div>

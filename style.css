@@ -237,7 +237,9 @@
   width: 304px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
   border-radius: 15px;
-  float: right;
+  position: absolute;
+  right: 0;
+  background: #fff;
 }
 .account-container h5 {
   margin: 0;
@@ -303,7 +305,6 @@ p {
   height: 100%;
   width: 100%;
   display: block;
-
   border-radius: 20px;
 }
 .showy {
