@@ -61,7 +61,7 @@
   transform: translate(-50%, -50%);
   display: none;
 }
-.nav-eye-icon {
+.nav-eye-icon-searchbox {
   position: absolute;
   top: 50%;
   left: 1.7%;
@@ -364,15 +364,130 @@ p {
 }
 /* SAĞ ÜSTTEKİ MESAJ BÖLÜMÜNE TIKLANINCA AÇILAN BÖLÜMÜN CSS KODLARI */
 .message-container {
-  width: 375px;
+  width: 360px;
   height: 91vh;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
   position: fixed;
   right: 0;
   background-color: #fff;
+  padding-left: 15px;
 }
 .message-container .message-header {
-  text-align: center;
+  /* text-align: center; */
   padding: 23px 0px;
+}
+.message-header h5 {
+  text-align: center;
+}
+.message-header i {
+  padding-left: 20px;
+}
+.message-upper h3 {
+  font-size: 37px;
+}
+.message-upper-input {
+  position: relative;
+}
+.message-upper input {
+  height: 50px;
+  border-radius: 50px;
+  width: 320px;
+  border: 2px solid #cdcdcd;
+  padding-left: 30px;
+}
+.nav-eye-icon-message {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.overflow-message {
+  height: 65%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.spanspanspan {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.random-avatar-images {
+  display: flex;
+  padding-bottom: 13px;
+  position: relative;
+}
+.random-avatar-images img {
+  padding-right: 10px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+}
+.random-avatar-images:hover {
+  background-color: #e2e2e2;
+  transition: all 0.2s ease-in-out;
+}
+.random-avatar-images:hover .avatar-icon {
+  display: block;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 4px;
+}
+.avatar-icon:hover {
+  background-color: #a7a5a5;
+}
+.username-container {
+  display: flex;
+  flex-direction: column;
+}
+.user-name {
+  padding-top: 20px;
+  font-weight: 500;
+}
+.user-name-child {
+  font-weight: lighter;
+  font-size: 13px;
+}
+.avatar-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.message-chatting-container {
+  width: 360px;
+  height: 91vh;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  position: fixed;
+  right: 0;
+  background-color: #fff;
+  padding-left: 15px;
+}
+.chatting-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+.chatting-header h4 {
+  font-size: 23px;
+}
+.chatting-middle input {
+  height: 50px;
+  border-radius: 50px;
+  width: 320px;
+  border: 2px solid #cdcdcd;
+  padding-left: 35px;
+}
+.chatting-middle {
+  position: relative;
+}
+.chatting-middle i {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 20px;
 }
