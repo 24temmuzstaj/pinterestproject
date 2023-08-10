@@ -17,13 +17,15 @@ document.addEventListener("click", function (e) {
 
   if (targetElement) {
     if (!targetElement.classList.contains("showy")) {
-      // Eğer tıklanan elementin hedeflediği yapı zaten görünür değilse
-      hideAllShowyElements(); // Önce tüm görünür yapıları gizle
-      targetElement.classList.add("showy"); // Sonra hedeflediği yapıyı görünür yap
-      clickedTarget.classList.add("showy"); // Sonra hedeflediği yapıyı görünür yap
+      hideAllShowyElements();
+      targetElement.classList.add("showy");
+      clickedTarget.classList.add("showy");
     }
   } else {
-    hideAllShowyElements(); // Hedeflenen yapı yoksa tüm görünür yapıları gizle
+    hideAllShowyElements();
+  }
+  if (!clickedTarget.closest(".showy")) {
+    hideAllShowyElements();
   }
 });
 
