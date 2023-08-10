@@ -177,33 +177,74 @@
   background: #878787;
   border-radius: 10px;
 }
-.update-content-head:has(.moreicon:hover) {
+
+.update-content-head:has(
+    .moreicon:hover,
+    .circelized:hover,
+    .circelized-with-position:hover
+  ) {
   background-color: unset;
 }
-.moreicon:hover {
-  color: #111111 !important;
+.update-content:has(
+    .moreicon:hover,
+    .circelized:hover,
+    .circelized-with-position:hover
+  ) {
+  background-color: unset;
 }
+/* .moreicon:hover .circelized {
+  color: #111111 !important;
+} */
 .moreicon {
   cursor: pointer;
+  display: none;
+  width: 25px;
 }
-.iconmore {
-  position: absolute;
-  right: 10px;
+.update-content-head:hover .moreicon {
+  /* color: black !important; */
+  display: block;
+}
+.update-content:hover .moreicon {
+  /* color: black !important; */
+  color: black;
+  display: block;
+}
+.circelized-with-position:hover .moreicon {
+  color: white;
 }
 .circelized {
-  background-color: red;
+  background-color: #fff;
   display: flex;
   text-align: center;
   align-items: center;
-  width: 36px;
-  height: 36px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
 }
-.iconmoretwo {
-  position: absolute;
-  right: 10px;
-  top: 10%;
+.circelized:hover {
+  background-color: black;
 }
+.circelized:hover .moreicon {
+  color: white;
+}
+.circelized-with-position {
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+.circelized-with-position:hover {
+  background: black;
+  color: white;
+}
+
 .update-content {
   display: grid;
   width: 342px;
@@ -213,6 +254,9 @@
 }
 .update-content:hover {
   background: #878787;
+}
+.update-content:hover .circelized .moreicon {
+  color: black;
 }
 .update-content span {
   padding-left: 10px;
@@ -327,7 +371,6 @@ p {
   position: fixed;
   right: 0;
   background-color: #fff;
-  display: none;
 }
 .message-container .message-header {
   text-align: center;
