@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: rgba(0, 0, 0, 0.6);
+  filter: brightness(50%);
+} */
+/* FATİH NAVBAR LOGO VE LİNKLERİN CSS KODLARI*/
+.navbar-logo-image {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+.navbar-logo-text {
+  font-size: 19px;
+  color: #cc0000;
+  margin: 0px;
+  padding: 0;
+  margin-top: 5px;
+  margin-left: 3px;
+  float: right;
+  font-weight: 500;
+}
+.navbar-nav li a {
+  margin-left: 10px;
+  font-weight: 500;
+  color: black;
+}
+.navbar-nav li a:hover {
+  text-decoration: underline;
+}
+.nav-oturum-ac {
+  color: white !important;
+  background: #e60023;
+  border-radius: 50px;
+}
+.nav-oturum-ac:hover {
+  text-decoration: none !important;
+  color: white;
+  background: #ad081b;
+}
+
+.nav-kaydol {
+  color: black;
+  background: #efefef;
+  border-radius: 50px;
+}
+.nav-kaydol:hover {
+  text-decoration: none !important;
+  background: #e2e2e2;
+}
+/* NAVBAR OTURUM AÇ BUTONUNA TIKLANDIĞINDA ÇIKAN BÖLÜMÜN CSS KODLARI */
+.navbar-login-side {
+  background: #fff;
+  width: 450px;
+  height: 620px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  z-index: 1000;
+  position: relative;
+}
+
+.show {
+  display: none;
+}
+
+.exit-button {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  padding-top: 10px;
+  padding-left: 1px;
+}
+.exit-button-side {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: absolute;
+  left: 90%;
+  top: 2%;
+}
+.exit-button-side:hover {
+  background-color: #e2e2e2;
+}
+.register-exit-button {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  padding-top: 10px;
+  padding-left: 1px;
+}
+.register-exit-button-side {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: absolute;
+  left: 90%;
+  top: 2%;
+}
+.register-exit-button-side:hover {
+  background-color: #e2e2e2;
+}
+.navbar-login-upper-side {
+  padding-top: 15px;
+}
+
+.navbar-login-upper-side h1 {
+  padding-top: 12px;
+  font-size: 30px;
+}
+.navbar-login-form-side form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.navbar-login-form-side input {
+  width: 250px;
+  height: 40px;
+  border-radius: 14px;
+  margin: auto;
+  border: 1px solid #767676;
+  margin-top: 2px;
+}
+.eye {
+  position: relative;
+  left: 100px;
+  bottom: 20px;
+}
+.navbar-login-form-side label {
+  margin-left: -185px;
+  font-size: 14px;
+}
+.navbar-login-form-side label[for="password"] {
+  margin-left: -195px !important;
+  padding-top: 5px;
+}
+::placeholder {
+  padding-left: 8px;
+  color: #767676;
+}
+.navbar-login-form-side form a span {
+  margin-left: -92px;
+  color: black;
+
+  text-decoration: none !important;
+  font-size: 14px;
+}
+.navbar-login-form-side form a {
+  text-decoration: none;
+  margin-top: 5px;
+}
+.navbar-login-form-side form a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.navbar-login-button-side {
+  width: 450px;
+  margin: auto;
+}
+.navbar-login-button-side .navbar-login-btn {
+  background: rgb(230, 0, 35);
+  color: #fff;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+}
+.navbar-login-button-side .navbar-login-btn:hover {
+  background: #bb061b;
+}
+.navbar-login-button-side-span-div {
+  margin: 8px 0;
+}
+.navbar-login-button-side-span-div span {
+  color: black;
+  font-weight: bold;
+}
+.social-btn {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 10px;
+}
+.social-btn-icon {
+  margin-left: 15px;
+  width: 10%;
+}
+.social-btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.navbar-login-button-side-button-facebook-div .navbar-facebook-btn {
+  color: white;
+  background: rgba(25, 118, 242, 255);
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: none;
+}
+.navbar-login-button-side-button-google-div .navbar-google-btn {
+  background-color: white;
+  color: #3c4043;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-top: 11px;
+  border: 1px solid #dadce0;
+}
+.policy-ahref {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.policy-ahref:hover {
+  text-decoration: underline;
+}
+.navbar-policy-side-text-first {
+  font-size: 11px;
+  margin: 15px auto;
+  width: 290px;
+  color: #767676;
+}
+.forborder {
+  width: 120px;
+  border-top: 1px solid #767676;
+  margin: 0 auto;
+}
+
+.navbar-policy-side-text-second-a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 12px;
+}
+.navbar-policy-side-text-third {
+  font-size: 12px;
+  margin-top: -12px;
+}
+.navbar-policy-side-text-third a {
+  font-size: 14px;
+}
+/* NAVBAR KAYDOL BUTONUNA TIKLANDIĞINDA ÇIKAN BÖLÜMÜN CSS KODLARI */
+.navbar-register-side {
+  background: #fff;
+  width: 450px;
+  margin: auto;
+  margin-top: 70px;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  z-index: 1000;
+  position: relative;
+}
+.navbar-register-upper-side {
+  padding-top: 15px;
+}
+.navbar-register-side h1 {
+  padding-top: 12px;
+  font-size: 30px;
+}
+.navbar-register-form-side form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.navbar-register-form-side input {
+  width: 250px;
+  height: 40px;
+  border-radius: 14px;
+  margin: auto;
+  border: 1px solid #767676;
+  margin-top: 2px;
+}
+
+.navbar-register-form-side label {
+  margin-left: -185px;
+  font-size: 14px;
+}
+.navbar-register-form-side label[for="password"] {
+  margin-left: -195px !important;
+  padding-top: 5px;
+}
+.navbar-register-form-side label[for="date"] {
+  margin-left: -152px !important;
+  padding-top: 5px;
+}
+.info:hover:after {
+  display: block;
+  content: "Pinterest'in güvende kalmasına yardımcı olmak için artık doğum tarihinizi almamız gerekiyor. Doğum tarihiniz ayrıca daha kişiselleştirilmiş öneriler ve alakalı reklamlar sunmamıza yardımcı oluyor. Bu bilgileri paylaşmayız ve profilinizde görünmez.";
+  width: 200px;
+  font-size: 11px;
+  background: black;
+  color: #dfdfdf;
+  position: fixed;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+  line-height: normal;
+  text-align: left;
+  padding: 5px 10px;
+  margin-left: 20px;
+  margin-top: -90px;
+}
+::-webkit-datetime-edit {
+  padding: 0.5em;
+  color: #767676;
+}
+::-webkit-calendar-picker-indicator {
+  padding-right: 1rem;
+}
+.navbar-register-form-side form a span {
+  margin-left: -92px;
+  color: black;
+
+  text-decoration: none !important;
+  font-size: 14px;
+}
+.navbar-register-form-side form a {
+  text-decoration: none;
+  margin-top: 5px;
+}
+.navbar-register-form-side form a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.navbar-register-button-side {
+  width: 450px;
+  margin: auto;
+}
+.navbar-register-button-side .navbar-register-btn {
+  background: rgb(230, 0, 35);
+  color: #fff;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+}
+.navbar-register-button-side .navbar-register-btn:hover {
+  background: #bb061b;
+}
+.navbar-register-button-side-span-div {
+  margin: 8px 0;
+}
+.navbar-register-button-side-span-div span {
+  color: black;
+  font-weight: bold;
+}
+.navbar-register-button-side-button-facebook-div .navbar-facebook-btn {
+  color: white;
+  background: rgba(25, 118, 242, 255);
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: none;
+}
+.navbar-register-button-side-button-google-div .navbar-google-btn {
+  background-color: white;
+  color: #3c4043;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-top: 11px;
+  border: 1px solid #dadce0;
+}
+.navbar-policy-side-text-businessaccount {
+  background: #e9e9e9;
+  height: 60px;
+  border-end-end-radius: 40px;
+  border-end-start-radius: 40px;
+}
+.navbar-policy-side-text-businessaccount h3 {
+  padding: 20px 20px;
+  font-size: 16px;
+}
