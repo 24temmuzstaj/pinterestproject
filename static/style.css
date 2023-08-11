@@ -1,7 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-}
+
 /* 100vh'lık renkli bölümler için kullanıldı sarı-mavi-pembe */
 .index-search {
     height: 100vh;
@@ -673,16 +670,6 @@ body {
     animation: slideFromBottom 1s ease;
 }
 
-/**************** ABOUT.CSS ***************/
-.bluenav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 85px;
-    background-color: #d7edff;
-    font-size: 16px;
-    z-index: 100; 
 
 
 * {
@@ -1082,3 +1069,14 @@ body {
   font-size: 16px;
 }
 
+
+.profileimg {
+  height: 120px;
+  width: 120px;
+
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}

@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+{% extends "index.html" %}
+{%load static % }
+
+{% block content %}
+
+<div class="container d-flex justify-content-center">
+    <form method="POST" class="w-25 m auto border p-4  ">
+        {%csrf_token %}
+
+        <img src="/static/img/pinterest-navbar-logo.png" alt="" style="width: 32px; height: 32px" />
+
+        <h2 class="text-center">Pinterest'e Hoş Geldiniz</h2>
+        <h6 style="font-size: 14px; font-weight: 400 " class="text-center">
+            Bir sonraki tutkunuzu keşfedin
+        </h6>
+
+        <label for="" class="mt-0">E-posta</label> <br>
+        <input type="email" name="email" placeholder="E-posta" required class="form-control rounded-4 py-2" /><br>
+        <label for=""> Parola </label><br>
+        <input type="password" name="sifre" id="" placeholder="Parola oluşturun" required
+            class="form-control rounded-4 py-2 mb-2" />
+    
+        <label for="date">Doğum tarihi <i class="fa-solid fa-circle-info info"></i></label><br>
+
+        <input type="date" name="date" id="" required class="form-control rounded-4 py-2 mt-1" />
+
+
+        
+        <div class="navbar-register-button-side ">
+            <div class="navbar-register-button-side-button-register-div">
+                <button type="submit" class="navbar-register-btn ">Devam Et</button>
+            </div>
+            <div class="navbar-register-button-side-span-div ">
+
+            </div>
+
+
+        </div>
+        <p class="text-center">VEYA</p>
+        <div class="navbar-register-button-side-button-facebook-div">
+            <button class="navbar-facebook-btn social-btn">
+                <i class="fa-brands fa-facebook social-btn-icon"></i>
+                <div class="social-btn-text">Facebook ile Devam Et</div>
+            </button>
+        </div>
+        <div class="navbar-register-button-side-button-google-div">
+            <button class="navbar-google-btn social-btn">
+                <i class="fa-brands fa-google social-btn-icon" style="margin-left: 15px; width: 10%"></i>
+                <div class="social-btn-text">Google ile devam edin</div>
+            </button>
+        </div>
+        <div class="navbar-policy-side">
+            <p class="navbar-policy-side-text-first">
+                Devam ederek Pinterest'in
+                <a href="" class="policy-ahref">Hizmet Şartları</a> koşullarını kabul
+                etmiş ve
+                <a href="" class="policy-ahref">Gizlilik Politikası</a> metnini
+                okuduğunuzu onaylamış olursunuz.
+                <a href="" class="policy-ahref">Veri toplama bildirimi.</a>
+            </p>
+            <div class="forborder"></div>
+            <p class="navbar-policy-side-text-second">
+                <a href="" class="navbar-policy-side-text-second-a">Hala Pinterest'te değil misiniz? Kaydolun</a>
+            </p>
+            <p class="navbar-policy-side-text-third">
+                İşletme misiniz?
+                <a href="" style="text-decoration: none; color: black">Buradan başlayın!</a>
+            </p>
+        </div>
+
+    </form>
+</div>
+{%endblock content %}
