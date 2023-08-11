@@ -52,7 +52,7 @@
   background-color: #e9e9e9;
   height: 48px;
   border-radius: 50px;
-  padding-left: 50px;
+  padding-left: 42px;
 }
 .cancel-icon {
   position: absolute;
@@ -372,6 +372,7 @@ p {
   right: 0;
   background-color: #fff;
   padding-left: 15px;
+  display: none;
 }
 .message-container .message-header {
   /* text-align: center; */
@@ -1383,7 +1384,6 @@ body {
   padding-top: 5px;
 }
 ::placeholder {
-  padding-left: 8px;
   color: #767676;
 }
 .navbar-login-form-side form a span {
