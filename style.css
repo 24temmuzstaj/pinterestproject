@@ -369,7 +369,7 @@ p {
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
   position: fixed;
-  left: 0;
+  right: 0;
   background-color: #fff;
   padding-left: 15px;
 }
@@ -466,6 +466,10 @@ p {
   right: 0;
   background-color: #fff;
   padding-left: 15px;
+  display: none;
+}
+.cancel-chatting-icon {
+  cursor: pointer;
 }
 .chatting-header {
   display: flex;
@@ -1626,4 +1630,7 @@ body {
 .navbar-policy-side-text-businessaccount h3 {
   padding: 20px 20px;
   font-size: 16px;
+}
+.showwy {
+  display: block;
 }

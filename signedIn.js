@@ -137,3 +137,12 @@ inp.addEventListener("input", (e) => {
     }
   }
 });
+const user_search_input = document.querySelector(".user-search-input");
+const chatting_opener = document.querySelector(".message-chatting-container");
+user_search_input.addEventListener("click", () => {
+  $(chatting_opener).toggleClass("showwy");
+});
+const chatting_close_button = document.querySelector(".cancel-chatting-icon");
+chatting_close_button.addEventListener("click", () => {
+  $(chatting_opener).removeClass("showwy");
+});
