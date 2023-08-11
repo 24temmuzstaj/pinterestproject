@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
     <title>Document</title>
+  </head>
 
-</head>
-
-<body>
-    
-
-<nav class="navbar navbar-expand-lg">
+  <body>
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid mt-2">
         <a class="navbar-brand me-auto" href="#"
           ><img
@@ -31,131 +37,156 @@
           <h1 class="navbar-logo-text">Pinterest</h1>
         </a>
 
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Hakkında</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">İş Dünyası</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-oturum-ac" href="#">Oturum Aç</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-kaydol" href="#">Kaydol</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="navbar-login-side show">
-    <div class="navbar-login-upper-side">
-      <div class="navbar-login-image">
-        <img src="./img/pinterest-navbar-logo.png" alt="" style="width: 32px; height: 32px" />
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hakkında</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">İş Dünyası</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-oturum-ac" href="#">Oturum Aç</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-kaydol" href="#">Kaydol</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="navbar-login-side show">
+      <div class="navbar-login-upper-side">
+        <div class="navbar-login-image">
+          <img
+            src="./img/pinterest-navbar-logo.png"
+            alt=""
+            style="width: 32px; height: 32px"
+          />
+        </div>
+
+        <div class="exit-button-side">
+          <i class="fa-solid fa-x exit-button"></i>
+        </div>
+        <h1>Pinterest'e Hoş Geldiniz</h1>
+      </div>
+      <div class="navbar-login-form-side">
+        <form>
+          <label for="email">E-posta</label>
+          <input type="email" placeholder="E-posta" />
+          <label for="password"> Parola </label>
+          <input type="password" name="" id="" placeholder="Parola" />
+          <i class="fa-solid fa-eye fa-xs eye"></i>
+          <a href=""><span>Parolanızı mı unuttunuz? </span></a>
+        </form>
+      </div>
+      <div class="navbar-login-button-side">
+        <div class="navbar-login-button-side-button-login-div">
+          <button class="navbar-login-btn">Oturum aç</button>
+        </div>
+        <div class="navbar-login-button-side-span-div"><span>VEYA</span></div>
+      </div>
+      <div class="navbar-login-button-side-button-facebook-div">
+        <button class="navbar-facebook-btn social-btn">
+          <i class="fa-brands fa-facebook social-btn-icon"></i>
+          <div class="social-btn-text">Facebook ile Devam Et</div>
+        </button>
+      </div>
+      <div class="navbar-login-button-side-button-google-div">
+        <button class="navbar-google-btn social-btn">
+          <i
+            class="fa-brands fa-google social-btn-icon"
+            style="margin-left: 15px; width: 10%"
+          ></i>
+          <div class="social-btn-text">Google ile devam edin</div>
+        </button>
       </div>
 
-      <div class="exit-button-side">
-        <i class="fa-solid fa-x exit-button"></i>
+      <div class="navbar-policy-side">
+        <p class="navbar-policy-side-text-first">
+          Devam ederek Pinterest'in
+          <a href="" class="policy-ahref">Hizmet Şartları</a> koşullarını kabul
+          etmiş ve
+          <a href="" class="policy-ahref">Gizlilik Politikası</a> metnini
+          okuduğunuzu onaylamış olursunuz.
+          <a href="" class="policy-ahref">Veri toplama bildirimi.</a>
+        </p>
+        <div class="forborder"></div>
+        <p class="navbar-policy-side-text-second">
+          <a href="" class="navbar-policy-side-text-second-a"
+            >Hala Pinterest'te değil misiniz? Kaydolun</a
+          >
+        </p>
+        <p class="navbar-policy-side-text-third">
+          İşletme misiniz?
+          <a href="" style="text-decoration: none; color: black"
+            >Buradan başlayın!</a
+          >
+        </p>
       </div>
-      <h1>Pinterest'e Hoş Geldiniz</h1>
     </div>
-    <div class="navbar-login-form-side">
-      <form>
-        <label for="email">E-posta</label>
-        <input type="email" placeholder="E-posta" />
-        <label for="password"> Parola </label>
-        <input type="password" name="" id="" placeholder="Parola" />
-        <i class="fa-solid fa-eye fa-xs eye"></i>
-        <a href=""><span>Parolanızı mı unuttunuz? </span></a>
-      </form>
-    </div>
-    <div class="navbar-login-button-side">
-      <div class="navbar-login-button-side-button-login-div">
-        <button class="navbar-login-btn">Oturum aç</button>
-      </div>
-      <div class="navbar-login-button-side-span-div"><span>VEYA</span></div>
-    </div>
-    <div class="navbar-login-button-side-button-facebook-div">
-      <button class="navbar-facebook-btn social-btn">
-        <i class="fa-brands fa-facebook social-btn-icon"></i>
-        <div class="social-btn-text">Facebook ile Devam Et</div>
-      </button>
-    </div>
-    <div class="navbar-login-button-side-button-google-div">
-      <button class="navbar-google-btn social-btn">
-        <i class="fa-brands fa-google social-btn-icon" style="margin-left: 15px; width: 10%"></i>
-        <div class="social-btn-text">Google ile devam edin</div>
-      </button>
-    </div>
+    <div class="navbar-register-side show">
+      <div class="navbar-register-upper-side">
+        <div class="navbar-register-image">
+          <img
+            src="./img/pinterest-navbar-logo.png"
+            alt=""
+            style="width: 32px; height: 32px"
+          />
+        </div>
 
-    <div class="navbar-policy-side">
-      <p class="navbar-policy-side-text-first">
-        Devam ederek Pinterest'in
-        <a href="" class="policy-ahref">Hizmet Şartları</a> koşullarını kabul
-        etmiş ve
-        <a href="" class="policy-ahref">Gizlilik Politikası</a> metnini
-        okuduğunuzu onaylamış olursunuz.
-        <a href="" class="policy-ahref">Veri toplama bildirimi.</a>
-      </p>
-      <div class="forborder"></div>
-      <p class="navbar-policy-side-text-second">
-        <a href="" class="navbar-policy-side-text-second-a">Hala Pinterest'te değil misiniz? Kaydolun</a>
-      </p>
-      <p class="navbar-policy-side-text-third">
-        İşletme misiniz?
-        <a href="" style="text-decoration: none; color: black">Buradan başlayın!</a>
-      </p>
-    </div>
-  </div>
-  <div class="navbar-register-side show">
-    <div class="navbar-register-upper-side">
-      <div class="navbar-register-image">
-        <img src="./img/pinterest-navbar-logo.png" alt="" style="width: 32px; height: 32px" />
+        <div class="register-exit-button-side">
+          <i class="fa-solid fa-x register-exit-button"></i>
+        </div>
+        <h1>Pinterest'e Hoş Geldiniz</h1>
+        <h6 style="font-size: 14px; font-weight: 400">
+          Bir sonraki tutkunuzu keşfedin
+        </h6>
       </div>
+      <div class="navbar-register-form-side">
+        <form>
+          <label for="email">E-posta</label>
+          <input type="email" placeholder="E-posta" />
+          <label for="password"> Parola </label>
+          <input
+            type="password"
+            name=""
+            id="password"
+            placeholder="Parola oluşturun"
+          />
+          <i class="fa-solid fa-eye fa-xs eye"></i>
+          <label for="date"
+            >Doğum tarihi <i class="fa-solid fa-circle-info info"></i
+          ></label>
 
-      <div class="register-exit-button-side">
-        <i class="fa-solid fa-x register-exit-button"></i>
+          <input type="date" name="date" id="" />
+          <a href=""><span>Parolanızı mı unuttunuz? </span></a>
+        </form>
       </div>
-      <h1>Pinterest'e Hoş Geldiniz</h1>
-      <h6 style="font-size: 14px; font-weight: 400">
-        Bir sonraki tutkunuzu keşfedin
-      </h6>
-    </div>
-    <div class="navbar-register-form-side">
-      <form>
-        <label for="email">E-posta</label>
-        <input type="email" placeholder="E-posta" />
-        <label for="password"> Parola </label>
-        <input type="password" name="" id="password" placeholder="Parola oluşturun" />
-        <i class="fa-solid fa-eye fa-xs eye"></i>
-        <label for="date">Doğum tarihi <i class="fa-solid fa-circle-info info"></i></label>
-
-        <input type="date" name="date" id="" />
-        <a href=""><span>Parolanızı mı unuttunuz? </span></a>
-      </form>
-    </div>
-    <div class="navbar-register-button-side">
-      <div class="navbar-register-button-side-button-register-div">
-        <button class="navbar-register-btn">Devam Et</button>
+      <div class="navbar-register-button-side">
+        <div class="navbar-register-button-side-button-register-div">
+          <button class="navbar-register-btn">Devam Et</button>
+        </div>
+        <div class="navbar-register-button-side-span-div">
+          <span>VEYA</span>
+        </div>
       </div>
-      <div class="navbar-register-button-side-span-div">
-        <span>VEYA</span>
+      <div class="navbar-register-button-side-button-facebook-div">
+        <button class="navbar-facebook-btn social-btn">
+          <i class="fa-brands fa-facebook social-btn-icon"></i>
+          <div class="social-btn-text">Facebook ile Devam Et</div>
+        </button>
       </div>
-    </div>
-    <div class="navbar-register-button-side-button-facebook-div">
-      <button class="navbar-facebook-btn social-btn">
-        <i class="fa-brands fa-facebook social-btn-icon"></i>
-        <div class="social-btn-text">Facebook ile Devam Et</div>
-      </button>
-    </div>
-    <div class="navbar-register-button-side-button-google-div">
-      <button class="navbar-google-btn social-btn">
-        <i class="fa-brands fa-google social-btn-icon" style="margin-left: 15px; width: 10%"></i>
-        <div class="social-btn-text">Google ile devam edin</div>
-      </button>
-    </div>
+      <div class="navbar-register-button-side-button-google-div">
+        <button class="navbar-google-btn social-btn">
+          <i
+            class="fa-brands fa-google social-btn-icon"
+            style="margin-left: 15px; width: 10%"
+          ></i>
+          <div class="social-btn-text">Google ile devam edin</div>
+        </button>
+      </div>
 
       <div class="navbar-policy-side">
         <p class="navbar-policy-side-text-first">
@@ -175,24 +206,44 @@
         <h3>Ücretsiz bir işletme hesabı oluşturun.</h3>
       </div>
     </div>
-  <div id="carouselExampleCaptions" class="carousel slide border">
-    <div class="tittle">
-      <p class="still m-auto fw-bold ">
-        Sıradaki fikri bulun
-      </p>
-    </div>
-    <div class="carousel-indicators">
-      <button type="button" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" id="btnzero"
-        class="btnpoint active" aria-label="Slide 1"></button>
-      <button type="button" class="btnpoint" data-bs-target="#carouselExampleCaptions" id="btnone" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" class="btnpoint" data-bs-target="#carouselExampleCaptions" id="btntwo" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-      <button type="button" class="btnpoint" data-bs-target="#carouselExampleCaptions" id="btntree" data-bs-slide-to="3"
-        aria-label="Slide 4"></button>
-    </div>
-
-
+    <div id="carouselExampleCaptions" class="carousel slide border">
+      <div class="tittle">
+        <p class="still m-auto fw-bold">Sıradaki fikri bulun</p>
+      </div>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-slide-to="0"
+          data-bs-target="#carouselExampleCaptions"
+          id="btnzero"
+          class="btnpoint active"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          class="btnpoint"
+          data-bs-target="#carouselExampleCaptions"
+          id="btnone"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          class="btnpoint"
+          data-bs-target="#carouselExampleCaptions"
+          id="btntwo"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          class="btnpoint"
+          data-bs-target="#carouselExampleCaptions"
+          id="btntree"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
 
       <!--------- 1.Slider ------->
       <div class="carousel-inner">
@@ -532,8 +583,7 @@
         </div>
       </div>
     </div>
-    
-    <script src="script.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -544,5 +594,6 @@
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
