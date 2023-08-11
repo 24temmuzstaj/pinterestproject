@@ -1,3 +1,326 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* 100vh'lık renkli bölümler için kullanıldı sarı-mavi-pembe */
+.index-search {
+    height: 100vh;
+}
+/* bir fikir arayın yazan bölüm büyük text için css*/
+.bfah1 {
+    width: 500px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+/* bir fikir arayın yazan bölüm küçük text için css */
+
+.bfah2 {
+    width: 500px;
+    font-size: 24px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+/* buton ve textler de kullanılan renkler */
+.kbf {
+    color: rgb(195, 25, 82);
+}
+
+.sgt {
+    color: #fffd92;
+    background-color: #fffd92;
+}
+
+.mgt {
+    color: rgb(218, 255, 246);
+    background-color: rgb(218, 255, 246);
+}
+
+.pgt {
+    color: rgb(255, 226, 235);
+    background-color: rgb(255, 226, 235);
+
+}
+
+.bfah3 {
+    background-color: rgb(195, 25, 82);
+
+}
+.bfk3 {
+    background-color: rgb(0, 107, 108);
+}
+
+.bfk3t {
+    color: rgb(0, 107, 108);
+}
+.gdy3 {
+    background-color: rgb(195, 47, 0);
+}
+
+.gdy3r {
+    color: rgb(195, 47, 0);
+}
+
+/* buton hizalama için verilen genişlik */
+.mw500 {
+    width: 500px;
+}
+/* sarı bölüm üst üste gelen fotolar ve buton için css  */
+.img-fotogen {
+    position: relative;
+}
+
+.img-fotogen img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.img-fotogen img:nth-child(1) {
+    z-index: 1;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: -100px;
+    left: -50px;
+}
+
+.img-fotogen img:nth-child(2) {
+    width: 290px;
+    z-index: 4;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: 0px;
+    left: -250px;
+}
+
+.img-fotogen img:nth-child(3) {
+    z-index: 3;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: 90px;
+    left: -385px;
+}
+
+.img-fotogen img:nth-child(4) {
+    width: 160px;
+    z-index: 2;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: 240px;
+    left: -60px;
+}
+
+.img-fotogen-text {
+    z-index: 5;
+    background-color: white;
+    color: rgb(110, 15, 60);
+    position: absolute;
+    top: 150px;
+    left: -300px;
+    font-size: 22px;
+    font-weight: bold;
+    width: 290px;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+
+}
+
+.sck23 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* mavi bölüm üst üste gelen fotolar için css  */
+
+.img-fotogen2 {
+    position: relative;
+}
+
+.img-fotogen2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.img-fotogen2 img:nth-child(1) {
+    z-index: 1;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: -350px;
+    left: -400px;
+    width: 400px;
+}
+
+.img-fotogen2 img:nth-child(2) {
+    width: 100px;
+    z-index: 2;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: -60px;
+    left: -350px;
+}
+
+.img-fotogen2 img:nth-child(3) {
+    width: 100px;
+    z-index: 2;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: -60px;
+    left: -240px;
+}
+
+.img-fotogen2 img:nth-child(4) {
+    width: 100px;
+    z-index: 2;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: -60px;
+    left: -130px;
+}
+
+.img-forogen2-text {
+    position: absolute;
+    top: -310px;
+    left: -350px;
+    color: rgb(255, 255, 255);
+    font-size: 56px;
+    font-weight: bold;
+    padding: 5px;
+    z-index: 3;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.img-fotogen2 img:nth-child(5) {
+    width: 230px;
+    z-index: 2;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: -360px;
+    left: 50px;
+}
+
+.img-forogen2-text2 {
+    width: 200px;
+    position: absolute;
+    top: -230px;
+    left: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    z-index: 3;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.img-fotogen2 img:nth-child(6) {
+    width: 170px;
+    z-index: 2;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: -80px;
+    left: 30px;
+}
+
+.img-forogen2-text3 {
+    width: 140px;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    z-index: 3;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.img-fotogen2 img:nth-child(7) {
+    width: 210px;
+    z-index: 2;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: 105px;
+    left: -250px;
+}
+
+.img-forogen2-text4 {
+    width: 150px;
+    position: absolute;
+    top: 150px;
+    left: -250px;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    z-index: 3;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.img-fotogen2 img:nth-child(8) {
+    width: 220px;
+    z-index: 2;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: 145px;
+    left: 10px;
+
+}
+
+.img-forogen2-text5 {
+    width: 150px;
+    position: absolute;
+    top: 220px;
+    left: 28px;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    z-index: 3;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+/* pembe bölüm gör üret yazısı iki satır olması için genişlik verildi */
+.gdy3w {
+    width: 350px;
+}
+
+/* pembe bölüm üst üste gelen fotolar ve text için css  */
+.img-fotogen3 {
+    position: relative;
+}
+
+.img-fotogen3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.img-fotogen3 img:nth-child(1) {
+    z-index: 1;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: -420px;
+    left: -500px;
+    width: 780px;
+
+}
+
+.img-fotogen3 img:nth-child(2) {
+    width: 200px;
+    z-index: 2;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: -175px;
+    left: -270px;
+}
+
+.img-fotogen3 img:nth-child(3) {
+    width: 90px;
+    z-index: 3;
+    /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+    top: 110px;
+    left: -310px;
+    border-radius: 50px 50px;
+}
+
+.img-forogen3-text {
+    width: 120px;
+    position: absolute;
+    top: 185px;
+    left: -220px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    z-index: 3;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 /***** Slider ****/
 #carouselExampleCaptions  {
     height: 100vh;
@@ -102,7 +425,6 @@
     font-size: 55px;
     font-weight:530;
 }
-
 
 /****** 1.Slider Fotoğraflar ******/
 .dinnerslider{
@@ -759,3 +1081,4 @@
   padding: 20px 20px;
   font-size: 16px;
 }
+
