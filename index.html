@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -131,4 +130,398 @@
 
 </body>
 
+</html>
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest</title>
+  <!-- Pinterest icon -->
+  <link rel="shortcut icon" href="img/pinterest-icon.png" type="image/x-icon">
+  <!-- script  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!--- BOOSTRAP LİNK --->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!---- CSS LİNK ------>
+  <link rel="stylesheet" href="style.css">
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+      <div class="container-fluid mt-2">
+        <a class="navbar-brand me-auto" href="#"
+          ><img
+            src="./img/pinterest-navbar-logo.png"
+            alt=""
+            class="navbar-logo-image"
+          />
+          <h1 class="navbar-logo-text">Pinterest</h1>
+        </a>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hakkında</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">İş Dünyası</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-oturum-ac" href="#">Oturum Aç</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-kaydol" href="#">Kaydol</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="navbar-login-side show">
+      <div class="navbar-login-upper-side">
+        <div class="navbar-login-image">
+          <img
+            src="./img/pinterest-navbar-logo.png"
+            alt=""
+            style="width: 32px; height: 32px"
+          />
+        </div>
+
+        <div class="exit-button-side">
+          <i class="fa-solid fa-x exit-button"></i>
+        </div>
+        <h1>Pinterest'e Hoş Geldiniz</h1>
+      </div>
+      <div class="navbar-login-form-side">
+        <form>
+          <label for="email">E-posta</label>
+          <input type="email" placeholder="E-posta" />
+          <label for="password"> Parola </label>
+          <input type="password" name="" id="" placeholder="Parola" />
+          <i class="fa-solid fa-eye fa-xs eye"></i>
+          <a href=""><span>Parolanızı mı unuttunuz? </span></a>
+        </form>
+      </div>
+      <div class="navbar-login-button-side">
+        <div class="navbar-login-button-side-button-login-div">
+          <button class="navbar-login-btn">Oturum aç</button>
+        </div>
+        <div class="navbar-login-button-side-span-div"><span>VEYA</span></div>
+      </div>
+      <div class="navbar-login-button-side-button-facebook-div">
+        <button class="navbar-facebook-btn social-btn">
+          <i class="fa-brands fa-facebook social-btn-icon"></i>
+          <div class="social-btn-text">Facebook ile Devam Et</div>
+        </button>
+      </div>
+      <div class="navbar-login-button-side-button-google-div">
+        <button class="navbar-google-btn social-btn">
+          <i
+            class="fa-brands fa-google social-btn-icon"
+            style="margin-left: 15px; width: 10%"
+          ></i>
+          <div class="social-btn-text">Google ile devam edin</div>
+        </button>
+      </div>
+
+      <div class="navbar-policy-side">
+        <p class="navbar-policy-side-text-first">
+          Devam ederek Pinterest'in
+          <a href="" class="policy-ahref">Hizmet Şartları</a> koşullarını kabul
+          etmiş ve
+          <a href="" class="policy-ahref">Gizlilik Politikası</a> metnini
+          okuduğunuzu onaylamış olursunuz.
+          <a href="" class="policy-ahref">Veri toplama bildirimi.</a>
+        </p>
+        <div class="forborder"></div>
+        <p class="navbar-policy-side-text-second">
+          <a href="" class="navbar-policy-side-text-second-a"
+            >Hala Pinterest'te değil misiniz? Kaydolun</a
+          >
+        </p>
+        <p class="navbar-policy-side-text-third">
+          İşletme misiniz?
+          <a href="" style="text-decoration: none; color: black"
+            >Buradan başlayın!</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="navbar-register-side show">
+      <div class="navbar-register-upper-side">
+        <div class="navbar-register-image">
+          <img
+            src="./img/pinterest-navbar-logo.png"
+            alt=""
+            style="width: 32px; height: 32px"
+          />
+        </div>
+
+        <div class="register-exit-button-side">
+          <i class="fa-solid fa-x register-exit-button"></i>
+        </div>
+        <h1>Pinterest'e Hoş Geldiniz</h1>
+        <h6 style="font-size: 14px; font-weight: 400">
+          Bir sonraki tutkunuzu keşfedin
+        </h6>
+      </div>
+      <div class="navbar-register-form-side">
+        <form>
+          <label for="email">E-posta</label>
+          <input type="email" placeholder="E-posta" />
+          <label for="password"> Parola </label>
+          <input
+            type="password"
+            name=""
+            id="password"
+            placeholder="Parola oluşturun"
+          />
+          <i class="fa-solid fa-eye fa-xs eye"></i>
+          <label for="date"
+            >Doğum tarihi <i class="fa-solid fa-circle-info info"></i
+          ></label>
+
+          <input type="date" name="date" id="" />
+          <a href=""><span>Parolanızı mı unuttunuz? </span></a>
+        </form>
+      </div>
+      <div class="navbar-register-button-side">
+        <div class="navbar-register-button-side-button-register-div">
+          <button class="navbar-register-btn">Devam Et</button>
+        </div>
+        <div class="navbar-register-button-side-span-div">
+          <span>VEYA</span>
+        </div>
+      </div>
+      <div class="navbar-register-button-side-button-facebook-div">
+        <button class="navbar-facebook-btn social-btn">
+          <i class="fa-brands fa-facebook social-btn-icon"></i>
+          <div class="social-btn-text">Facebook ile Devam Et</div>
+        </button>
+      </div>
+      <div class="navbar-register-button-side-button-google-div">
+        <button class="navbar-google-btn social-btn">
+          <i
+            class="fa-brands fa-google social-btn-icon"
+            style="margin-left: 15px; width: 10%"
+          ></i>
+          <div class="social-btn-text">Google ile devam edin</div>
+        </button>
+      </div>
+
+      <div class="navbar-policy-side">
+        <p class="navbar-policy-side-text-first">
+          Devam ederek Pinterest'in
+          <a href="" class="policy-ahref">Hizmet Şartları</a> koşullarını kabul
+          etmiş ve
+          <a href="" class="policy-ahref">Gizlilik Politikası</a> metnini
+          okuduğunuzu onaylamış olursunuz.
+          <a href="" class="policy-ahref">Veri toplama bildirimi.</a>
+        </p>
+        <p class="navbar-policy-side-text-second">
+          <span style="font-size: 11px">Zaten üye misiniz?</span
+          ><a href="" class="navbar-policy-side-text-second-a"> Oturum aç</a>
+        </p>
+      </div>
+      <div class="navbar-policy-side-text-businessaccount">
+        <h3>Ücretsiz bir işletme hesabı oluşturun.</h3>
+      </div>
+    </div>
+  <div id="carouselExampleCaptions" class="carousel slide border">
+    <div class="tittle">
+      <p class="still m-auto fw-bold ">
+        Sıradaki fikri bulun
+      </p>
+    </div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" id="btnzero"
+        class="btnpoint active" aria-label="Slide 1"></button>
+      <button type="button" class="btnpoint" data-bs-target="#carouselExampleCaptions" id="btnone" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" class="btnpoint" data-bs-target="#carouselExampleCaptions" id="btntwo" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" class="btnpoint" data-bs-target="#carouselExampleCaptions" id="btntree" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+
+
+
+    <!--------- 1.Slider ------->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="notes-container">
+          <span class="note-content m-auto text textone">hafta içi akşam yemeği fikri</span>
+        </div>
+        <div class="row">
+          <div class="col-2 frame" id="pngone">
+            <img class="rounded-4" src="/img/sliderone/1.jpeg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngtwo">
+            <img class="rounded-4" src="/img/sliderone/2.jpeg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngtree">
+            <img class="rounded-4" src="/img/sliderone/3.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngfour">
+            <img class="rounded-4" src="/img/sliderone/4.jpg" alt="">
+          </div>
+
+          <div class="col-1 frame" id="pngfive">
+            <img class="rounded-4" src="/img/sliderone/5.jpeg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngsix">
+            <img class="rounded-4" src="/img/sliderone/6.jpg" alt="">
+          </div>
+
+          <div class="col-1 frame" id="pngseven">
+            <img class="rounded-4" src="/img/sliderone/7.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <!--------- 2.Slider ------->
+
+      <div class="carousel-item">
+        <div class="notes-container">
+          <span class="note-content m-auto texttwo ">ev dekorasyonu fikri</span>
+        </div>
+
+        <div class="row">
+          <div class="col-2 frame" id="pngonex">
+            <img class="rounded-4" src="img/slidertwo/one.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngtwox">
+            <img class="rounded-4" src="img/slidertwo/two.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngthreex">
+            <img class="rounded-4" src="img/slidertwo/three.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngfourx">
+            <img class="rounded-4" src="img/slidertwo/four.jpg" alt="">
+          </div>
+
+          <div class="col-1 frame" id="pngfivex">
+            <img class="rounded-4" src="img/slidertwo/five.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngsixx">
+            <img class="rounded-4" src="img/slidertwo/six.jpg" alt="">
+          </div>
+
+          <div class="col-1 frame" id="pngsevenx">
+            <img class="rounded-4" src="img/slidertwo/seven.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+
+      <!--------- 3.Slider ------->
+
+
+      <div class="carousel-item">
+        <div class="notes-container">
+          <span class="note-content m-auto textthree ">yeni giyim stili</span>
+        </div>
+
+        <div class="row">
+          <div class="col-2 frame" id="pngoney">
+            <img class="rounded-4" src="img/sliderthree/one.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngtwoy">
+            <img class="rounded-4" src="img/sliderthree/two.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngthreey">
+            <img class="rounded-4" src="img/sliderthree/three.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngfoury">
+            <img class="rounded-4" src="img/sliderthree/four.jpg" alt="">
+          </div>
+
+          <div class="col-1 frame" id="pngfivey">
+            <img class="rounded-4" src="img/sliderthree/five.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngsixy">
+            <img class="rounded-4" src="img/sliderthree/six.jpg" alt="">
+          </div>
+
+          <div class="col-1 frame" id="pngseveny">
+            <img class="rounded-4" src="img/sliderthree/seven.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!--------- 4.Slider ------->
+
+      <div class="carousel-item">
+        <div class="notes-container">
+          <span class="note-content m-auto textfour  ">bahçecilik fikri</span>
+        </div>
+
+        <div class="row">
+          <div class="col-2 frame" id="pngonez">
+            <img class="rounded-4" src="img/sliderfour/one.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngtwoz">
+            <img class="rounded-4" src="img/sliderfour/two.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngthreez">
+            <img class="rounded-4" src="img/sliderfour/three.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngfourz">
+            <img class="rounded-4" src="img/sliderfour/four.jpg" alt="">
+          </div>
+
+          <div class="col-1 frame" id="pngfivez">
+            <img class="rounded-4" src="img/sliderfour/five.jpg" alt="">
+          </div>
+
+          <div class="col-2 frame" id="pngsixz">
+            <img class="rounded-4" src="img/sliderfour/six.jpg" alt="">
+          </div>
+
+          <div class="col-1 frame" id="pngsevenz">
+            <img class="rounded-4" src="img/sliderfour/seven.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
