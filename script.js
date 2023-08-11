@@ -74,7 +74,6 @@ const user_name = [
   "Dünya Şaşmaz",
   "İrem Yıldırım",
   "Doğancan Beytaş",
-  "Ecem Konuk",
   "Selami Şahin",
 ];
 
@@ -98,7 +97,18 @@ avatartxts.forEach((image, i) => {
 });
 
 const inp = document.querySelector(".chatinput");
-inp.addEventListener("keyup", (e) => {
+inp.addEventListener("input", (e) => {
+  inp.addEventListener("keydown", (e) => {
+    if (e.key === "Backspace") {
+      const userremoveList = document.querySelectorAll(".chatting-value-user");
+      userremoveList.forEach((userremove) => {
+        userremove.remove();
+      });
+    } else {
+      const userarea = document.querySelector(".chatting-user-area");
+      userarea.innerHTML = "";
+    }
+  });
   const inputValue = inp.value.toLowerCase();
   for (let i = 0; i < user_name.length; i++) {
     if (inputValue === user_name[i][0].toLowerCase()) {
@@ -106,7 +116,24 @@ inp.addEventListener("keyup", (e) => {
       const uservalue = document.createElement("span");
       uservalue.classList.add("user-value-output");
       uservalue.innerHTML = `${user_name[i]}`;
-      userarea.append(uservalue);
+      if (inputValue === user_name[i][0].toLowerCase()) {
+        const valuecontainer = document.createElement("div");
+        valuecontainer.classList.add("chatting-value-user");
+        const usertextingcontainer = document.createElement("div");
+        usertextingcontainer.classList.add("chatting-texting-container");
+        const uservalue = document.createElement("span");
+        uservalue.classList.add("user-value-output");
+        uservalue.innerHTML = `${user_name[i]}`;
+        const image = document.createElement("img");
+        image.classList.add("user-value-image");
+        image.src = `https://robohash.org/${i}`;
+        const span_value_connect = document.createElement("span");
+        span_value_connect.classList.add("user-value-connect");
+        span_value_connect.innerHTML = "Ağınızda";
+        usertextingcontainer.append(uservalue, span_value_connect);
+        valuecontainer.append(image, usertextingcontainer);
+        userarea.append(valuecontainer);
+      }
     }
   }
 });
