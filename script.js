@@ -1,3 +1,20 @@
+$(document).ready(function() {
+    // Otomatik geçişi başlat
+    $('#carouselExampleCaptions').carousel();
+
+    // Otomatik geçiş için fonksiyon
+    function nextSlide() {
+        var activeIndex = $('.carousel-item.active').index();
+        var slideCount = $('.carousel-item').length;
+        var nextIndex = (activeIndex + 1) % slideCount;
+        $('#carouselExampleCaptions').carousel(nextIndex);
+    }
+
+    // Otomatik geçiş aralığı (3 saniye)
+    var interval = setInterval(nextSlide, 5000);
+});
+
+
 /* OTURUM AÇ BUTONUNA TIKLANINCA AÇILAN BÖLÜMÜN JS KODULARI */
 const loginbutton = document.querySelector(".nav-oturum-ac");
 const registerbutton = document.querySelector(".nav-kaydol");
@@ -25,3 +42,4 @@ function registerexit(event) {
   $(register).toggleClass("show");
   event.preventDefault();
 }
+

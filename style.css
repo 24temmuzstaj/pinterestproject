@@ -1,3 +1,368 @@
+/***** Slider ****/
+#carouselExampleCaptions  {
+    height: 100vh;
+    background-color: white; /* Örnek olarak beyaz bir renk */
+    overflow: hidden; /* Slider içeriklerinin sınırlar içinde kalmasını sağlamak için */
+    position: relative; /* Resimlerin mutlak pozisyonunu kullanabilmek için */
+  }
+.still{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tittle{
+    margin-top:100px;
+}
+/*  DAİRE BUTONLAR */
+.btnpoint{
+    border-radius: 75%;
+    margin-bottom: 300px;
+    
+}
+/* NOKTALARIN STİLL ÖZELLİKLERİ */
+#btnzero {
+    background-color: #c28b00 ; /* Nokta rengi */
+    border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
+    width: 12px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+    margin-right: 5px; /* Sağ boşluk */
+    margin-left: 5px; /* Sol boşluk */
+    border: none; /* Kenarlık yok */
+    cursor: pointer;
+}
+#btnone {
+    background-color:  #618c7b ; /* Nokta rengi */
+    border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
+    width: 12px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+    margin-right: 5px; /* Sağ boşluk */
+    margin-left: 5px; /* Sol boşluk */
+    border: none; /* Kenarlık yok */
+    cursor: pointer;
+}
+#btntwo {
+    background-color:#0076d3; /* Nokta rengi */
+    border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
+    width: 12px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+    margin-right: 5px; /* Sağ boşluk */
+    margin-left: 5px; /* Sol boşluk */
+    border: none; /* Kenarlık yok */
+    cursor: pointer;
+}
+#btntree {
+    background-color:#407a57 ; /* Nokta rengi */
+    border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
+    width: 12px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+    margin-right: 5px; /* Sağ boşluk */
+    margin-left: 5px; /* Sol boşluk */
+    border: none; /* Kenarlık yok */
+    cursor: pointer;
+}
+
+/* SLİDER GEÇİŞLERİ */
+/***** 1.Slider'ın içeriği ******/
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.note{
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: auto;
+}
+.display-note-text {
+    font-size: 50px;
+    font-weight: bold;
+}
+/* 1.slider'ın yazı tipi ve rengi */
+.text{
+    color: #c28b00 ;
+    font-size: 55px;
+    font-weight:530;
+}
+/******* slider-two font and color ******/
+.texttwo{
+    color: #467c66 ;
+    font-size: 55px;
+    font-weight:530;
+}
+/******* slider-three font and color ******/
+.textthree{
+    color: #0076d3 ;
+    font-size: 55px;
+    font-weight:530;
+}
+/******* slider-four font and color ******/
+.textfour{
+    color: #407a57;
+    font-size: 55px;
+    font-weight:530;
+}
+
+
+/****** 1.Slider Fotoğraflar ******/
+.dinnerslider{
+    display:inline-block;
+}
+
+/***** 1slider'ın imgleri **********/
+#pngone{
+    margin-left: -110px;
+}
+#pngtwo img{
+    width: 220px;
+    height: 340px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+#pngtree img{
+    width: 180px;
+    height: 230px;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 23px;
+}
+#pngfour img{
+    width: 180px;
+    height: 280px;
+    position: relative;
+    margin-top: 300px;
+    opacity: 0.3;
+}
+#pngfive img{
+    width: 190px;
+    height: 250px;
+    position: relative;
+    margin-top: 200px;
+    margin-left: -27px;
+}
+#pngsix img{
+    width: 210px;
+    height: 280px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 45px;
+}
+#pngseven{
+    height: 150px;
+    margin-left: 55px;
+}
+
+/*****  slidertwo photo locations **********/
+#pngonex{
+    margin-left: -110px;
+    opacity: 0.9;
+}
+#pngtwox img{
+    width: 220px;
+    height: 340px;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 20px;
+    opacity: 0.9;
+}
+#pngthreex img{
+    width: 180px;
+    height: 230px;
+    position: relative;
+    margin-top: 250px;
+    margin-left: 23px;
+    opacity: 0.8;
+}
+#pngfourx img{
+    width: 190px;
+    height: 300px;
+    position: relative;
+    margin-top: 330px;
+    opacity: 0.3;
+}
+#pngfivex img{
+    width: 200px;
+    height: 250px;
+    position: relative;
+    margin-top: 250px;
+    margin-left: -27px;
+    opacity: 0.9;
+}
+#pngsixx img{
+    width: 210px;
+    height: 280px;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 65px;
+    opacity: 0.9;
+}
+#pngsevenx img{
+    width: 300px;
+    height: 360px;
+    margin-left: 70px;
+}
+
+
+/*****  sliderthree photo locations **********/
+#pngoney{
+    margin-left: -110px;
+    opacity: 0.9;
+}
+#pngtwoy img{
+    width: 220px;
+    height: 340px;
+    position: relative;
+    margin-top: 120px;
+    margin-left: 20px;
+    opacity: 0.9;
+}
+#pngthreey img{
+    width: 200px;
+    height: 250px;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 35px;
+    opacity: 0.9;
+}
+#pngfoury img{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    margin-top: 330px;
+    opacity: 0.3;
+}
+#pngfivey img{
+    width: 190px;
+    height: 280px;
+    position: relative;
+    margin-top: 220px;
+    margin-left: -15px;
+    opacity: 0.9;
+}
+#pngsixy img{
+    width: 230px;
+    height: 350px;
+    position: relative;
+    margin-top: 110px;
+    margin-left: 75px;
+    opacity: 0.9;
+
+}
+#pngseveny img{
+    height: 350px;
+    margin-left: 90px;
+
+}
+
+/*****  sliderfour photo locations **********/
+#pngonez{
+    margin-left: -110px;
+}
+#pngtwoz img{
+    width: 200px;
+    height: 340px;
+    position: relative;
+    margin-top: 95px;
+    margin-left: 15px;
+}
+#pngthreez img{
+    width: 190px;
+    height: 230px;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+#pngfourz img{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    margin-top: 300px;
+    opacity: 0.3;
+}
+#pngfivez img{
+    width: 190px;
+    height: 250px;
+    position: relative;
+    margin-top: 190px;
+    margin-left: 10px;
+    opacity: 0.8;
+}
+#pngsixz img{
+    width: 200px;
+    height: 330px;
+    position: relative;
+    margin-top: 95px;
+    margin-left: 100px;
+    
+}
+#pngsevenz img{
+    height: 350px;
+    width: 200px;
+    margin-left: 95px;
+    
+}
+
+
+/* ******** ANİMASYON CSSİ **** */
+.carousel-inner .frame {
+    opacity: 0.5; /* Başlangıçta yarı transparan yapabilirsiniz */
+    transform: translateY(100%); /* Resimleri başlangıçta aşağıdan dışarı taşıyın */
+    transition: opacity 0.8s ease, transform 1s ease; /* Geçiş efektlerini tanımlayın (süre ve geçiş türü) */
+}
+.carousel-inner .carousel-item.active .frame {
+    opacity: 0.9; /* Aktif resimler tamamen opak olacak */
+    transform: translateY(0); /* Aktif resimler yavaşça orijinal konumuna gelecek */
+}
+
+
+/* CSS */
+@keyframes slideFromBottom {
+    from {
+    transform: translateY(100%);
+    }
+    to {
+    transform: translateY(0);
+    }
+}
+.textone {
+    color: #c28b00;
+    font-size: 55px;
+    font-weight: 530;
+    animation: slideFromBottom 1s ease;
+}
+.texttwo {
+    color: #467c66;
+    font-size: 55px;
+    font-weight: 530;
+    animation: slideFromBottom 1s ease;
+}
+.textthree {
+    color: #0076d3;
+    font-size: 55px;
+    font-weight: 530;
+    animation: slideFromBottom 1s ease;
+}
+
+.textfour {
+    color: #407a57;
+    font-size: 55px;
+    font-weight: 530;
+    animation: slideFromBottom 1s ease;
+}
+
+/**************** ABOUT.CSS ***************/
+.bluenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    background-color: #d7edff;
+    font-size: 16px;
+    z-index: 100; 
+
+
 * {
   margin: 0;
   padding: 0;
