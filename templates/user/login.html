@@ -6,30 +6,26 @@
 {% block content %}
 
 <div class="container d-flex justify-content-center">
-    <form method="POST" class="w-25 m auto border p-4  ">
+    <form method="POST" class="singinbox m-auto border p-4 rounded-5">
         {%csrf_token %}
 
-        <img src="/static/img/pinterest-navbar-logo.png" alt="" style="width: 32px; height: 32px" />
+        <div class="center-container">
+            <img src="/static/img/pinterest-navbar-logo.png" alt="" class="singinlogo" />
+        </div>
 
-        <h2 class="text-center">Pinterest'e Hoş Geldiniz</h2>
-        <h6 style="font-size: 14px; font-weight: 400 " class="text-center">
-            Bir sonraki tutkunuzu keşfedin
-        </h6>
+        <h2 class="text-center mb-3 ">Pinterest'e Hoş Geldiniz</h2>
 
-        <label for="" class="mt-0">E-posta</label> <br>
+        <label for="" class="mt-2 ">E-posta</label> <br>
         <input type="email" name="email" placeholder="E-posta" required class="form-control rounded-4 py-2" /><br>
         <label for=""> Parola </label><br>
         <input type="password" name="sifre" id="" placeholder="Parola oluşturun" required
             class="form-control rounded-4 py-2 mb-2" />
-    
-            <div class="navbar-register-button-side ">
+
+        <div class="navbar-register-button-side  ">
+
             <div class="navbar-register-button-side-button-register-div">
                 <button type="submit" class="navbar-register-btn ">Devam Et</button>
             </div>
-            <div class="navbar-register-button-side-span-div ">
-
-            </div>
-
 
         </div>
         <p class="text-center">VEYA</p>

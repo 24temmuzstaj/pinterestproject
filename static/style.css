@@ -1,4 +1,4 @@
-
+/***** ŞERİFE CSS ****/
 /* 100vh'lık renkli bölümler için kullanıldı sarı-mavi-pembe */
 .index-search {
     height: 100vh;
@@ -318,7 +318,7 @@
     font-weight: 500;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-/***** Slider ****/
+/***** Slider Mehtap ****/
 #carouselExampleCaptions  {
     height: 100vh;
     background-color: white; /* Örnek olarak beyaz bir renk */
@@ -1078,5 +1078,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
 
+/**** DJANGO OTURUM AÇ FORM CSS DÜZENLENME ****/
+/* Kutu boyutu */
+.singinbox{
+  width: 390px;
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; 
+}
+/* img boyutu */
+.center-container img {
+  width: 40px; 
+  height: 40px;
 }
