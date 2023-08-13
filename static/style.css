@@ -866,7 +866,7 @@
   display: flex;
   margin: 0 auto;
   align-items: center;
-  margin-top: 10px;
+  margin-top: -10px;
 }
 .social-btn-icon {
   margin-left: 15px;
@@ -1017,7 +1017,7 @@
 }
 .navbar-register-button-side {
   width: 450px;
-  margin: auto;
+  margin-left: 75px;
 }
 .navbar-register-button-side .navbar-register-btn {
   background: rgb(230, 0, 35);
@@ -1069,7 +1069,6 @@
   font-size: 16px;
 }
 
-
 .profileimg {
   height: 120px;
   width: 120px;
@@ -1080,10 +1079,10 @@
   background-position: center center;
 }
 
-/**** DJANGO OTURUM AÇ FORM CSS DÜZENLENME ****/
+/**** DJANGO OTURUM AÇ FORM CSS DÜZENLENME MEHTAP ****/
 /* Kutu boyutu */
 .singinbox{
-  width: 390px;
+  width: 400px;
 }
 .center-container {
   display: flex;
@@ -1091,8 +1090,37 @@
   align-items: center;
   height: 10vh; 
 }
-/* img boyutu */
+/* img logo boyutu */
 .center-container img {
   width: 40px; 
   height: 40px;
+}
+.singinboxtext{
+  color: #181313;
+  text-decoration: none;
+}
+/**** hr uzunluğu ****/
+.hr-short{
+  width: 50%; /* İstediğiniz uzunlukta ayarlayabilirsiniz */
+  margin: 0 auto;
+}
+.form-control{
+  width: 80%;
+  margin: auto;
+}
+.navbar-register-button-side-tittle{
+  margin-left: 40px;
+}
+
+
+.input-container {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  right: 60px;
+  cursor: pointer;
 }
