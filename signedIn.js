@@ -17,23 +17,27 @@ document.addEventListener("click", function (e) {
   const targetElement = document.querySelector(targetSelector);
 
   if (targetElement) {
-    if (!targetElement.classList.contains("showy")) {
+    if (!targetElement.classList.contains("showwy")) {
       hideAllShowyElements();
-      targetElement.classList.add("showy");
-      clickedTarget.classList.add("showy");
+      targetElement.classList.add("showwy");
+      clickedTarget.classList.add("showwy");
+      if (targetElement.classList.contains("opened-searchbox-container")) {
+        $(document.querySelector(".hugething")).toggleClass("showwy");
+        if()
+      }
     }
   } else {
     hideAllShowyElements();
   }
-  if (!clickedTarget.closest(".showy")) {
+  if (!clickedTarget.closest(".showwy")) {
     hideAllShowyElements();
   }
 });
 
 function hideAllShowyElements() {
-  const showyElements = document.querySelectorAll(".showy");
+  const showyElements = document.querySelectorAll(".showwy");
   showyElements.forEach((element) => {
-    element.classList.remove("showy");
+    element.classList.remove("showwy");
   });
 }
 for (let i = 0; i < 25; i++) {
@@ -51,8 +55,8 @@ $(avatar_random).css("height", "75px");
 // $(avatar_random).css("border-radius", "50%");
 
 const user_name = [
-  "Ahmed Bashir",
-  "Ahmet Demir",
+  "Ahmet Bashir",
+  "Alkan Demir",
   "Ahmet Evkaya",
   "Emre Akkaya",
   "Serkan Akça",
@@ -65,7 +69,7 @@ const user_name = [
   "Oğuzhan Pur",
   "Ege Eren",
   "Ertuğrul Cantez",
-  "Ahmet Davutoğlu",
+  "Altan Kirazdoğan",
   "Elif Karasu",
   "Elif Rana Yavaş",
   "Erim Ünal Ersoy",

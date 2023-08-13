@@ -86,9 +86,13 @@
             </button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href=""
-              ><i class="fa-solid fa-comment-dots nav-icon"></i
-            ></a>
+            <button class="nav-link" href="" data-target=".message-container">
+              <i
+                class="fa-solid fa-comment-dots nav-icon message-icon"
+                data-target=".message-container"
+              >
+              </i>
+            </button>
           </li>
           <li class="nav-item">
             <a class="nav-link" href=""
@@ -169,7 +173,11 @@
         </div>
       </div>
     </div>
-    <div class="account-container p-2" data-target="account-container">
+    <div
+      class="account-container p-2"
+      data-target="account-container"
+      onclick="event.stopPropagation()"
+    >
       <div class="account-header">
         <p class="p-2 pb-0 headings">Şu anda kullanılan hesap</p>
       </div>
@@ -201,7 +209,11 @@
         <h5 class="p-2 mb-0">Çıkış yap</h5>
       </div>
     </div>
-    <div class="update-container p-2 me-2 mb-3" data-target="update-container">
+    <div
+      class="update-container p-2 me-2 mb-3"
+      data-target="update-container"
+      onclick="event.stopPropagation()"
+    >
       <div class="update-headerr" style="padding: 23px 0px">
         <h5 class="fs-6">Güncellemeler</h5>
       </div>
@@ -335,7 +347,7 @@
       </div>
       <div class="update-header" style="padding: 23px 0px"></div>
     </div>
-    <div class="message-container">
+    <div class="message-container" onclick="event.stopPropagation()">
       <div class="message-header">
         <h5 class="fs-6">
           Gelen Kutusu <i class="fa-solid fa-ellipsis"></i>
@@ -361,7 +373,7 @@
         </div>
       </div>
     </div>
-    <div class="message-chatting-container">
+    <div class="message-chatting-container" onclick="event.stopPropagation()">
       <div class="chatting-header">
         <h4>Yeni mesaj</h4>
         <h6 class="cancel-chatting-icon">İptal</h6>
