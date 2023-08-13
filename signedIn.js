@@ -15,15 +15,14 @@ document.addEventListener("click", function (e) {
   const clickedTarget = e.target;
   const targetSelector = $(clickedTarget).data("target");
   const targetElement = document.querySelector(targetSelector);
-
+  const hugething = document.querySelector(".hugething");
   if (targetElement) {
     if (!targetElement.classList.contains("showwy")) {
       hideAllShowyElements();
       targetElement.classList.add("showwy");
       clickedTarget.classList.add("showwy");
       if (targetElement.classList.contains("opened-searchbox-container")) {
-        $(document.querySelector(".hugething")).toggleClass("showwy");
-        if()
+        hugething.classList.add("showwy");
       }
     }
   } else {
