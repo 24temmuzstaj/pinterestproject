@@ -1112,15 +1112,19 @@
   margin-left: 40px;
 }
 
-
 .input-container {
   position: relative;
 }
-
-.icon {
+.icon{
   position: absolute;
   top: 70%;
   transform: translateY(-50%);
   right: 60px;
   cursor: pointer;
+}
+.google-icon{
+  width: 27px;
+  height:27px;
+  margin-right: 7px;
+  margin-top: 1px;
 }
