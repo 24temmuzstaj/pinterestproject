@@ -347,13 +347,27 @@
       </div>
       <div class="update-header" style="padding: 23px 0px"></div>
     </div>
+
     <div class="message-container" onclick="event.stopPropagation()">
       <div class="message-header">
         <h5 class="fs-6">
-          Gelen Kutusu <i class="fa-solid fa-ellipsis"></i>
+          Gelen Kutusu
+
+          <i
+            class="fa-solid fa-ellipsis threedots"
+            data-target=".read-container"
+            style="cursor: pointer"
+          ></i>
+
           <i class="fa-solid fa-pen"></i>
         </h5>
       </div>
+      <div class="read-container-relative">
+        <div class="read-container">
+          <h6>Tümünü okundu olarak işaretle</h6>
+        </div>
+      </div>
+
       <div class="message-upper">
         <h3>Arkadaşlarınızla fikirler paylaşın</h3>
         <div class="message-upper-input py-2">

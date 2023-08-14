@@ -114,7 +114,7 @@ inp.addEventListener("input", (e) => {
   });
   const inputValue = inp.value.toLowerCase();
   for (let i = 0; i < user_name.length; i++) {
-    if (inputValue === user_name[i][0].toLowerCase()) {
+    if (inputValue === user_name[i].toLowerCase()) {
       const userarea = document.querySelector(".chatting-user-area");
       const uservalue = document.createElement("span");
       uservalue.classList.add("user-value-output");
@@ -148,4 +148,15 @@ user_search_input.addEventListener("click", () => {
 const chatting_close_button = document.querySelector(".cancel-chatting-icon");
 chatting_close_button.addEventListener("click", () => {
   $(chatting_opener).removeClass("showwy");
+});
+
+const messageBtn = document.querySelector(".threedots");
+messageBtn.addEventListener("click", (e) => {
+  const clicked = e.target;
+  const readcontainer = document.querySelector(".read-container");
+  if (clicked == messageBtn) {
+    $(readcontainer).toggleClass("showwy");
+  } else {
+    hideAllShowyElements();
+  }
 });
