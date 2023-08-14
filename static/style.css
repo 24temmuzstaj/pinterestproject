@@ -1080,3 +1080,48 @@
   background-position: center center;
 
 }
+/**** DJANGO OTURUM AÇ FORM CSS DÜZENLENME MEHTAP ****/
+/* Kutu boyutu */
+.singinbox{
+  width: 400px;
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; 
+}
+/* img logo boyutu */
+.center-container img {
+  width: 40px; 
+  height: 40px;
+}
+.singinboxtext{
+  color: #181313;
+  text-decoration: none;
+}
+/**** hr uzunluğu ****/
+.hr-short{
+  width: 50%; /* İstediğiniz uzunlukta ayarlayabilirsiniz */
+  margin: 0 auto;
+}
+.form-control{
+  width: 80%;
+  margin: auto;
+}
+.navbar-register-button-side-tittle{
+  margin-left: 40px;
+}
+
+
+.input-container {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  right: 60px;
+  cursor: pointer;
+}
