@@ -108,25 +108,29 @@ inp.addEventListener("input", (e) => {
         userremove.remove();
       });
     } else {
-      const userarea = document.querySelector(".chatting-user-area");
-      userarea.innerHTML = "";
+      /* const userarea = document.querySelector(".chatting-user-area");
+      userarea.innerHTML = ""; */
     }
   });
   const inputValue = inp.value.toLowerCase();
+  const matchingValues = user_name.filter((value) =>
+    value.toLowerCase().includes(inputValue)
+  );
   for (let i = 0; i < user_name.length; i++) {
-    if (inputValue === user_name[i].toLowerCase()) {
+    if (inputValue === matchingValues.toString) {
       const userarea = document.querySelector(".chatting-user-area");
       const uservalue = document.createElement("span");
       uservalue.classList.add("user-value-output");
-      uservalue.innerHTML = `${user_name[i]}`;
-      if (inputValue === user_name[i][0].toLowerCase()) {
+      uservalue.innerHTML = `${matchingValues}`;
+      console.log(matchingValues);
+      if (inputValue === matchingValues) {
         const valuecontainer = document.createElement("div");
         valuecontainer.classList.add("chatting-value-user");
         const usertextingcontainer = document.createElement("div");
         usertextingcontainer.classList.add("chatting-texting-container");
         const uservalue = document.createElement("span");
         uservalue.classList.add("user-value-output");
-        uservalue.innerHTML = `${user_name[i]}`;
+        uservalue.innerHTML = `${matchingValues}`;
         const image = document.createElement("img");
         image.classList.add("user-value-image");
         image.src = `https://robohash.org/${i}`;
