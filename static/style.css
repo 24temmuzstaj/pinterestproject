@@ -980,7 +980,7 @@
   content: "Pinterest'in güvende kalmasına yardımcı olmak için artık doğum tarihinizi almamız gerekiyor. Doğum tarihiniz ayrıca daha kişiselleştirilmiş öneriler ve alakalı reklamlar sunmamıza yardımcı oluyor. Bu bilgileri paylaşmayız ve profilinizde görünmez.";
   width: 200px;
   font-size: 11px;
-  background: black;
+  background: rgba(48, 48, 48, 0.993);
   color: #dfdfdf;
   position: fixed;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
