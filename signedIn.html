@@ -406,47 +406,53 @@
         </div>
       </div>
     </div>
-    <div class="profile-save-container">
+    <div class="profile-save-container" onclick="event.stopPropagation()">
       <div class="save-header">
         <h5>Kaydet</h5>
       </div>
       <div class="input-container">
         <i class="fa-solid fa-magnifying-glass input-save-icon"></i>
-        <input class="input-save" type="text" />
+        <input class="input-save" type="text" placeholder="Ara" />
       </div>
       <div class="save-middle">
         <span style="font-size: 12px"
           >Hızlı bir şekilde kaydedip daha sonra düzenleyin</span
         >
         <div class="save-middle-content">
-          <i class="fa-solid fa-clock-rotate-left"></i>
-          <span style="font-size: 16px">Profil</span>
+          <div class="clock-container">
+            <div class="clock-content">
+              <i
+                class="fa-solid fa-clock-rotate-left clock"
+                style="font-size: 24px"
+              ></i>
+            </div>
+
+            <span style="font-size: 16px; font-weight: 600">Profil</span>
+            <a href="#" class="profile-save-button ms-auto me-3">Kaydet</a>
+          </div>
         </div>
 
-        <h6>Panoya kaydet</h6>
-        <img
-          style="
-            width: 48px;
-            height: 48px;
-            object-fit: cover;
-            border-radius: 10px;
-          "
-          src="./img/forpin.jpg"
-          alt=""
-        />
-        <span style="font-size: 16px">Pin</span>
-        <img
-          style="
-            width: 48px;
-            height: 48px;
-            object-fit: cover;
-            border-radius: 10px;
-          "
-          src="./img/forpin.jpg"
-          alt=""
-        />
-        <span style="font-size: 16px">Yemek tarifleri</span>
-        <h3 style="font-size: 16px">Pano oluştur</h3>
+        <span style="font-size: 12px; display: block pb-4">Panoya kaydet</span>
+        <div class="middle-content">
+          <img
+            style="
+              width: 48px;
+              height: 48px;
+              object-fit: cover;
+              border-radius: 10px;
+            "
+            src="./img/forpin.jpg"
+            alt=""
+          />
+          <span style="font-size: 16px; font-weight: 600">Pinlerim</span>
+          <a href="#" class="profile-save-button ms-auto me-3">Kaydet</a>
+        </div>
+      </div>
+      <div class="save-lower d-flex align-items-center">
+        <div class="plus">
+          <i class="fa-solid fa-plus plusicon" style="font-size: 20px"></i>
+        </div>
+        <span style="font-size: 16px; font-weight: 600">Pano oluştur</span>
       </div>
     </div>
     <div class="container-fluid picture-container pt-3"></div>
