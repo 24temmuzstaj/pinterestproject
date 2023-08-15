@@ -2,13 +2,13 @@
 
 <nav class="navbar navbar-expand">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="/static/img/pinterest-navbar-login-logo.png"
+        <a class="navbar-brand" href="/"><img src="/static/img/pinterest-navbar-login-logo.png"
                 style="width: 32px; height: 32px" alt="" /></a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active mainpage" href="#"><span>Ana Sayfa</span></a>
+                    <a class="nav-link active mainpage" href="/"><span>Ana Sayfa</span></a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -43,19 +43,17 @@
                 </button>
             </li>
             <li class="nav-item">
-                <a class="nav-link"><i class="fa-solid fa-user nav-icon"></i></a>
+                
+                <a class="nav-link " href="profil/profile/"><img style="width: 25px; border-radius: 50%;" src="{{ user_profile.profile_image.url }}" alt="Profile Picture">
+
+                
             </li>
             <li class="nav-item">
                 <a class="nav-link boxy account-opener"><i data-target=".account-container"
                         class="fa-solid fa-angle-down nav-icon account-opener iconicon"></i></a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link nav-oturum-ac" href="profil/profile/">{{ request.user.username }}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-kaydol" href="/user/logout/">Çıkış yap</a>
-            </li>
+           
 
 
         </div>
@@ -131,7 +129,7 @@
     </div>
     <div class="account-upper py-2">
         <div class="image-container ps-2">
-            <img src="/static/img/avatar.webp" alt="" />
+            <img style="width: 25px; border-radius: 50%;" src="{{ user_profile.profile_image.url }}" alt="Profile Picture">
         </div>
         <div class="text-container">
             <h6>{{ request.user.username }}</h6>
@@ -154,7 +152,8 @@
         <h5 class="p-2">Hizmet şartlarına göz at</h5>
         <h5 class="p-2">Gizlilik politikasına göz at</h5>
         <h5 class="p-2">Beta test kullanıcısı olun</h5>
-        <h5 class="p-2 mb-0">Çıkış yap</h5>
+        <h5><a href="/user/logout/" class="p-2 mb-0">Çıkış yap</a></h5>
+       
     </div>
 </div>
 <div class="update-container p-2 me-2 mb-3" data-target="update-container" onclick="event.stopPropagation()">
@@ -362,3 +361,4 @@
 <script src="https:/code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
 <script src="/static/script.js"></script>
+
