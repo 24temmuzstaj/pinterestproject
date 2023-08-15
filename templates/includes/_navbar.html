@@ -57,7 +57,7 @@
                 <a class="nav-link nav-kaydol" href="/user/logout/">Çıkış yap</a>
             </li>
 
-            
+
         </div>
     </div>
 </nav>
@@ -134,9 +134,9 @@
             <img src="/static/img/avatar.webp" alt="" />
         </div>
         <div class="text-container">
-            <h6>Fatih Pur</h6>
+            <h6>{{ request.user.username }}</h6>
             <p>Kişisel</p>
-            <p>loremipsum@lorem.com</p>
+            <p>{{ request.user.email }}</p>
         </div>
     </div>
     <div class="account-middle pb-1">
@@ -164,7 +164,7 @@
     <div class="overflow">
         <div class="update-content-head py-1 mb-3">
             <img src="/static/img/content_small_pin.png" style="width: 48px; height: 48px" alt="" />
-            <span>Fatih, hangi fikirler tam size göre? Size ilham veren şeyleri
+            <span>{{ request.user.username }}, hangi fikirler tam size göre? Size ilham veren şeyleri
                 paylaşmak için ilk Pininizi oluşturun.
                 <strong style="font-weight: 100">15s</strong></span>
             <div class="circelized">
