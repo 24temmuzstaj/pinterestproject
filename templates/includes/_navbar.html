@@ -49,6 +49,15 @@
                 <a class="nav-link boxy account-opener"><i data-target=".account-container"
                         class="fa-solid fa-angle-down nav-icon account-opener iconicon"></i></a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-oturum-ac" href="profil/profile/">{{ request.user.username }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-kaydol" href="/user/logout/">Çıkış yap</a>
+            </li>
+
+            
         </div>
     </div>
 </nav>
