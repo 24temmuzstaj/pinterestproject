@@ -95,12 +95,10 @@
             </button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href=""
-              ><i class="fa-solid fa-user nav-icon"></i
-            ></a>
+            <a class="nav-link"><i class="fa-solid fa-user nav-icon"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link boxy account-opener" href="#"
+            <a class="nav-link boxy account-opener"
               ><i
                 data-target=".account-container"
                 class="fa-solid fa-angle-down nav-icon account-opener iconicon"
@@ -173,11 +171,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="account-container p-2"
-      data-target="account-container"
-      onclick="event.stopPropagation()"
-    >
+    <div class="account-container p-2" onclick="event.stopPropagation()">
       <div class="account-header">
         <p class="p-2 pb-0 headings">Şu anda kullanılan hesap</p>
       </div>
@@ -409,6 +403,49 @@
             <i class="fa-solid fa-heart"></i>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="profile-save-container">
+      <div class="save-header">
+        <h5>Kaydet</h5>
+      </div>
+      <div class="input-container">
+        <i class="fa-solid fa-magnifying-glass input-save-icon"></i>
+        <input class="input-save" type="text" />
+      </div>
+      <div class="save-middle">
+        <span style="font-size: 12px"
+          >Hızlı bir şekilde kaydedip daha sonra düzenleyin</span
+        >
+        <div class="save-middle-content">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <span style="font-size: 16px">Profil</span>
+        </div>
+
+        <h6>Panoya kaydet</h6>
+        <img
+          style="
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 10px;
+          "
+          src="./img/forpin.jpg"
+          alt=""
+        />
+        <span style="font-size: 16px">Pin</span>
+        <img
+          style="
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 10px;
+          "
+          src="./img/forpin.jpg"
+          alt=""
+        />
+        <span style="font-size: 16px">Yemek tarifleri</span>
+        <h3 style="font-size: 16px">Pano oluştur</h3>
       </div>
     </div>
     <div class="container-fluid picture-container pt-3"></div>

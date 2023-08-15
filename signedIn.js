@@ -6,8 +6,18 @@ for (let i = 0; i < 144; i++) {
   element.classList.add("masonry-item");
   const image = document.createElement("img");
   image.src = "./img/" + i + ".jpg";
-
-  element.append(image);
+  const profile = document.createElement("span");
+  profile.classList.add("profile-item");
+  const icon = document.createElement("i");
+  icon.classList.add("fa-solid");
+  icon.classList.add("fa-angle-down");
+  icon.classList.add("profile-icon");
+  const ahref = document.createElement("a");
+  ahref.innerHTML = "Kaydet";
+  ahref.href = "#";
+  ahref.classList.add("save");
+  profile.innerHTML = "Profil";
+  element.append(image, profile, icon, ahref);
   imageparent.append(element);
 }
 
@@ -78,6 +88,7 @@ const user_name = [
   "İrem Yıldırım",
   "Doğancan Beytaş",
   "Selami Şahin",
+  "Ecem Konuk",
 ];
 
 const avatartxts = document.querySelectorAll(".random-avatar-images");
@@ -114,7 +125,7 @@ inp.addEventListener("input", (e) => {
   });
   const inputValue = inp.value.toLowerCase();
   for (let i = 0; i < user_name.length; i++) {
-    if (inputValue === user_name[i].toLowerCase()) {
+    if (inputValue === user_name[i][0].toLowerCase()) {
       const userarea = document.querySelector(".chatting-user-area");
       const uservalue = document.createElement("span");
       uservalue.classList.add("user-value-output");
