@@ -2276,3 +2276,18 @@ p {
   display: flex;
 }
 /* ---fatih indexle ilgili bölm */
+
+/* Mehtap Bottom section start */
+.sectionbox{
+  width:100vh ;
+  background-color: #ffffff;
+}
+.sectionbox img{
+  width:200px;
+  height:250px ;
+  border-radius: 20px;
+  margin:3px;
+}
+
+
+/* Mehtap Bottom section end */
