@@ -44,7 +44,7 @@
             </li>
             <li class="nav-item">
                 
-                <a class="nav-link " href="profil/profile/"><img style="width: 25px; border-radius: 50%;" src="{{ user_profile.profile_image.url }}" alt="Profile Picture">
+                <a class="nav-link " href="{% url 'view_profile' %}"><img style="width: 25px; border-radius: 50%;" src="{{ user_profile.profile_image.url }}" alt="Profile Picture">
 
                 
             </li>
@@ -52,9 +52,6 @@
                 <a class="nav-link boxy account-opener"><i data-target=".account-container"
                         class="fa-solid fa-angle-down nav-icon account-opener iconicon"></i></a>
             </li>
-
-           
-
 
         </div>
     </div>
@@ -360,5 +357,7 @@
     crossorigin="anonymous"></script>
 <script src="https:/code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
-<script src="/static/script.js"></script>
+<script src="/static/script2.js"></script>
+
+
 
