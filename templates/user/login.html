@@ -22,7 +22,10 @@
     </h2>
 
     <div class="navbar-register-button-side-tittle">
-      <label for="e-mail" class="mt-2 me-2 mb-1" style="font-size: small"
+      <label
+        for="e-mail"
+        class="mt-2 me-2 mb-1 login-label"
+        style="font-size: small"
         >E-posta</label
       >
 
@@ -31,35 +34,32 @@
         name="email"
         placeholder="E-posta"
         required
-        class="form-control rounded-4 py-2 ml-2"
+        class="form-control rounded-4 py-2"
+        style="width: 250px; margin: auto"
       />
     </div>
 
-    <!-- <div class="navbar-register-button-side-tittle">
-            <label for="" style="font-size: small;" class=" me-2 mb-1 "> Parola
-            </label><br>
-        </div>
-        <input type="password" name="sifre" id="" placeholder="Parola oluşturun" required
-            class="form-control rounded-4 py-2 mb-2" /> -->
+    <div class="navbar-register-button-side-tittle">
+      <label
+        for="e-mail"
+        class="mt-2 me-2 mb-1 login-label"
+        style="font-size: small"
+        >Parola</label
+      >
 
-    <div class="input-container">
-      <label for="password" style="font-size: small" class="mb-1">Parola</label>
-      <div class="navbar-register-button-side-tittle"></div>
-      <div class="icon" id="showButton">
-        <i class="fa-solid fa-eye-slash" style="color: #000000"></i>
-      </div>
       <input
         type="password"
         name="sifre"
         id="password"
-        placeholder="Parola oluşturun"
+        placeholder="Parola"
         required
-        class="form-control rounded-4 py-2 mb-2 mx-auto"
+        class="form-control rounded-4 py-2 mb-1"
+        style="width: 250px; margin: auto"
       />
     </div>
 
     <a
-      class="navbar-login-button-side-tittle"
+      class="navbar-login-button-side-tittle parola-remember"
       style="font-size: 13px; color: black; font-weight: 600"
       href=""
       >Parolanızı mı Unuttunuz?</a
@@ -107,7 +107,7 @@
       </p>
     </div>
 
-    <hr class="hr-short" />
+    <div class="forborder"></div>
 
     <div
       class="navbar-register-button-side-button-text-div mt-2 text-center mx-4"
@@ -115,11 +115,13 @@
     >
       <p>
         <strong
-          ><a class="singinboxtext" href=""
+          ><a class="signinboxtextfirst" href=""
             >Hala Pinterest'te değil misiniz? Kaydolun</a
           ></strong
         >İşletme misiniz?
-        <strong><a class="singinboxtext" href="">Buradan Başlayın!</a></strong>
+        <strong class="pb-3 pt-2 d-inline-block"
+          ><a class="singinboxtext" href="">Buradan Başlayın!</a></strong
+        >
       </p>
     </div>
   </form>

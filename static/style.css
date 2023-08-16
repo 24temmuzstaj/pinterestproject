@@ -855,7 +855,7 @@
   text-decoration: underline;
 }
 .navbar-login-button-side {
-  width: 400px;
+  width: 250px;
   margin: auto;
 }
 .navbar-login-button-side .navbar-login-btn {
@@ -980,7 +980,7 @@
   padding-left: 8px;
 }
 .register-label-one {
-  margin-left: 55px;
+  margin-left: 95.5px;
 }
 
 .info:hover:after {
@@ -1090,13 +1090,18 @@
 /**** DJANGO OTURUM AÇ FORM CSS DÜZENLENME MEHTAP ****/
 /* Kutu boyutu */
 .singinbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
 }
 .center-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  margin-top: 20px;
 }
 /* img logo boyutu */
 .center-container img {
@@ -1105,20 +1110,14 @@
 }
 .singinboxtext {
   color: #181313;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 /**** hr uzunluğu ****/
 .hr-short {
   width: 50%; /* İstediğiniz uzunlukta ayarlayabilirsiniz */
   margin: 0 auto;
 }
-.form-control {
-  width: 80%;
-  margin: auto;
-}
-.navbar-register-button-side-tittle {
-  margin-left: 40px;
-}
+
 .navbar-register-button-side-tittle input {
   padding-left: 8px;
 }
@@ -1934,16 +1933,11 @@ p {
   width: 400px;
   height: 620px;
   margin: auto;
-  margin-top: 100px;
   text-align: center;
   border-radius: 40px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
   z-index: 1000;
   position: relative;
-}
-
-.show {
-  display: none;
 }
 
 .exit-button {
@@ -2012,13 +2006,11 @@ p {
   left: 100px;
   bottom: 20px;
 }
-.navbar-login-form-side label {
-  margin-left: -185px;
-  font-size: 14px;
+.login-label {
+  padding-left: 83.5px;
 }
-.navbar-login-form-side label[for="password"] {
-  margin-left: -195px !important;
-  padding-top: 5px;
+.parola-remember {
+  padding-left: 83.5px;
 }
 ::placeholder {
   color: #767676;
@@ -2039,7 +2031,7 @@ p {
   text-decoration: underline;
 }
 .navbar-login-button-side {
-  width: 400px;
+  width: 250px;
   margin: auto;
 }
 .navbar-login-button-side .navbar-login-btn {
@@ -2096,6 +2088,11 @@ p {
   font-weight: 500;
   margin-top: 11px;
   border: 1px solid #dadce0;
+}
+.navbar-login-button-side-button-text-div p {
+  margin: auto;
+  width: 275px;
+  margin-bottom: 10px;
 }
 .policy-ahref {
   text-decoration: none;
@@ -2247,6 +2244,11 @@ p {
   border-radius: 20px;
   font-weight: 500;
   border: none;
+}
+.navbar-register-button-side-button-text-div .signinboxtextfirst {
+  display: block;
+  text-decoration: none !important;
+  color: #181313;
 }
 .navbar-register-button-side-button-google-div .navbar-google-btn {
   background-color: white;
