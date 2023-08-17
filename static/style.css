@@ -1151,7 +1151,7 @@
   top: 0;
   z-index: 1111;
   background: #fff;
-}
+}index
 .nav-icon {
   padding: 10px;
 }
@@ -2278,16 +2278,19 @@ p {
 /* ---fatih indexle ilgili bölm */
 
 /* Mehtap Bottom section start */
-.sectionbox{
-  width:100vh ;
-  background-color: #ffffff;
+.background {
+  display: flex;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(201, 44, 78, 0.842);
+  
 }
-.sectionbox img{
-  width:200px;
-  height:250px ;
-  border-radius: 20px;
-  margin:3px;
+.image-repository {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: center; */
+
 }
 
-
-/* Mehtap Bottom section end */
