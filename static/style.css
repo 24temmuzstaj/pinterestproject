@@ -2277,20 +2277,73 @@ p {
 }
 /* ---fatih indexle ilgili bölm */
 
-/* Mehtap Bottom section start */
+/* Mehtap Background section start */
 .background {
   display: flex;
-  height: 700px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background-color: rgba(201, 44, 78, 0.842);
+  background-color: rgba(240, 113, 113, 0.842);
   
 }
-.image-repository {
+.image-repository{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  /* align-items: center; */
-
 }
+.frame img{
+  width: 200px;
+  height: 310px;
+}
+/* Background img'ler */
+#section1{
+  margin-top: 15px;
+  margin-left: -30px;
+}
+#section2 {
+  height: 320px;
+  margin-left: -50px;
+  overflow: hidden;
+  position: relative;
+  bottom:  140px;
+}
+#section3 {
+  width: 200px;
+  height: 320px;
+  left: 45px;
+  overflow: hidden;
+  position: relative;
+  bottom:  210px;
+}
+#section4 {
+  width: 200px;
+  height: 300px;
+  left: 135px;
+  overflow: hidden;
+  position: relative;
+}
+#section5 {
+  width: 200px;
+  height: 300px;
+  left: 230px;
+  overflow: hidden;
+  position: relative;
+  bottom:200px;
+}
+#section6 {
+  width: 190px;
+  height: 300px;
+  left: 320px;
+  overflow: hidden;
+  position: relative;
+  bottom:100px;
+}
+#section7 {
+  width: 200px;
+  height: 300px;
+  left: 400px;
+  overflow: hidden;
+  position: relative;
+  top: 8px;
+}
+
 
