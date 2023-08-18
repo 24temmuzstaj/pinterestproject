@@ -2280,10 +2280,10 @@ p {
 /* Mehtap Background section start */
 .background {
   display: flex;
-  height: 550px;
+  height: 580px;
   overflow: hidden;
   position: relative;
-  background-color: rgba(240, 113, 113, 0.842);
+  background-color: white;
   
 }
 .image-repository{
@@ -2345,5 +2345,6 @@ p {
   position: relative;
   top: 8px;
 }
+
 
 
