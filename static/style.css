@@ -1090,11 +1090,11 @@
 /**** DJANGO OTURUM AÇ FORM CSS DÜZENLENME MEHTAP ****/
 /* Kutu boyutu */
 .singinbox {
-  height: 600px;
+  height: 400px;
   background-color: white;
   position: relative;
   left: 180px;
-  top: 20px;
+  top: 25px;
 }
 .center-container {
   display: flex;
@@ -2367,20 +2367,84 @@ p {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  width: 70%; 
+  width: 60%; 
   padding: 20px;
   z-index: 2;
 }
 
 /*************** form *********/
 
-/* Form container'ı */
-.container {
+.col-form {
+  flex: 0 0 25%;
+  padding: 10px; /* Önceki değeri 50px'den 20px'ye düşürdük */
+  background-color: #f9f9f9; 
+  border-radius: 50px;
   position: absolute;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  color: black;
-  height: 90px;
-  z-index: 3;
-
+  top: 50%;
+  right: 10%; 
+  transform: translateY(-50%);
+  height: fit-content;
+  z-index: 2;
 }
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* İçeriği yatayda merkezle */
+  text-align: center;
+  width: 350px; 
+  height: 540px;
+  margin: 0 auto; 
+  overflow: hidden;
+}
+.col-form form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2px;
+  margin-top: 10px; /* Yukarı boşluk */
+}
+.col-form form label {
+  width: 250px;
+  text-align: start;
+}
+
+.col-form form input {
+  padding: 8px; /* Daha küçük padding */
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.col-form form button {
+  padding: 7px; /* Daha küçük padding */
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 17px;
+}
+
+.col-form .facebook-button,
+.col-form .google-button {
+  padding: 8px; /* Daha küçük padding */
+  border-radius: 18px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  width: 250px;
+}
+.col-form .text {
+  font-size: 10px;
+  color: #666; 
+}
+.col-form .facebook-button {
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+}
+
+.col-form .google-button {
+  color: black;
+  background-color: #cfe6e8f3; 
+  border: 1px solid blue;
+}
+
+
