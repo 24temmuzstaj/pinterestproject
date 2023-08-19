@@ -51,16 +51,13 @@
     {% for pin in pins %}
 
 
-    <div class="col-3 mb-3">
-      <div class="card" style="height: 650px;">
-        <img src="{{ pin.image.url}}" height="250" class="card-img-top" alt="{{pin.title}}">
-        <div class="card-body  ">
-
-          <h5 class="card-title text-warning">{{pin.title}}</h5>
-          <p>{{pin.description}}</p>
+      <div class="col-2 mb-3">
+        <div class="card " >
+          <a href="{%url 'detay' pin.id %}"><img src="{{ pin.image.url}}" alt="{{pin.title}}" class="w-100"> </a>
         </div>
+      
+        
       </div>
-    </div>
 
     {% endfor %}
   </div>
