@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
-from django.contrib.auth.models import User
+
 from django.contrib import messages
 from datetime import datetime  # datetime modülünü ekleyin
 from django.contrib.auth import login,authenticate,logout
@@ -58,4 +58,5 @@ def userLogin(request):
 def userLogout(request):
     logout(request)
     messages.success(request, "Çıkış yapıldı")
-    return redirect('index')
+    return redirect('login')
+
