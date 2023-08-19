@@ -2406,12 +2406,14 @@ p {
 .col-form form label {
   width: 250px;
   text-align: start;
+  font-size: 12px;
 }
 
 .col-form form input {
   padding: 8px; /* Daha küçük padding */
   border: 1px solid #ccc;
   border-radius: 15px;
+  font-size: 12px;
 }
 
 .col-form form button {
@@ -2430,6 +2432,7 @@ p {
   font-weight: bold;
   text-align: center;
   width: 250px;
+  font-size: 12px;
 }
 .col-form .text {
   font-size: 10px;
@@ -2440,11 +2443,8 @@ p {
   color: #fff;
   border: none;
 }
-
 .col-form .google-button {
   color: black;
-  background-color: #cfe6e8f3; 
-  border: 1px solid blue;
+  background-color: #dee7e7f3; 
+  border: 1px solid rgb(204, 204, 224);
 }
-
-
