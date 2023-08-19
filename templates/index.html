@@ -132,6 +132,7 @@
             <img class="rounded-4" src="/static/img/sliderone/7.jpeg" alt="" />
           </div>
         </div>
+
       </div>
 
       <!--------- 2.Slider ------->
@@ -444,42 +445,100 @@
     </div>
 
     <!-- Kaydol ve form bölümü -->
-    <div class="col-form">
-      <div class="form-container">
-        <div class="logo">
-          <a href="#"><img src="/static/img/Pinterest-Logo.png" alt="" width="100px"></a>
+    <div class="container d-flex justify-content-center">
+      <form method="POST" class="singinbox m-auto border rounded-5">
+        {%csrf_token %}
+
+        <div class="center-container pt-4">
+          <img src="/static/img/pinterest-navbar-logo.png" alt="" class="singinlogo"
+            style="width: 40px; height: 40px" />
         </div>
-        <h1>Pinterest'e Hoşgeldiniz</h1>
-        <p>Bir sonraki tutkunuzu keşfedin.</p>
+        <h2 class="text-center mb-3 pt-2" style="font-size: 25px">
+          Pinterest'e Hoş Geldiniz
+        </h2>
+        <h6 style="font-size: 14px; font-weight: 400" class="text-center">
+          Bir sonraki tutkunuzu keşfedin
+        </h6>
 
-        <form>
-          <label for="">E-posta</label>
-          <input type="email" placeholder="E-posta">
-          <label for="">Parola</label>
-          <input type="password" placeholder="Parola">
-          <label for="">Doğum tarihi</label>
-          <input type="date" placeholder="Doğum Tarihi">
-          <button type="submit">Devam Et</button>
-        </form>
+        <div class="navbar-register-button-side-tittle">
+          <label for="e-mail" class="register-label-one mt-3" style="font-size: small">E-posta</label>
+          <br />
+        </div>
+        <input type="email" name="email" placeholder="E-posta" required
+          class="form-control rounded-4 mx-auto inputpadding" style="width: 250px" /><br />
 
-        <p>VEYA</p>
+        <div class="navbar-register-button-side-tittle">
+          <label for="password" style="font-size: small" class="register-label-one">Parola</label><br />
+        </div>
+        <input type="password" name="sifre" placeholder="Parola oluşturun" required
+          class="form-control rounded-4 mb-4 mx-auto inputpadding" style="width: 250px" />
 
-        <button class="facebook-button">
-          <i class="fa-brands fa-facebook"></i>
-          <span class="button-text">Facebook ile Devam Et</span>
-        </button>
-        <button class="google-button">
-          <i class="fa-brands fa-google"></i>
-          <span class="button-text">Google ile Devam Edin</span>
-        </button>
-        <p class="text">Kaydolarak, hizmet şartlarını ve gizlilik politikasını <br> kabul etmiş olursunuz.</p>
-      </div>
+        <div class="navbar-register-button-side-tittle">
+          <label for="date" style="font-size: small" class="register-label-one">Doğum tarihi
+            <i class="fa-solid fa-circle-info info" style="margin-left: 5px"></i></label><br />
+        </div>
+
+        <input type="date" name="date" required class="form-control rounded-4 py-2 mt-1 mx-auto" style="width: 250px" />
+
+        <div class="navbar-register-button-side">
+          <div class="navbar-register-button-side-button-register-div text-center">
+            <button type="submit" class="navbar-register-btn text-center">
+              Devam Et
+            </button>
+          </div>
+
+          <div class="navbar-register-button-side-span-div">
+            <p class="text-center"><strong>VEYA</strong></p>
+          </div>
+
+          <div class="navbar-register-button-side-button-facebook-div">
+            <button class="navbar-facebook-btn social-btn">
+              <i class="fa-brands fa-facebook social-btn-icon"></i>
+              <div class="social-btn-text">Facebook ile Devam Et</div>
+            </button>
+          </div>
+          <div class="navbar-register-button-side-button-google-div">
+            <button class="navbar-google-btn social-btn">
+              <i class="fa-brands fa-google social-btn-icon" style="margin-left: 15px; width: 10%"></i>
+              <div class="social-btn-text">Google ile devam edin</div>
+            </button>
+
+            <div class="navbar-policy-side">
+              <p class="navbar-policy-side-text-first">
+                Devam ederek Pinterest'in
+                <a href="" class="policy-ahref">Hizmet Şartları</a> koşullarını
+                kabul etmiş ve
+                <a href="" class="policy-ahref">Gizlilik Politikası</a> metnini
+                okuduğunuzu onaylamış olursunuz.
+                <a href="" class="policy-ahref">Veri toplama bildirimi.</a>
+              </p>
+              <p class="navbar-policy-side-text-second text-center mb-2">
+                <span style="font-size: 11px">Zaten üye misiniz?</span><a href=""
+                  class="navbar-policy-side-text-second-a"> Oturum aç</a>
+              </p>
+            </div>
+            <div class="navbar-policy-side-text-businessaccount">
+              <h3>Ücretsiz bir işletme hesabı oluşturun.</h3>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
 
 
 
 
+
+
+
+
+
+
+
+
   </div>
+
+  <!-- Kaydol ve form bölümü -->
 
 
 

@@ -1090,23 +1090,23 @@
 /**** DJANGO OTURUM AÇ FORM CSS DÜZENLENME MEHTAP ****/
 /* Kutu boyutu */
 .singinbox {
-  width: 400px;
+  height: 600px;
+  background-color: white;
+  position: relative;
+  left: 180px;
+  top: 20px;
 }
 .center-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
 }
 /* img logo boyutu */
 .center-container img {
   width: 40px;
   height: 40px;
 }
-.singinboxtext {
-  color: #181313;
-  text-decoration: none;
-}
+
 /**** hr uzunluğu ****/
 .hr-short {
   width: 50%; /* İstediğiniz uzunlukta ayarlayabilirsiniz */
@@ -2367,89 +2367,20 @@ p {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  width: 50%; 
+  width: 70%; 
   padding: 20px;
   z-index: 2;
 }
 
 /*************** form *********/
-.col-form {
-  flex: 0 0 25%;
-  padding: 20px;
-  background-color: #f9f9f9; 
-  border-radius: 30px;
+
+/* Form container'ı */
+.container {
   position: absolute;
-  top: 50%;
-  right: 10%; 
-  transform: translateY(-50%);
-  height: 85vh;
-  z-index: 2;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.col-form h1 {
-  font-size: 20px;
-  font-weight: 60px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.col-form form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.col-form form label{
-  text-align: start;
-}
-.col-form form input {
-  padding: 20px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-}
-.col-form form button {
-  padding: 7px;
-  background-color: #e60023;
-  color: #fff;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 20px;
-  
-}
-.col-form .facebook-button,
-.col-form .google-button {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  padding: 10px;
-  border-radius: 20px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.col-form .facebook-button {
-  background-color: #1877f2;
-  color: #fff;
-  border: none;
-}
-
-.col-form .google-button {
+  left: 65%;
+  transform: translate(-50%, -50%);
   color: black;
-  background-color: #cfe6e8f3; 
-  border: 1px solid blue;
-}
-.col-form .text {
-  font-size: 15px;
-  color: #666; 
+  height: 90px;
+  z-index: 3;
+
 }
