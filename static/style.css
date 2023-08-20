@@ -2277,6 +2277,8 @@ p {
 }
 /* ---fatih indexle ilgili bölm */
 
+
+/* MEHTAP START */
 /***** Mehtap Background section start *****/
 .background {
   display: flex;
@@ -2346,7 +2348,7 @@ p {
 }
 /* Frame içindeki resimler için overlay */
 .frame {
-    position: relative; /* Öğenin içerikli bir konumlandırmaya sahip olması gerekiyor */
+    position: relative;
 }
 .image-repository::before {
     content: "";
@@ -2372,11 +2374,10 @@ p {
   z-index: 2;
 }
 
-/*************** form *********/
-
+ /* MEHTAP BOTTOM SECTİON CSS */
 .col-form {
   flex: 0 0 25%;
-  padding: 10px; /* Önceki değeri 50px'den 20px'ye düşürdük */
+  padding: 10px;
   background-color: #f9f9f9; 
   border-radius: 50px;
   position: absolute;
@@ -2389,8 +2390,7 @@ p {
 .form-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* İçeriği yatayda merkezle */
-  text-align: center;
+  align-items: center;
   width: 350px; 
   height: 540px;
   margin: 0 auto; 
@@ -2401,7 +2401,7 @@ p {
   flex-direction: column;
   text-align: center;
   gap: 2px;
-  margin-top: 10px; /* Yukarı boşluk */
+  margin-top: 10px; 
 }
 .col-form form label {
   width: 250px;
@@ -2410,14 +2410,14 @@ p {
 }
 
 .col-form form input {
-  padding: 8px; /* Daha küçük padding */
+  padding: 8px; 
   border: 1px solid #ccc;
   border-radius: 15px;
   font-size: 12px;
 }
 
 .col-form form button {
-  padding: 7px; /* Daha küçük padding */
+  padding: 7px; 
   font-weight: bold;
   cursor: pointer;
   border-radius: 17px;
@@ -2425,7 +2425,7 @@ p {
 
 .col-form .facebook-button,
 .col-form .google-button {
-  padding: 8px; /* Daha küçük padding */
+  padding: 8px; 
   border-radius: 18px;
   cursor: pointer;
   margin-bottom: 10px;
@@ -2448,3 +2448,32 @@ p {
   background-color: #dee7e7f3; 
   border: 1px solid rgb(204, 204, 224);
 }
+/* En alttaki footer */
+.graybox a ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center; 
+}
+
+.graybox a ul li {
+  font-size: 10px;
+  color: #111111;
+  text-align: center;
+  margin: 0 5px; 
+  position: relative; 
+}
+
+.graybox a ul li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #111111;
+}
+
+
+
