@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/7847ed05c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--  <script>
+      window.onload = () => {
+        const imageparent = document.querySelector(".picture-container");
+        const masonry = new Masonry(imageparent, {
+          itemSelector: ".picture-container-image",
+          columnWidth: ".picture-container-image",
+          gutter: 10,
+        });
+      };
+    </script> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand">
+      <div class="container-fluid">
+        <div class="nav-left-side ms-3">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./img/pinterest-navbar-login-logo.png"
+              style="width: 32px; height: 32px"
+              alt=""
+            />
+          </a>
+          <a href=""><span class="nav-left-text">Pinterest</span></a>
+          <a href="">
+            <span class="nav-left-text-two">Keşfet</span>
+          </a>
+        </div>
+
+        <div class="searchinput-container">
+          <i class="fa-solid fa-magnifying-glass nav-eye-icon-searchbox"></i>
+          <input
+            class="form-control searchinput"
+            type="search"
+            placeholder="Kolay hazırlanan akşam yemekleri, moda vb. aramalar yapın
+"
+            style="background: #fff"
+            aria-label="Search"
+            data-target=".opened-searchbox-container"
+          />
+          <i class="fa-solid fa-circle-xmark cancel-icon"></i>
+        </div>
+        <div class="nav-right-side">
+          <button class="buttonlogin">Oturum Aç</button>
+          <button class="buttonregister">Kaydol</button>
+        </div>
+        <div class="nav-right-dropdown">
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle fs-3"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></button>
+            <ul class="dropdown-menu nav-right-drop">
+              <li>
+                <a class="dropdown-item pb-3" href="#">Pinterest Hakkında</a>
+              </li>
+              <li>
+                <a class="dropdown-item pb-3" href="#"
+                  >Şartları ve gizliliği görün</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Oturum açma isteklerini durdur
+                  <input
+                    class="form-check-input pt-2 ms-2"
+                    type="checkbox"
+                    value=""
+                    aria-label="Checkbox for following text input"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hugething"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="/path/to/masonry.pkgd.min.js"></script> -->
+  </body>
+</html>
