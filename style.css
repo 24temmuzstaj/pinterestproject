@@ -1890,3 +1890,90 @@ body {
   background: unset;
   text-decoration: underline !important;
 }
+
+.disco-upper h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+.mid-pic-row {
+  justify-content: center;
+  padding-top: 40px;
+}
+.mid-pic {
+  width: 414px;
+  margin: 0 -8px;
+}
+.mid-pic img {
+  width: 100%;
+  height: 258px;
+  border-radius: 15px;
+  object-fit: cover;
+  filter: brightness(75%);
+}
+.mid-pic img:hover {
+  filter: brightness(50%);
+  transition: all 0.2s ease-in-out;
+}
+.pic-container {
+  position: relative;
+}
+.pic-container h3 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: white;
+  cursor: pointer;
+}
+.pic-container span {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  background-color: #e2e2e2;
+  border-radius: 30px;
+  color: black;
+  font-weight: 500;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.midtext {
+  text-align: center;
+  padding-top: 60px;
+}
+.hobby-pic-row {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  max-width: 1000px;
+  padding-top: 30px;
+  margin: auto;
+}
+.hobby-pic-row .col {
+  width: 242px;
+  flex: 0;
+  margin-top: 10px;
+  display: block;
+  position: relative;
+}
+.hobby-pic-row img {
+  width: 242px;
+  height: 104px;
+  object-fit: cover;
+  border-radius: 15px;
+  filter: brightness(70%);
+  transition: all 0.2s ease-in-out;
+}
+.hobby-pic-row img:hover {
+  filter: brightness(50%);
+}
+.hobby-pic-row .col > h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
