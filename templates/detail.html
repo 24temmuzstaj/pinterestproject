@@ -1,43 +1,32 @@
-{% extends "base.html" %}
-{% load static % }
-
-{% block title %}{{pin.title}}{%endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block title
+%}{{pin.title}}{%endblock %} {% block content %}
 
 <div class="container">
-    <div class="row justify-content-center mt-3">
-        <div class="col-8">
-            <div class="shadow border rounded p-4 d-flex">
-                <div class="col-6  ">
-                    <div class="image-detay rounded-4 ">
-                        <img src="{{ pin.image.url}}" alt="{{pin.title}}">
-                    </div>
-                </div>
-                <div class="col-6 mx-3">
-                    <h3>{{pin.title}}</h3>
-                    <p>{{pin.description}}</p>
-
-
-
-
-                    <p><b>Ekleyen: </b> {{ pin.user.username }}</p>
-                    {% if pin.profile_image %}
-                    <img src="{{ pin.profile_image.url }}" alt="{{ pin.user.username }}" class="profile-image">
-
-                    {% endif %}
-                </div>
-            </div>
+  <div class="row justify-content-center mt-3">
+    <div class="col-8">
+      <div class="shadow border rounded p-4 d-flex">
+        <div class="col-6">
+          <div class="image-detay rounded-4">
+            <img src="{{ pin.image.url}}" alt="{{pin.title}}" />
+          </div>
         </div>
+        <div class="col-6 mx-3">
+          <h3>{{pin.title}}</h3>
+          <p>{{pin.description}}</p>
+
+          <p><b>Ekleyen: </b> {{ pin.user.username }}</p>
+          {% if pin.profile_image %}
+          <img
+            src="{{ pin.profile_image.url }}"
+            alt="{{ pin.user.username }}"
+            class="profile-image"
+          />
+
+          {% endif %}
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
-
-
-
-{% endblock content %}
-
-
-{% block script %}
-
-{% endblock %}
+{% endblock content %} {% block script %} {% endblock %}
