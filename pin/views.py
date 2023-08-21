@@ -7,7 +7,10 @@ from django.contrib.auth.decorators import login_required
 
 
 def index(request):
-    pins = Pins.objects.all()  # Değişken adını 'pins' olarak düzeltiyoruz
+    pins = Pins.objects.all()  
+    if request.GET.get('search'):
+        search = request.GET.get('search')
+        pins = Pins.objects.filter( title__icontains=search)
     return render(request, 'index.html', {'pins': pins})
 
 def pins(request,pinId):

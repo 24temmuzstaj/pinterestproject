@@ -5,7 +5,7 @@ for (let i = 0; i < 144; i++) {
     const element = document.createElement("div");
     element.classList.add("masonry-item");
     const image = document.createElement("img");
-    image.src = "/static/img/" + i + ".jpg";
+    image.src ="/static/img/" + i + ".jpg";
     const profile = document.createElement("span");
     profile.classList.add("profile-item");
     const icon = document.createElement("i");

@@ -24,12 +24,16 @@
                     </ul>
                 </li>
             </ul>
-            <div class="searchinput-container">
-                <i class="fa-solid fa-magnifying-glass nav-eye-icon-searchbox"></i>
-                <input class="form-control searchinput" type="search" placeholder="Ara" aria-label="Search"
-                    data-target=".opened-searchbox-container" />
-                <i class="fa-solid fa-circle-xmark cancel-icon"></i>
-            </div>
+
+            <form action="/" method="GET" class="searchinput-container" action="/">
+                <i class=" fa-solid fa-magnifying-glass nav-eye-icon-searchbox"></i>
+                <input class="form-control searchinput" name="search" type="search" placeholder="Ara"
+                    aria-label="Search" data-target=".opened-searchbox-container" />
+            </form>
+          
+
+
+
             <li class="nav-item">
                 <button class="nav-link update-opener" href="#" data-target=".update-container">
                     <i data-target=".update-container"
@@ -43,10 +47,12 @@
                 </button>
             </li>
             <li class="nav-item">
-                
-                <a class="nav-link " href="{% url 'view_profile' %}"><img style="width: 30px; height: 30px; border-radius: 50%;" src="{{ user_profile.profile_image.url }}" alt="Profile Picture">
-                    
-                
+
+                <a class="nav-link " href="{% url 'view_profile' %}"><img
+                        style="width: 30px; height: 30px; border-radius: 50%;"
+                        src="{{ user_profile.profile_image.url }}" alt="Profile Picture">
+
+
             </li>
             <li class="nav-item">
                 <a class="nav-link boxy account-opener"><i data-target=".account-container"
@@ -126,7 +132,8 @@
     </div>
     <div class="account-upper py-2">
         <div class="image-container ps-2">
-            <img style="width: 60px; border-radius: 50%;" src="{{ user_profile.profile_image.url }}" alt="Profile Picture">
+            <img style="width: 60px; border-radius: 50%;" src="{{ user_profile.profile_image.url }}"
+                alt="Profile Picture">
         </div>
         <div class="text-container">
             <h6>{{ request.user.username }}</h6>
@@ -141,7 +148,7 @@
     </div>
     <div class="account-lower">
         <p class="p-2 pb-2 pt-3 headings">Daha fazla seçenek</p>
-        <h5><a href="{% url 'edit_profile' %}"  class="p-2" >Ayarlar </a></h5>
+        <h5><a href="{% url 'edit_profile' %}" class="p-2">Ayarlar </a></h5>
         <h5 class="p-2">Anasayfa akışınızı ayarlayın</h5>
         <h5 class="p-2">Windows uygulamasını yükle</h5>
         <h5 class="p-2">Gizlilik haklarınız</h5>
@@ -150,7 +157,7 @@
         <h5 class="p-2">Gizlilik politikasına göz at</h5>
         <h5 class="p-2">Beta test kullanıcısı olun</h5>
         <h5><a href="/user/logout/" class="p-2 mb-0">Çıkış yap</a></h5>
-       
+
     </div>
 </div>
 <div class="update-container p-2 me-2 mb-3" data-target="update-container" onclick="event.stopPropagation()">
@@ -358,6 +365,3 @@
 <script src="https:/code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
 <script src="/static/script2.js"></script>
-
-
-
