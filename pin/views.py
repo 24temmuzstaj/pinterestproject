@@ -13,7 +13,7 @@ def index(request):
         search = request.GET.get('search')
         pins = Pins.objects.filter( 
             Q(title__icontains=search)|
-            Q(Kategori__title__icontains=search)|
+            Q(kategori__title__icontains=search)|
             Q(description__icontains=search)
         )
     
@@ -36,14 +36,14 @@ def create(request):
         title = request.POST['title']  
         description = request.POST['description']  
         image = request.FILES['image']       
-        profile_image = request.FILES.get('profile_image')  # Profil resmini alma
+    
         
         pin = Pins.objects.create(
             user=request.user,
             title=title, 
             description=description,
             image=image,
-            profile_image=profile_image,  # Profil resmini kaydetme
+          
         )
         print("pin oluşturuldu")
         return redirect('index') 
@@ -53,7 +53,6 @@ def create(request):
 
     return render(request, 'create.html',context)
 
-  
 
 
 

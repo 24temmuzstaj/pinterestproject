@@ -52,7 +52,8 @@
 
 <div class="container-fluid">
   <div class="picture-container">
-    {% if pins|length > 0 %} {% for pin in pins %}
+    {% if pins|length > 0 %} 
+    {% for pin in pins %}
 
     <div class="cardseri">
       <a href="{% url 'detay' pin.id %}" class="cardhref">
@@ -66,7 +67,8 @@
       </a>
     </div>
 
-    {% endfor %} {% else %}
+    {% endfor %} 
+    {% else %}
     <p>bu konuda pin bulunamadı</p>
     {% endif %}
   </div>
