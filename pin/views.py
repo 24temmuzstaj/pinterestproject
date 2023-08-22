@@ -27,31 +27,29 @@ def pins(request,pinId):
     return render(request, 'detail.html', context)
 
 
-
-
 @login_required
 def create(request):
-    kategoriler=Kategori.objects.all()
+    kategoriler = Kategori.objects.all()
     if request.method == 'POST':
         title = request.POST['title']  
         description = request.POST['description']  
-        image = request.FILES['image']       
+        image = request.FILES['image']   
+        kategori_id = request.POST.get('kategori')  
     
-        
         pin = Pins.objects.create(
             user=request.user,
+            kategori_id=kategori_id,  
             title=title, 
             description=description,
             image=image,
-          
         )
         print("pin oluşturuldu")
         return redirect('index') 
-    context={
+    context = {
         'kategoriler': kategoriler
     }
+    return render(request, 'create.html', context)
 
-    return render(request, 'create.html',context)
 
 
 
