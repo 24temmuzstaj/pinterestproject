@@ -2482,12 +2482,31 @@ p {
   height: 1px;
   background-color: #111111;
 }
-/** YUKARI ÇIK BUTONU **/
+/********* YUKARI ÇIK BUTONU ********/
 #upButton {
+  position: fixed;
+  bottom: 450px;
+  right: 600px;
+  background-color: #9c054c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#upButton span {
+  font-size: 24px;
+}
+/************** AŞAĞI ÇIK BUTONU *********/
+#downButton {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #b61905;
+  background-color: #3498db;
   color: white;
   border: none;
   border-radius: 50%;
@@ -2499,8 +2518,7 @@ p {
   justify-content: center;
 }
 
-#upButton span {
+#downButton span {
   font-size: 24px;
 }
-
 

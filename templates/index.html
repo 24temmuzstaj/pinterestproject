@@ -97,6 +97,7 @@
 
 
 
+
     <!--------- 1.Slider ------->
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -132,6 +133,9 @@
             <img class="rounded-4" src="/static/img/sliderone/7.jpeg" alt="" />
           </div>
         </div>
+        <button id="downButton" onclick="goToNextSection()">
+          <span>&#9660;</span>
+        </button>
       </div>
 
       <!--------- 2.Slider ------->
@@ -386,7 +390,6 @@
         <div class="col-1 frame">
           <img class="rounded-4" src="/static/img/section/7section.jpg" id="section7" alt="" />
         </div>
-        <!-- 2.satır -->
       </div>
       <!-- 2.satır -->
       <div class="row">
@@ -476,7 +479,7 @@
         </button>
         <p class="text">Kaydolarak, hizmet şartlarını ve gizlilik politikasını <br> kabul etmiş olursunuz.</p>
         <button id="upButton" onclick="goToTop()">
-          <span>&#9650;</span>
+          <i class="fa-solid fa-angle-up" style="color: #ffffff;"></i>
       </div>
 
     </div>
@@ -525,7 +528,8 @@
   <script src="https:/code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
 
-  <script src="/static/scriptyellow.js"></script>
+  <script src="/static/scriptdown.js"></script>
+  <script src="/static/scriptup.js"></script>
   <script src="/static/script.js"></script>
   <script src="/static/script2.js"></script>
 
