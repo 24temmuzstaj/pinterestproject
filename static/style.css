@@ -2482,5 +2482,25 @@ p {
   height: 1px;
   background-color: #111111;
 }
+/** YUKARI ÇIK BUTONU **/
+#upButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #b61905;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#upButton span {
+  font-size: 24px;
+}
 
 
