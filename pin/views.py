@@ -4,14 +4,20 @@ from django.shortcuts import render, redirect
 from .models import *
 from .models import Pins
 from django.contrib.auth.decorators import login_required
-
+from django.db.models import Q
 
 def index(request):
     pins = Pins.objects.all()  
+    search = ""
     if request.GET.get('search'):
         search = request.GET.get('search')
-        pins = Pins.objects.filter( title__icontains=search)
-    return render(request, 'index.html', {'pins': pins})
+        pins = Pins.objects.filter( 
+            Q(title__icontains=search)|
+            Q(Kategori__title__icontains=search)|
+            Q(description__icontains=search)
+        )
+    
+    return render(request, 'index.html', {'pins': pins,'search':search})
 
 def pins(request,pinId):
     pinim=Pins.objects.get(id=pinId)
@@ -25,6 +31,7 @@ def pins(request,pinId):
 
 @login_required
 def create(request):
+    kategoriler=Kategori.objects.all()
     if request.method == 'POST':
         title = request.POST['title']  
         description = request.POST['description']  
@@ -39,11 +46,14 @@ def create(request):
             profile_image=profile_image,  # Profil resmini kaydetme
         )
         print("pin oluşturuldu")
-        return redirect('index')
-    return render(request, 'create.html')
+        return redirect('index') 
+    context={
+        'kategoriler': kategoriler
+    }
 
+    return render(request, 'create.html',context)
 
-
+  
 
 
 

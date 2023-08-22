@@ -52,6 +52,7 @@
 
 <div class="container-fluid">
   <div class="picture-container">
+    {% if pins|length > 0 %}
     {% for pin in pins %}
 
     <div class="cardseri">
@@ -65,6 +66,9 @@
     </div>
 
     {% endfor %}
+    {% else %}
+    <p>bu konuda pin bulunamadı</p>
+    {% endif %}
   </div>
 </div>
 
