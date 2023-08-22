@@ -2291,3 +2291,46 @@ p {
   width: 100%; /* Resmin genişliği %100 olur, konteynerin genişliğine sığar */
   height: auto; /* Yüksekliği otomatik olarak ayarlanır */
 }
+
+/* ! pinin üzerine gelecek kaydet butonunun css kodları */
+
+.pin-button {
+  position: absolute;
+  padding: 10px 12px;
+  margin-top: 10px;
+  right: 6%;
+  background-color: #e60023;
+  border-radius: 50px;
+  color: white;
+  font-weight: 500;
+  display: none;
+  border: none;
+}
+.pin-button:hover {
+  background: #ad081b;
+}
+.imageandtext {
+  position: relative;
+}
+.pinimg:hover {
+  filter: brightness(0.5) !important;
+  transition: all 0.2s ease-in-out;
+}
+.imageandtext:hover .pin-button {
+  display: inline;
+}
+.pin-left-button {
+  position: absolute;
+  padding: 10px;
+  margin-top: 10px;
+  left: 2%;
+  color: white;
+  border-radius: 50px;
+  font-weight: 500;
+  display: none;
+  border: none;
+  background-color: unset;
+}
+.imageandtext:hover .pin-left-button {
+  display: unset;
+}

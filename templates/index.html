@@ -52,26 +52,25 @@
 
 <div class="container-fluid">
   <div class="picture-container">
-    {% if pins|length > 0 %}
-    {% for pin in pins %}
+    {% if pins|length > 0 %} {% for pin in pins %}
 
     <div class="cardseri">
-      <a href="{% url 'detay' pin.id %}">
-        <img
-          src="{{ pin.image.url }}"
-          alt="{{ pin.title }}"
-          class="w-100 rounded-4"
-        />
+      <a href="{% url 'detay' pin.id %}" class="cardhref">
+        <div class="imageandtext">
+          <img
+            src="{{ pin.image.url }}"
+            alt="{{ pin.title }}"
+            class="w-100 rounded-4 pinimg"
+          />
+        </div>
       </a>
     </div>
 
-    {% endfor %}
-    {% else %}
+    {% endfor %} {% else %}
     <p>bu konuda pin bulunamadı</p>
     {% endif %}
   </div>
 </div>
-
 {% else %}
 
 <div id="carouselExampleCaptions" class="carousel slide border">
@@ -469,5 +468,5 @@
     </div>
   </div>
 </div>
-
+<script src="/static/pin.js"></script>
 {% endif %} {% endblock content %} {% block script %} {% endblock %}
