@@ -9,16 +9,11 @@
     <input class="input-save" type="text" placeholder="Ara" />
   </div>
   <div class="save-middle">
-    <span style="font-size: 12px"
-      >Hızlı bir şekilde kaydedip daha sonra düzenleyin</span
-    >
+    <span style="font-size: 12px">Hızlı bir şekilde kaydedip daha sonra düzenleyin</span>
     <div class="save-middle-content">
       <div class="clock-container">
         <div class="clock-content">
-          <i
-            class="fa-solid fa-clock-rotate-left clock"
-            style="font-size: 24px"
-          ></i>
+          <i class="fa-solid fa-clock-rotate-left clock" style="font-size: 24px"></i>
         </div>
 
         <span style="font-size: 16px; font-weight: 600">Profil</span>
@@ -28,16 +23,12 @@
 
     <span style="font-size: 12px; display: block pb-4">Panoya kaydet</span>
     <div class="middle-content">
-      <img
-        style="
+      <img style="
           width: 48px;
           height: 48px;
           object-fit: cover;
           border-radius: 10px;
-        "
-        src="/static/img/forpin.jpg"
-        alt=""
-      />
+        " src="/static/img/forpin.jpg" alt="" />
       <span style="font-size: 16px; font-weight: 600">Pinlerim</span>
       <a href="#" class="profile-save-button ms-auto me-3">Kaydet</a>
     </div>
@@ -52,26 +43,23 @@
 
 <div class="container-fluid">
   <div class="picture-container">
-    {% if pins|length > 0 %} 
+    {% if pins|length > 0 %}
     {% for pin in pins %}
 
     <div class="cardseri">
       <a href="{% url 'detay' pin.id %}" class="cardhref">
         <div class="imageandtext">
-          <img
-            src="{{ pin.image.url }}"
-            alt="{{ pin.title }}"
-            class="w-100 rounded-4 pinimg"
-          />
+          <img src="{{ pin.image.url }}" alt="{{ pin.title }}" class="w-100 rounded-4 pinimg" />
         </div>
       </a>
     </div>
 
-    {% endfor %} 
+    {% endfor %}
     {% else %}
-    <p>bu konuda pin bulunamadı</p>
+
     {% endif %}
   </div>
+  <h3 class="text-center">bu konuda pin bulunamadı</h3>
 </div>
 {% else %}
 
@@ -80,47 +68,21 @@
     <p class="still m-auto fw-bold">Sıradaki fikri bulun</p>
   </div>
   <div class="carousel-indicators">
-    <button
-      type="button"
-      data-bs-slide-to="0"
-      data-bs-target="#carouselExampleCaptions"
-      id="btnzero"
-      class="btnpoint active"
-      aria-label="Slide 1"
-    ></button>
-    <button
-      type="button"
-      class="btnpoint"
-      data-bs-target="#carouselExampleCaptions"
-      id="btnone"
-      data-bs-slide-to="1"
-      aria-label="Slide 2"
-    ></button>
-    <button
-      type="button"
-      class="btnpoint"
-      data-bs-target="#carouselExampleCaptions"
-      id="btntwo"
-      data-bs-slide-to="2"
-      aria-label="Slide 3"
-    ></button>
-    <button
-      type="button"
-      class="btnpoint"
-      data-bs-target="#carouselExampleCaptions"
-      id="btntree"
-      data-bs-slide-to="3"
-      aria-label="Slide 4"
-    ></button>
+    <button type="button" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" id="btnzero"
+      class="btnpoint active" aria-label="Slide 1"></button>
+    <button type="button" class="btnpoint" data-bs-target="#carouselExampleCaptions" id="btnone" data-bs-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" class="btnpoint" data-bs-target="#carouselExampleCaptions" id="btntwo" data-bs-slide-to="2"
+      aria-label="Slide 3"></button>
+    <button type="button" class="btnpoint" data-bs-target="#carouselExampleCaptions" id="btntree" data-bs-slide-to="3"
+      aria-label="Slide 4"></button>
   </div>
 
   <!--------- 1.Slider ------->
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="notes-container">
-        <span class="note-content m-auto text textone"
-          >hafta içi akşam yemeği fikri</span
-        >
+        <span class="note-content m-auto text textone">hafta içi akşam yemeği fikri</span>
       </div>
       <div class="row">
         <div class="col-2 frame" id="pngone">
@@ -208,27 +170,15 @@
         </div>
 
         <div class="col-2 frame" id="pngthreey">
-          <img
-            class="rounded-4"
-            src="/static/img/sliderthree/three.jpg"
-            alt=""
-          />
+          <img class="rounded-4" src="/static/img/sliderthree/three.jpg" alt="" />
         </div>
 
         <div class="col-2 frame" id="pngfoury">
-          <img
-            class="rounded-4"
-            src="/static/img/sliderthree/four.jpg"
-            alt=""
-          />
+          <img class="rounded-4" src="/static/img/sliderthree/four.jpg" alt="" />
         </div>
 
         <div class="col-1 frame" id="pngfivey">
-          <img
-            class="rounded-4"
-            src="/static/img/sliderthree/five.jpg"
-            alt=""
-          />
+          <img class="rounded-4" src="/static/img/sliderthree/five.jpg" alt="" />
         </div>
 
         <div class="col-2 frame" id="pngsixy">
@@ -236,11 +186,7 @@
         </div>
 
         <div class="col-1 frame" id="pngseveny">
-          <img
-            class="rounded-4"
-            src="/static/img/sliderthree/seven.jpg"
-            alt=""
-          />
+          <img class="rounded-4" src="/static/img/sliderthree/seven.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -261,11 +207,7 @@
         </div>
 
         <div class="col-2 frame" id="pngthreez">
-          <img
-            class="rounded-4"
-            src="/static/img/sliderfour/three.jpg"
-            alt=""
-          />
+          <img class="rounded-4" src="/static/img/sliderfour/three.jpg" alt="" />
         </div>
 
         <div class="col-2 frame" id="pngfourz">
@@ -281,11 +223,7 @@
         </div>
 
         <div class="col-1 frame" id="pngsevenz">
-          <img
-            class="rounded-4"
-            src="/static/img/sliderfour/seven.jpg"
-            alt=""
-          />
+          <img class="rounded-4" src="/static/img/sliderfour/seven.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -293,37 +231,16 @@
 </div>
 
 <!-- index- search sarı bölüm-->
-<div
-  class="index-search container-fluid d-flex justify-content-center align-items-center sgt"
->
+<div class="index-search container-fluid d-flex justify-content-center align-items-center sgt">
   <div class="row">
     <!-- search img & button-->
     <div class="col-md-6 my-5">
       <div class="img-fotogen">
-        <img
-          src="/static/img/topRight-d0230035.png"
-          alt="Lorem Image"
-          class="w-75 rounded"
-        />
-        <img
-          src="/static/img/center-77497603.png"
-          alt="Lorem Image"
-          class="rounded"
-        />
-        <img
-          src="/static/img/left-511a9304.png"
-          alt="Lorem Image"
-          class="w-75 rounded"
-        />
-        <img
-          src="/static/img/right-88044782.png"
-          alt="Lorem Image"
-          class="rounded"
-        />
-        <button
-          type="button"
-          class="rounded-pill img-fotogen-text border-0 px-4 py-4"
-        >
+        <img src="/static/img/topRight-d0230035.png" alt="Lorem Image" class="w-75 rounded" />
+        <img src="/static/img/center-77497603.png" alt="Lorem Image" class="rounded" />
+        <img src="/static/img/left-511a9304.png" alt="Lorem Image" class="w-75 rounded" />
+        <img src="/static/img/right-88044782.png" alt="Lorem Image" class="rounded" />
+        <button type="button" class="rounded-pill img-fotogen-text border-0 px-4 py-4">
           <i class="bi bi-search px-1 font-weight-bold"></i> Kolay tavuk yemeği
         </button>
       </div>
@@ -357,10 +274,7 @@
           En Beğendiğiniz fikirlere daha sonra dönmek için kaydedin
         </div>
         <div class="text-center my-2 m-auto">
-          <button
-            type="button"
-            class="rounded-pill bfk3 border-0 mgt px-4 py-2"
-          >
+          <button type="button" class="rounded-pill bfk3 border-0 mgt px-4 py-2">
             Keşfet
           </button>
         </div>
@@ -370,46 +284,14 @@
     <div class="col-md-6 my-5">
       <div class="sck23 d-flex justify-content-center align-items-center">
         <div class="img-fotogen2">
-          <img
-            src="/static/img/future-home-vibes-55a673b9.png"
-            class="rounded"
-            alt="Fotoğraf 1"
-          />
-          <img
-            src="/static/img/future-home1-f4037b6b.png"
-            class="rounded"
-            alt="Fotoğraf 2"
-          />
-          <img
-            src="/static/img/future-home2-c70a8738.png"
-            class="rounded"
-            alt="Fotoğraf 3"
-          />
-          <img
-            src="/static/img/future-home3-ac09e50f.png"
-            class="rounded"
-            alt="Fotoğraf 4"
-          />
-          <img
-            src="/static/img/scandinavian-bedroom-917ad89c.png"
-            class="rounded"
-            alt="Fotoğraf 5"
-          />
-          <img
-            src="/static/img/deck-of-dreams-fb527bf1.png"
-            class="rounded"
-            alt="Fotoğraf 6"
-          />
-          <img
-            src="/static/img/serve-my-drinks-263547ea.png"
-            class="rounded"
-            alt="Fotoğraf 7"
-          />
-          <img
-            src="/static/img/bathroom-upgrade-48ebb8fc.png"
-            class=""
-            alt="Fotoğraf 8"
-          />
+          <img src="/static/img/future-home-vibes-55a673b9.png" class="rounded" alt="Fotoğraf 1" />
+          <img src="/static/img/future-home1-f4037b6b.png" class="rounded" alt="Fotoğraf 2" />
+          <img src="/static/img/future-home2-c70a8738.png" class="rounded" alt="Fotoğraf 3" />
+          <img src="/static/img/future-home3-ac09e50f.png" class="rounded" alt="Fotoğraf 4" />
+          <img src="/static/img/scandinavian-bedroom-917ad89c.png" class="rounded" alt="Fotoğraf 5" />
+          <img src="/static/img/deck-of-dreams-fb527bf1.png" class="rounded" alt="Fotoğraf 6" />
+          <img src="/static/img/serve-my-drinks-263547ea.png" class="rounded" alt="Fotoğraf 7" />
+          <img src="/static/img/bathroom-upgrade-48ebb8fc.png" class="" alt="Fotoğraf 8" />
           <p class="img-forogen2-text">Aşk merdiveni ev temaları</p>
           <p class="img-forogen2-text2 p-3">İskandinav yatak odam</p>
           <p class="img-forogen2-text3 p-3">Hayallerimin güvertesi</p>
@@ -429,21 +311,9 @@
     <div class="col-md-6 my-5">
       <div class="sck23 d-flex justify-content-center align-items-center">
         <div class="img-fotogen3">
-          <img
-            src="/static/img/shop-bd0c8a04.png"
-            class="rounded"
-            alt="Fotoğraf 1"
-          />
-          <img
-            src="/static/img/creator-pin-img-491ebb56.png"
-            class="rounded"
-            alt="Fotoğraf 2"
-          />
-          <img
-            src="/static/img/creator-avatar-d7a05622.png"
-            class="rounded-5"
-            alt="Fotoğraf 3"
-          />
+          <img src="/static/img/shop-bd0c8a04.png" class="rounded" alt="Fotoğraf 1" />
+          <img src="/static/img/creator-pin-img-491ebb56.png" class="rounded" alt="Fotoğraf 2" />
+          <img src="/static/img/creator-avatar-d7a05622.png" class="rounded-5" alt="Fotoğraf 3" />
           <p class="img-forogen3-text">Scout the City 56,7 bin takipçi</p>
         </div>
       </div>
@@ -459,10 +329,7 @@
           şeyler ve fikirler keşfetmek.
         </div>
         <div class="text-center my-2 m-auto">
-          <button
-            type="button"
-            class="rounded-pill gdy3 border-0 pgt px-4 py-2"
-          >
+          <button type="button" class="rounded-pill gdy3 border-0 pgt px-4 py-2">
             Keşfet
           </button>
         </div>
