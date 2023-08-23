@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 <title>{% block title %} Üye ol {% endblock %}</title>
 <div class="container d-flex justify-content-center">
-  <form method="POST" class="singinbox m-auto border rounded-5">
+  <form method="POST" class="singinbox m-auto border rounded-5 mt-5">
     {%csrf_token %}
 
     <div class="center-container">
