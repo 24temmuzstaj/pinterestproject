@@ -1127,7 +1127,7 @@
   width: 50%; /* İstediğiniz uzunlukta ayarlayabilirsiniz */
   margin: 0 auto;
 }
-.form-control {
+.ipt {
   width: 250px !important;
   margin: auto;
   border-radius: 20px;

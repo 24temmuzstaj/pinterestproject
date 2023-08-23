@@ -6,3 +6,5 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     bio = models.TextField(blank=True)
     profile_image = models.ImageField(upload_to='profile_images/', default='default.png')
+    
+  
