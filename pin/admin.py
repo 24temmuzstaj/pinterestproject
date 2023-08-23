@@ -3,3 +3,4 @@ from .models import *
 
 admin.site.register(Kategori)
 admin.site.register(Pins)
+admin.site.register(Comment)

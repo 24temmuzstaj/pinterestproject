@@ -5,6 +5,33 @@ from .models import *
 from .models import Pins
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
+from .forms import CommentForm
+
+def pins(request, pinId):
+    pin = Pins.objects.get(id=pinId)
+    comments = Comment.objects.filter(pin=pin)
+    
+    if request.method == 'POST':
+        comment_form = CommentForm(request.POST)
+        print(comment_form.errors)
+        if comment_form.is_valid():
+            print("Form is valid")
+            new_comment = comment_form.save(commit=False)
+            new_comment.pin = pin  
+            new_comment.user = request.user
+            new_comment.save()
+            comment_form = CommentForm()
+
+
+    context = {
+        'pin': pin,
+        'comments': comments,
+        'comment_form': comment_form,
+    }
+    return render(request, 'detail.html', context)
+
+
+
 
 def index(request):
     pins = Pins.objects.all()  
