@@ -747,7 +747,7 @@
 /* NAVBAR OTURUM AÇ BUTONUNA TIKLANDIĞINDA ÇIKAN BÖLÜMÜN CSS KODLARI */
 .navbar-login-side {
   background: #fff;
-  width: 450px;
+  width: 398px;
   height: 620px;
   margin: auto;
   margin-top: 100px;
@@ -856,7 +856,7 @@
   text-decoration: underline;
 }
 .navbar-login-button-side {
-  width: 450px;
+  width: 398px;
   margin: auto;
 }
 .navbar-login-button-side .navbar-login-btn {
@@ -1034,10 +1034,10 @@
   text-decoration: underline;
 }
 .navbar-register-button-side {
-  width: 450px;
+  width: 398px;
   margin: auto;
 }
-.navbar-register-button-side .navbar-register-btn {
+.navbar-register-btn {
   background: rgb(230, 0, 35);
   color: #fff;
   width: 250px;
@@ -1046,6 +1046,7 @@
   font-weight: 700;
   margin-top: 20px;
   border: none;
+  margin: 0 auto;
 }
 .navbar-register-button-side .navbar-register-btn:hover {
   background: #bb061b;
@@ -1126,10 +1127,11 @@
   width: 50%; /* İstediğiniz uzunlukta ayarlayabilirsiniz */
   margin: 0 auto;
 }
-/* .form-control {
+.form-control {
   width: 250px !important;
   margin: auto;
-} */
+  border-radius: 20px;
+}
 
 .eye {
   position: absolute;
@@ -2027,6 +2029,9 @@ p {
 .login-label {
   margin-left: 87.5px;
 }
+.register-label {
+  margin-left: 87.5px;
+}
 .parola-remember {
   margin-left: 80px;
 }
@@ -2164,7 +2169,7 @@ input[type="password"]::-ms-clear {
 /* NAVBAR KAYDOL BUTONUNA TIKLANDIĞINDA ÇIKAN BÖLÜMÜN CSS KODLARI */
 .navbar-register-side {
   background: #fff;
-  width: 450px;
+  width: 400px;
   margin: auto;
   margin-top: 70px;
   text-align: center;
@@ -2247,8 +2252,11 @@ input[type="password"]::-ms-clear {
   text-decoration: underline;
 }
 .navbar-register-button-side {
-  width: 450px;
+  width: 398px;
   margin: auto;
+}
+.navbar-register-button-side-button-register-div {
+  text-align: center;
 }
 .navbar-register-button-side .navbar-register-btn {
   background: rgb(230, 0, 35);
