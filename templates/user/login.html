@@ -1,84 +1,126 @@
-
-{% extends "base.html" %}
-{% load static %}
-
-{% block title %}Giriş {%endblock %} 
-
+{% extends "base.html" %} {% load static %} {% block title %}Giriş {%endblock %}
 {% block content %}
 
 <div class="container d-flex justify-content-center">
-    <form method="POST" class="singinbox m-auto border rounded-5">
-        {%csrf_token %}
+  <form method="POST" class="singinbox m-auto border rounded-5">
+    {%csrf_token %}
 
-        <div class="center-container">
-            <img src="/static/img/pinterest-navbar-logo.png" alt="" class="singinlogo" />
+    <div class="center-container">
+      <img
+        src="/static/img/pinterest-navbar-logo.png"
+        alt=""
+        class="singinlogo"
+      />
+    </div>
+
+    <h2 class="text-center mb-3" style="font-size: 25px">
+      Pinterest'e Hoş Geldiniz
+    </h2>
+
+    <div class="navbar-register-button-side-tittle">
+      <label for="e-mail" class="login-label" style="font-size: small"
+        >E-posta</label
+      >
+
+      <input
+        type="email"
+        name="email"
+        placeholder="E-posta"
+        required
+        class="form-control rounded-4 py-2 ipt"
+      />
+    </div>
+
+    <div class="navbar-register-button-side-tittle">
+      <label for="e-mail" class="login-label" style="font-size: small"
+        >Parola</label
+      >
+
+      <div class="iptandeye">
+        <input
+          type="password"
+          name="sifre"
+          id="password"
+          placeholder="Parola"
+          required
+          class="form-control rounded-4 py-2 mb-1 ipt"
+        />
+        <div class="icon" id="showButton">
+          <i class="fa-solid fa-eye-slash eye" style="color: #000000"></i>
         </div>
+      </div>
+    </div>
 
-        <h2 class="text-center mb-3" style="font-size:25px;">Pinterest'e Hoş Geldiniz</h2>
+    <a
+      class="navbar-login-button-side-tittle parola-remember"
+      style="font-size: 13px; color: black; font-weight: 600"
+      href=""
+      >Parolanızı mı Unuttunuz?</a
+    >
 
-        <div class="navbar-register-button-side-tittle">
-            <label for="e-mail" class="mt-2 me-2 mb-1" style="font-size: small;">E-posta</label> <br>
-        </div>
-        <input type="email" name="email" placeholder="E-posta" required class="form-control rounded-4 py-2 ml-2" /><br>
+    <div class="navbar-login-button-side">
+      <div class="navbar-login-button-side-button-login-div text-center">
+        <button type="submit" class="navbar-login-btn mb-2">Devam Et</button>
+      </div>
+    </div>
 
-        
+    <p class="text-center"><strong>VEYA</strong></p>
 
-        <div class="input-container">
-            <div class="navbar-register-button-side-tittle">
-                <label for="password" style="font-size: small;" class=" me-2 mb-1 ">Parola</label><br>
-            </div>
-            <div class="icon" id="showButton">
-                <i class="fa-solid fa-eye-slash" style="color: #000000;"></i>
-            </div>
-            <input type="password" name="sifre" id="password" placeholder="Parola oluşturun" required
-                class="form-control rounded-4 py-2 mb-2" />
-        </div>
+    <div class="navbar-login-button-side-button-facebook-div">
+      <button class="navbar-facebook-btn social-btn">
+        <i class="fa-brands fa-facebook social-btn-icon"></i>
+        <div class="social-btn-text">Facebook ile Devam Et</div>
+      </button>
+    </div>
+    <div class="navbar-login-button-side-button-google-div">
+      <button class="navbar-google-btn social-btn">
+        <i
+          class="fa-brands fa-google social-btn-icon"
+          style="margin-left: 15px; width: 10%"
+        ></i>
+        <div class="social-btn-text">Google ile devam edin</div>
+      </button>
+    </div>
 
-        <a class="navbar-register-button-side-tittle" style="font-size: 13px; color: black; font-weight:600; "
-            href="">Parolanızı mı
-            Unuttunuz?</a>
+    <div
+      class="navbar-login-button-side-button-text-div mt-3 text-center mx-4"
+      style="font-size: 11px"
+    >
+      <p>
+        Devam ederek Pinterest'in
+        <strong><a class="singinboxtext" href="">Hizmet Şartları</a> </strong
+        >koşullarını kabul etmiş ve
+        <strong
+          ><a class="singinboxtext" href="">Gizlilik Politikası</a></strong
+        >
+        metnini okuduğunuzu onaylamış olursunuz.
+        <strong
+          ><a class="singinboxtext" href="">Veri Toplama Birimi.</a></strong
+        >
+      </p>
+    </div>
 
-        <div class="navbar-register-button-side">
-            <div class="navbar-register-button-side-button-register-div">
-                <button type="submit" class="navbar-register-btn mb-2 ">Devam Et</button>
-            </div>
-        </div>
+    <div class="forborder"></div>
 
-        <p class="text-center"><strong>VEYA</strong></p>
-
-        <div class="navbar-register-button-side-button-facebook-div">
-            <button class="navbar-facebook-btn social-btn">
-                <i class="fa-brands fa-facebook social-btn-icon"></i>
-                <div class="social-btn-text">Facebook ile Devam Et</div>
-            </button>
-        </div>
-        <div class="navbar-register-button-side-button-google-div">
-            <button class="navbar-google-btn social-btn">
-                <i class="fa-brands fa-google social-btn-icon" style="margin-left: 15px; width: 10%"></i>
-                <div class="social-btn-text">Google ile devam edin</div>
-            </button>
-        </div>
-
-        <div class="navbar-register-button-side-button-text-div mt-3 text-center  mx-4" style="font-size: 11px;"">
-            <p>Devam ederek Pinterest'in <strong><a class=" singinboxtext" href="">Hizmet Şartları</a>
-            </strong>koşullarını kabul etmiş ve
-            <strong><a class=" singinboxtext" href="">Gizlilik Politikası</a></strong> metnini okuduğunuzu onaylamış
-            olursunuz. <strong><a class="singinboxtext" href="">Veri Toplama Birimi.</a></strong>
-            </p>
-        </div>
-
-        <hr class="hr-short">
-
-        <div class=" navbar-register-button-side-button-text-div mt-2 text-center  mx-4" style=" font-size: 11px;">
-            <p>
-                <strong><a class="singinboxtext" href="">Hala Pinterest'te değil misiniz?
-                        Kaydolun</a></strong>İşletme
-                misiniz? <strong><a class="singinboxtext" href="">Buradan Başlayın!</a></strong>
-            </p>
-        </div>
-
-
-    </form>
+    <div
+      class="navbar-register-button-side-button-text-div mt-2 text-center mx-4"
+      style="font-size: 11px"
+    >
+      <p>
+        <strong
+          ><a class="signinboxtextfirst" href="" style="color: black"
+            >Hala Pinterest'te değil misiniz? Kaydolun</a
+          ></strong
+        >
+        <br />
+        İşletme misiniz?
+        <strong class="pb-3 pt-2 d-inline-block"
+          ><a class="singinboxtext" href="">Buradan Başlayın!</a></strong
+        >
+      </p>
+    </div>
+  </form>
 </div>
-{%endblock content %}
-{% block script %} <script src="/static/script_parola.js"></script> {% endblock %}
+{%endblock content %} {% block script %}
+<script src="/static/script_parola.js"></script>
+{% endblock %}
