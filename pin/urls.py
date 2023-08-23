@@ -1,6 +1,14 @@
 from django.urls import path
-from.views  import *
+from pin.views import *
+from . import views
+from django.conf.urls.static import static
+from django.conf import settings
 urlpatterns =[
-    path('', index, name='index')
+    path('', views.index, name='index'),
+    path('pin-detay/<int:pinId>/', views.pins, name='detay'),
+    path('create/',views.create, name='create'),
 
 ]
+
+
+

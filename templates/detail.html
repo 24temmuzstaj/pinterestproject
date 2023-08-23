@@ -1,0 +1,54 @@
+{% extends "base.html" %} {% load static %} {% block title %} {{pin.title}}
+{%endblock %} {% block content %}
+
+<div class="container">
+  <div class="row justify-content-center mt-3">
+    <div class="col-8">
+      <div class="shadow border rounded p-4 d-flex">
+        <div class="col-6">
+          <div class="image-detay rounded-4">
+            <img src="{{ pin.image.url}}" alt="{{pin.title}}" />
+          </div>
+        </div>
+        <div class="col-6 mx-3">
+          <h3>{{pin.title}}</h3>
+          <p>{{pin.description}}</p>
+          <small><i>{{pin.kategori.title}}</i></small>
+          <p><b>Ekleyen: </b> {{ pin.user.username }}</p>
+
+          <div class="mt-4">
+            <h4>Yorumlar</h4>
+            <ul class="list-group">
+              {% for comment in comments %}
+              <li class="list-group-item">
+                  <strong>{{ comment.user.username }}</strong> - {{ comment.text }}
+                  <small class="float-right">{{ comment.created_at|date:"d/m/Y H:i" }}</small>
+              </li>
+              {% empty %}
+              <li class="list-group-item">Henüz yorum yok.</li>
+              {% endfor %}
+          </ul>
+          
+          </div>
+
+          <div class="mt-4">
+            <h4>Yorum Ekle</h4>
+            <form method="post">
+              {% csrf_token %}
+              <div class="form-group">
+                <label for="comment">Yorumunuz:</label>
+                <textarea name="text" id="comment" class="form-control" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mt-2">Gönder</button>
+            </form>
+          </div>
+        
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
