@@ -14,21 +14,21 @@
       src="https://kit.fontawesome.com/7847ed05c8.js"
       crossorigin="anonymous"
     ></script>
-    <!--  <script>
+    <script>
       window.onload = () => {
         const imageparent = document.querySelector(".picture-container");
         const masonry = new Masonry(imageparent, {
-          itemSelector: ".picture-container-image",
-          columnWidth: ".picture-container-image",
+          itemSelector: ".masonry-item",
+          columnWidth: ".masonry-item",
           gutter: 10,
         });
       };
-    </script> -->
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand">
-    <div class="container-fluid">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
             src="./img/pinterest-navbar-login-logo.png"
@@ -106,8 +106,8 @@
             ></a>
           </li>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
     <div class="hugething"></div>
     <div class="respo">
       <div class="opened-searchbox-container" onclick="event.stopPropagation()">
@@ -494,8 +494,8 @@
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="/path/to/masonry.pkgd.min.js"></script> -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="/path/to/masonry.pkgd.min.js"></script>
     <script src="signedIn.js"></script>
   </body>
 </html>
