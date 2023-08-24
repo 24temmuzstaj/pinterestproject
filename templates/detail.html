@@ -15,40 +15,32 @@
           <p>{{pin.description}}</p>
           <small><i>{{pin.kategori.title}}</i></small>
           <p><b>Ekleyen: </b> {{ pin.user.username }}</p>
-
-          <div class="mt-4">
-            <h4>Yorumlar</h4>
-            <ul class="list-group">
-              {% for comment in comments %}
-              <li class="list-group-item">
-                  <strong>{{ comment.user.username }}</strong> - {{ comment.text }}
-                  <small class="float-right">{{ comment.created_at|date:"d/m/Y H:i" }}</small>
-              </li>
-              {% empty %}
-              <li class="list-group-item">Henüz yorum yok.</li>
-              {% endfor %}
+          <h2>Yorumlar</h2>
+          <ul>
+            {% for comment in comments %}
+            <li>{{ comment.text }} - {{ comment.user.username }}</li>
+            {% empty %}
+            <li>Henüz yorum bulunmuyor.</li>
+            {% endfor %}
           </ul>
+
           
-          </div>
 
-          <div class="mt-4">
-            <h4>Yorum Ekle</h4>
-            <form method="post">
-              {% csrf_token %}
-              <div class="form-group">
-                <label for="comment">Yorumunuz:</label>
-                <textarea name="text" id="comment" class="form-control" rows="3" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary mt-2">Gönder</button>
-            </form>
-          </div>
+          <form method="post" action="{% url 'add_comment' pins_id=pin.id %}">
+            {% csrf_token %}
+            {{ comment_form.text.label_tag }}<br>
+            {{ comment_form.text }}
+            <button type="submit">Yorum Yap</button>
+        </form>
         
-
-
         </div>
+
+
+  
       </div>
     </div>
   </div>
+</div>
 </div>
 
 {% endblock content %}

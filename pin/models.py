@@ -18,11 +18,9 @@ class Pins(models.Model):
     def __str__(self):
         return self.title
 
-class Comment(models.Model):
-    pin = models.ForeignKey(Pins, on_delete=models.CASCADE,  null=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
-    text = models.TextField( null=True)
-    created_at = models.DateTimeField(auto_now_add=True, null=True)
 
-    def __str__(self):
-        return self.text
+
+
+
+
+

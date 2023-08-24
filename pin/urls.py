@@ -7,8 +7,12 @@ urlpatterns =[
     path('', views.index, name='index'),
     path('pin-detay/<int:pinId>/', views.pins, name='detay'),
     path('create/',views.create, name='create'),
+    path('pins/<int:pinsId>/', views.pins_detay, name='pins_detay'),
+    
+
 
 ]
+
 
 
 

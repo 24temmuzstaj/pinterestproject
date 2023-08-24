@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'pin',
     'user',
     'profil',
+    'comments'
 
 ]
 

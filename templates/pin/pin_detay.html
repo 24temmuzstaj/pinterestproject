@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>{{ pin.title }}</h2>
+            <p>{{ pin.description }}</p>
+            <p><i>{{ pin.kategori.title }}</i></p>
+            <p><b>Ekleyen:</b> {{ pin.user.username }}</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Yorumlar</h2>
+            <ul>
+                {% for comment in comments %}
+                    <li>{{ comment.text }} - {{ comment.user.username }}</li>
+                {% empty %}
+                    <li>Henüz yorum bulunmuyor.</li>
+                {% endfor %}
+            </ul>
+            <h2>Yorum Yap</h2>
+            <form method="post" action="{% url 'add_comment' pins_id=pin.id %}">
+                {% csrf_token %}
+                {{ comment_form.as_p }}
+                <button type="submit">Yorum Yap</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

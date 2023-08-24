@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import *
 from .models import Pins
 from django.contrib.auth.decorators import login_required
@@ -26,7 +26,6 @@ def index(request):
         context["user_profile"]=user_profile
     return render(request, 'index.html', context )
 
-
 def pins(request,pinId):
     user_profile, created = UserProfile.objects.get_or_create(user=request.user)
   
@@ -36,7 +35,6 @@ def pins(request,pinId):
         'user_profile': user_profile
     }
     return render(request, 'detail.html', context)
-
 
 @login_required
 def create(request):
@@ -64,13 +62,18 @@ def create(request):
     
     return render(request, 'create.html', context)
 
-
-
-
-
 def show_pins(request):
     user_profile, created = UserProfile.objects.get_or_create(user=request.user)
   
     pins = Pins.objects.all()
     return render(request, 'detail.html', {'pins': pins, 'user_profile': user_profile})
 
+
+
+from django.shortcuts import render
+from .models import Pins
+
+def pins_detay(request, pinsId):
+    pin = Pins.objects.get(id=pinsId)
+    comments = pins.comment_set.all()
+    return render(request, 'pin/pin_detay.html', {'pin': pin, 'comments': comments}) 
