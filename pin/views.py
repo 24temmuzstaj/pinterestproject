@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from .forms import CommentForm
 from profil.models import UserProfile
+
 def pins(request, pinId):
     
     pin = Pins.objects.get(id=pinId)
@@ -34,7 +35,8 @@ def pins(request, pinId):
 
 
 def index(request):
-    user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+    print(request.user.is_authenticated, "asda")
+     
     pins = Pins.objects.all()  
     search = ""
     if request.GET.get('search'):
@@ -44,10 +46,15 @@ def index(request):
             Q(kategori__title__icontains=search)|
             Q(description__icontains=search)
         )
-    
-    return render(request, 'index.html', {'pins': pins,'search':search, 'user_profile': user_profile})
+    context = {'pins': pins,'search':search}
+    if request.user.is_authenticated:
+        user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+        context["user_profile"]=user_profile
+    return render(request, 'index.html', context )
+
 
 def pins(request,pinId):
+
     pinim=Pins.objects.get(id=pinId)
     context={
         'pin': pinim
@@ -57,6 +64,7 @@ def pins(request,pinId):
 
 @login_required
 def create(request):
+    user_profile, created = UserProfile.objects.get_or_create(user=request.user)
     kategoriler = Kategori.objects.all()
     if request.method == 'POST':
         title = request.POST['title']  
@@ -74,8 +82,10 @@ def create(request):
         print("pin oluşturuldu")
         return redirect('index') 
     context = {
-        'kategoriler': kategoriler
+        'kategoriler': kategoriler,
+        'user_profile': user_profile
     }
+    
     return render(request, 'create.html', context)
 
 
