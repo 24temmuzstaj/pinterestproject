@@ -1,27 +1,45 @@
-
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Profil {%endblock %} 
-    
-    {% block content %}
-    <div class="container-fluid d-flex justify-content-center">
-        <div class="row align-items-center">
+{% block title %}Profil {%endblock %}
 
-            <div class="col-md-6 my-5 text-center">
-                <h1>Profil Güncelleme</h1>
-                <form method="post" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit">Değiştir</button>
-                </form>
+{% block content %}
 
-            </div>
+<body>
+    <div class="list">
+        <div class="list-item">
+            <a href="#">Profili Düzenle</a>
         </div>
+        <div class="list-item">
+            <a href="#">Kişisel Bilgiler</a>
+        </div>
+        <div class="list-item">
+            <a href="#">Hesap Yönetimi</a>
+        </div>
+        <div class="list-item">
+            <a href="#">Ana sayfa akışınızı ayarlayın</a>
+        </div>
+        <div class="list-item">
+            <a href="#">Üzerinize aldığınız hesaplar</a>
+        </div>
+        <div class="list-item">
+            <a href="#">Sosyal izinler</a>
+        </div>
+        <div class="list-item">
+            <a href="#">Bildirimler</a>
+        </div>
+        <div class="list-item">
+            <a href="#">Gizlilik ve veriler</a>
+        </div>
+        <div class="list-item">
+            <a href="#">Güvenlik ve Oturum açma</a>
+        </div>
+        <div class="list-item">
+            <a href="#">Markalı içerikler</a>
+        </div>
+
     </div>
-   
-    
-    {%endblock content %}
+</body>
 
 
-
+{%endblock content %}
