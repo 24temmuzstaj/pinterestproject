@@ -1,13 +1,12 @@
-
-
 from django.shortcuts import render, redirect
 from .models import *
 from .models import Pins
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from .forms import CommentForm
-
+from profil.models import UserProfile
 def pins(request, pinId):
+    
     pin = Pins.objects.get(id=pinId)
     comments = Comment.objects.filter(pin=pin)
     
@@ -27,13 +26,15 @@ def pins(request, pinId):
         'pin': pin,
         'comments': comments,
         'comment_form': comment_form,
+        
+    
     }
     return render(request, 'detail.html', context)
 
 
 
-
 def index(request):
+    user_profile, created = UserProfile.objects.get_or_create(user=request.user)
     pins = Pins.objects.all()  
     search = ""
     if request.GET.get('search'):
@@ -44,7 +45,7 @@ def index(request):
             Q(description__icontains=search)
         )
     
-    return render(request, 'index.html', {'pins': pins,'search':search})
+    return render(request, 'index.html', {'pins': pins,'search':search, 'user_profile': user_profile})
 
 def pins(request,pinId):
     pinim=Pins.objects.get(id=pinId)

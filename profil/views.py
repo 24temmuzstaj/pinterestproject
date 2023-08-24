@@ -20,7 +20,7 @@ def edit_profile(request):
     else:
         form = UserProfileForm(instance=user_profile)
     
-    return render(request, 'profile/edit_profile.html', {'form': form})
+    return render(request, 'profile/edit_profile.html', {'form': form, 'user_profile': user_profile})
 
 def view_profile(request):
     user_profile, created = UserProfile.objects.get_or_create(user=request.user)
