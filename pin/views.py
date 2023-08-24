@@ -3,40 +3,14 @@ from .models import *
 from .models import Pins
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from .forms import CommentForm
 from profil.models import UserProfile
 
-def pins(request, pinId):
-    
-    pin = Pins.objects.get(id=pinId)
-    comments = Comment.objects.filter(pin=pin)
-    
-    if request.method == 'POST':
-        comment_form = CommentForm(request.POST)
-        print(comment_form.errors)
-        if comment_form.is_valid():
-            print("Form is valid")
-            new_comment = comment_form.save(commit=False)
-            new_comment.pin = pin  
-            new_comment.user = request.user
-            new_comment.save()
-            comment_form = CommentForm()
-
-
-    context = {
-        'pin': pin,
-        'comments': comments,
-        'comment_form': comment_form,
-        
-    
-    }
-    return render(request, 'detail.html', context)
 
 
 
 def index(request):
     print(request.user.is_authenticated, "asda")
-     
+    
     pins = Pins.objects.all()  
     search = ""
     if request.GET.get('search'):
@@ -54,10 +28,12 @@ def index(request):
 
 
 def pins(request,pinId):
-
+    user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+  
     pinim=Pins.objects.get(id=pinId)
     context={
-        'pin': pinim
+        'pin': pinim,
+        'user_profile': user_profile
     }
     return render(request, 'detail.html', context)
 
@@ -93,6 +69,8 @@ def create(request):
 
 
 def show_pins(request):
+    user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+  
     pins = Pins.objects.all()
-    return render(request, 'detail.html', {'pins': pins})
+    return render(request, 'detail.html', {'pins': pins, 'user_profile': user_profile})
 
