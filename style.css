@@ -19,11 +19,13 @@
 .nav-item .mainpage {
   background-color: black;
   border-radius: 24px;
+  width: 100px;
 }
 .mainpage > span {
   color: #fff;
   font-weight: 600;
   font-size: 14px;
+  padding: 10px 7px;
 }
 .create {
   color: #111111;
@@ -80,13 +82,15 @@
   z-index: 1111111;
   position: fixed;
   left: 50%;
-  top: 43.5%;
+  top: 415px;
   margin-left: 45px;
   transform: translate(-50%, -50%);
   background: #fff;
   display: none;
 }
-
+.respo {
+  position: relative;
+}
 .hugething {
   position: fixed;
   width: 100%;
