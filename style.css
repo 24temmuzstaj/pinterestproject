@@ -67,17 +67,17 @@
 .nav-eye-icon-searchbox {
   position: absolute;
   top: 50%;
-  left: 1.7%;
+  left: 20px;
   transform: translate(-50%, -50%);
 }
 
 /* INPUT'A TIKLANDIĞINDA AÇILAN BÖLÜMÜN CSS KODLARI */
 .opened-searchbox-container {
   width: 100%;
-  height: 580px;
+  height: 510px;
   max-height: 80vh;
   /*  margin: 0px auto; */
-  padding: 40px 35px;
+  padding: 20px 35px;
   padding-right: 50px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
@@ -88,6 +88,7 @@
   display: none;
   z-index: 1111111111;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .opened-searchbox-container::-webkit-scrollbar-thumb {
   background-color: #8b8989;
@@ -108,9 +109,7 @@
   /* border-start-end-radius: 50px;
   border-end-end-radius: 50px; */
 }
-.respo {
-  position: relative;
-}
+
 .hugething {
   position: fixed;
   width: 100%;
@@ -134,17 +133,30 @@
   display: flex;
   width: 100%;
 } */
+.suggestion-container {
+  display: flex;
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
 .searchbox-suggestion-content {
+  display: flex;
+  flex: 1;
+  max-width: 350px;
   background-color: #e9e9e9;
   border-radius: 20px;
+  overflow: hidden;
+  margin-top: 15px;
+  align-items: center;
 }
 .searchbox-suggestion-content img {
   object-fit: cover;
-  width: 150px;
+  min-width: 150px;
   height: 150px;
   border-start-start-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
 .searchbox-popular-container {
   width: 100%;
   display: flex;
@@ -153,12 +165,16 @@
 }
 
 .searchbox-popular-content {
-  width: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 350px;
+  align-items: center;
   background-color: #e9e9e9;
   border-radius: 20px;
+  padding-right: 10px;
 }
 .searchbox-popular-content img {
-  width: 150px;
+  min-width: 150px !important;
   height: 150px;
   object-fit: cover;
   border-start-start-radius: 10px;
@@ -1866,6 +1882,12 @@ body {
 
 /* RESPONSIVE BÖLÜMÜ */
 /* SEARCHBOX İÇERİĞİNİN RESPONSİVE CSS BÖLÜMÜ */
+@media screen and (max-width: 768px) {
+  .suggestion-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media screen and (max-width: 992px) {
   .searchbox-popular-container {
     display: grid;
