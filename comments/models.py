@@ -7,5 +7,5 @@ class Comment(models.Model):
     text = models.TextField(null=True, )
     created_at = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
+    def __str__(self): 
         return self.text

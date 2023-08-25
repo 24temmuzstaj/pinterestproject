@@ -18,22 +18,21 @@
           <h2>Yorumlar</h2>
           <ul>
             {% for comment in comments %}
-            <li>{{ comment.text }} - {{ comment.user.username }}</li>
+            <li>{{ comment.text }} --- {{ comment.user.username }}</li>
+            <hr>
             {% empty %}
             <li>Henüz yorum bulunmuyor.</li>
             {% endfor %}
           </ul>
 
-          
-
-          <form method="post" action="{% url 'add_comment' pins_id=pin.id %}">
+          <form method="post">
             {% csrf_token %}
             {{ comment_form.text.label_tag }}<br>
             {{ comment_form.text }}
             <button type="submit">Yorum Yap</button>
         </form>
+
         
-        </div>
 
 
   

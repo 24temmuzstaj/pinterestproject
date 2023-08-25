@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import CommentForm
 from pin.models import Pins
-
+from profil.models import UserProfile
 
 
 def add_comment(request, pins_id):
@@ -19,4 +19,4 @@ def add_comment(request, pins_id):
         form = CommentForm()
     return render(request, 'comments/add_comment.html', {'pins': pins, 'comment_form': form})
 
- 
+

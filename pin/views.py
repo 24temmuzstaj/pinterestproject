@@ -4,7 +4,7 @@ from .models import Pins
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from profil.models import UserProfile
-
+from comments.forms import CommentForm
 
 
 
@@ -26,15 +26,36 @@ def index(request):
         context["user_profile"]=user_profile
     return render(request, 'index.html', context )
 
-def pins(request,pinId):
+
+
+
+
+from django.http import HttpResponseRedirect
+
+def pins(request, pinId):
     user_profile, created = UserProfile.objects.get_or_create(user=request.user)
-  
-    pinim=Pins.objects.get(id=pinId)
-    context={
-        'pin': pinim,
-        'user_profile': user_profile
+    pin = get_object_or_404(Pins, id=pinId)
+    comments = pin.comments.all()
+
+    if request.method == 'POST':
+        comment_form = CommentForm(request.POST)
+        if comment_form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.pins = pin
+            comment.user = request.user
+            comment.save()
+            return HttpResponseRedirect(request.path)  # Redirect to the same page to avoid form resubmission on refresh
+    else:
+        comment_form = CommentForm()
+
+    context = {
+        'pin': pin,
+        'user_profile': user_profile,
+        'comments': comments,
+        'comment_form': comment_form
     }
     return render(request, 'detail.html', context)
+
 
 @login_required
 def create(request):
@@ -64,7 +85,6 @@ def create(request):
 
 def show_pins(request):
     user_profile, created = UserProfile.objects.get_or_create(user=request.user)
-  
     pins = Pins.objects.all()
     return render(request, 'detail.html', {'pins': pins, 'user_profile': user_profile})
 
@@ -75,5 +95,7 @@ from .models import Pins
 
 def pins_detay(request, pinsId):
     pin = Pins.objects.get(id=pinsId)
-    comments = pins.comment_set.all()
-    return render(request, 'pin/pin_detay.html', {'pin': pin, 'comments': comments}) 
+    comments = pin.comments.all()
+    comment_form = CommentForm()
+    return render(request, 'pin/pin_detay.html', {'pin': pin, 'comments': comments, 'comment_form': CommentForm()}) 
+
