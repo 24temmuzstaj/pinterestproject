@@ -389,13 +389,13 @@ p {
 /* FOTOĞRAFLARIN CSS KODLARI */
 .picture-container {
   column-count: 7;
-  column-gap: 15px;
-  row-gap: 15px;
-  padding: 0 70px;
+  min-width: 236px;
+  overflow: hidden;
+  padding: 0px 70px 0px 50px;
 }
 .masonry-item {
-  display: inline-block;
-  width: 236px;
+  width: 100%;
+  margin-left: 20px;
   position: relative;
 }
 /* .masonry-item:hover {
@@ -403,7 +403,6 @@ p {
 } */
 .masonry-item img {
   margin-top: 15px;
-  height: 100%;
   width: 100%;
   display: flex;
   border-radius: 20px;
@@ -413,7 +412,7 @@ p {
 }
 .profile-item {
   position: absolute;
-  top: 35px;
+  top: 20px;
   left: 17.5px;
   color: white;
   font-weight: 500;
@@ -425,7 +424,7 @@ p {
 }
 .profile-icon {
   position: absolute;
-  top: 39px;
+  top: 25px;
   left: 60px;
   color: white;
   display: none;
@@ -436,7 +435,7 @@ p {
 }
 .save {
   position: absolute;
-  top: 25px;
+  top: 10px;
   right: 17.5px;
   background-color: #e60023;
   color: white;
@@ -1917,5 +1916,21 @@ body {
   .searchbox-popular-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .picture-container {
+    column-count: 5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .picture-container {
+    column-count: 3;
+  }
+}
+@media screen and (max-width: 500px) {
+  .picture-container {
+    column-count: 1;
   }
 }
