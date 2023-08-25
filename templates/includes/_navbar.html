@@ -10,7 +10,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
+        <li class="nav-item" style="width: 90px">
           <a class="nav-link active mainpage" href="/"
             ><span>Ana Sayfa</span></a
           >
@@ -40,18 +40,105 @@
       </ul>
 
       <form action="/" method="GET" class="searchinput-container">
-        <i class="fa-solid fa-magnifying-glass nav-eye-icon-searchbox"></i>
-        <input
-          class="form-control searchinput"
-          name="search"
-          type="search"
-          placeholder="Ara"
-          aria-label="Search"
-          data-target=".opened-searchbox-container"
-          value="{{search}}"
-        />
-      </form>
+        <div class="searchinput-container">
+          <i class="fa-solid fa-magnifying-glass nav-eye-icon-searchbox"></i>
+          <input
+            class="form-control searchinput"
+            name="search"
+            type="search"
+            placeholder="Ara"
+            aria-label="Search"
+            data-target=".opened-searchbox-container"
+            value="{{search}}"
+          />
 
+          <div
+            class="opened-searchbox-container"
+            onclick="event.stopPropagation()"
+          >
+            <div class="row">
+              <div class="col-12"><h5 class="pt-2">Son Aramalar</h5></div>
+              <div class="col-12">
+                <div class="searchbox-opening-links pt-2">
+                  <p>Vegan yemek tarifleri <i class="fa-solid fa-xmark"></i></p>
+                  <p>Kapkek tarifleri <i class="fa-solid fa-xmark"></i></p>
+                  <p>35mm <i class="fa-solid fa-xmark"></i></p>
+                  <p>Aesthetic <i class="fa-solid fa-xmark"></i></p>
+                  <p>Omlet tarifleri <i class="fa-solid fa-xmark"></i></p>
+                </div>
+              </div>
+            </div>
+            <h5 class="pt-2">Sizin için fikirler</h5>
+            <div class="suggestion-container">
+              <div class="searchbox-suggestion-content">
+                <img src="/static/img/searchboxsuggestion1.jpg" alt="" />
+                <span>Ticari fotoğrafçılık</span>
+              </div>
+
+              <div class="searchbox-suggestion-content contenttwo">
+                <img src="/static/img/searchboxsuggestion2.jpg" alt="" />
+                <span>Fotoğraf kolajı</span>
+              </div>
+            </div>
+
+            <div class="row searchbox-lower">
+              <div class="col-12">
+                <h5 class="pt-2">Pinterest'te popüler</h5>
+              </div>
+            </div>
+            <div class="searchbox-popular-container pt-2">
+              <div class="">
+                <div class="searchbox-popular-content">
+                  <img src="/static/img/searchboximg1.jpg" alt="" />
+                  <span>Dövme fotoğrafları</span>
+                </div>
+              </div>
+              <div class="">
+                <div class="searchbox-popular-content">
+                  <img src="/static/img/searchboximg2.jpg" alt="" />
+                  <span>Atatürk fotoğrafları</span>
+                </div>
+              </div>
+              <div class="">
+                <div class="searchbox-popular-content">
+                  <img src="/static/img/searchboximg3.jpg" alt="" />
+                  <span>Kadın fotoğrafları</span>
+                </div>
+              </div>
+              <div class="">
+                <div class="searchbox-popular-content">
+                  <img src="/static/img/searchboximg4.jpg" alt="" />
+                  <span>Tuval resimleri</span>
+                </div>
+              </div>
+              <div class="">
+                <div class="searchbox-popular-content">
+                  <img src="/static/img/searchboximg5.jpg" alt="" />
+                  <span>Sanat resimleri</span>
+                </div>
+              </div>
+              <div class="">
+                <div class="searchbox-popular-content">
+                  <img src="/static/img/searchboximg6.jpg" alt="" />
+                  <span>Deniz fotoğrafları</span>
+                </div>
+              </div>
+              <div class="">
+                <div class="searchbox-popular-content">
+                  <img src="/static/img/searchboximg7.jpg" alt="" />
+                  <span>Kadın fotoğrafları</span>
+                </div>
+              </div>
+              <div class="">
+                <div class="searchbox-popular-content">
+                  <img src="/static/img/searchboximg8.jpg" alt="" />
+                  <span>Çiçek fotoğrafları</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
       <li class="nav-item">
         <button
           class="nav-link update-opener"
