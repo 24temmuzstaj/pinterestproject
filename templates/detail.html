@@ -1,10 +1,10 @@
 {% extends "base.html" %} {% load static %} {% block title %} {{pin.title}}
 {%endblock %} {% block content %}
 <link rel="stylesheet" href="/static/style.css" />
-<div class="container">
-  <div class="row justify-content-center mt-3">
-    <div class="col-8">
-      <div class="shadow border rounded p-4 d-flex">
+<div class="container detail-container">
+  <div class="row justify-content-center mt-3 rounded-3">
+    <div class="col-8 rounded-4">
+      <div class="shadow border p-4 d-flex">
         <div class="col-6">
           <div class="image-detay rounded-4">
             <img src="{{ pin.image.url}}" alt="{{pin.title}}" />
