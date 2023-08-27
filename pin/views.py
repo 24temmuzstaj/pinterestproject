@@ -37,6 +37,8 @@ def pins(request, pinId):
     pin = get_object_or_404(Pins, id=pinId)
     comments = pin.comments.all()
 
+    share_owner_profile = pin.user.userprofile
+
     if request.method == 'POST':
         comment_form = CommentForm(request.POST)
         if comment_form.is_valid():
@@ -44,7 +46,7 @@ def pins(request, pinId):
             comment.pins = pin
             comment.user = request.user
             comment.save()
-            return HttpResponseRedirect(request.path)  # Redirect to the same page to avoid form resubmission on refresh
+            return HttpResponseRedirect(request.path) 
     else:
         comment_form = CommentForm()
 
@@ -52,7 +54,8 @@ def pins(request, pinId):
         'pin': pin,
         'user_profile': user_profile,
         'comments': comments,
-        'comment_form': comment_form
+        'comment_form': comment_form,
+        'share_owner_profile': share_owner_profile,  
     }
     return render(request, 'detail.html', context)
 

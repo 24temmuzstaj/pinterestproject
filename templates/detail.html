@@ -46,7 +46,7 @@
                   border-radius: 50%;
                   object-fit: cover;
                 "
-                src="{{ user_profile.profile_image.url }}"
+                src="{{  share_owner_profile.profile_image.url }}"
                 alt="Profile Picture"
               />
               {{ pin.user.username }}
@@ -69,7 +69,7 @@
                       border-radius: 50%;
                       object-fit: cover;
                     "
-                    src="{{ user_profile.profile_image.url }}"
+                    src="{{ comment.user.userprofile.profile_image.url }}"
                     alt="Profile Picture"
                   />
                 </p>
