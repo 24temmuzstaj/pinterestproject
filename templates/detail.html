@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% load static %} {% block title %} {{pin.title}}
 {%endblock %} {% block content %}
-
+<link rel="stylesheet" href="/static/style.css" />
 <div class="container">
   <div class="row justify-content-center mt-3">
     <div class="col-8">
@@ -10,36 +10,108 @@
             <img src="{{ pin.image.url}}" alt="{{pin.title}}" />
           </div>
         </div>
-        <div class="col-6 mx-3">
-          <h3>{{pin.title}}</h3>
-          <p>{{pin.description}}</p>
-          <small><i>{{pin.kategori.title}}</i></small>
-          <p><b>Ekleyen: </b> {{ pin.user.username }}</p>
-          <h2>Yorumlar</h2>
-          <ul>
+        <div class="col-6 mx-3 comment-side-wrapper">
+          <div class="row">
+            <div class="col-6 comment-upper-left">
+              <div class="comment-upper-icons">
+                <button>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </button>
+                <button>
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </button>
+                <button><i class="fa-solid fa-link"></i></button>
+              </div>
+            </div>
+
+            <div class="col-6 comment-upper-right">
+              <div class="comment-upper-buttons">
+                <button style="font-weight: 500">
+                  Pinlerim
+                  <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <button class="save-btn">Kaydet</button>
+              </div>
+            </div>
+          </div>
+          <div class="comment-content mt-4">
+            <h3>{{pin.title}}</h3>
+            <p>{{pin.description}}</p>
+            <small><i>{{pin.kategori.title}}</i></small>
+            <p>
+              <img
+                style="
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                "
+                src="{{ user_profile.profile_image.url }}"
+                alt="Profile Picture"
+              />
+              {{ pin.user.username }}
+            </p>
+            <button class="commentbtn">
+              Yorumlar
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+          </div>
+
+          <ul class="commentlistul">
             {% for comment in comments %}
-            <li>{{ comment.text }} --- {{ comment.user.username }}</li>
-            <hr>
+            <div class="commentwrapper d-flex">
+              <li class="commentlist d-flex pt-4">
+                <p>
+                  <img
+                    style="
+                      width: 30px;
+                      height: 30px;
+                      border-radius: 50%;
+                      object-fit: cover;
+                    "
+                    src="{{ user_profile.profile_image.url }}"
+                    alt="Profile Picture"
+                  />
+                </p>
+                <div class="commentlistdata">
+                  <span style="font-weight: bold" class="ps-3"
+                    >{{ comment.user.username }}</span
+                  >
+                  <span class="ps-2" style="word-break: break-all"
+                    >{{ comment.text }}</span
+                  >
+                </div>
+              </li>
+            </div>
+
             {% empty %}
-            <li>Henüz yorum bulunmuyor.</li>
+            <li>Ne düşünüyorsunuz?</li>
             {% endfor %}
           </ul>
 
           <form method="post">
             {% csrf_token %}
-            {{ comment_form.text.label_tag }}<br>
-            {{ comment_form.text }}
-            <button type="submit">Yorum Yap</button>
-        </form>
-
-        
-
-
-  
+            <div class="comment-text-wrapper">
+              <img
+                style="
+                  width: 34px;
+                  height: 34px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                "
+                src="{{ user_profile.profile_image.url }}"
+                alt="Profile Picture"
+              />
+              {{ comment_form.text }}
+              <button type="submit" class="commentbtnlast">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 
 {% endblock content %}
