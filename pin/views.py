@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from profil.models import UserProfile
 from comments.forms import CommentForm
+from datetime import datetime
 
 
 
@@ -38,6 +39,7 @@ def pins(request, pinId):
     comments = pin.comments.all()
 
     share_owner_profile = pin.user.userprofile
+    now = datetime.now() 
 
     if request.method == 'POST':
         comment_form = CommentForm(request.POST)
@@ -56,6 +58,7 @@ def pins(request, pinId):
         'comments': comments,
         'comment_form': comment_form,
         'share_owner_profile': share_owner_profile,  
+        'now': now,
     }
     return render(request, 'detail.html', context)
 

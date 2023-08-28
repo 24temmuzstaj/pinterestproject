@@ -80,6 +80,8 @@
                   <span class="ps-2" style="word-break: break-all"
                     >{{ comment.text }}</span
                   >
+                  <small class="ps-2">{{  comment.created_at|timesince:now }} </small>
+     
                 </div>
               </li>
             </div>
