@@ -1,12 +1,12 @@
 {% extends "base.html" %} {% load static %} {% block title %} {{pin.title}}
 {%endblock %} {% block content %}
 <link rel="stylesheet" href="/static/style.css" />
-<div class="container detail-container">
-  <div class="row justify-content-center mt-3 rounded-3">
-    <div class="col-8 rounded-4">
+<div class="container-fluid detail-container">
+  <div class="justify-content-center mt-3 rounded-3">
+    <div class="row wrapper grid">
       <div class="shadow border p-4 d-flex">
-        <div class="col-6">
-          <div class="image-detay rounded-4">
+        <div class="col-6 comment-image-side">
+          <div class="image-detay">
             <img src="{{ pin.image.url}}" alt="{{pin.title}}" />
           </div>
         </div>
@@ -53,7 +53,9 @@
             </p>
             <button class="commentbtn">
               Yorumlar
-              <i class="fa-solid fa-angle-down"></i>
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-angle-down comment-close"></i>
+              </div>
             </button>
           </div>
 
@@ -85,7 +87,7 @@
             </div>
 
             {% empty %}
-            <li>Ne düşünüyorsunuz?</li>
+            <li>Henüz yorum yok! Sohbeti başlatmak için bir tane ekleyin.</li>
             {% endfor %}
           </ul>
 
@@ -113,5 +115,6 @@
     </div>
   </div>
 </div>
+<script src="/static/comment.js"></script>
 
 {% endblock content %}
