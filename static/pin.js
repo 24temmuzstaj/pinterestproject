@@ -4,6 +4,7 @@ const pinfunc = () => {
     const txt = document.createElement("button");
     txt.className = "pin-button";
     txt.innerHTML = "Kaydet";
+    $(txt).attr("href", "{% URL 'profile' %}");
     const pintxt = document.createElement("button");
     pintxt.className = "pin-left-button";
     pintxt.innerHTML = "Detay";
