@@ -34,3 +34,18 @@ pinsave.forEach((element) => {
     $(pinsave).toggleClass("showwy");
   });
 });
+
+const pin_create = document.querySelector(".header-input");
+const pin_create_header_border = document.querySelector(
+  ".create-pin-header-border"
+);
+document.addEventListener("click", (e) => {
+  const clickedTarget = e.target;
+  if (clickedTarget == pin_create) {
+    $(pin_create_header_border).css("border-top", "1.5px solid #0076d3");
+  }
+  if (clickedTarget != pin_create) {
+    $(pin_create_header_border).css("border-top", "1.5px solid #878787");
+  }
+});
+ondragover

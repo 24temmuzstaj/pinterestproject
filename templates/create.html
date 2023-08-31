@@ -48,24 +48,35 @@
         </div>
       </div>
       <div class="row">
-        <div class="create-file-wrapper col-6">
-          <div class="create-border"></div>
-          <div class="create-upload-file">
-            <div class="create-upload-content">
-              <i
-                class="fa-solid fa-circle-arrow-up mx-auto mb-2"
-                style="font-size: 24px"
-              ></i>
-              <span class="d-block text-center upload-span"
-                >Yüklemek için sürükleyip bırakın veya tıklayın</span
-              >
-              <span class="upload-suggestion"
-                >Öneri: Yüksek kaliteli .jpg formatında 20 MB'den küçük dosyalar
-                kullanın</span
-              >
+        <label for="file-upload" class="col-6 upload-label"
+          ><div class="create-file-wrapper" for="file-upload">
+            <div class="create-border"></div>
+            <div class="create-upload-file">
+              <div class="create-upload-content">
+                <input
+                  type="file"
+                  id="file-upload"
+                  class="file-upload-input"
+                  name="image"
+                />
+                <i
+                  class="fa-solid fa-circle-arrow-up mx-auto mb-2"
+                  style="font-size: 24px"
+                >
+                </i>
+
+                <span class="d-block text-center upload-span"
+                  >Yüklemek için tıklayın</span
+                >
+                <span class="upload-suggestion"
+                  >Öneri: Yüksek kaliteli .jpg formatında 20 MB'den küçük
+                  dosyalar kullanın</span
+                >
+              </div>
             </div>
-          </div>
-        </div>
+          </div></label
+        >
+
         <div class="create-texting-side col-6">
           <div class="texting-header-wrapper">
             <div class="texting-header">
@@ -73,24 +84,45 @@
                 type="text"
                 class="header-input"
                 id="input-header"
-                value="Başlığınızı ekleyin"
+                placeholder="Başlığınızı ekleyin"
                 rows="1"
-              >
-Başlığınızı ekleyin
-              </textarea>
+              ></textarea>
               <div
-                class="border"
-                style="border-top: 5px solid black; margin-bottom: 20px"
+                class="create-pin-header-border"
+                style="
+                  border-top: 1.5px solid #878787;
+                  margin-top: -10px;
+                  margin-bottom: 20px;
+                "
+                data-target=".header-input"
               ></div>
             </div>
           </div>
           <div class="texting-about">
-            <img
-              src="{{ user_profile.profile_image.url }}"
-              alt=""
-              style="width: 48px; height: 48px; border-radius: 48px"
-            />
-            <span>{{ request.user.username }}</span>
+            <div class="img-and-span-wrapper d-flex">
+              <img
+                src="{{ user_profile.profile_image.url }}"
+                alt=""
+                style="width: 48px; height: 48px; border-radius: 48px"
+              />
+              <span style="display: block">{{ request.user.username }}</span>
+            </div>
+
+            <textarea
+              class="about-area"
+              type="text"
+              rows="1"
+              placeholder="Pininizin ne hakkında olduğunu herkese söyleyin"
+            ></textarea>
+            <div
+              class="create-pin-header-border"
+              style="
+                border-top: 1.5px solid #878787;
+                width: 500px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+              "
+            ></div>
           </div>
         </div>
       </div>

@@ -2653,6 +2653,7 @@ input[type="password"]::-ms-clear {
   width: 50%;
   margin: auto;
   margin-top: 75px;
+  border-radius: 15px;
 }
 .create-wrapper {
   display: grid;
@@ -2718,12 +2719,38 @@ input[type="password"]::-ms-clear {
   width: 500px;
 }
 .header-input {
-  width: 500px;
+  /*  width: 500px; */
   border: none;
   outline: none;
-  font-weight: 500;
-  word-break: keep-all;
+  font-weight: 600;
   background: transparent;
   overflow-x: hidden;
   resize: unset;
+  letter-spacing: -1px;
+}
+.img-and-span-wrapper {
+  align-items: center;
+}
+.img-and-span-wrapper span {
+  padding-left: 7px;
+}
+.about-area {
+  width: 480px;
+  border: none;
+  outline: none;
+  background: transparent;
+  resize: none;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.file-upload-input {
+  display: none;
+}
+.upload-label {
+  z-index: 11111111;
+  display: flex;
+  cursor: pointer !important;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
 }
