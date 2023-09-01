@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% load static %} {% block title %} My Pins {% endblock %}
+{% block content %}
+<div class="my-pins-container">
+    <h1>Pinlerim</h1>
+    <div class="picture-container">
+        {% for pin in pins %}
+        <li class="cardseri">
+            <a href="{% url 'detay' pin.id %}" class="cardhref">
+                <div class="imageandtext">
+                    <img src="{{ pin.image.url }}" alt="{{ pin.title }}" class="w-100 rounded-4 pinimg" />
+                </div>
+
+            </a>
+        </li>
+        {% empty %}
+        <li><a href="{% url 'create' %}">İlk Pin Oluştur</a></li>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

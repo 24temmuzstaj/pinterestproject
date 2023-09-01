@@ -105,3 +105,9 @@ def pins_detay(request, pinsId):
     comment_form = CommentForm()
     return render(request, 'pin/pin_detay.html', {'pin': pin, 'comments': comments, 'comment_form': CommentForm()}) 
 
+# Kullanıcının pinlerini çek
+@login_required
+def my_pins(request):
+    user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+    pins = Pins.objects.filter(user=request.user)  # Kullanıcının pinlerini çek
+    return render(request, 'my_pins.html', {'pins': pins, 'user_profile': user_profile})
