@@ -15,25 +15,93 @@ $(document).ready(function () {
 });
 
 // Mehtap edit_profile start
-function goster(icerikAdi) {
-    $('#rightboxone h4').text(icerikAdi);
-    
-    // İçerik adına göre içeriği güncelleyebilirsiniz. Örnek içerikler ekledim.
-    if (icerikAdi === 'Profili Düzenle') {
-        $('#rightboxone p').text('Kişisel bilgilerinizi gizli tutun. Buraya eklediğiniz bilgiler, profilinizi görüntüleyebilen herkes tarafından görülebilir.');
-        // <!-- 2.kutu -->
-    } else if (icerikAdi === 'Kişisel Bilgiler') {
-        $('#rightboxtwo p').text('fghjgfdgfh');
-    }
-    else if (icerikAdi === 'Hesap Bilgileri') {
-        $('#rightboxone p').text('Hesap Bilgileriniz burada görüntülenecektir.');
-    }
-    else if (icerikAdi === 'Ana Sayfa Akışı') {
-        $('#rightboxone p').text('anasayfaa.');
-    }
-    else if (icerikAdi === 'Hesaplar') {
-        $('#rightboxone p').text('anasayfaa.');
-    }
 
-    $('#rightboxone').show();
+// Profili Düzenle linkine tıklandığında
+document.getElementById("profilLink").addEventListener("click", function() {
+    // İlgili içeriği görünür yap
+    document.getElementById("icerik1").style.display = "block";
+    // Diğer içerikleri gizle
+    hideOtherContent("icerik1");
+});
+
+// Kişisel Bilgiler linkine tıklandığında
+document.getElementById("bilgilerLink").addEventListener("click", function() {
+    // İlgili içeriği görünür yap
+    document.getElementById("icerik2").style.display = "block";
+    // Diğer içerikleri gizle
+    hideOtherContent("icerik2");
+});
+// Hesap Yönetimi linkine tıklandığında
+document.getElementById("hesapLink").addEventListener("click", function() {
+    // İlgili içeriği görünür yap
+    document.getElementById("icerik3").style.display = "block";
+    // Diğer içerikleri gizle
+    hideOtherContent("icerik3");
+});
+
+// Ana Sayfa Akışınızı Ayarlayın linkine tıklandığında
+document.getElementById("akısLink").addEventListener("click", function() {
+    // İlgili içeriği görünür yap
+    document.getElementById("icerik4").style.display = "block";
+    // Diğer içerikleri gizle
+    hideOtherContent("icerik4");
+});
+
+// Üzerinize Aldığınız Hesaplar linkine tıklandığında
+document.getElementById("aldıgınızLink").addEventListener("click", function() {
+    // İlgili içeriği görünür yap
+    document.getElementById("icerik5").style.display = "block";
+    // Diğer içerikleri gizle
+    hideOtherContent("icerik5");
+});
+
+// Sosyal İzinler linkine tıklandığında
+document.getElementById("izinlerLink").addEventListener("click", function() {
+    // İlgili içeriği görünür yap
+    document.getElementById("icerik6").style.display = "block";
+    // Diğer içerikleri gizle
+    hideOtherContent("icerik6");
+});
+
+// Bildirimler linkine tıklandığında
+document.getElementById("bildirimLink").addEventListener("click", function() {
+    // İlgili içeriği görünür yap
+    document.getElementById("icerik7").style.display = "block";
+    // Diğer içerikleri gizle
+    hideOtherContent("icerik7");
+});
+
+// Gizlilik ve Veriler linkine tıklandığında
+document.getElementById("gizlilikLink").addEventListener("click", function() {
+    // İlgili içeriği görünür yap
+    document.getElementById("icerik8").style.display = "block";
+    // Diğer içerikleri gizle
+    hideOtherContent("icerik8");
+});
+
+// Güvenlik ve Oturum Açma linkine tıklandığında
+document.getElementById("guvenlikLink").addEventListener("click", function() {
+    // İlgili içeriği görünür yap
+    document.getElementById("icerik9").style.display = "block";
+    // Diğer içerikleri gizle
+    hideOtherContent("icerik9");
+});
+
+// Markalı İçerikler linkine tıklandığında
+document.getElementById("markaLink").addEventListener("click", function() {
+    // İlgili içeriği görünür yap
+    document.getElementById("icerik10").style.display = "block";
+    // Diğer içerikleri gizle
+    hideOtherContent("icerik10");
+});
+
+ // Diğer içerikleri gizlemek için yardımcı bir işlev
+ function hideOtherContent(currentContentId) {
+    const contentIds = ["icerik1", "icerik2", "icerik3", "icerik4", "icerik5", "icerik6", "icerik7", "icerik8", "icerik9", "icerik10"];
+    contentIds.forEach(function(id) {
+        if (id !== currentContentId) {
+            document.getElementById(id).style.display = "none";
+        }
+    });
 }
+// Mehtap edit_profile end

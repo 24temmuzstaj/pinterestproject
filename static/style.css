@@ -2369,11 +2369,14 @@ p {
   
 }
 
-
-
 /* MEHTAP EDİT-PROFİLE SAYFASI CSS START */
-#rightboxone{
-  width: 400px; 
-  margin-top: -400px;
-  margin-left: 300px;
+.contentbox {
+  float: right;
+  margin-right: 400px;
+  background-color: #cce0d8;
+  width: 50%;
+  clear: both;
+  margin-top: 20px; /* İçeriği yukarı taşımak için üst boşluk ekleyin */
+  position: relative; /* Pozisyonu ayarlayın */
+  top: -400px; /* İçeriği yukarı taşımak için negatif bir üst konum değeri kullanın */
 }
