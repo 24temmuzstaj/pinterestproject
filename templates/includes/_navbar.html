@@ -161,8 +161,10 @@
         </button>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'view_profile' %}"
-          ><img
+        <a class="nav-link" href="{% url 'view_profile' %}" href="{% url 'my_pins' %}"
+  
+          >
+          <img
             style="width: 30px; height: 30px; border-radius: 50%"
             src="{{ user_profile.profile_image.url }}"
             alt="Profile Picture"

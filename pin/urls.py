@@ -8,8 +8,8 @@ urlpatterns =[
     path('pin-detay/<int:pinId>/', views.pins, name='detay'),
     path('create/',views.create, name='create'),
     path('pins/<int:pinsId>/', views.pins_detay, name='pins_detay'),
-    path('my-pins/', views.my_pins, name='my_pins'),
-    
+    path('my-pins/', my_pins, name='my_pins'),
+ 
 
 
 ]

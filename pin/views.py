@@ -110,4 +110,4 @@ def pins_detay(request, pinsId):
 def my_pins(request):
     user_profile, created = UserProfile.objects.get_or_create(user=request.user)
     pins = Pins.objects.filter(user=request.user)  # Kullanıcının pinlerini çek
-    return render(request, 'my_pins.html', {'pins': pins, 'user_profile': user_profile})
+    return render(request, 'profile/view_profile.html', {'pins': pins, 'user_profile': user_profile})
