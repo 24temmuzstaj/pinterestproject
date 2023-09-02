@@ -2341,6 +2341,7 @@ p {
   margin-left: 20px;
   margin-top: 50px;
   color: black;
+  align-items: flex-start; /* Metinleri sola hizala */
   
 }
 
@@ -2350,8 +2351,8 @@ p {
   text-decoration: none;
   font-size: 12px;
   border-radius: 7px;
-  text-align: center;
   margin: 4px;
+  text-align: start;
 }
 .list-item a {
   color: rgb(53, 52, 52);
@@ -2360,7 +2361,19 @@ p {
 }
 
 .list-item:hover{
-  background-color: #dad0d0;
+  background-color: #faf3f3;
 } 
+.list-item :hover,
+.list-item :focus {
+  border-bottom: 2px solid black;
+  
+}
 
-/* MEHTAP EDİT-PROFİLE SAYFASI CSS END */
+
+
+/* MEHTAP EDİT-PROFİLE SAYFASI CSS START */
+#rightboxone{
+  width: 400px; 
+  margin-top: -400px;
+  margin-left: 300px;
+}
