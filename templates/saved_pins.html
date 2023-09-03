@@ -1,0 +1,24 @@
+<!-- saved_pins.html -->
+{% extends "base.html" %}
+{% block title %}Kaydedilen Fotoğraflar{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Kaydedilen Fotoğraflar</h1>
+    <ul>
+        <div class="mypins-wrapper">
+        {% for saved_pin in saved_pins %}
+        <li class="cardseri ">
+            <a href="{% url 'pins_detay' saved_pin.pin.id %}" class="cardhref">
+                <div class="imageandtext">
+                    <img src="{{ saved_pin.pin.image.url }}" alt="{{ saved_pin.pin.title }}"
+                        class="w-100 rounded-4 pinimg" />
+                </div>  
+            </a>
+        </li>
+        {% empty %}
+        <li>Henüz hiçbir fotoğraf kaydedilmemiş.</li>
+        {% endfor %}
+    </ul>
+    </div>
+</div>
+{% endblock %}

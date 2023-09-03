@@ -30,7 +30,11 @@
                   Pinlerim
                   <i class="fa-solid fa-angle-down"></i>
                 </button>
-                <button class="save-btn">Kaydet</button>
+
+                <button class="save-btn">
+                  <a href="{% url 'save_pin' pin.id %}">Kaydet</a>
+                </button>
+                
               </div>
             </div>
           </div>

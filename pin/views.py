@@ -6,7 +6,7 @@ from django.db.models import Q
 from profil.models import UserProfile
 from comments.forms import CommentForm
 from datetime import datetime
-
+from django.http import HttpResponseRedirect
 
 
 def index(request):
@@ -26,12 +26,6 @@ def index(request):
         user_profile, created = UserProfile.objects.get_or_create(user=request.user)
         context["user_profile"]=user_profile
     return render(request, 'index.html', context )
-
-
-
-
-
-from django.http import HttpResponseRedirect
 
 def pins(request, pinId):
     user_profile, created = UserProfile.objects.get_or_create(user=request.user)
@@ -61,7 +55,6 @@ def pins(request, pinId):
         'now': now,
     }
     return render(request, 'detail.html', context)
-
 
 @login_required
 def create(request):
@@ -94,11 +87,6 @@ def show_pins(request):
     pins = Pins.objects.all()
     return render(request, 'detail.html', {'pins': pins, 'user_profile': user_profile})
 
-
-
-from django.shortcuts import render
-from .models import Pins
-
 def pins_detay(request, pinsId):
     pin = Pins.objects.get(id=pinsId)
     comments = pin.comments.all()
@@ -111,3 +99,22 @@ def my_pins(request):
     user_profile, created = UserProfile.objects.get_or_create(user=request.user)
     pins = Pins.objects.filter(user=request.user)  # Kullanıcının pinlerini çek
     return render(request, 'profile/view_profile.html', {'pins': pins, 'user_profile': user_profile})
+
+
+@login_required
+def save_pin(request, pinId):
+    pin = get_object_or_404(Pins, id=pinId)
+    user = request.user
+    # Kullanıcının bu fotoğrafı daha önce kaydedip kaydetmediğini kontrol edin
+    if not SavedPin.objects.filter(user=user, pin=pin).exists():
+        SavedPin.objects.create(user=user, pin=pin)
+    # Kullanıcıyı kaydedilen fotoğraflar sayfasına yönlendirin veya istediğiniz yere yönlendirin
+    return redirect('saved_pins')
+
+from .models import SavedPin
+
+@login_required
+def saved_pins(request):
+    user = request.user
+    saved_pins = SavedPin.objects.filter(user=user)
+    return render(request, 'profile/view_profile.html', {'saved_pins': saved_pins})

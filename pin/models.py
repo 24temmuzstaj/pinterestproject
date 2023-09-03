@@ -17,8 +17,15 @@ class Pins(models.Model):
 
     def __str__(self):
         return self.title
+    
 
 
+class SavedPin(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    pin = models.ForeignKey(Pins, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.user.username}'s Saved Pin: {self.pin.title}"
 
 
 
