@@ -115,6 +115,7 @@ from .models import SavedPin
 
 @login_required
 def saved_pins(request):
+    user_profile, created = UserProfile.objects.get_or_create(user=request.user)
     user = request.user
     saved_pins = SavedPin.objects.filter(user=user)
-    return render(request, 'profile/view_profile.html', {'saved_pins': saved_pins})
+    return render(request, 'profile/view_profile.html', {'saved_pins': saved_pins,  'user_profile': user_profile})

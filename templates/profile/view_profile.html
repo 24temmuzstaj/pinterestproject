@@ -49,7 +49,7 @@
 
 
 <div class="container">
-  <h1>Kaydedilen Fotoğraflar</h1>
+
   <ul>
       <div class="mypins-wrapper">
       {% for saved_pin in saved_pins %}
@@ -61,8 +61,7 @@
               </div>  
           </a>
       </li>
-      {% empty %}
-      <li>Henüz hiçbir fotoğraf kaydedilmemiş.</li>
+    
       {% endfor %}
   </ul>
   </div>
