@@ -104,4 +104,5 @@ document.getElementById("markaLink").addEventListener("click", function() {
         }
     });
 }
+
 // Mehtap edit_profile end
