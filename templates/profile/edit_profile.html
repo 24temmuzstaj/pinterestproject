@@ -14,7 +14,7 @@
             <a href="#" id="bilgilerLink">Hesap Yönetimi</a>
         </div>
         <div class="list-item">
-            <a href="#" id="hesapLink">Hesap Yönetimi</a>
+            <a href="#" id="hesapLink">Profil Görünürlüğü</a>
         </div>
         <div class="list-item">
             <a href="#" id="akısLink">Ana sayfa akışınızı ayarlayın</a>
@@ -89,6 +89,7 @@
                 </div>
             </div>
         </div>
+
 
         <!-- 2.İÇERİK(Hessap Yönetimi) -->
         <div id="icerik2" style="display: none;">
@@ -470,7 +471,7 @@
             </div>
             <div class="row">
                 <div class="col-6">
-                    <p style="font-size: 13px;">Profilinizi, Pinlerinizi ve panolarınızı geçici olarak gizleyin</p>
+                    <p style="font-size: 12px;">Profilinizi, Pinlerinizi ve panolarınızı geçici olarak gizleyin</p>
                 </div>
                 <div class="col-5">
                     <button
@@ -487,57 +488,111 @@
             </div>
             <div class="row">
                 <div class="col-7">
-                    <p style="font-size: 13px;">Hesabınızla ilişkili verilerinizi ve her şeyi kalıcı olarak silin</p>
+                    <p style="font-size: 12px;">Hesabınızla ilişkili verilerinizi ve her şeyi kalıcı olarak silin</p>
                 </div>
                 <div class="col-4">
                     <button
                         style="border: none; border-radius: 21px; padding: 11px; font-weight: 500; font-size: smaller; margin-left: 20px;">Hesabı
                         Sil</button>
                 </div>
+            </div>
+        </div>
 
 
-
-
-
-
-
-
-
-
-
-                <!-- 3.İÇERİK -->
-                <div id="icerik3" style="display: none;">
-                    <h4>Hesap Yönetimi İçeriği</h4>
-                </div>
-                <!-- 4.İÇERİK -->
-                <div id="icerik4" style="display: none;">
-                    <h4>Ana sayfa akışınızı ayarlayın İçeriği</h4>
-                </div>
-                <!-- 5.İÇERİK -->
-                <div id="icerik5" style="display: none;">
-                    <h4>Üzerinize aldığınız hesaplar İçeriği</h4>
-                </div>
-                <!-- 6.İÇERİK -->
-                <div id="icerik6" style="display: none;">
-                    <h4>Sosyal İzinler İçeriği</h4>
-                </div>
-                <!-- 7.İÇERİK -->
-                <div id="icerik7" style="display: none;">
-                    <h4>Bildirimler İçeriği</h4>
-                </div>
-                <!-- 8.İÇERİK -->
-                <div id="icerik8" style="display: none;">
-                    <h4>Gizlilik ve Veriler İçeriği</h4>
-                </div>
-                <!-- 9.İÇERİK -->
-                <div id="icerik9" style="display: none;">
-                    <h4>Güvenlik ve Oturum Açma İçeriği</h4>
-                </div>
-                <!-- 10.İÇERİK -->
-                <div id="icerik10" style="display: none;">
-                    <h4>Markalı İçerikler İçeriği</h4>
+        <!-- 3.İÇERİK  Profil Görünürlüğü-->
+        <div id="icerik3" style="display: none;">
+            <h4>Profil Görünürlüğü</h4>
+            <div class="row">
+                <div class="col-10">
+                    <p style="font-size: 13px;">Profilinizin Pinterest'te ve Pinterest dışında nasıl görüntüleneceğini
+                        yönetin.
+                    </p>
                 </div>
             </div>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <p style="font-size: 14px; margin-bottom: 5px; font-weight: 500;">Özel Profil</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    <p style="font-size: 13px;">Profiliniz özel olduğunda yalnızca onayladığınız kişiler profilinizi,
+                        Pinlerinizi, panolarınızı, takipçilerinizi ve takip edilen listelerinizi görebilir. <a
+                            style="color: black; font-weight: 600;" class="profilvisibility" href="">Daha fazla bilgi
+                            edninin.</a>
+                    </p>
+                </div>
+                <div class="col-3">
+                    <div class="col-2">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleSwitch">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <p style="font-size: 14px; margin-bottom: 5px; font-weight: 500;">Arama Gizliliği</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    <p style="font-size: 13px;">Profilinizi ve panolarınızı arama motorlarından gizleyin (Ör. Google).
+                        <a href="" class="profilvisibility" style="color: black; font-weight: 600;">Daha fazla bilgi
+                            edninin.</a>
+                    </p>
+                </div>
+                <div class="col-2">
+                    <label class="switch">
+                        <input type="checkbox" id="toggleSwitch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 4.İÇERİK (Ana sayfa akışınızı ayarlayın) -->
+        <div id="icerik4" style="display: none;">
+            <h4>Ana sayfa akışınızı ayarlayın</h4>
+            <div class="row">
+                <div class="col-10">
+                    <p style="font-size: 13px;">Pinterest'i sizi daha iyi yansıtacak şekilde düzenleyin sen.
+                        Pinterest'in size fikirler önermek için kullandığı bilgileri düzenleyin. Bu bilgiler herkese
+                        açık bir şekilde görüntülenmeyecek.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- 5.İÇERİK -->
+        <div id="icerik5" style="display: none;">
+            <h4>Üzerinize aldığınız hesaplar İçeriği</h4>
+        </div>
+        <!-- 6.İÇERİK -->
+        <div id="icerik6" style="display: none;">
+            <h4>Sosyal İzinler İçeriği</h4>
+        </div>
+        <!-- 7.İÇERİK -->
+        <div id="icerik7" style="display: none;">
+            <h4>Bildirimler İçeriği</h4>
+        </div>
+        <!-- 8.İÇERİK -->
+        <div id="icerik8" style="display: none;">
+            <h4>Gizlilik ve Veriler İçeriği</h4>
+        </div>
+        <!-- 9.İÇERİK -->
+        <div id="icerik9" style="display: none;">
+            <h4>Güvenlik ve Oturum Açma İçeriği</h4>
+        </div>
+        <!-- 10.İÇERİK -->
+        <div id="icerik10" style="display: none;">
+            <h4>Markalı İçerikler İçeriği</h4>
+        </div>
+
 
 
 </body>

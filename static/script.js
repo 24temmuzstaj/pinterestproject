@@ -17,7 +17,7 @@ $(document).ready(function () {
 // Mehtap edit_profile start
 
 // Profili Düzenle linkine tıklandığında
-document.getElementById("profilLink").addEventListener("click", function() {
+document.getElementById("profilLink").addEventListener("click", function () {
     // İlgili içeriği görünür yap
     document.getElementById("icerik1").style.display = "block";
     // Diğer içerikleri gizle
@@ -25,14 +25,14 @@ document.getElementById("profilLink").addEventListener("click", function() {
 });
 
 // Kişisel Bilgiler linkine tıklandığında
-document.getElementById("bilgilerLink").addEventListener("click", function() {
+document.getElementById("bilgilerLink").addEventListener("click", function () {
     // İlgili içeriği görünür yap
     document.getElementById("icerik2").style.display = "block";
     // Diğer içerikleri gizle
     hideOtherContent("icerik2");
 });
 // Hesap Yönetimi linkine tıklandığında
-document.getElementById("hesapLink").addEventListener("click", function() {
+document.getElementById("hesapLink").addEventListener("click", function () {
     // İlgili içeriği görünür yap
     document.getElementById("icerik3").style.display = "block";
     // Diğer içerikleri gizle
@@ -40,7 +40,7 @@ document.getElementById("hesapLink").addEventListener("click", function() {
 });
 
 // Ana Sayfa Akışınızı Ayarlayın linkine tıklandığında
-document.getElementById("akısLink").addEventListener("click", function() {
+document.getElementById("akısLink").addEventListener("click", function () {
     // İlgili içeriği görünür yap
     document.getElementById("icerik4").style.display = "block";
     // Diğer içerikleri gizle
@@ -48,7 +48,7 @@ document.getElementById("akısLink").addEventListener("click", function() {
 });
 
 // Üzerinize Aldığınız Hesaplar linkine tıklandığında
-document.getElementById("aldıgınızLink").addEventListener("click", function() {
+document.getElementById("aldıgınızLink").addEventListener("click", function () {
     // İlgili içeriği görünür yap
     document.getElementById("icerik5").style.display = "block";
     // Diğer içerikleri gizle
@@ -56,7 +56,7 @@ document.getElementById("aldıgınızLink").addEventListener("click", function()
 });
 
 // Sosyal İzinler linkine tıklandığında
-document.getElementById("izinlerLink").addEventListener("click", function() {
+document.getElementById("izinlerLink").addEventListener("click", function () {
     // İlgili içeriği görünür yap
     document.getElementById("icerik6").style.display = "block";
     // Diğer içerikleri gizle
@@ -64,7 +64,7 @@ document.getElementById("izinlerLink").addEventListener("click", function() {
 });
 
 // Bildirimler linkine tıklandığında
-document.getElementById("bildirimLink").addEventListener("click", function() {
+document.getElementById("bildirimLink").addEventListener("click", function () {
     // İlgili içeriği görünür yap
     document.getElementById("icerik7").style.display = "block";
     // Diğer içerikleri gizle
@@ -72,7 +72,7 @@ document.getElementById("bildirimLink").addEventListener("click", function() {
 });
 
 // Gizlilik ve Veriler linkine tıklandığında
-document.getElementById("gizlilikLink").addEventListener("click", function() {
+document.getElementById("gizlilikLink").addEventListener("click", function () {
     // İlgili içeriği görünür yap
     document.getElementById("icerik8").style.display = "block";
     // Diğer içerikleri gizle
@@ -80,7 +80,7 @@ document.getElementById("gizlilikLink").addEventListener("click", function() {
 });
 
 // Güvenlik ve Oturum Açma linkine tıklandığında
-document.getElementById("guvenlikLink").addEventListener("click", function() {
+document.getElementById("guvenlikLink").addEventListener("click", function () {
     // İlgili içeriği görünür yap
     document.getElementById("icerik9").style.display = "block";
     // Diğer içerikleri gizle
@@ -88,21 +88,33 @@ document.getElementById("guvenlikLink").addEventListener("click", function() {
 });
 
 // Markalı İçerikler linkine tıklandığında
-document.getElementById("markaLink").addEventListener("click", function() {
+document.getElementById("markaLink").addEventListener("click", function () {
     // İlgili içeriği görünür yap
     document.getElementById("icerik10").style.display = "block";
     // Diğer içerikleri gizle
     hideOtherContent("icerik10");
 });
 
- // Diğer içerikleri gizlemek için yardımcı bir işlev
- function hideOtherContent(currentContentId) {
+// Diğer içerikleri gizlemek için yardımcı bir işlev
+function hideOtherContent(currentContentId) {
     const contentIds = ["icerik1", "icerik2", "icerik3", "icerik4", "icerik5", "icerik6", "icerik7", "icerik8", "icerik9", "icerik10"];
-    contentIds.forEach(function(id) {
+    contentIds.forEach(function (id) {
         if (id !== currentContentId) {
             document.getElementById(id).style.display = "none";
         }
     });
 }
+// Eğer JavaScript ile bir işlem yapmak isterseniz, bu örneği kullanabilirsiniz.
+document.getElementById("toggleSwitch").addEventListener("change", function () {
+    // Burada açık veya kapalı durumu kontrol edebilirsiniz.
+    if (this.checked) {
+        // Açık durumu
+        console.log("Açık");
+    } else {
+        // Kapalı durumu
+        console.log("Kapalı");
+    }
+});
+
 
 // Mehtap edit_profile end
