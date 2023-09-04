@@ -138,58 +138,406 @@
                 <p style="font-size: 10px; margin-top: 18px;">Cinsiyet</p>
                 <div class="col-3">
                     <!-- Radyo düğmesi 1 -->
-                    <input type="radio" name="cinsiyet" id="kadın1" class="custom-radio">
+                    <input type="radio" name="cinsiyet" id="kadın" class="custom-radio">
                     <label for="kadın" style="font-size:smaller;">Kadın</label>
                 </div>
                 <div class="col-3">
                     <!-- Radyo düğmesi 2 -->
-                    <input type="radio" name="cinsiyet" id="kadın2" class="custom-radio">
+                    <input type="radio" name="cinsiyet" id="erkek" class="custom-radio">
                     <label for="Erkek" style="font-size:small;">Erkek</label>
                 </div>
                 <div class="col-3">
                     <!-- Radyo düğmesi 3 -->
-                    <input type="radio" name="cinsiyet" id="kadın3" class="custom-radio">
+                    <input type="radio" name="cinsiyet" id="different" class="custom-radio">
                     <label for="İkiliOlmayan" style="font-size:small;">İkili Olmayan</label>
                 </div>
             </div>
-        </div>
+            <!-- ülke seçimi -->
+            <div class="col-10">
+                <p style="font-size: 9px;margin-top: 15px;">Ülke/Bölge</p>
+                <select aria-invalid="false" class="webhinput" style="font-size: small;" id="accountBasicsCountry"
+                    name="country">
+                    <option value="TR">Türkiye (Türkiye)</option>
+                    <option value="UM">ABD Küçük Dış Adaları</option>
+                    <option value="AF">Afganistan (افغانستان‎)</option>
+                    <option value="AX">Aland</option>
+                    <option value="DE">Almanya (Deutschland)</option>
+                    <option value="US">Amerika Birleşik Devletleri</option>
+                    <option value="AS">Amerikan Samoası</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AI">Anguilla</option>
+                    <option value="AQ">Antarktika</option>
+                    <option value="AG">Antigua ve Barbuda</option>
+                    <option value="AR">Arjantin</option>
+                    <option value="AL">Arnavutluk (Shqipëria)</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Avustralya</option>
+                    <option value="AT">Avusturya (Österreich)</option>
+                    <option value="AZ">Azerbaycan (Azərbaycan)</option>
+                    <option value="BS">Bahamalar</option>
+                    <option value="BH">Bahreyn (البحرين‎)</option>
+                    <option value="BD">Bangladeş (বাংলাদেশ)</option>
+                    <option value="BB">Barbados</option>
+                    <option value="EH">Batı Sahra (الصحراء الغربية‎)</option>
+                    <option value="BE">Belçika (België)</option>
+                    <option value="BZ">Belize</option>
+                    <option value="BJ">Benin (Bénin)</option>
+                    <option value="BM">Bermuda</option>
+                    <option value="BY">Beyaz Rusya (Беларусь)</option>
+                    <option value="AE">Birleşik Arap Emirlikleri (الإمارات العربية المتحدة‎)</option>
+                    <option value="GB">Birleşik Krallık</option>
+                    <option value="BO">Bolivya</option>
+                    <option value="BQ">Bonaire</option>
+                    <option value="BA">Bosna Hersek (Босна и Херцеговина)</option>
+                    <option value="BW">Bostvana</option>
+                    <option value="BV">Bouvet Adası</option>
+                    <option value="BR">Brezilya (Brasil)</option>
+                    <option value="IO">Britanya Hint Okyanusu Toprakları</option>
+                    <option value="BN">Brunei</option>
+                    <option value="BG">Bulgaristan (България)</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi (Uburundi)</option>
+                    <option value="BT">Butan (འབྲུག)</option>
+                    <option value="KY">Cayman Adaları</option>
+                    <option value="GI">Cebelitarık</option>
+                    <option value="DZ">Cezayir (الجزائر‎)</option>
+                    <option value="CX">Christmas Adası</option>
+                    <option value="DJ">Cibuti</option>
+                    <option value="CC">Cocos Adaları</option>
+                    <option value="CK">Cook Adaları</option>
+                    <option value="CW">Curaçao</option>
+                    <option value="TD">Çad (Tchad)</option>
+                    <option value="CZ">Çek Cumhuriyeti (Česká republika)</option>
+                    <option value="DK">Danimarka (Danmark)</option>
+                    <option value="TL">Doğu Timor</option>
+                    <option value="DO">Dominik Cumhuriyeti (República Dominicana)</option>
+                    <option value="DM">Dominika</option>
+                    <option value="EC">Ekvador</option>
+                    <option value="GQ">Ekvator Ginesi (Guinea Ecuatorial)</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="ID">Endonezya</option>
+                    <option value="ER">Eritre</option>
+                    <option value="AM">Ermenistan (Հայաստան)</option>
+                    <option value="EE">Estonya (Eesti)</option>
+                    <option value="ET">Etiyopya</option>
+                    <option value="FK">Falkland Adaları (Islas Malvinas)</option>
+                    <option value="FO">Faroe Adaları (Føroyar)</option>
+                    <option value="MA">Fas (المغرب‎)</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="CI">Fildişi Sahili</option>
+                    <option value="PH">Filipinler</option>
+                    <option value="PS">Filistin Devleti (فلسطين‎)</option>
+                    <option value="FI">Finlandiya (Suomi)</option>
+                    <option value="FR">Fransa</option>
+                    <option value="GF">Fransız Guyanası (Guyane française)</option>
+                    <option value="TF">Fransız Güney Toprakları (Terres australes françaises)</option>
+                    <option value="PF">Fransız Polinezyası (Polynésie française)</option>
+                    <option value="GA">Gabon</option>
+                    <option value="GM">Gambiya</option>
+                    <option value="GH">Gana (Gaana)</option>
+                    <option value="GN">Gine (Guinée)</option>
+                    <option value="GW">Gine-Bissau (Guiné Bissau)</option>
+                    <option value="GD">Grenada</option>
+                    <option value="GL">Grönland (Kalaallit Nunaat)</option>
+                    <option value="GP">Guadelup</option>
+                    <option value="GU">Guam</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GG">Guernsey</option>
+                    <option value="GY">Guyana</option>
+                    <option value="ZA">Güney Afrika</option>
+                    <option value="GS">Güney Georgia ve Güney Sandwich Adaları</option>
+                    <option value="SS">Güney Sudan (جنوب السودان‎)</option>
+                    <option value="GE">Gürcistan (საქართველო)</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HM">Heard Adası ve McDonald Adaları</option>
+                    <option value="HR">Hırvatistan (Hrvatska)</option>
+                    <option value="IN">Hindistan (भारत)</option>
+                    <option value="NL">Hollanda (Nederland)</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HK">Hong Kong (香港)</option>
+                    <option value="IQ">Irak (العراق‎)</option>
+                    <option value="IR">İran İslam Cumhuriyeti (ایران‎)</option>
+                    <option value="IE">İrlanda</option>
+                    <option value="ES">İspanya</option>
+                    <option value="IL">İsrail (ישראל‎)</option>
+                    <option value="SE">İsveç (Sverige)</option>
+                    <option value="CH">İsviçre (Schweiz)</option>
+                    <option value="IT">İtalya (Italia)</option>
+                    <option value="IS">İzlanda (Ísland)</option>
+                    <option value="JM">Jamaika</option>
+                    <option value="JP">Japon işi (日本)</option>
+                    <option value="JE">Jersey</option>
+                    <option value="KH">Kamboçya (កម្ពុជា)</option>
+                    <option value="CM">Kamerun (Cameroun)</option>
+                    <option value="CA">Kanada</option>
+                    <option value="ME">Karadağ (Crna Gora)</option>
+                    <option value="QA">Katar (قطر‎)</option>
+                    <option value="KZ">Kazakistan (Казахстан)</option>
+                    <option value="KE">Kenya</option>
+                    <option value="CY">Kıbrıs (Κύπρος)</option>
+                    <option value="KG">Kırgızistan</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="CO">Kolombiya</option>
+                    <option value="KM">Komorlar (جزر القمر‎)</option>
+                    <option value="CG">Kongo (Congo-Brazzaville)</option>
+                    <option value="CD">Kongo Demokratik Cumhuriyeti (Jamhuri ya Kidemokrasia ya Kongo)</option>
+                    <option value="KR">Kore Cumhuriyeti (대한민국)</option>
+                    <option value="CR">Kosta Rika</option>
+                    <option value="KW">Kuveyt (الكويت‎)</option>
+                    <option value="MK">Kuzey Makedonya Cumhuriyeti (Македонија)</option>
+                    <option value="MP">Kuzey Mariana Adaları</option>
+                    <option value="CU">Küba</option>
+                    <option value="LA">Lao Demokratik Halk Cumhuriyeti (ສ.ປ.ປ ລາວ)</option>
+                    <option value="LS">Lesotho</option>
+                    <option value="LV">Letonya (Latvija)</option>
+                    <option value="LR">Liberya</option>
+                    <option value="LY">Libya (ليبيا‎)</option>
+                    <option value="LI">Lihtenştayn</option>
+                    <option value="LT">Litvanya (Lietuva)</option>
+                    <option value="LB">Lübnan (لبنان‎)</option>
+                    <option value="LU">Lüksemburg</option>
+                    <option value="HU">Macaristan (Magyarország)</option>
+                    <option value="MG">Madagaskar (Madagasikara)</option>
+                    <option value="MO">Makao (澳門)</option>
+                    <option value="MW">Malavi</option>
+                    <option value="MV">Maldivler</option>
+                    <option value="MY">Malezya</option>
+                    <option value="ML">Mali</option>
+                    <option value="MT">Malta</option>
+                    <option value="IM">Man Adası</option>
+                    <option value="MH">Marshall Adaları</option>
+                    <option value="MQ">Martinique</option>
+                    <option value="MU">Mauritius (Moris)</option>
+                    <option value="YT">Mayotte</option>
+                    <option value="MX">Meksika (México)</option>
+                    <option value="EG">Mısır (مصر‎)</option>
+                    <option value="FM">Mikronezya</option>
+                    <option value="MN">Moğolistan (Монгол)</option>
+                    <option value="MD">Moldova Cumhuriyeti (Republica Moldova)</option>
+                    <option value="MC">Monako</option>
+                    <option value="MS">Montserrat</option>
+                    <option value="MR">Moritanya (موريتانيا‎)</option>
+                    <option value="MZ">Mozambik (Moçambique)</option>
+                    <option value="MM">Myanmar (မြန်မာ)</option>
+                    <option value="NA">Namibya</option>
+                    <option value="NR">Nauru</option>
+                    <option value="NP">Nepal (नेपाल)</option>
+                    <option value="NE">Nijer (Nijar)</option>
+                    <option value="NG">Nijerya</option>
+                    <option value="NI">Nikaragua</option>
+                    <option value="NU">Niue</option>
+                    <option value="NF">Norfolk Adası</option>
+                    <option value="NO">Norveç (Norge)</option>
+                    <option value="CF">Orta Afrika Cumhuriyeti (République centrafricaine)</option>
+                    <option value="UZ">Özbekistan (Ўзбекистон)</option>
+                    <option value="PK">Pakistan (پاکستان‎)</option>
+                    <option value="PW">Palau</option>
+                    <option value="PA">Panama (Panamá)</option>
+                    <option value="VA">Papalık (Vatikan Şehir Devleti) (Città del Vaticano)</option>
+                    <option value="PG">Papua Yeni Gine</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Peru</option>
+                    <option value="PN">Pitcairn Adaları</option>
+                    <option value="PL">Polonya (Polska)</option>
+                    <option value="PT">Portekiz</option>
+                    <option value="PR">Porto Riko</option>
+                    <option value="RE">Reunion</option>
+                    <option value="RO">Romanya (România)</option>
+                    <option value="RW">Ruanda</option>
+                    <option value="RU">Rusya Federasyonu (Россия)</option>
+                    <option value="SH">Saint Helena,Ascension ve Tristan da Cunha</option>
+                    <option value="KN">Saint Kitts ve Nevis</option>
+                    <option value="LC">Saint Lucia</option>
+                    <option value="MF">Saint Martin [Fransa bölgesi] (Saint-Martin [partie française])</option>
+                    <option value="PM">Saint Pierre ve Miquelon (Saint-Pierre-et-Miquelon)</option>
+                    <option value="VC">Saint Vincent ve Grenadinler</option>
+                    <option value="WS">Samoa</option>
+                    <option value="SM">San Marino</option>
+                    <option value="ST">Sao Tome ve Principe (São Tomé e Príncipe)</option>
+                    <option value="SN">Senegal (Sénégal)</option>
+                    <option value="SC">Seyşeller</option>
+                    <option value="RS">Sırbistan (Србија)</option>
+                    <option value="SL">Sierra Leone</option>
+                    <option value="SG">Singapur</option>
+                    <option value="SX">Sint Maarten (Hollanda tarafı)</option>
+                    <option value="SK">Slovakya (Slovensko)</option>
+                    <option value="SI">Slovenya (Slovenija)</option>
+                    <option value="SB">Solomon Adaları</option>
+                    <option value="SO">Somali (Soomaaliya)</option>
+                    <option value="LK">Sri Lanka (ශ්‍රී ලංකාව))</option>
+                    <option value="BL">St Barths (Saint-Barthélemy)</option>
+                    <option value="SD">Sudan (السودان‎)</option>
+                    <option value="SR">Surinam</option>
+                    <option value="SY">Suriye Arap Cumhuriyeti (سوريا‎)</option>
+                    <option value="SA">Suudi Arabistan (المملكة العربية السعودية‎)</option>
+                    <option value="SJ">Svalbard ve Jan Mayen (Svalbard og Jan Mayen)</option>
+                    <option value="SZ">Svaziland</option>
+                    <option value="CL">Şili</option>
+                    <option value="TJ">Tacikistan</option>
+                    <option value="TZ">Tanzanya</option>
+                    <option value="TH">Tayland (ไทย)</option>
+                    <option value="TW">Tayvan (台灣)</option>
+                    <option value="TG">Togo</option>
+                    <option value="TK">Tokelau</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TT">Trinidad ve Tobago</option>
+                    <option value="TN">Tunus (تونس‎)</option>
+                    <option value="TC">Turks ve Caicos Adaları</option>
+                    <option value="TV">Tuvalu</option>
+
+                    <option value="TM">Türkmenistan</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UA">Ukrayna (Україна)</option>
+                    <option value="OM">Umman (عُمان‎)</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="JO">Ürdün (الأردن‎)</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VE">Venezuela</option>
+                    <option value="VN">Vietnam (Việt Nam)</option>
+                    <option value="VI">Virjin Adaları, Birleşik Devletler</option>
+                    <option value="VG">Virjin Adaları, Britanya</option>
+                    <option value="WF">Wallis ve Futuna Adaları</option>
+                    <option value="YE">Yemen (اليمن‎)</option>
+                    <option value="NC">Yeni Kaledonya (Nouvelle-Calédonie)</option>
+                    <option value="NZ">Yeni Zelanda</option>
+                    <option value="CV">Yeşil Burun Adaları (Kabu Verdi)</option>
+                    <option value="GR">Yunanistan (Ελλάδα)</option>
+                    <option value="ZM">Zambiya</option>
+                    <option value="ZW">Zimbabve</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <p style="font-size: 9px; margin-top: 15px;">Dil</p>
+                    <select aria-invalid="false" class="webhinput" style="font-size: small;" name="locale">
+                        <option value="tr">Türkçe</option>
+                        <option value="af-ZA">Afrikaans</option>
+                        <option value="id-ID">Bahasa Indonesia</option>
+                        <option value="ms-MY">Bahasa Malaysia</option>
+                        <option value="cs-CZ">Čeština</option>
+                        <option value="da-DK">Dansk</option>
+                        <option value="de">Deutsch</option>
+                        <option value="en-AU">English (Australia)</option>
+                        <option value="en-IN">English (India)</option>
+                        <option value="en-GB">English (UK)</option>
+                        <option value="en-US">English (US)</option>
+                        <option value="es-419">Español (Américas)</option>
+                        <option value="es-AR">Español (Argentina)</option>
+                        <option value="es-ES">Español (España)</option>
+                        <option value="es-MX">Español (México)</option>
+                        <option value="fr">Français</option>
+                        <option value="hr-HR">Hrvatski</option>
+                        <option value="it">Italiano</option>
+                        <option value="hu-HU">Magyar</option>
+                        <option value="nl">Nederlands</option>
+                        <option value="nb-NO">Norsk bokmål</option>
+                        <option value="pl-PL">Polski</option>
+                        <option value="pt-BR">Português (Brasil)</option>
+                        <option value="pt-PT">Português (Europeu)</option>
+                        <option value="ro-RO">Română</option>
+                        <option value="sk-SK">Slovenčina</option>
+                        <option value="fi-FI">Suomi</option>
+                        <option value="sv-SE">Svenska</option>
+                        <option value="tl-PH">Tagalog</option>
+                        <option value="vi-VN">Tiếng Việt</option>
+                        <option value="el-GR">Ελληνικά</option>
+                        <option value="bg-BG">Български</option>
+                        <option value="ru-RU">Русский</option>
+                        <option value="uk-UA">Українська</option>
+                        <option value="he-IL">עברית</option>
+                        <option value="ar-SA">العربية</option>
+                        <option value="hi-IN">हिन्दी</option>
+                        <option value="bn-IN">বাংলা</option>
+                        <option value="te-IN">తెలుగు</option>
+                        <option value="th-TH">ภาษาไทย</option>
+                        <option value="ko-KR">한국어</option>
+                        <option value="ja">日本語</option>
+                        <option value="zh-CN">简体中文</option>
+                        <option value="zh-TW">繁體中文</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <h6 class="mt-4 mb-4">Devre Dışı Bırakma ve Silme</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p style="font-size: 14px; margin-bottom: 5px; font-weight: 500;">Hesabı Devre Dışı Bırak</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p style="font-size: 13px;">Profilinizi, Pinlerinizi ve panolarınızı geçici olarak gizleyin</p>
+                </div>
+                <div class="col-5">
+                    <button
+                        style=" border: none; border-radius: 21px; padding: 11px; font-weight: 500; font-size: smaller;">Hesabı
+                        devre dışı bırak</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <p style="font-size: 14px; margin-top: 15px; font-weight: 500;">Verilerinizi ve hesabınızı silin
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <p style="font-size: 13px;">Hesabınızla ilişkili verilerinizi ve her şeyi kalıcı olarak silin</p>
+                </div>
+                <div class="col-4">
+                    <button
+                        style="border: none; border-radius: 21px; padding: 11px; font-weight: 500; font-size: smaller; margin-left: 20px;">Hesabı
+                        Sil</button>
+                </div>
 
 
 
 
-        <!-- 3.İÇERİK -->
-        <div id="icerik3" style="display: none;">
-            <h4>Hesap Yönetimi İçeriği</h4>
-        </div>
-        <!-- 4.İÇERİK -->
-        <div id="icerik4" style="display: none;">
-            <h4>Ana sayfa akışınızı ayarlayın İçeriği</h4>
-        </div>
-        <!-- 5.İÇERİK -->
-        <div id="icerik5" style="display: none;">
-            <h4>Üzerinize aldığınız hesaplar İçeriği</h4>
-        </div>
-        <!-- 6.İÇERİK -->
-        <div id="icerik6" style="display: none;">
-            <h4>Sosyal İzinler İçeriği</h4>
-        </div>
-        <!-- 7.İÇERİK -->
-        <div id="icerik7" style="display: none;">
-            <h4>Bildirimler İçeriği</h4>
-        </div>
-        <!-- 8.İÇERİK -->
-        <div id="icerik8" style="display: none;">
-            <h4>Gizlilik ve Veriler İçeriği</h4>
-        </div>
-        <!-- 9.İÇERİK -->
-        <div id="icerik9" style="display: none;">
-            <h4>Güvenlik ve Oturum Açma İçeriği</h4>
-        </div>
-        <!-- 10.İÇERİK -->
-        <div id="icerik10" style="display: none;">
-            <h4>Markalı İçerikler İçeriği</h4>
-        </div>
-    </div>
+
+
+
+
+
+
+
+                <!-- 3.İÇERİK -->
+                <div id="icerik3" style="display: none;">
+                    <h4>Hesap Yönetimi İçeriği</h4>
+                </div>
+                <!-- 4.İÇERİK -->
+                <div id="icerik4" style="display: none;">
+                    <h4>Ana sayfa akışınızı ayarlayın İçeriği</h4>
+                </div>
+                <!-- 5.İÇERİK -->
+                <div id="icerik5" style="display: none;">
+                    <h4>Üzerinize aldığınız hesaplar İçeriği</h4>
+                </div>
+                <!-- 6.İÇERİK -->
+                <div id="icerik6" style="display: none;">
+                    <h4>Sosyal İzinler İçeriği</h4>
+                </div>
+                <!-- 7.İÇERİK -->
+                <div id="icerik7" style="display: none;">
+                    <h4>Bildirimler İçeriği</h4>
+                </div>
+                <!-- 8.İÇERİK -->
+                <div id="icerik8" style="display: none;">
+                    <h4>Gizlilik ve Veriler İçeriği</h4>
+                </div>
+                <!-- 9.İÇERİK -->
+                <div id="icerik9" style="display: none;">
+                    <h4>Güvenlik ve Oturum Açma İçeriği</h4>
+                </div>
+                <!-- 10.İÇERİK -->
+                <div id="icerik10" style="display: none;">
+                    <h4>Markalı İçerikler İçeriği</h4>
+                </div>
+            </div>
 
 
 </body>
