@@ -2406,6 +2406,8 @@ p {
 .profilvisibility:hover {
   border-bottom: 1px solid black;
 }
+
+/* <!-- 3.İÇERİK ( Profil Görünürlüğü )--> */
 /* Kaydırmalı düğme stilleri */
 .switch {
   position: relative;
@@ -2459,3 +2461,43 @@ input:focus + .slider {
 input:checked + .slider:before {
   transform: translateX(26px);
 }
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    cursor: pointer;
+    margin-right: 20px; /* İstenilen boşluk miktarını ayarlayın */
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-item:hover {
+    border-bottom: 1px solid black;
+}
+
+.clickable {
+  height: auto; /* Yüksekliği otomatik olarak ayarla */
+  max-height: 30px; /* Maksimum yükseklik belirle */
+  transition: color 0.3s;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.clickable:hover {
+  background-color: #eeebeb;
+}
+
+.content {
+    margin-top: 10px;
+}
+.content-item {
+    display: none;
+}
+

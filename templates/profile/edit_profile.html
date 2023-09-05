@@ -499,7 +499,7 @@
         </div>
 
 
-        <!-- 3.İÇERİK  Profil Görünürlüğü-->
+        <!-- 3.İÇERİK ( Profil Görünürlüğü )-->
         <div id="icerik3" style="display: none;">
             <h4>Profil Görünürlüğü</h4>
             <div class="row">
@@ -563,9 +563,188 @@
                         açık bir şekilde görüntülenmeyecek.</p>
                 </div>
             </div>
+            <div style="display: flex; align-items: center; margin-top: 16px;">
+                <a href="#" class="clickable"
+                    style="color: black; text-decoration: none; margin-right: 5px; font-weight:500;"
+                    onclick="goster('etkinlikIcerik')">Etkinlik</a>
+                <a href="#" class="clickable"
+                    style="color: black; text-decoration: none; margin-right: 5px; font-weight:500;"
+                    onclick="goster('ilgiAlanlariIcerik')">İlgi Alanları</a>
+                <a href="#" class="clickable"
+                    style="color: black; text-decoration: none; margin-right: 5px; font-weight:500;"
+                    onclick="goster('panolarIcerik')">Panolar</a>
+                <a href="#" class="clickable"
+                    style="color: black; text-decoration: none; margin-right: 5px; font-weight:500;"
+                    onclick="goster('takipEdiliyorIcerik')">Takip Ediliyor</a>
+            </div>
+            <div class="content">
+                <div id="etkinlikIcerik" class="content-item" style="display: none;">
+                    <div class="row">
+                        <div class="col-10">
+                            <p style="font-size: 13px;">Yakın zamanda kaydettiğiniz veya yakından görüntülemek için
+                                dokunduğunuz Pinlerle ilgili fikirleri gizleyin.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-6 mt-3">
+                            <h6>1 Hafta Önce Baktığınız Pinler</h6>
+                        </div>
+                        <div class="col-4">
+                            <button
+                                style="margin-bottom: 18px; border: none; border-radius: 21px; padding: 11px; font-weight: 500; font-size: smaller;">Hepsini
+                                kapat</button>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/1.jpg" alt="">
+                        </div>
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/2.jpg" alt="">
+                        </div>
+                        <div style="flex: 1;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div style="display: flex; margin-top: 9px; ">
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/4.jpg" alt="">
+                        </div>
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/5.jpg" alt="">
+                        </div>
+                        <div style="flex: 1;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6 mt-3">
+                            <h6>4 Hafta Önce Baktığınız Pinler</h6>
+                        </div>
+                        <div class="col-4">
+                            <button
+                                style="margin-bottom: 18px; border: none; border-radius: 21px; padding: 11px; font-weight: 500; font-size: smaller;">Hepsini
+                                kapat</button>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/7.jpg" alt="">
+                        </div>
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/8.jpg" alt="">
+                        </div>
+                        <div style="flex: 1;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/9.jpg" alt="">
+                        </div>
+                    </div>
+                    <div style="display: flex; margin-top: 9px; ">
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/10.jpg" alt="">
+                        </div>
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/11.jpg" alt="">
+                        </div>
+                        <div style="flex: 1;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/12.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6 mt-3">
+                            <h6>1 Yıl Önce Baktığınız Pinler</h6>
+                        </div>
+                        <div class="col-4">
+                            <button
+                                style="margin-bottom: 18px; border: none; border-radius: 21px; padding: 11px; font-weight: 500; font-size: smaller;">Hepsini
+                                kapat</button>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/13.jpg" alt="">
+                        </div>
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/14.jpg" alt="">
+                        </div>
+                        <div style="flex: 1;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/15.jpg" alt="">
+                        </div>
+                    </div>
+                    <div style="display: flex; margin-top: 9px; ">
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/16.jpg" alt="">
+                        </div>
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/17.jpg" alt="">
+                        </div>
+                        <div style="flex: 1;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/18.jpg" alt="">
+                        </div>
+                    </div>
+                    <div style="display: flex; margin-top: 9px; ">
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/19.jpg" alt="">
+                        </div>
+                        <div style="flex: 1; margin-right: 10px;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/20.jpg" alt="">
+                        </div>
+                        <div style="flex: 1;">
+                            <img style="border-radius: 10px; height: 250px; width: 170px;"
+                                src="/static/img/edit_profile/21.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="ilgiAlanlariIcerik" class="content-item" style="display: none;">
+                    <div class="row">
+                        <div class="col-10">
+                            <p style="font-size: 13px;">Size uygun fikirler görmeye başlamak için ilgi alanları ekleyin.
+                                Artık ilginizi çekmeyen fikirleri gizlemek için ilgi alanlarını kaldırın.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <p style="font-size: 13px; margin-top: 40px;">Ana sayfa akışınıza henüz bir konu eklemediniz
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div id="panolarIcerik" class="content-item" style="display: none;">
+                    <p>Panolar içeriği burada.</p>
+                </div>
+
+                <div id="takipEdiliyorIcerik" class="content-item" style="display: none;">
+                    <p>Takip Ediliyor içeriği burada.</p>
+                </div>
+                <!-- Diğer içerikleri aynı şekilde ekleyin -->
+            </div>
         </div>
-
-
 
 
         <!-- 5.İÇERİK -->

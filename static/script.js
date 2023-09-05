@@ -104,17 +104,20 @@ function hideOtherContent(currentContentId) {
         }
     });
 }
-// Eğer JavaScript ile bir işlem yapmak isterseniz, bu örneği kullanabilirsiniz.
-document.getElementById("toggleSwitch").addEventListener("change", function () {
-    // Burada açık veya kapalı durumu kontrol edebilirsiniz.
-    if (this.checked) {
-        // Açık durumu
-        console.log("Açık");
-    } else {
-        // Kapalı durumu
-        console.log("Kapalı");
+
+function goster(contentId) {
+    // Tüm içerikleri gizle
+    var contentItems = document.querySelectorAll('.content-item');
+    for (var i = 0; i < contentItems.length; i++) {
+        contentItems[i].style.display = 'none';
     }
-});
+
+    // Belirli içeriği göster
+    var contentToShow = document.getElementById(contentId);
+    if (contentToShow) {
+        contentToShow.style.display = 'block';
+    }
+}
 
 
 // Mehtap edit_profile end
