@@ -40,7 +40,7 @@
   margin-left: -40px;
 }
 /* INPUT */
-.searchinput-container {
+.searchinput-container-discovery {
   min-width: 407px;
   display: flex;
   flex-grow: 1;
@@ -48,7 +48,7 @@
   flex-basis: auto;
   position: relative;
 }
-.searchinput {
+.searchinput-discovery {
   background-color: #e9e9e9;
   height: 48px;
   border-radius: 50px;
