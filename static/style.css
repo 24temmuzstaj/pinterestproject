@@ -2500,4 +2500,85 @@ input:checked + .slider:before {
 .content-item {
     display: none;
 }
+/* Pano */
+.panodiv {
+  width: 600px;
+  height: 60px; 
+  padding: 3px; 
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.panodiv img {
+  width: 55px;
+  height: 53px;
+  border-radius: 11px;
+}
+
+.panodiv h6 {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+}
+
+.panodiv p {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+}
+.panodiv:hover {
+  background-color: #ebe7e7;
+}
+
+.custom-switch.small-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 480px; 
+}
+
+
+.custom-switch.small-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-switch.small-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* Düğme arkaplan rengi */
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.custom-switch.small-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px; /* Düğme yüksekliği - 4px */
+  width: 16px; /* Düğme genişliği - 4px */
+  left: 2px; /* İç içe geçme mesafesi */
+  bottom: 1px; /* İç içe geçme mesafesi */
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.custom-switch.small-switch input:checked + .slider {
+  background-color: black; /* Açık durumun arkaplan rengi */
+}
+
+.custom-switch.small-switch input:checked + .slider:before {
+  -webkit-transform: translateX(16px); /* Açık durumda kaydırma */
+  -ms-transform: translateX(16px); /* Açık durumda kaydırma */
+  transform: translateX(16px); /* Açık durumda kaydırma */
+}
 
