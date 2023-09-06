@@ -49,3 +49,22 @@ document.addEventListener("click", (e) => {
     $(pin_create_header_under_border).css("border-top", "1.5px solid #878787");
   }
 });
+// Dosya seçme etiketinin tıklanmasını dinle
+document.getElementById("file-choose").addEventListener("click", function () {
+  // Dosya seçme inputunu tetikle
+  document.getElementById("file-upload").click();
+});
+
+// Dosya seçme inputundaki değişiklikleri dinle
+document.getElementById("file-upload").addEventListener("change", function () {
+  var dosyaSecInput = this;
+  var dosyaAdiParagrafi = document.getElementById("dosyaAdi");
+
+  if (dosyaSecInput.files.length > 0) {
+    // Seçilen dosyanın adını göster
+    dosyaAdiParagrafi.textContent = dosyaSecInput.files[0].name;
+  } else {
+    // Hiç dosya seçilmediyse mesajı temizle
+    dosyaAdiParagrafi.textContent = "";
+  }
+});
