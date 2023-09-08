@@ -2486,7 +2486,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   padding-left: 10px;
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 12px;
 }
 
@@ -2580,5 +2580,40 @@ input:checked + .slider:before {
   -webkit-transform: translateX(16px); /* Açık durumda kaydırma */
   -ms-transform: translateX(16px); /* Açık durumda kaydırma */
   transform: translateX(16px); /* Açık durumda kaydırma */
+}
+
+.image-container {
+  transition: all 0.3s ease-in-out;
+}
+
+.image-container:hover {
+  background-color: #ccc;
+  transform: scale(1.02);
+}
+/* 6.İÇERİK(Sosyal İzinler) */
+.custom-radio {
+  display: none; /* Orijinal radio düğmesini gizle */
+}
+
+.custom-radio + label {
+  cursor: pointer;
+  position: relative;
+  padding-right: 30px; /* Özelleştirilmiş görünüm için sağ boşluk ayarı */
+}
+
+.custom-radio + label::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px; /* Özelleştirilmiş kutunun genişliği */
+  height: 20px; /* Özelleştirilmiş kutunun yüksekliği */
+  border: 2px solid #000; /* Kenarlık rengi */
+  background-color: transparent;
+  border-radius: 50%; /* Yuvarlak köşeler */
+}
+
+.custom-radio:checked + label::before {
+  background-color: #000; /* Tıklandığında kutunun rengini değiştir */
 }
 
