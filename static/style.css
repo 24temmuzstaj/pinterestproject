@@ -2606,14 +2606,80 @@ input:checked + .slider:before {
   position: absolute;
   right: 0;
   top: 0;
-  width: 20px; /* Özelleştirilmiş kutunun genişliği */
-  height: 20px; /* Özelleştirilmiş kutunun yüksekliği */
-  border: 2px solid #000; /* Kenarlık rengi */
+  width: 20px; 
+  height: 20px; 
+  border: 2px solid #000; 
   background-color: transparent;
-  border-radius: 50%; /* Yuvarlak köşeler */
+  border-radius: 50%; 
+}
+/* Radio Düğmeleri */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 17px;
+  height: 17px;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
-.custom-radio:checked + label::before {
-  background-color: #000; /* Tıklandığında kutunun rengini değiştir */
+input[type="radio"]:checked {
+  background-color: black;
 }
+
+.your-custom-class {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  width: 50px;
+  height: 25px;
+  left: 50px;
+}
+
+/* On-off düğmesinin gizlenmiş input etiketi */
+.your-custom-class input {
+  display: none;
+}
+
+/* Düğme çerçevesi */
+.your-custom-class::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc; /* Düğme kapalıyken arka plan rengi */
+  border-radius: 25px; /* Yuvarlak düğme */
+  transition: background-color 0.3s;
+}
+
+/* Düğmenin kaydırıcı (slider) */
+.your-custom-slider-class {
+  position: absolute;
+  top: 2px; /* Kaydırıcıyı biraz yukarı hareket ettirin */
+  left: 2px; /* Kaydırıcıyı biraz sola hareket ettirin */
+  width: 21px; /* Kaydırıcı genişliği */
+  height: 21px; /* Kaydırıcı yüksekliği */
+  background-color: white; /* Kaydırıcı rengi */
+  border-radius: 50%; /* Yuvarlak kaydırıcı */
+  transition: left 0.3s;
+}
+
+
+.your-custom-class input:checked + .your-custom-slider-class {
+  left: 27px; 
+}
+
+
+
+
+
+
+
+
+
+
+
 
