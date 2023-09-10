@@ -2573,7 +2573,7 @@ input:checked + .slider:before {
 }
 
 .custom-switch.small-switch input:checked + .slider {
-  background-color: black; /* Açık durumun arkaplan rengi */
+  background-color: black;
 }
 
 .custom-switch.small-switch input:checked + .slider:before {
@@ -2634,7 +2634,7 @@ input[type="radio"]:checked {
   user-select: none;
   width: 50px;
   height: 25px;
-  left: 50px;
+  left: 0px;
 }
 
 /* On-off düğmesinin gizlenmiş input etiketi */
@@ -2667,14 +2667,9 @@ input[type="radio"]:checked {
   transition: left 0.3s;
 }
 
-
 .your-custom-class input:checked + .your-custom-slider-class {
   left: 27px; 
 }
-
-
-
-
 
 
 
