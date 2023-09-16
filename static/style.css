@@ -2959,3 +2959,306 @@ input[type="password"]::-ms-clear {
     width: 100%;
   }
 }
+
+/* MEHTAP EDİT-PROFİLE SAYFASI CSS START */
+.contentbox {
+  float: right;
+  margin-right: 550px;
+  width: 35%;
+  clear: both;
+  margin-top: 20px;
+  position: relative;
+  top: -410px;
+}
+.editinput {
+  border-radius: 10px;
+  padding: 5px;
+  border-color: blue;
+  border: 1px solid rgb(201, 194, 194);
+  height: 40px;
+  width: 100%;
+}
+.abouthinput{
+  border-radius: 10px;
+  padding: 5px;
+  border-color: blue;
+  border: 1px solid rgb(201, 194, 194);
+  height: 70px;
+  width: 100%;
+}
+.webhinput{
+  border-radius: 10px;
+  padding: 5px;
+  border-color: blue;
+  border: 1px solid rgb(201, 194, 194);
+  height: 40px;
+  width: 100%;
+}
+.profilvisibility:hover {
+  border-bottom: 1px solid black;
+}
+
+/* <!-- 3.İÇERİK ( Profil Görünürlüğü )--> */
+/* Kaydırmalı düğme stilleri */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 51px;
+  height: 16px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Kaydırmalı düğme tasarımı */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: -8px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transition: .4s;
+  border-radius: 34px;
+  border: 1px solid black;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+/* Açık durum için stil */
+input:checked + .slider {
+  background-color: #02070a;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    cursor: pointer;
+    margin-right: 20px; /* İstenilen boşluk miktarını ayarlayın */
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-item:hover {
+    border-bottom: 1px solid black;
+}
+
+.clickable {
+  height: auto; /* Yüksekliği otomatik olarak ayarla */
+  max-height: 30px; /* Maksimum yükseklik belirle */
+  transition: color 0.3s;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.clickable:hover {
+  background-color: #eeebeb;
+}
+
+.content {
+    margin-top: 10px;
+}
+.content-item {
+    display: none;
+}
+/* Pano */
+.panodiv {
+  width: 600px;
+  height: 60px; 
+  padding: 3px; 
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.panodiv img {
+  width: 55px;
+  height: 53px;
+  border-radius: 11px;
+}
+
+.panodiv h6 {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+}
+
+.panodiv p {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+}
+.panodiv:hover {
+  background-color: #ebe7e7;
+}
+
+.custom-switch.small-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 480px; 
+}
+
+
+.custom-switch.small-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-switch.small-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* Düğme arkaplan rengi */
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.custom-switch.small-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px; /* Düğme yüksekliği - 4px */
+  width: 16px; /* Düğme genişliği - 4px */
+  left: 2px; /* İç içe geçme mesafesi */
+  bottom: 1px; /* İç içe geçme mesafesi */
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.custom-switch.small-switch input:checked + .slider {
+  background-color: black;
+}
+
+.custom-switch.small-switch input:checked + .slider:before {
+  -webkit-transform: translateX(16px); /* Açık durumda kaydırma */
+  -ms-transform: translateX(16px); /* Açık durumda kaydırma */
+  transform: translateX(16px); /* Açık durumda kaydırma */
+}
+
+.image-container {
+  transition: all 0.3s ease-in-out;
+}
+
+.image-container:hover {
+  background-color: #ccc;
+  transform: scale(1.02);
+}
+/* 6.İÇERİK(Sosyal İzinler) */
+.custom-radio {
+  display: none; /* Orijinal radio düğmesini gizle */
+}
+
+.custom-radio + label {
+  cursor: pointer;
+  position: relative;
+  padding-right: 30px; /* Özelleştirilmiş görünüm için sağ boşluk ayarı */
+}
+
+.custom-radio + label::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px; 
+  height: 20px; 
+  border: 2px solid #000; 
+  background-color: transparent;
+  border-radius: 50%; 
+}
+/* Radio Düğmeleri */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 17px;
+  height: 17px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: black;
+}
+
+.your-custom-class {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  width: 50px;
+  height: 25px;
+  left: 0px;
+}
+
+/* On-off düğmesinin gizlenmiş input etiketi */
+.your-custom-class input {
+  display: none;
+}
+
+/* Düğme çerçevesi */
+.your-custom-class::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc; /* Düğme kapalıyken arka plan rengi */
+  border-radius: 25px; /* Yuvarlak düğme */
+  transition: background-color 0.3s;
+}
+
+/* Düğmenin kaydırıcı (slider) */
+.your-custom-slider-class {
+  position: absolute;
+  top: 2px; /* Kaydırıcıyı biraz yukarı hareket ettirin */
+  left: 2px; /* Kaydırıcıyı biraz sola hareket ettirin */
+  width: 21px; /* Kaydırıcı genişliği */
+  height: 21px; /* Kaydırıcı yüksekliği */
+  background-color: white; /* Kaydırıcı rengi */
+  border-radius: 50%; /* Yuvarlak kaydırıcı */
+  transition: left 0.3s;
+}
+
+.your-custom-class input:checked + .your-custom-slider-class {
+  left: 27px; 
+}
+
