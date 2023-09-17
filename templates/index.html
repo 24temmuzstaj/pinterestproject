@@ -1,5 +1,7 @@
-{% extends "base.html" %} {% load static %} {% block title %} Pinterest
-{%endblock %} {% block content %} {% if user.is_authenticated %}
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Pinterest
+{% endblock %} {% block content %} {% if user.is_authenticated %}
 <div class="profile-save-container" onclick="event.stopPropagation()">
   <div class="save-header">
     <h5>Kaydet</h5>
@@ -271,7 +273,6 @@
         <li>Bugün</li>
         <li>Keşfet</li>
       </ul>
-      >>>>>>> Stashed changes
     </a>
   </div>
 
