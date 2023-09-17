@@ -3240,25 +3240,110 @@ input[type="radio"]:checked {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: #ccc; /* Düğme kapalıyken arka plan rengi */
-  border-radius: 25px; /* Yuvarlak düğme */
-  transition: background-color 0.3s;
+  height: 1px;
+  background-color: #111111;
 }
-
-/* Düğmenin kaydırıcı (slider) */
-.your-custom-slider-class {
+ /* MEHTAP BOTTOM SECTİON CSS */
+ .col-form {
+  flex: 0 0 25%;
+  padding: 10px;
+  background-color: #f9f9f9; 
+  border-radius: 50px;
   position: absolute;
-  top: 2px; /* Kaydırıcıyı biraz yukarı hareket ettirin */
-  left: 2px; /* Kaydırıcıyı biraz sola hareket ettirin */
-  width: 21px; /* Kaydırıcı genişliği */
-  height: 21px; /* Kaydırıcı yüksekliği */
-  background-color: white; /* Kaydırıcı rengi */
-  border-radius: 50%; /* Yuvarlak kaydırıcı */
-  transition: left 0.3s;
+  top: 50%;
+  right: 10%; 
+  transform: translateY(-50%);
+  height: fit-content;
+  z-index: 2;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px; 
+  height: 540px;
+  margin: 0 auto; 
+  overflow: hidden;
+}
+.col-form form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2px;
+  margin-top: 10px; 
+}
+.col-form form label {
+  width: 250px;
+  text-align: start;
+  font-size: 12px;
 }
 
-.your-custom-class input:checked + .your-custom-slider-class {
-  left: 27px; 
+.col-form form input {
+  padding: 8px; 
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 12px;
 }
+
+.col-form form button {
+  padding: 7px; 
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 17px;
+}
+
+.col-form .facebook-button,
+.col-form .google-button {
+  padding: 8px; 
+  border-radius: 18px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  width: 250px;
+  font-size: 12px;
+}
+.col-form .text {
+  font-size: 10px;
+  color: #666; 
+}
+.col-form .facebook-button {
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+}
+.col-form .google-button {
+  color: black;
+  background-color: #dee7e7f3; 
+  border: 1px solid rgb(204, 204, 224);
+}
+/* En alttaki footer */
+.graybox a ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center; 
+}
+
+.graybox a ul li {
+  font-size: 10px;
+  color: #111111;
+  text-align: center;
+  margin: 0 5px; 
+  position: relative; 
+}
+
+.graybox a ul li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #111111;
+}
+ /* MEHTAP BOTTOM SECTİON END CSS */
+
+
 
