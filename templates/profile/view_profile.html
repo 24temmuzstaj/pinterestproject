@@ -1,0 +1,72 @@
+{% extends "base.html" %} {% load static %} {% block title %}Profil düzenle
+{%endblock %} {% block content %}
+<div class="container-fluid d-flex justify-content-center">
+  <div class="row align-items-center">
+    <div class="col-md-6 my-5 text-center">
+      <div class="profileimg rounded-circle">
+        <img
+          src="{{ user_profile.profile_image.url }}"
+          alt="Profil Resmi"
+          class="w-100"
+        />
+      </div>
+
+      <h1 class="">{{ request.user.username}}</h1>
+      <div class="d-flex justify-content-center">
+        <a class="sharebtn btn rounded-pill mx-1 w-auto" href="">Paylaş</a>
+        <a
+          class="editbtn btn rounded-pill mx-1 text-nowrap"
+          href="{% url 'edit_profile' %}"
+          >Profili düzenle</a
+        >
+      </div>
+      <div class="d-flex justify-content-center my-5">
+        <a href="{% url 'my_pins' %}" class="mx-3 created-pins">Oluşturuldu</a>
+
+        <a href="{% url 'saved_pins' %}" class="mx-3 created-pins"
+          >Kaydedildi</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="my-pins container">
+  <div class="mypins-wrapper">
+    {% for pin in pins %}
+    <li class="cardseri mypins-cards">
+      <a href="{% url 'detay' pin.id %}" class="cardhref">
+        <div class="imageandtext">
+          <img
+            src="{{ pin.image.url }}"
+            alt="{{ pin.title }}"
+            class="w-100 rounded-4 pinimg"
+          />
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="container">
+  <ul>
+    <div class="mypins-wrapper">
+      {% for saved_pin in saved_pins %}
+      <li class="cardseri">
+        <a href="{% url 'pins_detay' saved_pin.pin.id %}" class="cardhref">
+          <div class="saved-imageandtext">
+            <img
+              src="{{ saved_pin.pin.image.url }}"
+              alt="{{ saved_pin.pin.title }}"
+              class="w-100 rounded-4 pinimg"
+            />
+          </div>
+        </a>
+      </li>
+
+      {% endfor %}
+    </div>
+  </ul>
+</div>
+{%endblock content %}

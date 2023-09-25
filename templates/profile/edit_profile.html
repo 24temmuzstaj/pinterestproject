@@ -1,0 +1,1391 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Profil {%endblock %}
+
+{% block content %}
+
+<div class="list">
+    <div class="list-item ">
+        <a href="#" id="profilLink">Profili Düzenle</a>
+    </div>
+    <div class="list-item">
+        <a href="#" id="bilgilerLink">Hesap Yönetimi</a>
+    </div>
+    <div class="list-item">
+        <a href="#" id="hesapLink">Profil Görünürlüğü</a>
+    </div>
+    <div class="list-item">
+        <a href="#" id="akısLink">Ana sayfa akışınızı ayarlayın</a>
+    </div>
+    <div class="list-item">
+        <a href="#" id="aldıgınızLink">Üzerinize aldığınız hesaplar</a>
+    </div>
+    <div class="list-item">
+        <a href="#" id="izinlerLink">Sosyal izinler</a>
+    </div>
+    <div class="list-item">
+        <a href="#" id="bildirimLink">Bildirimler</a>
+    </div>
+    <div class="list-item">
+        <a href="#" id="gizlilikLink">Gizlilik ve veriler</a>
+    </div>
+    <div class="list-item">
+        <a href="#" id="guvenlikLink">Güvenlik</a>
+    </div>
+    <div class="list-item">
+        <a href="#" id="markaLink">Markalı içerikler</a>
+    </div>
+</div>
+
+<div class="contentbox">
+    <!-- -------------------------------------------------------------------------------------->
+    <!-- 1.İÇERİK(Profili Düzenle) -->
+    <div id="icerik1" style="display: none; font-size: 13px;">
+        <h4>Profili Düzenle</h4>
+        <p>Kişisel bilgilerinizi gizli tutun. Buraya eklediğiniz bilgiler, profilinizi görüntüleyebilen herkes
+            tarafından görülebilir.</p>
+        <div class="row">
+            <div class="col-2">
+                <p style="font-size: 10px; margin-top: 17px; ">Fotoğraf</p>
+                <img src="/static/img/boşimg.jpg" alt="" style="border-radius: 100%; width: 60px; height: 60px;">
+            </div>
+            <div class="col-2">
+                <button
+                    style="margin-top: 45px; border: none; border-radius: 24px; padding: 7px; font-weight:500;">Değiştir</button>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-5">
+                <p style="font-size: 10px; margin-top: 17px; ">Ad</p>
+                <input class="editinput" type="text" placeholder="Adı">
+            </div>
+            <div class="col-5">
+                <p style="font-size: 10px; margin-top: 17px; ">Soyadı</p>
+                <input class="editinput" type="text" placeholder="Soyadı">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 10px; margin-top: 17px; margin-bottom: 4px; ">Hakkında</p>
+                <input class="abouthinput" type="text" placeholder="Hikayenizi Anlatın">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 10px; margin-top: 17px; margin-bottom: 4px; ">Web Sitesi</p>
+                <input class="webhinput" type="text" placeholder="https://plus.google.com/117485071617512257122">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 10px; margin-top: 17px; margin-bottom: 4px; ">Kullanıcı Adı</p>
+                <input class="webhinput" type="text" placeholder="Kullanıcı Adı">
+                <p style="font-size: 10px; margin-bottom: 4px; ">www.pinterest.com/mmmehtapavci
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------------------------->
+    <!-- 2.İÇERİK(Hessap Yönetimi) -->
+    <div id="icerik2" style="display: none;">
+        <h4>Hesap Yönetimi</h4>
+        <p style="font-size: 13px;">Kişisel bilgilerinizde veya hesap türünüzde değişiklik yapın.
+        </p>
+        <h6 class="mt-4">Hesabınız</h6>
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 10px; margin-bottom: 4px; ">E-posta • Gizli</p>
+                <input class="webhinput" type="text">
+            </div>
+        </div>
+        <div class="row mt-4 ">
+            <div class="col-8">
+                <p style="font-size: 10px; margin-bottom: 4px; ">Parola</p>
+                <input class="webhinput" type="text">
+            </div>
+            <div class="col-4">
+                <button
+                    style="margin-top: 18px; border: none; border-radius: 21px; padding: 11px; font-weight:500; font-size:small;">Değiştir
+                </button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-7">
+                <p style="font-size: 14px; margin-bottom: 4px; font-weight: 600;">İşletme hesabına geçin</p>
+                <p style="font-size: 13px;">Bir işletme hesabıyla, Pinterest'te işletmenizi büyütmenizi sağlayacak
+                    reklamlar ve analizler gibi araçlara erişebilirsiniz.</p>
+            </div>
+            <div class="col-5">
+                <button
+                    style="margin-top: 16px; border: none; border-radius: 21px; padding: 11px; font-weight: 500; font-size: smaller;">Hesabı
+                    geçir</button>
+            </div>
+        </div>
+        <div class="row">
+            <h6 class="mt-4">Kişisel Bilgiler</h6>
+            <div class="col-10">
+                <p style="font-size: 10px;margin-top: 15px;">Doğum Tarihi</p>
+                <input type="date" class="webhinput " style="font-size: small;" name="" id="">
+            </div>
+        </div>
+
+        <div class="row">
+            <p style="font-size: 10px; margin-top: 18px;">Cinsiyet</p>
+            <div class="col-3">
+                <!-- Radyo düğmesi 1 -->
+                <input type="radio" name="cinsiyet" id="kadın" class="custom-radio">
+                <label for="kadın" style="font-size:smaller;">Kadın</label>
+            </div>
+            <div class="col-3">
+                <!-- Radyo düğmesi 2 -->
+                <input type="radio" name="cinsiyet" id="erkek" class="custom-radio">
+                <label for="Erkek" style="font-size:small;">Erkek</label>
+            </div>
+            <div class="col-3">
+                <!-- Radyo düğmesi 3 -->
+                <input type="radio" name="cinsiyet" id="different" class="custom-radio">
+                <label for="İkiliOlmayan" style="font-size:small;">İkili Olmayan</label>
+            </div>
+        </div>
+        <!-- ülke seçimi -->
+        <div class="col-10">
+            <p style="font-size: 9px;margin-top: 15px;">Ülke/Bölge</p>
+            <select aria-invalid="false" class="webhinput" style="font-size: small;" id="accountBasicsCountry"
+                name="country">
+                <option value="TR">Türkiye (Türkiye)</option>
+                <option value="UM">ABD Küçük Dış Adaları</option>
+                <option value="AF">Afganistan (افغانستان‎)</option>
+                <option value="AX">Aland</option>
+                <option value="DE">Almanya (Deutschland)</option>
+                <option value="US">Amerika Birleşik Devletleri</option>
+                <option value="AS">Amerikan Samoası</option>
+                <option value="AD">Andorra</option>
+                <option value="AO">Angola</option>
+                <option value="AI">Anguilla</option>
+                <option value="AQ">Antarktika</option>
+                <option value="AG">Antigua ve Barbuda</option>
+                <option value="AR">Arjantin</option>
+                <option value="AL">Arnavutluk (Shqipëria)</option>
+                <option value="AW">Aruba</option>
+                <option value="AU">Avustralya</option>
+                <option value="AT">Avusturya (Österreich)</option>
+                <option value="AZ">Azerbaycan (Azərbaycan)</option>
+                <option value="BS">Bahamalar</option>
+                <option value="BH">Bahreyn (البحرين‎)</option>
+                <option value="BD">Bangladeş (বাংলাদেশ)</option>
+                <option value="BB">Barbados</option>
+                <option value="EH">Batı Sahra (الصحراء الغربية‎)</option>
+                <option value="BE">Belçika (België)</option>
+                <option value="BZ">Belize</option>
+                <option value="BJ">Benin (Bénin)</option>
+                <option value="BM">Bermuda</option>
+                <option value="BY">Beyaz Rusya (Беларусь)</option>
+                <option value="AE">Birleşik Arap Emirlikleri (الإمارات العربية المتحدة‎)</option>
+                <option value="GB">Birleşik Krallık</option>
+                <option value="BO">Bolivya</option>
+                <option value="BQ">Bonaire</option>
+                <option value="BA">Bosna Hersek (Босна и Херцеговина)</option>
+                <option value="BW">Bostvana</option>
+                <option value="BV">Bouvet Adası</option>
+                <option value="BR">Brezilya (Brasil)</option>
+                <option value="IO">Britanya Hint Okyanusu Toprakları</option>
+                <option value="BN">Brunei</option>
+                <option value="BG">Bulgaristan (България)</option>
+                <option value="BF">Burkina Faso</option>
+                <option value="BI">Burundi (Uburundi)</option>
+                <option value="BT">Butan (འབྲུག)</option>
+                <option value="KY">Cayman Adaları</option>
+                <option value="GI">Cebelitarık</option>
+                <option value="DZ">Cezayir (الجزائر‎)</option>
+                <option value="CX">Christmas Adası</option>
+                <option value="DJ">Cibuti</option>
+                <option value="CC">Cocos Adaları</option>
+                <option value="CK">Cook Adaları</option>
+                <option value="CW">Curaçao</option>
+                <option value="TD">Çad (Tchad)</option>
+                <option value="CZ">Çek Cumhuriyeti (Česká republika)</option>
+                <option value="DK">Danimarka (Danmark)</option>
+                <option value="TL">Doğu Timor</option>
+                <option value="DO">Dominik Cumhuriyeti (República Dominicana)</option>
+                <option value="DM">Dominika</option>
+                <option value="EC">Ekvador</option>
+                <option value="GQ">Ekvator Ginesi (Guinea Ecuatorial)</option>
+                <option value="SV">El Salvador</option>
+                <option value="ID">Endonezya</option>
+                <option value="ER">Eritre</option>
+                <option value="AM">Ermenistan (Հայաստան)</option>
+                <option value="EE">Estonya (Eesti)</option>
+                <option value="ET">Etiyopya</option>
+                <option value="FK">Falkland Adaları (Islas Malvinas)</option>
+                <option value="FO">Faroe Adaları (Føroyar)</option>
+                <option value="MA">Fas (المغرب‎)</option>
+                <option value="FJ">Fiji</option>
+                <option value="CI">Fildişi Sahili</option>
+                <option value="PH">Filipinler</option>
+                <option value="PS">Filistin Devleti (فلسطين‎)</option>
+                <option value="FI">Finlandiya (Suomi)</option>
+                <option value="FR">Fransa</option>
+                <option value="GF">Fransız Guyanası (Guyane française)</option>
+                <option value="TF">Fransız Güney Toprakları (Terres australes françaises)</option>
+                <option value="PF">Fransız Polinezyası (Polynésie française)</option>
+                <option value="GA">Gabon</option>
+                <option value="GM">Gambiya</option>
+                <option value="GH">Gana (Gaana)</option>
+                <option value="GN">Gine (Guinée)</option>
+                <option value="GW">Gine-Bissau (Guiné Bissau)</option>
+                <option value="GD">Grenada</option>
+                <option value="GL">Grönland (Kalaallit Nunaat)</option>
+                <option value="GP">Guadelup</option>
+                <option value="GU">Guam</option>
+                <option value="GT">Guatemala</option>
+                <option value="GG">Guernsey</option>
+                <option value="GY">Guyana</option>
+                <option value="ZA">Güney Afrika</option>
+                <option value="GS">Güney Georgia ve Güney Sandwich Adaları</option>
+                <option value="SS">Güney Sudan (جنوب السودان‎)</option>
+                <option value="GE">Gürcistan (საქართველო)</option>
+                <option value="HT">Haiti</option>
+                <option value="HM">Heard Adası ve McDonald Adaları</option>
+                <option value="HR">Hırvatistan (Hrvatska)</option>
+                <option value="IN">Hindistan (भारत)</option>
+                <option value="NL">Hollanda (Nederland)</option>
+                <option value="HN">Honduras</option>
+                <option value="HK">Hong Kong (香港)</option>
+                <option value="IQ">Irak (العراق‎)</option>
+                <option value="IR">İran İslam Cumhuriyeti (ایران‎)</option>
+                <option value="IE">İrlanda</option>
+                <option value="ES">İspanya</option>
+                <option value="IL">İsrail (ישראל‎)</option>
+                <option value="SE">İsveç (Sverige)</option>
+                <option value="CH">İsviçre (Schweiz)</option>
+                <option value="IT">İtalya (Italia)</option>
+                <option value="IS">İzlanda (Ísland)</option>
+                <option value="JM">Jamaika</option>
+                <option value="JP">Japon işi (日本)</option>
+                <option value="JE">Jersey</option>
+                <option value="KH">Kamboçya (កម្ពុជា)</option>
+                <option value="CM">Kamerun (Cameroun)</option>
+                <option value="CA">Kanada</option>
+                <option value="ME">Karadağ (Crna Gora)</option>
+                <option value="QA">Katar (قطر‎)</option>
+                <option value="KZ">Kazakistan (Казахстан)</option>
+                <option value="KE">Kenya</option>
+                <option value="CY">Kıbrıs (Κύπρος)</option>
+                <option value="KG">Kırgızistan</option>
+                <option value="KI">Kiribati</option>
+                <option value="CO">Kolombiya</option>
+                <option value="KM">Komorlar (جزر القمر‎)</option>
+                <option value="CG">Kongo (Congo-Brazzaville)</option>
+                <option value="CD">Kongo Demokratik Cumhuriyeti (Jamhuri ya Kidemokrasia ya Kongo)</option>
+                <option value="KR">Kore Cumhuriyeti (대한민국)</option>
+                <option value="CR">Kosta Rika</option>
+                <option value="KW">Kuveyt (الكويت‎)</option>
+                <option value="MK">Kuzey Makedonya Cumhuriyeti (Македонија)</option>
+                <option value="MP">Kuzey Mariana Adaları</option>
+                <option value="CU">Küba</option>
+                <option value="LA">Lao Demokratik Halk Cumhuriyeti (ສ.ປ.ປ ລາວ)</option>
+                <option value="LS">Lesotho</option>
+                <option value="LV">Letonya (Latvija)</option>
+                <option value="LR">Liberya</option>
+                <option value="LY">Libya (ليبيا‎)</option>
+                <option value="LI">Lihtenştayn</option>
+                <option value="LT">Litvanya (Lietuva)</option>
+                <option value="LB">Lübnan (لبنان‎)</option>
+                <option value="LU">Lüksemburg</option>
+                <option value="HU">Macaristan (Magyarország)</option>
+                <option value="MG">Madagaskar (Madagasikara)</option>
+                <option value="MO">Makao (澳門)</option>
+                <option value="MW">Malavi</option>
+                <option value="MV">Maldivler</option>
+                <option value="MY">Malezya</option>
+                <option value="ML">Mali</option>
+                <option value="MT">Malta</option>
+                <option value="IM">Man Adası</option>
+                <option value="MH">Marshall Adaları</option>
+                <option value="MQ">Martinique</option>
+                <option value="MU">Mauritius (Moris)</option>
+                <option value="YT">Mayotte</option>
+                <option value="MX">Meksika (México)</option>
+                <option value="EG">Mısır (مصر‎)</option>
+                <option value="FM">Mikronezya</option>
+                <option value="MN">Moğolistan (Монгол)</option>
+                <option value="MD">Moldova Cumhuriyeti (Republica Moldova)</option>
+                <option value="MC">Monako</option>
+                <option value="MS">Montserrat</option>
+                <option value="MR">Moritanya (موريتانيا‎)</option>
+                <option value="MZ">Mozambik (Moçambique)</option>
+                <option value="MM">Myanmar (မြန်မာ)</option>
+                <option value="NA">Namibya</option>
+                <option value="NR">Nauru</option>
+                <option value="NP">Nepal (नेपाल)</option>
+                <option value="NE">Nijer (Nijar)</option>
+                <option value="NG">Nijerya</option>
+                <option value="NI">Nikaragua</option>
+                <option value="NU">Niue</option>
+                <option value="NF">Norfolk Adası</option>
+                <option value="NO">Norveç (Norge)</option>
+                <option value="CF">Orta Afrika Cumhuriyeti (République centrafricaine)</option>
+                <option value="UZ">Özbekistan (Ўзбекистон)</option>
+                <option value="PK">Pakistan (پاکستان‎)</option>
+                <option value="PW">Palau</option>
+                <option value="PA">Panama (Panamá)</option>
+                <option value="VA">Papalık (Vatikan Şehir Devleti) (Città del Vaticano)</option>
+                <option value="PG">Papua Yeni Gine</option>
+                <option value="PY">Paraguay</option>
+                <option value="PE">Peru</option>
+                <option value="PN">Pitcairn Adaları</option>
+                <option value="PL">Polonya (Polska)</option>
+                <option value="PT">Portekiz</option>
+                <option value="PR">Porto Riko</option>
+                <option value="RE">Reunion</option>
+                <option value="RO">Romanya (România)</option>
+                <option value="RW">Ruanda</option>
+                <option value="RU">Rusya Federasyonu (Россия)</option>
+                <option value="SH">Saint Helena,Ascension ve Tristan da Cunha</option>
+                <option value="KN">Saint Kitts ve Nevis</option>
+                <option value="LC">Saint Lucia</option>
+                <option value="MF">Saint Martin [Fransa bölgesi] (Saint-Martin [partie française])</option>
+                <option value="PM">Saint Pierre ve Miquelon (Saint-Pierre-et-Miquelon)</option>
+                <option value="VC">Saint Vincent ve Grenadinler</option>
+                <option value="WS">Samoa</option>
+                <option value="SM">San Marino</option>
+                <option value="ST">Sao Tome ve Principe (São Tomé e Príncipe)</option>
+                <option value="SN">Senegal (Sénégal)</option>
+                <option value="SC">Seyşeller</option>
+                <option value="RS">Sırbistan (Србија)</option>
+                <option value="SL">Sierra Leone</option>
+                <option value="SG">Singapur</option>
+                <option value="SX">Sint Maarten (Hollanda tarafı)</option>
+                <option value="SK">Slovakya (Slovensko)</option>
+                <option value="SI">Slovenya (Slovenija)</option>
+                <option value="SB">Solomon Adaları</option>
+                <option value="SO">Somali (Soomaaliya)</option>
+                <option value="LK">Sri Lanka (ශ්‍රී ලංකාව))</option>
+                <option value="BL">St Barths (Saint-Barthélemy)</option>
+                <option value="SD">Sudan (السودان‎)</option>
+                <option value="SR">Surinam</option>
+                <option value="SY">Suriye Arap Cumhuriyeti (سوريا‎)</option>
+                <option value="SA">Suudi Arabistan (المملكة العربية السعودية‎)</option>
+                <option value="SJ">Svalbard ve Jan Mayen (Svalbard og Jan Mayen)</option>
+                <option value="SZ">Svaziland</option>
+                <option value="CL">Şili</option>
+                <option value="TJ">Tacikistan</option>
+                <option value="TZ">Tanzanya</option>
+                <option value="TH">Tayland (ไทย)</option>
+                <option value="TW">Tayvan (台灣)</option>
+                <option value="TG">Togo</option>
+                <option value="TK">Tokelau</option>
+                <option value="TO">Tonga</option>
+                <option value="TT">Trinidad ve Tobago</option>
+                <option value="TN">Tunus (تونس‎)</option>
+                <option value="TC">Turks ve Caicos Adaları</option>
+                <option value="TV">Tuvalu</option>
+
+                <option value="TM">Türkmenistan</option>
+                <option value="UG">Uganda</option>
+                <option value="UA">Ukrayna (Україна)</option>
+                <option value="OM">Umman (عُمان‎)</option>
+                <option value="UY">Uruguay</option>
+                <option value="JO">Ürdün (الأردن‎)</option>
+                <option value="VU">Vanuatu</option>
+                <option value="VE">Venezuela</option>
+                <option value="VN">Vietnam (Việt Nam)</option>
+                <option value="VI">Virjin Adaları, Birleşik Devletler</option>
+                <option value="VG">Virjin Adaları, Britanya</option>
+                <option value="WF">Wallis ve Futuna Adaları</option>
+                <option value="YE">Yemen (اليمن‎)</option>
+                <option value="NC">Yeni Kaledonya (Nouvelle-Calédonie)</option>
+                <option value="NZ">Yeni Zelanda</option>
+                <option value="CV">Yeşil Burun Adaları (Kabu Verdi)</option>
+                <option value="GR">Yunanistan (Ελλάδα)</option>
+                <option value="ZM">Zambiya</option>
+                <option value="ZW">Zimbabve</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 9px; margin-top: 15px;">Dil</p>
+                <select aria-invalid="false" class="webhinput" style="font-size: small;" name="locale">
+                    <option value="tr">Türkçe</option>
+                    <option value="af-ZA">Afrikaans</option>
+                    <option value="id-ID">Bahasa Indonesia</option>
+                    <option value="ms-MY">Bahasa Malaysia</option>
+                    <option value="cs-CZ">Čeština</option>
+                    <option value="da-DK">Dansk</option>
+                    <option value="de">Deutsch</option>
+                    <option value="en-AU">English (Australia)</option>
+                    <option value="en-IN">English (India)</option>
+                    <option value="en-GB">English (UK)</option>
+                    <option value="en-US">English (US)</option>
+                    <option value="es-419">Español (Américas)</option>
+                    <option value="es-AR">Español (Argentina)</option>
+                    <option value="es-ES">Español (España)</option>
+                    <option value="es-MX">Español (México)</option>
+                    <option value="fr">Français</option>
+                    <option value="hr-HR">Hrvatski</option>
+                    <option value="it">Italiano</option>
+                    <option value="hu-HU">Magyar</option>
+                    <option value="nl">Nederlands</option>
+                    <option value="nb-NO">Norsk bokmål</option>
+                    <option value="pl-PL">Polski</option>
+                    <option value="pt-BR">Português (Brasil)</option>
+                    <option value="pt-PT">Português (Europeu)</option>
+                    <option value="ro-RO">Română</option>
+                    <option value="sk-SK">Slovenčina</option>
+                    <option value="fi-FI">Suomi</option>
+                    <option value="sv-SE">Svenska</option>
+                    <option value="tl-PH">Tagalog</option>
+                    <option value="vi-VN">Tiếng Việt</option>
+                    <option value="el-GR">Ελληνικά</option>
+                    <option value="bg-BG">Български</option>
+                    <option value="ru-RU">Русский</option>
+                    <option value="uk-UA">Українська</option>
+                    <option value="he-IL">עברית</option>
+                    <option value="ar-SA">العربية</option>
+                    <option value="hi-IN">हिन्दी</option>
+                    <option value="bn-IN">বাংলা</option>
+                    <option value="te-IN">తెలుగు</option>
+                    <option value="th-TH">ภาษาไทย</option>
+                    <option value="ko-KR">한국어</option>
+                    <option value="ja">日本語</option>
+                    <option value="zh-CN">简体中文</option>
+                    <option value="zh-TW">繁體中文</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <h6 class="mt-4 mb-4">Devre Dışı Bırakma ve Silme</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p style="font-size: 14px; margin-bottom: 5px; font-weight: 500;">Hesabı Devre Dışı Bırak</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p style="font-size: 12px;">Profilinizi, Pinlerinizi ve panolarınızı geçici olarak gizleyin</p>
+            </div>
+            <div class="col-5">
+                <button
+                    style=" border: none; border-radius: 21px; padding: 11px; font-weight: 500; font-size: smaller;">Hesabı
+                    devre dışı bırak</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <p style="font-size: 14px; margin-top: 15px; font-weight: 500;">Verilerinizi ve hesabınızı silin
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <p style="font-size: 12px;">Hesabınızla ilişkili verilerinizi ve her şeyi kalıcı olarak silin</p>
+            </div>
+            <div class="col-4">
+                <button
+                    style="border: none; border-radius: 21px; padding: 11px; font-weight: 500; font-size: smaller; margin-left: 20px;">Hesabı
+                    Sil</button>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------------------------->
+    <!-- 3.İÇERİK ( Profil Görünürlüğü )-->
+    <div id="icerik3" style="display: none;">
+        <h4>Profil Görünürlüğü</h4>
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 13px;">Profilinizin Pinterest'te ve Pinterest dışında nasıl görüntüleneceğini
+                    yönetin.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <p style="font-size: 14px; margin-bottom: 5px; font-weight: 500;">Özel Profil</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9">
+                <p style="font-size: 13px;">Profiliniz özel olduğunda yalnızca onayladığınız kişiler profilinizi,
+                    Pinlerinizi, panolarınızı, takipçilerinizi ve takip edilen listelerinizi görebilir. <a
+                        style="color: black; font-weight: 600;" class="profilvisibility" href="">Daha fazla bilgi
+                        edninin.</a>
+                </p>
+            </div>
+            <div class="col-3">
+                <div class="col-2">
+                    <label class="switch">
+                        <input type="checkbox" id="toggleSwitch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <p style="font-size: 14px; margin-bottom: 5px; font-weight: 500;">Arama Gizliliği</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9">
+                <p style="font-size: 13px;">Profilinizi ve panolarınızı arama motorlarından gizleyin (Ör. Google).
+                    <a href="" class="profilvisibility" style="color: black; font-weight: 600;">Daha fazla bilgi
+                        edninin.</a>
+                </p>
+            </div>
+            <div class="col-2">
+                <label class="switch">
+                    <input type="checkbox" id="toggleSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------------------------->
+    <!-- 4.İÇERİK (Ana sayfa akışınızı ayarlayın) -->
+    <div id="icerik4" style="display: none;">
+        <h4>Ana sayfa akışınızı ayarlayın</h4>
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 13px;">Pinterest'i sizi daha iyi yansıtacak şekilde düzenleyin sen.
+                    Pinterest'in size fikirler önermek için kullandığı bilgileri düzenleyin. Bu bilgiler herkese
+                    açık bir şekilde görüntülenmeyecek.</p>
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; margin-top: 16px;">
+            <a href="#" class="clickable"
+                style="color: black; text-decoration: none; margin-right: 5px; font-weight:500;"
+                onclick="goster('etkinlikIcerik')">Etkinlik</a>
+            <a href="#" class="clickable"
+                style="color: black; text-decoration: none; margin-right: 5px; font-weight:500;"
+                onclick="goster('ilgiAlanlariIcerik')">İlgi Alanları</a>
+            <a href="#" class="clickable"
+                style="color: black; text-decoration: none; margin-right: 5px; font-weight:500;"
+                onclick="goster('panolarIcerik')">Panolar</a>
+            <a href="#" class="clickable"
+                style="color: black; text-decoration: none; margin-right: 5px; font-weight:500;"
+                onclick="goster('takipEdiliyorIcerik')">Takip Ediliyor</a>
+        </div>
+        <div class="content">
+            <div id="etkinlikIcerik" class="content-item" style="display: none;">
+                <div class="row">
+                    <div class="col-10">
+                        <p style="font-size: 13px;">Yakın zamanda kaydettiğiniz veya yakından görüntülemek için
+                            dokunduğunuz Pinlerle ilgili fikirleri gizleyin.</p>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-6 mt-3">
+                        <h6>1 Hafta Önce Baktığınız Pinler</h6>
+                    </div>
+                    <div class="col-4">
+                        <button
+                            style="margin-bottom: 18px; border: none; border-radius: 21px; padding: 11px; font-weight: 500; font-size: smaller;">Hepsini
+                            kapat</button>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/1.jpg" alt="">
+                    </div>
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/2.jpg" alt="">
+                    </div>
+                    <div style="flex: 1;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/3.jpg" alt="">
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 9px; ">
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/4.jpg" alt="">
+                    </div>
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/5.jpg" alt="">
+                    </div>
+                    <div style="flex: 1;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-6 mt-3">
+                        <h6>4 Hafta Önce Baktığınız Pinler</h6>
+                    </div>
+                    <div class="col-4">
+                        <button
+                            style="margin-bottom: 18px; border: none; border-radius: 21px; padding: 11px; font-weight: 500; font-size: smaller;">Hepsini
+                            kapat</button>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/7.jpg" alt="">
+                    </div>
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/8.jpg" alt="">
+                    </div>
+                    <div style="flex: 1;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/9.jpg" alt="">
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 9px; ">
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/10.jpg" alt="">
+                    </div>
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/11.jpg" alt="">
+                    </div>
+                    <div style="flex: 1;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-6 mt-3">
+                        <h6>1 Yıl Önce Baktığınız Pinler</h6>
+                    </div>
+                    <div class="col-4">
+                        <button
+                            style="margin-bottom: 18px; border: none; border-radius: 21px; padding: 11px; font-weight: 500; font-size: smaller;">Hepsini
+                            kapat</button>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/13.jpg" alt="">
+                    </div>
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/14.jpg" alt="">
+                    </div>
+                    <div style="flex: 1;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/15.jpg" alt="">
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 9px; ">
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/16.jpg" alt="">
+                    </div>
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/17.jpg" alt="">
+                    </div>
+                    <div style="flex: 1;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/18.jpg" alt="">
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 9px; ">
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/19.jpg" alt="">
+                    </div>
+                    <div style="flex: 1; margin-right: 10px;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/20.jpg" alt="">
+                    </div>
+                    <div style="flex: 1;">
+                        <img style="border-radius: 10px; height: 250px; width: 170px;"
+                            src="/static/img/edit_profile/21.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- İLGİ ALANLARI -->
+            <div id="ilgiAlanlariIcerik" class="content-item" style="display: none;">
+                <div class="row">
+                    <div class="col-10">
+                        <p style="font-size: 13px;">Size uygun fikirler görmeye başlamak için ilgi alanları ekleyin.
+                            Artık ilginizi çekmeyen fikirleri gizlemek için ilgi alanlarını kaldırın.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 mx-auto">
+                        <p style="font-size: 13px; margin-top: 40px;">Ana sayfa akışınıza henüz bir konu eklemediniz
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- PANO -->
+            <div id="panolarIcerik" class="content-item" style="display: none;">
+                <div class="row">
+                    <div class="col-10">
+                        <p style="font-size: 13px;">Bir panoyla ilgili fikirleri görmemek için bu panoyu kapatın.
+                            Endişelenmeyin, bu durum panonuzu etkilemeyecek.</p>
+                    </div>
+                </div>
+                <div class="panodiv mt-3">
+                    <img src="/static/img/edit_profile/1pano.jpg" alt="Örgü projeleri adlı panonun kapağı">
+                    <h6>Örgü Projeleri</h6>
+                    <p style="font-size: 10px;">1 Pin .4 Bölüm</p>
+                    <label class="custom-switch small-switch">
+                        <input type="checkbox" id="toggleSwitch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="panodiv mt-3">
+                    <img src="/static/img/edit_profile/2pano.jpg" alt="Örgü projeleri adlı panonun kapağı">
+                    <h6>Takı</h6>
+                    <p style="font-size: 10px;">2 Pin .0 Bölüm</p>
+                    <label class="custom-switch small-switch">
+                        <input type="checkbox" id="toggleSwitch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="panodiv mt-3">
+                    <img src="/static/img/edit_profile/3pano.jpg" alt="Örgü projeleri adlı panonun kapağı">
+                    <h6>Çiçek</h6>
+                    <p style="font-size: 10px;">1 Pin .1 Bölüm</p>
+                    <label class="custom-switch small-switch">
+                        <input type="checkbox" id="toggleSwitch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="panodiv mt-3">
+                    <img src="/static/img/edit_profile/4pano.jpg" alt="Örgü projeleri adlı panonun kapağı">
+                    <h6>Boncuk</h6>
+                    <p style="font-size: 10px;">2 Pin .0 Bölüm</p>
+                    <label class="custom-switch small-switch">
+                        <input type="checkbox" id="toggleSwitch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="panodiv mt-3">
+                    <img src="/static/img/edit_profile/5pano.jpg" alt="Örgü projeleri adlı panonun kapağı">
+                    <h6>Çiçek Aranjmanları</h6>
+                    <p style="font-size: 10px;">2 Pin .0 Bölüm</p>
+                    <label class="custom-switch small-switch">
+                        <input type="checkbox" id="toggleSwitch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="panodiv mt-3">
+                    <img src="/static/img/edit_profile/6pano.jpg" alt="Örgü projeleri adlı panonun kapağı">
+                    <h6>Tel Toka</h6>
+                    <p style="font-size: 10px;">5 Pin .4 Bölüm</p>
+                    <label class="custom-switch small-switch">
+                        <input type="checkbox" id="toggleSwitch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="panodiv mt-3">
+                    <img src="/static/img/edit_profile/7pano.jpg" alt="Örgü projeleri adlı panonun kapağı">
+                    <h6>Hediye Fikirleri</h6>
+                    <p style="font-size: 10px;">7 Pin .5 Bölüm</p>
+                    <label class="custom-switch small-switch">
+                        <input type="checkbox" id="toggleSwitch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="panodiv mt-3">
+                    <img src="/static/img/edit_profile/8pano.jpg" alt="Örgü projeleri adlı panonun kapağı">
+                    <h6>Seramik</h6>
+                    <p style="font-size: 10px;">2 Pin .2 Bölüm</p>
+                    <label class="custom-switch small-switch">
+                        <input type="checkbox" id="toggleSwitch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="panodiv mt-3">
+                    <img src="/static/img/edit_profile/9pano.jpg" alt="Örgü projeleri adlı panonun kapağı">
+                    <h6>Çiçek Taçlar</h6>
+                    <p style="font-size: 10px;">11 Pin .0 Bölüm</p>
+                    <label class="custom-switch small-switch">
+                        <input type="checkbox" id="toggleSwitch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- TAKİP EDİLİYOR -->
+            <div id="takipEdiliyorIcerik" class="content-item" style="display: none;">
+                <div class="row">
+                    <div class="col-10">
+                        <p style="font-size: 13px;">Bir kişiyi veya markayı takip etmeyi bırakarak yayınladıkları
+                            Pinleri görmeyebilirsiniz. Bu kişilere bildirim gönderilmeyecek.</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-5">
+                        <div class="image-container">
+                            <a href="">
+                                <img src="/static/img/edit_profile/1pin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="image-container">
+                            <a href="">
+                                <img src="/static/img/edit_profile/2pin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-5">
+                        <div class="image-container">
+                            <a href="">
+                                <img src="/static/img/edit_profile/3pin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="image-container">
+                            <a href="">
+                                <img src="/static/img/edit_profile/4pin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-5">
+                        <div class="image-container">
+                            <a href="">
+                                <img src="/static/img/edit_profile/5pin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="image-container">
+                            <a href="">
+                                <img src="/static/img/edit_profile/6pin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-5">
+                        <div class="image-container">
+                            <a href="">
+                                <img src="/static/img/edit_profile/7pin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------------------------->
+    <!-- 5.İÇERİK(Üzerinize Aldığınız Hesaplar) -->
+    <div id="icerik5" style="display: none;">
+        <h4>Üzerinize aldığınız hesaplar İçeriği</h4>
+        <div class="row">
+            <div class="col-9">
+                <p style="font-size: 12px;">Bir hesabı üstünüze aldığınızda analizleri takip edebilir ve
+                    sitelerinizden oluşturulan her Pinde marka adınızın görünmesini sağlayabilirsiniz.<a
+                        style="color: black; font-weight: 600;" class="profilvisibility" href="">Daha fazla bilgi
+                        alın.</a>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-1">
+                <img src="/static/img/edit_profile/globalword.png" style="width: 20px; height: 20px;" alt="">
+            </div>
+            <div class="col-3 mt-1">
+                <h6>Web Siteleri</h6>
+            </div>
+            <div class="col-3">
+                <!-- Boş bir kolon ekleyerek düğmeyi en sonda görüntüleyebilirsiniz -->
+            </div>
+            <div class="col-5">
+                <button
+                    style="font-size: 13px; border: none; border-radius: 24px; padding: 5px; font-weight:500;">Üzerine
+                    Al</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------->
+    <!-- 6.İÇERİK(Sosyal İzinler) -->
+    <div id="icerik6" style="display: none;">
+        <h4>Sosyal İzinler</h4>
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 13px;">Diğer kullanıcıların Pinterest'te sizinle nasıl etkileşime
+                    girebileceğini ve en yeni özelliklerimize göre onaylamak istediğiniz diğer izinleri seçin</p>
+            </div>
+        </div>
+        <div class="row">
+            <h6 class="mt-4">@Bahsetmeler</h6>
+            <p style="font-size: 13px;">Kimlerin sizden @basedebileceğini seçin</p>
+        </div>
+        <div class="row mt-3">
+            <div class="col-1">
+                <input type="radio" id="everyone" name="allow_mentions" value="0">
+            </div>
+            <div class="col-4"><label for="everyone" style="font-size: small;">Pinterest'teki herkes</label>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-1">
+                <input type="radio" id="everyone" name="allow_mentions" value="0">
+            </div>
+            <div class="col-7"><label for="everyone" style="font-size: small;">Yalnızca takip ettiğiniz
+                    kişilerden</label></div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-1">
+                <input type="radio" id="everyone" name="allow_mentions" value="0">
+            </div>
+            <div class="col-4">
+                <label for="everyone" style="font-size: small;">Kapat</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <h6 class="mt-4">Mesajlar</h6>
+                <p style="font-size: 13px;">Mesajların gelen kutunuza veya istek kutunuza alınmasına ya da hiç
+                    alınmamasına siz karar verirsiniz</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-7">
+                <p style="font-size:13px; font-weight: 500;">Arkadaşlar</p>
+                <p style="font-size: 13px;">Gelen Kutusu</p>
+            </div>
+            <div class="col-4">
+                <button
+                    style="font-size: 13px; border: none; border-radius: 24px; padding: 10px; font-weight:500;">Düzenle</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-7">
+                <p style="font-size:13px; font-weight: 500;">Takipçiler</p>
+                <p style="font-size: 13px;">İstekler</p>
+            </div>
+            <div class="col-4">
+                <button
+                    style="font-size: 13px; border: none; border-radius: 24px; padding: 10px; font-weight:500;">Düzenle</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-7">
+                <p style="font-size:13px; font-weight: 500;">Takip Ediliyor</p>
+                <p style="font-size: 13px;">İstekler</p>
+            </div>
+            <div class="col-4">
+                <button
+                    style="font-size: 13px; border: none; border-radius: 24px; padding: 10px; font-weight:500;">Düzenle</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-7">
+                <p style="font-size:13px; font-weight: 500;">Arkadaşlar</p>
+                <p style="font-size: 13px;">Gelen Kutusu</p>
+            </div>
+            <div class="col-4">
+                <button
+                    style="font-size: 13px; border: none; border-radius: 24px; padding: 10px; font-weight:500;">Düzenle</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <h6 class="mt-4">Yorumlar</h6>
+                <p style="font-size: 13px; font-weight: 500;">Pinlerinize Yorum Yapılmasına İzin verin</p>
+            </div>
+            <div class="row">
+                <div class="col-8" style="font-size: 12px;">Yorumlar, yeni ve mevcut Pinleriniz için varsayılan
+                    olarak açılacaktır</div>
+                <label class="your-custom-class another-custom-class">
+                    <input type="checkbox" id="yourToggleSwitchID">
+                    <span class="your-custom-slider-class"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 13px; font-weight: 500;margin-top: 10px;">Pinlerimdeki yorumları filtrele</p>
+            </div>
+            <div class="row">
+                <div class="col-8" style="font-size: 12px;">Yorumlar, yeni ve mevcut Pinleriniz için varsayılan
+                    olarak açılacaktır</div>
+                <label class="your-custom-class another-custom-class">
+                    <input type="checkbox" id="yourToggleSwitchID">
+                    <span class="your-custom-slider-class"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 13px; font-weight: 500; margin-top: 10px;">Başkalarının Pinlerindeki yorumları
+                    filtreleyin</p>
+            </div>
+            <div class="row">
+                <div class="col-8" style="font-size: 12px;">Belirli kelime veya ifadeleri içeren yorumları
+                    başkalarının Pinlerinde engelleyin</div>
+                <label class="your-custom-class another-custom-class">
+                    <input type="checkbox" id="yourToggleSwitchID">
+                    <span class="your-custom-slider-class"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <h6 class="mt-4">Alışveriş Önerileri
+                </h6>
+                <p style="font-size: 13px; font-weight: 500;">Standart Pinlerde göster</p>
+            </div>
+            <div class="row">
+                <div class="col-8" style="font-size: 12px;">Kullanıcılar, görsel arama özelliğini kullanarak
+                    standart Pinlerinizde gösterilene benzer ürünleri satın alabilirler</div>
+                <label class="your-custom-class another-custom-class">
+                    <input type="checkbox" id="yourToggleSwitchID">
+                    <span class="your-custom-slider-class"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 13px; font-weight: 500; margin-top: 10px;">Fikir Pinlerinde göster</p>
+            </div>
+            <div class="row">
+                <div class="col-8" style="font-size: 12px;">Kullanıcılar, görsel arama ile alışveriş özelliğini
+                    kullanarak Fikir Pinlerinizde gösterilene benzer ürünleri satın alabilirler
+                    Ürün etiketleri veya ücretli ortaklık etiketi içeren Fikir reklamları ve Fikir Pinleri için
+                    alışveriş önerileri kullanılamaz</div>
+                <label class="your-custom-class another-custom-class">
+                    <input type="checkbox" id="yourToggleSwitchID">
+                    <span class="your-custom-slider-class"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <h6 class="mt-4">Videoları Otomatik Oynat</h6>
+                <p style="font-size: 13px; font-weight: 500; margin-top: 10px;">Pinlerinize Yorum Yapılmasına İzin
+                    verin</p>
+            </div>
+            <div class="row">
+                <div class="col-8" style="font-size: 12px;">Videoları bilgisayarda otomatik oynat.<a
+                        style="color: black; font-weight: 600;" class="profilvisibility" href="">Daha fazla bilgi
+                        edninin.</a></div>
+                <label class="your-custom-class another-custom-class">
+                    <input type="checkbox" id="yourToggleSwitchID">
+                    <span class="your-custom-slider-class"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------->
+    <!-- 7.İÇERİK(Bildirimler) -->
+    <div id="icerik7" style="display: none;">
+        <h4>Bildirimler</h4>
+        <div class="row">
+            <div class="col-11" style="font-size: 13px;">Sizi önemli değişikliklerden mutlaka haberdar edeceğiz;
+                ancak siz yine de başka neleri duymak istediğinizi belirtin.<a style="color: black; font-weight: 600;"
+                    class="profilvisibility" href="">Daha fazla bilgi
+                    edninin.</a>
+            </div>
+            <div class="row mt-4">
+                <div class="col-7">
+                    <p style="font-size:13px; font-weight: 500;">Pinterest'te</p>
+                    <p style="font-size: 13px;">Uygulamada veya sitedeyken göreceğiniz bildirimleri seçin.</p>
+                </div>
+                <div class="col-4">
+                    <button
+                        style="font-size: 13px; border: none; border-radius: 24px; padding: 10px; font-weight:500;">Düzenle</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <a style="color: black; font-weight: 500;font-size: 13px; " class="profilvisibility" href="">Daha
+                        fazla bilgi
+                        edninin.</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-7">
+                <p style="font-size:13px; font-weight: 500;">E-postayla</p>
+                <p style="font-size: 13px;">E-posta ile hangi bildirimleri alacağınızı seçin.</p>
+            </div>
+            <div class="col-4">
+                <button
+                    style="font-size: 13px; border: none; border-radius: 24px; padding: 10px; font-weight:500;">Düzenle</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <a style="color: black; font-weight: 500;font-size: 13px; " class="profilvisibility" href="">Daha
+                    fazla bilgi
+                    edninin.</a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-7">
+                <p style="font-size:13px; font-weight: 500;">Anlık bildirimlerle</p>
+                <p style="font-size: 13px;">Telefonunuza veya bilgisayarınıza gelecek bildirimleri seçin.</p>
+            </div>
+            <div class="col-4">
+                <button
+                    style="font-size: 13px; border: none; border-radius: 24px; padding: 10px; font-weight:500;">Düzenle</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <a style="color: black; font-weight: 500;font-size: 13px; " class="profilvisibility" href="">Daha
+                    fazla bilgi
+                    edninin.</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------->
+    <!-- 8.İÇERİK(Gizlilik ve Veriler) -->
+    <div id="icerik8" style="display: none;">
+        <h4>Gizlilik ve Veriler</h4>
+        <div class="row">
+            <div class="col-10" style="font-size: 13px;">Sizi önemli değişikliklerden mutlaka haberdar edeceğiz;
+                ancak siz yine de başka neleri duymak istediğinizi belirtin. <br> <a
+                    style="color: black; font-weight: 600;" class="profilvisibility" href="">Daha fazla bilgi
+                    edninin.</a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <h6>
+                Reklam Kişiselleştirme
+            </h6>
+        </div>
+        <div class="row mt-1">
+            <div class="col-1 d-flex justify-content-center align-items-center ">
+                <input type="checkbox" id="everyone" name="allow_mentions" value="0">
+            </div>
+            <div class="col-9">
+                <label for="everyone" style="font-size: small;">Ziyaret edilen sitelerden alınan bilgiler kullanılsın:
+                    Pinterest'in, Pinterest'teki reklamları iyileştirmek için ziyaret ettiğiniz sitelerden alınan
+                    verileri kullanmasına izin verin.</label>
+                <a style="color: black; font-weight: 600; font-size: 12px;" class="profilvisibility" href="">Daha fazla
+                    bilgi edinin.</a>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-1 d-flex justify-content-center align-items-center ">
+                <input type="checkbox" id="everyone" name="allow_mentions" value="0">
+            </div>
+            <div class="col-9">
+                <label for="everyone" style="font-size: small;">İş ortağı bilgileri kullanılsın: Pinterest'in,
+                    Pinterest'te gördüğünüz reklamları iyileştirmek için iş ortaklarından alınan bilgileri kullanmasına
+                    izin verin. </label>
+                <a style="color: black; font-weight: 600; font-size: 12px;" class="profilvisibility" href="">Daha fazla
+                    bilgi edinin.</a>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-1 d-flex justify-content-center align-items-center ">
+                <input type="checkbox" id="everyone" name="allow_mentions" value="0">
+            </div>
+            <div class="col-9">
+                <label for="everyone" style="font-size: small;">Pinterest ile ilgili reklamlar: Pinterest'in, diğer
+                    sitelerde veya uygulamalarda size gösterilen Pinterest ile ilgili reklamları iyileştirmek için
+                    etkinliğinizi kullanmasına izin verin.</label>
+                <a style="color: black; font-weight: 600; font-size: 12px;" class="profilvisibility" href="">Daha fazla
+                    bilgi edinin.</a>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-1 d-flex justify-content-center align-items-center ">
+                <input type="checkbox" id="everyone" name="allow_mentions" value="0">
+            </div>
+            <div class="col-9">
+                <label for="everyone" style="font-size: small;">Reklam raporlama etkinliği: Pinterest'in reklam
+                    performansı raporlaması için etkinliğinizi paylaşmasına izin verin.</label>
+                <a style="color: black; font-weight: 600; font-size: 12px;" class="profilvisibility" href="">Daha fazla
+                    bilgi edinin.</a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-7">
+                <h6>Verilerinizi ve Hesabınızı Silin</h6>
+                <p style="font-size: 13px;">Verilerinizi ve hesabınızı silin</p>
+            </div>
+            <div class="col-3">
+                <button
+                    style="font-size: 13px; border: none; border-radius: 24px; padding: 10px; font-weight:500;">Verileri
+                    sil</button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-7">
+                <h6>Verilerinizi talep edin
+                </h6>
+                <p style="font-size: 13px;">Pinterest'in hakkınızda topladığı bilgilerin bir kopyasını talep
+                    edebilirsiniz. Üçüncü taraf sağlayıcımız SendSafely'den talebinizi tamamlamanız için bir e-posta
+                    alacaksınız.</p><a style="color: black; font-weight: 600; font-size: 12px;" class="profilvisibility"
+                    href="">Daha fazla
+                    bilgi edinin.</a>
+            </div>
+            <div class="col-4">
+                <button
+                    style="font-size: 13px; border: none; border-radius: 24px; padding: 10px; font-weight:500;margin-top: 50px;">İsteği
+                    Başlat</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------->
+    <!-- 9.İÇERİK(Güvenlik) -->
+    <div id="icerik9" style="display: none;">
+        <h4>Güvenlik</h4>
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 13px;">Hesabınızın, Pinlerinizin ve panolarınızın güvenliğini korumak için iki
+                    faktörlü
+                    kimlik doğrulamayı açmak ve bağlı cihazlarınızın listesini kontrol etmek gibi ek güvenlik
+                    önlemlerine yer
+                    verin. <br> <a style="color: black; font-weight: 600;" class="profilvisibility" href="">Daha fazla
+                        bilgi
+                        edninin.</a>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <h6>İki Faktörlü Kimlik Doğrulama</h6>
+            <div class="row">
+                <div class="col-11">
+                    <p style="font-size: 13px;">Bu, hesabınızın daha da güvenli olmasını sağlar. Her oturum açtığınızda
+                        parolanızın yanı sıra telefonunuza SMS'le gönderdiğimiz gizli kodu girmeniz gerekir. <a
+                            style="color: black; font-weight: 600;" class="profilvisibility" href="">Daha
+                            fazla
+                            bilgi
+                            edninin.</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-1 d-flex justify-content-center align-items-center mt-3 ">
+                    <input type="checkbox" id="everyone" name="allow_mentions" value="0">
+                </div>
+                <div class="col-9 mt-3">
+                    <label for="everyone" style="font-size: 14px;">Oturum açma sırasında kod
+                        iste</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <h6>Oturum açma seçenekleri</h6>
+            <div class="row">
+                <div class="col-11">
+                    <p style="font-size: 13px;">Pinterest'te oturum açmak için sosyal medya hesabınızı kullanın. <br> <a
+                            style="color: black; font-weight: 600;" class="profilvisibility" href="">Daha
+                            fazla
+                            bilgi
+                            edninin.</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-1 d-flex justify-content-center align-items-center mt-3 ">
+                    <input type="checkbox" id="everyone" name="allow_mentions" value="0">
+                </div>
+                <div class="col-9 mt-4">
+                    <label for="everyone" style="font-size: 14px;">Oturum açmak için Facebook hesabınızı
+                        kullanın</label>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-1 d-flex justify-content-center align-items-center mt-1 ">
+                    <input type="checkbox" id="everyone" name="allow_mentions" value="0">
+                </div>
+                <div class="col-9 mt-1">
+                    <label for="everyone" style="font-size: 14px;">Oturum açmak için Google hesabınızı kullanın</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <h6>Uygulamalarda oturum açma</h6>
+            <div class="row">
+                <div class="col-11">
+                    <p style="font-size: 13px;">Pinterest profilinizle oturum açtığınız her yeri takip edin ve artık
+                        Pinterest ile kullanmadığınız uygulamaların erişimini kaldırın.<br> <a
+                            style="color: black; font-weight: 600;" class="profilvisibility" href="">Daha
+                            fazla
+                            bilgi
+                            edninin.</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-11 mt-3">
+                    <p style="font-size: 13px;">Hiç uygulama onaylamadınız</p>
+                    <div class="row mt-5">
+                        <div class="col-7">
+                            <h6>Bağlı cihazlar
+                            </h6>
+                            <p style="font-size: 13px;">Bu liste hesabınızda oturum açmış olan cihazları gösterir.
+                                Tanımadığınız tüm cihazların erişimini iptal edin.</p><a
+                                style="color: black; font-weight: 600; font-size: 13px;" class="profilvisibility"
+                                href="">Daha fazla
+                                bilgi edinin.</a>
+                        </div>
+                        <div class="col-5">
+                            <button
+                                style="font-size: 13px; border: none; border-radius: 24px; padding: 10px; font-weight:500;margin-top: 50px;">Oturumları
+                                Göster</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------------------------->
+    <!-- 10.İÇERİK(Markalı İçerikler) -->
+    <div id="icerik10" style="display: none;">
+        <h4>Markalı İçerikler</h4>
+        <div class="row">
+            <div class="col-10">
+                <p style="font-size: 13px;">Pinterest'in Markalı İçerik programı, sponsorluk fırsatlarından
+                    yararlanabilmeleri için içerik üreticileri ve markalar arasında bağlantı kuran bir hizmettir.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <h6>Markalı İçerikler programına kaydolun
+            </h6>
+        </div>
+        <div class="row mt-1">
+            <div class="col-7">
+                <p style="font-size: 13px;">Sizi markalarla eşleştirmek için elimizden geleni yapacağız ancak kaydolmak
+                    markalarla anlaşma yapacağınızı garanti etmez.</p>
+            </div>
+            <div class="col-4 mt-2">
+                <button
+                    style="font-size: 13px; border: none; border-radius: 24px; padding: 10px; font-weight:500;">Kaydol</button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+
+
+{%endblock content %}

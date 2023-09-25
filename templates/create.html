@@ -1,0 +1,131 @@
+{% extends "base.html" %} {% load static %} {% block title %} Create Pin
+{%endblock %} {% block content %}
+<body class="create-body">
+  <div class="create-container">
+    <div class="create-wrapper">
+      <form
+        action="{% url 'create' %}"
+        method="POST"
+        enctype="multipart/form-data"
+        class="w-100 m-auto p-3 create-form"
+      >
+        {% csrf_token %}
+        <div class="create-upper-side d-flex">
+          <div class="create-more-wrapper">
+            <i class="fa-solid fa-ellipsis" style="width: 18px; height: 18px">
+            </i>
+          </div>
+          <!--  <select name="kategori" id="">
+      <option value="">------------</option>
+      {% for kategori in kategoriler %}
+      <option value="{{ kategori.id }}">{{ kategori.title }}</option>
+      {% endfor %}
+    </select> -->
+          <div class="create-save-wrapper ms-auto">
+            <div class="create-pin-wrapper d-flex">
+              <div class="create-mypins-wrapper">
+                <li class="nav-item dropdown create-show-pins">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span class="create">Pinlerim</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/create/"></a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+              <div class="pin-save-wrapper">
+                <input type="submit" value="Kaydet" class="pin-save-btn" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="file-upload" class="col-6 upload-label" id="file-choose"
+            ><div class="create-file-wrapper" for="file-upload">
+              <div class="create-border"></div>
+              <div class="create-upload-file">
+                <div class="create-upload-content">
+                  <input
+                    type="file"
+                    id="file-upload"
+                    class="file-upload-input"
+                    name="image"
+                  />
+                  <i
+                    class="fa-solid fa-circle-arrow-up mx-auto mb-2"
+                    style="font-size: 24px"
+                  >
+                  </i>
+
+                  <span class="d-block text-center upload-span"
+                    >Yüklemek için tıklayın</span
+                  >
+                  <span class="upload-suggestion"
+                    >Öneri: Yüksek kaliteli .jpg formatında 20 MB'den küçük
+                    dosyalar kullanın</span
+                  >
+                  <p id="dosyaAdi"></p>
+                </div>
+              </div>
+            </div>
+          </label>
+
+          <div class="create-texting-side col-6">
+            <div class="texting-header-wrapper">
+              <div class="texting-header">
+                <textarea
+                  type="text"
+                  class="header-input"
+                  id="input-header"
+                  placeholder="Başlığınızı ekleyin"
+                  rows="1"
+                  name="title"
+                ></textarea>
+                <div class="create-pin-header-border"></div>
+              </div>
+            </div>
+            <div class="texting-about">
+              <div class="img-and-span-wrapper d-flex">
+                <img
+                  src="{{ user_profile.profile_image.url }}"
+                  alt=""
+                  style="width: 48px; height: 48px; border-radius: 48px"
+                />
+                <span style="display: block">{{ request.user.username }}</span>
+              </div>
+
+              <textarea
+                class="about-area"
+                type="text"
+                rows="1"
+                placeholder="Pininizin ne hakkında olduğunu herkese söyleyin"
+                name="description"
+              ></textarea>
+              <div
+                class="create-pin-header-under-border"
+                style="
+                  border-top: 1.5px solid #878787;
+                  width: 500px;
+                  margin-bottom: 20px;
+                  margin-top: 10px;
+                  width: 40vw;
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+<script src="/static/script.js"></script>
+{% endblock content %}

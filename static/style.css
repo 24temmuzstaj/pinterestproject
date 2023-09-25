@@ -1,0 +1,3349 @@
+/* 100vh'lık renkli bölümler için kullanıldı sarı-mavi-pembe */
+.index-search {
+  height: 100vh;
+}
+/* bir fikir arayın yazan bölüm büyük text için css*/
+.bfah1 {
+  width: 500px;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* bir fikir arayın yazan bölüm küçük text için css */
+
+.bfah2 {
+  width: 500px;
+  font-size: 24px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* buton ve textler de kullanılan renkler */
+.kbf {
+  color: rgb(195, 25, 82);
+}
+
+.sgt {
+  color: #fffd92;
+  background-color: #fffd92;
+}
+
+.mgt {
+  color: rgb(218, 255, 246);
+  background-color: rgb(218, 255, 246);
+}
+
+.pgt {
+  color: rgb(255, 226, 235);
+  background-color: rgb(255, 226, 235);
+}
+
+.bfah3 {
+  background-color: rgb(195, 25, 82);
+}
+.bfk3 {
+  background-color: rgb(0, 107, 108);
+}
+
+.bfk3t {
+  color: rgb(0, 107, 108);
+}
+.gdy3 {
+  background-color: rgb(195, 47, 0);
+}
+
+.gdy3r {
+  color: rgb(195, 47, 0);
+}
+
+/* buton hizalama için verilen genişlik */
+.mw500 {
+  width: 500px;
+}
+/* sarı bölüm üst üste gelen fotolar ve buton için css  */
+.img-fotogen {
+  position: relative;
+}
+
+.img-fotogen img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.img-fotogen img:nth-child(1) {
+  z-index: 1;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: -100px;
+  left: -50px;
+}
+
+.img-fotogen img:nth-child(2) {
+  width: 290px;
+  z-index: 4;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: 0px;
+  left: -250px;
+}
+
+.img-fotogen img:nth-child(3) {
+  z-index: 3;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: 90px;
+  left: -385px;
+}
+
+.img-fotogen img:nth-child(4) {
+  width: 160px;
+  z-index: 2;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: 240px;
+  left: -60px;
+}
+
+.img-fotogen-text {
+  z-index: 5;
+  background-color: white;
+  color: rgb(110, 15, 60);
+  position: absolute;
+  top: 150px;
+  left: -300px;
+  font-size: 22px;
+  font-weight: bold;
+  width: 290px;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.sck23 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* mavi bölüm üst üste gelen fotolar için css  */
+
+.img-fotogen2 {
+  position: relative;
+}
+
+.img-fotogen2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.img-fotogen2 img:nth-child(1) {
+  z-index: 1;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: -350px;
+  left: -400px;
+  width: 400px;
+}
+
+.img-fotogen2 img:nth-child(2) {
+  width: 100px;
+  z-index: 2;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: -60px;
+  left: -350px;
+}
+
+.img-fotogen2 img:nth-child(3) {
+  width: 100px;
+  z-index: 2;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: -60px;
+  left: -240px;
+}
+
+.img-fotogen2 img:nth-child(4) {
+  width: 100px;
+  z-index: 2;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: -60px;
+  left: -130px;
+}
+
+.img-forogen2-text {
+  position: absolute;
+  top: -310px;
+  left: -350px;
+  color: rgb(255, 255, 255);
+  font-size: 56px;
+  font-weight: bold;
+  padding: 5px;
+  z-index: 3;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.img-fotogen2 img:nth-child(5) {
+  width: 230px;
+  z-index: 2;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: -360px;
+  left: 50px;
+}
+
+.img-forogen2-text2 {
+  width: 200px;
+  position: absolute;
+  top: -230px;
+  left: 60px;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  z-index: 3;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.img-fotogen2 img:nth-child(6) {
+  width: 170px;
+  z-index: 2;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: -80px;
+  left: 30px;
+}
+
+.img-forogen2-text3 {
+  width: 140px;
+  position: absolute;
+  top: -30px;
+  left: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  z-index: 3;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.img-fotogen2 img:nth-child(7) {
+  width: 210px;
+  z-index: 2;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: 105px;
+  left: -250px;
+}
+
+.img-forogen2-text4 {
+  width: 150px;
+  position: absolute;
+  top: 150px;
+  left: -250px;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  z-index: 3;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.img-fotogen2 img:nth-child(8) {
+  width: 220px;
+  z-index: 2;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: 145px;
+  left: 10px;
+}
+
+.img-forogen2-text5 {
+  width: 150px;
+  position: absolute;
+  top: 220px;
+  left: 28px;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  z-index: 3;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+/* pembe bölüm gör üret yazısı iki satır olması için genişlik verildi */
+.gdy3w {
+  width: 350px;
+}
+
+/* pembe bölüm üst üste gelen fotolar ve text için css  */
+.img-fotogen3 {
+  position: relative;
+}
+
+.img-fotogen3 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.img-fotogen3 img:nth-child(1) {
+  z-index: 1;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: -420px;
+  left: -500px;
+  width: 780px;
+}
+
+.img-fotogen3 img:nth-child(2) {
+  width: 200px;
+  z-index: 2;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: -175px;
+  left: -270px;
+}
+
+.img-fotogen3 img:nth-child(3) {
+  width: 90px;
+  z-index: 3;
+  /* İkinci fotoğrafı istediğiniz pozisyona taşımak için top ve left değerlerini değiştirebilirsiniz */
+  top: 110px;
+  left: -310px;
+  border-radius: 50px 50px;
+}
+
+.img-forogen3-text {
+  width: 120px;
+  position: absolute;
+  top: 185px;
+  left: -220px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  z-index: 3;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+/***** Slider ****/
+#carouselExampleCaptions {
+  height: 100vh;
+  background-color: white; /* Örnek olarak beyaz bir renk */
+  overflow: hidden; /* Slider içeriklerinin sınırlar içinde kalmasını sağlamak için */
+  position: relative; /* Resimlerin mutlak pozisyonunu kullanabilmek için */
+}
+.still {
+  text-align: center;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tittle {
+  margin-top: 100px;
+}
+/*  DAİRE BUTONLAR */
+.btnpoint {
+  border-radius: 75%;
+  margin-bottom: 300px;
+}
+/* NOKTALARIN STİLL ÖZELLİKLERİ */
+#btnzero {
+  background-color: #c28b00; /* Nokta rengi */
+  border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
+  width: 12px; /* Genişlik */
+  height: 12px; /* Yükseklik */
+  margin-right: 5px; /* Sağ boşluk */
+  margin-left: 5px; /* Sol boşluk */
+  border: none; /* Kenarlık yok */
+  cursor: pointer;
+}
+#btnone {
+  background-color: #618c7b; /* Nokta rengi */
+  border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
+  width: 12px; /* Genişlik */
+  height: 12px; /* Yükseklik */
+  margin-right: 5px; /* Sağ boşluk */
+  margin-left: 5px; /* Sol boşluk */
+  border: none; /* Kenarlık yok */
+  cursor: pointer;
+}
+#btntwo {
+  background-color: #0076d3; /* Nokta rengi */
+  border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
+  width: 12px; /* Genişlik */
+  height: 12px; /* Yükseklik */
+  margin-right: 5px; /* Sağ boşluk */
+  margin-left: 5px; /* Sol boşluk */
+  border: none; /* Kenarlık yok */
+  cursor: pointer;
+}
+#btntree {
+  background-color: #407a57; /* Nokta rengi */
+  border-radius: 50%; /* Yuvarlak kenarlar için %50 border-radius */
+  width: 12px; /* Genişlik */
+  height: 12px; /* Yükseklik */
+  margin-right: 5px; /* Sağ boşluk */
+  margin-left: 5px; /* Sol boşluk */
+  border: none; /* Kenarlık yok */
+  cursor: pointer;
+}
+
+/* SLİDER GEÇİŞLERİ */
+/***** 1.Slider'ın içeriği ******/
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.note {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: auto;
+}
+.display-note-text {
+  font-size: 50px;
+  font-weight: bold;
+}
+/* 1.slider'ın yazı tipi ve rengi */
+.text {
+  color: #c28b00;
+  font-size: 55px;
+  font-weight: 530;
+}
+/******* slider-two font and color ******/
+.texttwo {
+  color: #467c66;
+  font-size: 55px;
+  font-weight: 530;
+}
+/******* slider-three font and color ******/
+.textthree {
+  color: #0076d3;
+  font-size: 55px;
+  font-weight: 530;
+}
+/******* slider-four font and color ******/
+.textfour {
+  color: #407a57;
+  font-size: 55px;
+  font-weight: 530;
+}
+
+/****** 1.Slider Fotoğraflar ******/
+.dinnerslider {
+  display: inline-block;
+}
+
+/***** 1slider'ın imgleri **********/
+#pngone {
+  margin-left: -110px;
+}
+#pngtwo img {
+  width: 220px;
+  height: 340px;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+#pngtree img {
+  width: 180px;
+  height: 230px;
+  position: relative;
+  margin-top: 200px;
+  margin-left: 23px;
+}
+#pngfour img {
+  width: 180px;
+  height: 280px;
+  position: relative;
+  margin-top: 300px;
+  opacity: 0.3;
+}
+#pngfive img {
+  width: 190px;
+  height: 250px;
+  position: relative;
+  margin-top: 200px;
+  margin-left: -27px;
+}
+#pngsix img {
+  width: 210px;
+  height: 280px;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 45px;
+}
+#pngseven {
+  height: 150px;
+  margin-left: 55px;
+}
+
+/*****  slidertwo photo locations **********/
+#pngonex {
+  margin-left: -110px;
+  opacity: 0.9;
+}
+#pngtwox img {
+  width: 220px;
+  height: 340px;
+  position: relative;
+  margin-top: 150px;
+  margin-left: 20px;
+  opacity: 0.9;
+}
+#pngthreex img {
+  width: 180px;
+  height: 230px;
+  position: relative;
+  margin-top: 250px;
+  margin-left: 23px;
+  opacity: 0.8;
+}
+#pngfourx img {
+  width: 190px;
+  height: 300px;
+  position: relative;
+  margin-top: 330px;
+  opacity: 0.3;
+}
+#pngfivex img {
+  width: 200px;
+  height: 250px;
+  position: relative;
+  margin-top: 250px;
+  margin-left: -27px;
+  opacity: 0.9;
+}
+#pngsixx img {
+  width: 210px;
+  height: 280px;
+  position: relative;
+  margin-top: 150px;
+  margin-left: 65px;
+  opacity: 0.9;
+}
+#pngsevenx img {
+  width: 300px;
+  height: 360px;
+  margin-left: 70px;
+}
+
+/*****  sliderthree photo locations **********/
+#pngoney {
+  margin-left: -110px;
+  opacity: 0.9;
+}
+#pngtwoy img {
+  width: 220px;
+  height: 340px;
+  position: relative;
+  margin-top: 120px;
+  margin-left: 20px;
+  opacity: 0.9;
+}
+#pngthreey img {
+  width: 200px;
+  height: 250px;
+  position: relative;
+  margin-top: 200px;
+  margin-left: 35px;
+  opacity: 0.9;
+}
+#pngfoury img {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  margin-top: 330px;
+  opacity: 0.3;
+}
+#pngfivey img {
+  width: 190px;
+  height: 280px;
+  position: relative;
+  margin-top: 220px;
+  margin-left: -15px;
+  opacity: 0.9;
+}
+#pngsixy img {
+  width: 230px;
+  height: 350px;
+  position: relative;
+  margin-top: 110px;
+  margin-left: 75px;
+  opacity: 0.9;
+}
+#pngseveny img {
+  height: 350px;
+  margin-left: 90px;
+}
+
+/*****  sliderfour photo locations **********/
+#pngonez {
+  margin-left: -110px;
+}
+#pngtwoz img {
+  width: 200px;
+  height: 340px;
+  position: relative;
+  margin-top: 95px;
+  margin-left: 15px;
+}
+#pngthreez img {
+  width: 190px;
+  height: 230px;
+  position: relative;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+#pngfourz img {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  margin-top: 300px;
+  opacity: 0.3;
+}
+#pngfivez img {
+  width: 190px;
+  height: 250px;
+  position: relative;
+  margin-top: 190px;
+  margin-left: 10px;
+  opacity: 0.8;
+}
+#pngsixz img {
+  width: 200px;
+  height: 330px;
+  position: relative;
+  margin-top: 95px;
+  margin-left: 100px;
+}
+#pngsevenz img {
+  height: 350px;
+  width: 200px;
+  margin-left: 95px;
+}
+
+/* ******** ANİMASYON CSSİ **** */
+.carousel-inner .frame {
+  opacity: 0.5; /* Başlangıçta yarı transparan yapabilirsiniz */
+  transform: translateY(
+    100%
+  ); /* Resimleri başlangıçta aşağıdan dışarı taşıyın */
+  transition: opacity 0.8s ease, transform 1s ease; /* Geçiş efektlerini tanımlayın (süre ve geçiş türü) */
+}
+.carousel-inner .carousel-item.active .frame {
+  opacity: 0.9; /* Aktif resimler tamamen opak olacak */
+  transform: translateY(
+    0
+  ); /* Aktif resimler yavaşça orijinal konumuna gelecek */
+}
+
+/* CSS */
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.textone {
+  color: #c28b00;
+  font-size: 55px;
+  font-weight: 530;
+  animation: slideFromBottom 1s ease;
+}
+.texttwo {
+  color: #467c66;
+  font-size: 55px;
+  font-weight: 530;
+  animation: slideFromBottom 1s ease;
+}
+.textthree {
+  color: #0076d3;
+  font-size: 55px;
+  font-weight: 530;
+  animation: slideFromBottom 1s ease;
+}
+
+.textfour {
+  color: #407a57;
+  font-size: 55px;
+  font-weight: 530;
+  animation: slideFromBottom 1s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: rgba(0, 0, 0, 0.6);
+  filter: brightness(50%);
+} */
+/* FATİH NAVBAR LOGO VE LİNKLERİN CSS KODLARI*/
+.navbar-logo-image {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+.navbar-logo-text {
+  font-size: 19px;
+  color: #cc0000;
+  margin: 0px;
+  padding: 0;
+  margin-top: 5px;
+  margin-left: 3px;
+  float: right;
+  font-weight: 500;
+}
+.navbar-nav li a {
+  margin-left: 10px;
+  font-weight: 500;
+  color: black;
+}
+.navbar-nav li a:hover {
+  text-decoration: underline;
+}
+.nav-oturum-ac {
+  color: white !important;
+  background: #e60023;
+  border-radius: 50px;
+}
+.nav-oturum-ac:hover {
+  text-decoration: none !important;
+  color: white;
+  background: #ad081b;
+}
+
+.nav-kaydol {
+  color: black;
+  background: #efefef;
+  border-radius: 50px;
+}
+.nav-kaydol:hover {
+  text-decoration: none !important;
+  background: #e2e2e2;
+}
+/* NAVBAR OTURUM AÇ BUTONUNA TIKLANDIĞINDA ÇIKAN BÖLÜMÜN CSS KODLARI */
+.navbar-login-side {
+  background: #fff;
+  width: 398px;
+  height: 620px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  z-index: 1000;
+  position: relative;
+}
+
+.show {
+  display: none;
+}
+
+.exit-button {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  padding-top: 10px;
+  padding-left: 1px;
+}
+.exit-button-side {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: absolute;
+  left: 90%;
+  top: 2%;
+}
+.exit-button-side:hover {
+  background-color: #e2e2e2;
+}
+.register-exit-button {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  padding-top: 10px;
+  padding-left: 1px;
+}
+.register-exit-button-side {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: absolute;
+  left: 90%;
+  top: 2%;
+}
+.register-exit-button-side:hover {
+  background-color: #e2e2e2;
+}
+.navbar-login-upper-side {
+  padding-top: 15px;
+}
+
+.navbar-login-upper-side h1 {
+  padding-top: 12px;
+  font-size: 30px;
+}
+.navbar-login-form-side form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.input-container {
+  width: 250px !important;
+  height: 40px;
+  border-radius: 14px;
+  margin: auto;
+  border: 1px solid #767676;
+  margin-top: 2px;
+}
+.eye {
+  position: relative;
+  left: 100px;
+  bottom: 20px;
+}
+.navbar-login-form-side label {
+  margin-left: -185px;
+  font-size: 14px;
+}
+.navbar-login-form-side label[for="password"] {
+  margin-left: -195px !important;
+  padding-top: 5px;
+}
+::placeholder {
+  /*  padding-left: 8px; */
+  color: #767676;
+}
+.navbar-login-form-side form a span {
+  margin-left: -92px;
+  color: black;
+
+  text-decoration: none !important;
+  font-size: 14px;
+}
+.navbar-login-form-side form a {
+  text-decoration: none;
+  margin-top: 5px;
+}
+.navbar-login-form-side form a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.navbar-login-button-side {
+  width: 398px;
+  margin: auto;
+}
+.navbar-login-button-side .navbar-login-btn {
+  background: rgb(230, 0, 35);
+  color: #fff;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+  margin: auto;
+}
+.navbar-login-button-side .navbar-login-btn:hover {
+  background: #bb061b;
+}
+.navbar-login-button-side-span-div {
+  margin: 8px 0;
+}
+.navbar-login-button-side-span-div span {
+  color: black;
+  font-weight: bold;
+}
+.social-btn {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 10px;
+}
+.social-btn-icon {
+  margin-left: 15px;
+  width: 10%;
+}
+.social-btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.navbar-login-button-side-button-facebook-div .navbar-facebook-btn {
+  color: white;
+  background: rgba(25, 118, 242, 255);
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: none;
+}
+.navbar-login-button-side-button-google-div .navbar-google-btn {
+  background-color: white;
+  color: #3c4043;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-top: 11px;
+  border: 1px solid #dadce0;
+}
+.policy-ahref {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.policy-ahref:hover {
+  text-decoration: underline;
+}
+.navbar-policy-side-text-first {
+  font-size: 11px;
+  margin: 15px auto;
+  width: 290px;
+  color: #767676;
+}
+.forborder {
+  width: 120px;
+  border-top: 1px solid #767676;
+  margin: 0 auto;
+}
+
+.navbar-policy-side-text-second-a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 12px;
+}
+.navbar-policy-side-text-third {
+  font-size: 12px;
+  margin-top: -12px;
+}
+.navbar-policy-side-text-third a {
+  font-size: 14px;
+}
+/* NAVBAR KAYDOL BUTONUNA TIKLANDIĞINDA ÇIKAN BÖLÜMÜN CSS KODLARI */
+.navbar-register-side {
+  background: #fff;
+  width: 450px;
+  margin: auto;
+  margin-top: 70px;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  z-index: 1000;
+  position: relative;
+}
+.navbar-register-upper-side {
+  padding-top: 15px;
+}
+.navbar-register-side h1 {
+  padding-top: 12px;
+  font-size: 30px;
+}
+.navbar-register-form-side form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.navbar-register-form-side input {
+  width: 250px;
+  height: 40px;
+  border-radius: 14px;
+  margin: auto;
+  border: 1px solid #767676;
+  margin-top: 2px;
+}
+
+.navbar-register-form-side label {
+  margin-left: -185px;
+  font-size: 14px;
+}
+.navbar-register-form-side label[for="password"] {
+  margin-left: -195px !important;
+  padding-top: 5px;
+}
+.navbar-register-form-side label[for="date"] {
+  margin-left: -152px !important;
+  padding-top: 5px;
+}
+.info:hover:after {
+  display: block;
+  content: "Pinterest'in güvende kalmasına yardımcı olmak için artık doğum tarihinizi almamız gerekiyor. Doğum tarihiniz ayrıca daha kişiselleştirilmiş öneriler ve alakalı reklamlar sunmamıza yardımcı oluyor. Bu bilgileri paylaşmayız ve profilinizde görünmez.";
+  width: 200px;
+  font-size: 11px;
+  background: black;
+  color: #dfdfdf;
+  position: fixed;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+  line-height: normal;
+  text-align: left;
+  padding: 5px 10px;
+  margin-left: 20px;
+  margin-top: -90px;
+}
+::-webkit-datetime-edit {
+  padding: 0.5em;
+  color: #767676;
+}
+::-webkit-calendar-picker-indicator {
+  padding-right: 1rem;
+}
+.navbar-register-form-side form a span {
+  margin-left: -92px;
+  color: black;
+
+  text-decoration: none !important;
+  font-size: 14px;
+}
+.navbar-register-form-side form a {
+  text-decoration: none;
+  margin-top: 5px;
+}
+.navbar-register-form-side form a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.navbar-register-button-side {
+  width: 398px;
+  margin: auto;
+}
+.navbar-register-btn {
+  background: rgb(230, 0, 35);
+  color: #fff;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+  margin: 0 auto;
+}
+.navbar-register-button-side .navbar-register-btn:hover {
+  background: #bb061b;
+}
+.navbar-register-button-side-span-div {
+  margin: 8px 0;
+}
+.navbar-register-button-side-span-div span {
+  color: black;
+  font-weight: bold;
+}
+.navbar-register-button-side-button-facebook-div .navbar-facebook-btn {
+  color: white;
+  background: rgba(25, 118, 242, 255);
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: none;
+}
+.navbar-register-button-side-button-google-div .navbar-google-btn {
+  background-color: white;
+  color: #3c4043;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-top: 11px;
+  border: 1px solid #dadce0;
+}
+.navbar-policy-side-text-businessaccount {
+  background: #e9e9e9;
+  height: 60px;
+  border-end-end-radius: 40px;
+  border-end-start-radius: 40px;
+}
+.navbar-policy-side-text-businessaccount h3 {
+  padding: 20px 20px;
+  font-size: 16px;
+}
+
+.profileimg {
+  height: 120px;
+  width: 120px;
+
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/**** DJANGO OTURUM AÇ FORM CSS DÜZENLENME MEHTAP ****/
+/* Kutu boyutu */
+.singinbox {
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+/* img logo boyutu */
+.center-container img {
+  width: 40px;
+  height: 40px;
+}
+.singinboxtext {
+  color: #181313;
+  text-decoration: none;
+}
+/**** hr uzunluğu ****/
+.hr-short {
+  width: 50%; /* İstediğiniz uzunlukta ayarlayabilirsiniz */
+  margin: 0 auto;
+}
+.ipt {
+  width: 250px !important;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.eye {
+  position: absolute;
+  right: 2500px;
+}
+.input-container {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  right: 60px;
+  cursor: pointer;
+}
+
+/* fatih login index css */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style: none !important;
+  box-sizing: border-box;
+}
+
+/* GİRİŞ YAPILDIKTAN SONRA AÇILAN SAYFANIN CSS KODLARI */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1111;
+  background: #fff;
+}
+.nav-icon {
+  padding: 10px;
+}
+.nav-item .mainpage {
+  background-color: black;
+  border-radius: 24px;
+}
+.mainpage > span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+.create {
+  color: #111111;
+}
+.dropdown-item {
+  font-weight: 600;
+  padding: 5px 20px;
+  margin-left: 0px !important;
+}
+.dropdown-item:hover {
+  background: #e9e9e9;
+}
+.dropdown-menu {
+  border-radius: 12px;
+  margin-left: -30px;
+  margin-top: 5px;
+}
+/* INPUT */
+.searchinput-container {
+  width: 100%;
+  /* min-width: 351px; */
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto; */
+  position: relative;
+}
+.searchinput {
+  background-color: #e9e9e9;
+  height: 48px;
+  border-radius: 50px;
+  padding-left: 52px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-eye-icon-searchbox {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* INPUT'A TIKLANDIĞINDA AÇILAN BÖLÜMÜN CSS KODLARI */
+.opened-searchbox-container {
+  width: 100%;
+  height: 510px;
+  max-height: 80vh;
+  /*  margin: 0px auto; */
+  padding: 20px 35px;
+  padding-right: 50px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  z-index: 1111111;
+  position: absolute;
+  left: 0px;
+  background: #fff;
+  display: none;
+  z-index: 11111111111;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.opened-searchbox-container::-webkit-scrollbar-thumb {
+  background-color: #8b8989;
+  border: 3px solid transparent;
+  /* border-start-end-radius: 50px;
+  border-end-end-radius: 50px; */
+  margin-right: 50px;
+  border-radius: 50px;
+
+  /* background-clip: padding-box; */
+}
+.opened-searchbox-container::-webkit-scrollbar {
+  width: 10px;
+  background-color: #e9e9e9;
+  padding-right: 30px;
+  margin-right: 50px;
+  border-radius: 50px;
+  /* border-start-end-radius: 50px;
+  border-end-end-radius: 50px; */
+}
+
+.hugething {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+.dropdown-toggle {
+  display: block !important;
+}
+.searchbox-opening-links p {
+  display: inline-block;
+  background: #e9e9e9;
+  border-radius: 50px;
+  height: 30px;
+  width: auto;
+  padding: 2px 15px;
+}
+/* .searchbox-suggestion-container {
+  display: flex;
+  width: 100%;
+} */
+.suggestion-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.searchbox-suggestion-content {
+  display: flex;
+  flex: 1;
+  max-width: 350px;
+  background-color: #e9e9e9;
+  border-radius: 20px;
+  margin-top: 15px;
+  align-items: center;
+}
+.searchbox-suggestion-content img {
+  object-fit: cover;
+  min-width: 150px;
+  height: 150px;
+  border-start-start-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.searchbox-popular-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.searchbox-popular-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 350px;
+  align-items: center;
+  background-color: #e9e9e9;
+  border-radius: 20px;
+  padding-right: 10px;
+}
+.searchbox-popular-content img {
+  min-width: 150px !important;
+  height: 150px;
+  object-fit: cover;
+  border-start-start-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.opened-searchbox-container span {
+  margin-left: 10px;
+  font-weight: 600;
+}
+/* SAĞ ÜSTTEKİ BİLDİRİMLERE TIKLAYINCA AÇILIN BÖLÜMÜN CSS KODLARI */
+.update-container {
+  width: 375px;
+  height: 91vh;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  position: fixed;
+  right: 0;
+  display: none;
+  background-color: #fff;
+  z-index: 11111111;
+}
+.overflow {
+  height: 83%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.update-headerr {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 8px -4px;
+}
+.update-content-head {
+  display: flex;
+  align-items: center;
+  padding-left: 7px;
+}
+.update-content-head span {
+  font-size: 16px;
+  color: #111111;
+  font-weight: 400;
+  padding-left: 15px;
+  width: 250px;
+}
+.update-content-head:hover {
+  background: #878787;
+  border-radius: 10px;
+}
+
+.update-content-head:has(
+    .moreicon:hover,
+    .circelized:hover,
+    .circelized-with-position:hover
+  ) {
+  background-color: unset;
+}
+.update-content:has(
+    .moreicon:hover,
+    .circelized:hover,
+    .circelized-with-position:hover
+  ) {
+  background-color: unset;
+}
+/* .moreicon:hover .circelized {
+  color: #111111 !important;
+} */
+.moreicon {
+  cursor: pointer;
+  display: none;
+  width: 25px;
+}
+.update-content-head:hover .moreicon {
+  /* color: black !important; */
+  display: block;
+}
+.update-content:hover .moreicon {
+  /* color: black !important; */
+  color: black;
+  display: block;
+}
+.circelized-with-position:hover .moreicon {
+  color: white;
+}
+.circelized {
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.circelized:hover {
+  background-color: black;
+}
+.circelized:hover .moreicon {
+  color: white;
+}
+.circelized-with-position {
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+.circelized-with-position:hover {
+  background: black;
+  color: white;
+}
+
+.update-content {
+  display: grid;
+  width: 342px;
+  padding-left: 7px;
+  border-radius: 10px;
+  position: relative;
+}
+.update-content:hover {
+  background: #878787;
+}
+.update-content:hover .circelized .moreicon {
+  color: black;
+}
+.update-content span {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.lower-span-two {
+  display: inline-block;
+  width: 250px;
+}
+
+.updateimage {
+  width: 110px;
+  height: 145px;
+  float: left;
+  border: 0.1px solid transparent;
+}
+.updateimage:nth-child(1) {
+  border-start-start-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.updateimage:nth-child(3) {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/*SAĞ ÜSTTEKİ ACCOUNT A TIKLANINCA AÇILAN BÖLÜMÜN CSS KODLARI */
+
+.account-container {
+  display: none;
+  width: 304px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  border-radius: 15px;
+  position: fixed;
+  right: 0;
+  background: #fff;
+  z-index: 11111111;
+}
+.account-container h5 {
+  margin: 0;
+  cursor: pointer;
+}
+
+.text-container p {
+  border: unset;
+  color: #5f5f5f;
+  font-size: 14px;
+}
+.account-container h5:hover {
+  background-color: #e9e9e9;
+  border-radius: 7px;
+}
+
+.account-header {
+  font-size: 14px;
+}
+.account-upper img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.account-upper {
+  display: flex;
+  gap: 9px;
+  margin-top: 15px;
+}
+.account-upper:hover {
+  background: #e9e9e9;
+  border-radius: 7px;
+}
+.text-container h6,
+p {
+  margin: 0px;
+}
+.account-middle h5 {
+  width: 100%;
+  font-size: 16px;
+}
+
+.account-lower h5 {
+  width: 100%;
+  font-size: 16px;
+}
+.headings {
+  font-size: 12px;
+}
+/* FOTOĞRAFLARIN CSS KODLARI */
+.picture-container {
+  column-count: 7;
+  column-gap: 15px;
+  row-gap: 15px;
+  padding: 50px 70px;
+}
+.cardseri {
+  margin-bottom: 10px;
+}
+.masonry-item {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+/* .masonry-item:hover {
+  filter: opacity(0.2);
+} */
+.masonry-item img {
+  margin-top: 15px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+.masonry-item img:hover {
+  filter: brightness(70%);
+}
+.profile-item {
+  position: absolute;
+  top: 35px;
+  left: 17.5px;
+  color: white;
+  font-weight: 500;
+  display: none;
+  cursor: pointer;
+}
+.masonry-item:hover .profile-item {
+  display: unset;
+}
+.profile-icon {
+  position: absolute;
+  top: 39px;
+  left: 60px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+.masonry-item:hover .profile-icon {
+  display: unset;
+}
+.save {
+  position: absolute;
+  top: 25px;
+  right: 17.5px;
+  background-color: #e60023;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: none;
+}
+.masonry-item:hover .save {
+  display: unset;
+}
+.save:hover {
+  background-color: #ad081b;
+}
+.profile-save-container {
+  width: 360px;
+  height: auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  padding: 0px 20px;
+  flex-direction: column;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 111111;
+}
+.save-header {
+  text-align: center;
+  font-size: 16px;
+  padding: 16px;
+}
+.input-save {
+  background: #fff;
+  height: 48px;
+  width: 100%;
+  border-radius: 50px;
+  padding-left: 40px;
+  margin-left: -5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 2px solid #dfdfdf;
+}
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-save-icon {
+  position: absolute;
+  left: 20px;
+  transform: translate(-50%, -50%);
+}
+.save-middle h4 {
+  padding-top: 20px;
+}
+.clock-container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0px;
+  padding-left: 15px;
+  border-radius: 20px;
+  margin-left: -5px;
+}
+.clock-content {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background-color: #e9e9e9;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.clock-container span {
+  padding-left: 10px;
+}
+.middle-content {
+  display: flex;
+  align-items: center;
+  padding: 12px 0px;
+  margin-left: -5px;
+  padding-left: 15px;
+}
+.middle-content span {
+  padding-left: 10px;
+}
+.save-lower {
+  width: 360px;
+  height: 80px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: -20px;
+  padding-left: 30px;
+}
+.save-lower:hover {
+  background: #e9e9e9;
+}
+.save-lower span {
+  padding-left: 10px;
+}
+.plus {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background-color: #e9e9e9;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.profile-save-button {
+  background-color: #fff;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+.clock-container:hover {
+  background: #e9e9e9;
+  border-radius: 20px;
+  /* margin-left: -15px; */
+}
+.middle-content:hover {
+  background: #e9e9e9;
+  border-radius: 20px;
+}
+.clock-container:hover .profile-save-button {
+  background-color: #e60023;
+}
+.clock-container:hover .clock-content {
+  background-color: #fff;
+}
+.middle-content:hover .profile-save-button {
+  background-color: #e60023;
+}
+/* .profile-save-button:hover {
+  background-color: #ad081b;
+} */
+/* SAĞ ÜSTTEKİ MESAJ BÖLÜMÜNE TIKLANINCA AÇILAN BÖLÜMÜN CSS KODLARI */
+.message-container {
+  width: 360px;
+  height: 91vh;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  position: fixed;
+  right: 0;
+  background-color: #fff;
+  padding-left: 20px;
+  display: none;
+  z-index: 11111111;
+}
+.read-container-relative {
+  position: relative;
+  top: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: unset;
+}
+.read-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e9e9e9;
+  width: 180px;
+  padding-left: 8px;
+  padding-top: 8px;
+  border-radius: 15px;
+  border: 8px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 2px;
+  display: none;
+}
+.read-container h6 {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.message-container .message-header {
+  /* text-align: center; */
+  padding: 23px 0px;
+}
+.message-header h5 {
+  text-align: center;
+}
+.message-header i {
+  padding-left: 20px;
+}
+.message-upper h3 {
+  font-size: 37px;
+}
+.message-upper-input {
+  position: relative;
+}
+.message-upper input {
+  height: 50px;
+  border-radius: 50px;
+  width: 320px;
+  border: 2px solid #cdcdcd;
+  padding-left: 30px;
+}
+.nav-eye-icon-message {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.overflow-message {
+  height: 65%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.spanspanspan {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.random-avatar-images {
+  display: flex;
+  padding-bottom: 13px;
+  position: relative;
+}
+.random-avatar-images img {
+  padding-right: 10px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+}
+.random-avatar-images:hover {
+  background-color: #e2e2e2;
+  transition: all 0.2s ease-in-out;
+}
+.random-avatar-images:hover .avatar-icon {
+  display: block;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  text-align: center;
+}
+.avatar-icon:hover {
+  background-color: #a7a5a5;
+}
+.username-container {
+  display: flex;
+  flex-direction: column;
+}
+.user-name {
+  padding-top: 20px;
+  font-weight: 500;
+}
+.user-name-child {
+  font-weight: lighter;
+  font-size: 13px;
+}
+.avatar-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 25px;
+  height: 25px;
+  padding-top: 4px;
+  text-align: center;
+}
+.message-chatting-container {
+  width: 360px;
+  height: 91vh;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  position: fixed;
+  right: 0;
+  background-color: #fff;
+  padding-left: 15px;
+  display: none;
+  z-index: 1111111111;
+  overflow-y: scroll;
+}
+.cancel-chatting-icon {
+  cursor: pointer;
+}
+.chatting-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+.chatting-header h4 {
+  font-size: 23px;
+}
+.chatting-middle input {
+  height: 50px;
+  border-radius: 50px;
+  width: 320px;
+  border: 2px solid #cdcdcd;
+  padding-left: 35px;
+}
+.chatting-middle {
+  position: relative;
+}
+.chatting-middle i {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 20px;
+}
+.user-value-image {
+  width: 75px;
+  height: 75px;
+}
+.chatting-value-user {
+  display: flex;
+}
+.chatting-texting-container {
+  display: flex;
+  flex-direction: column;
+}
+.chatting-texting-container span {
+  padding-top: 15px;
+  padding-left: 5px;
+}
+.chatting-texting-container span:nth-child(2) {
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: -10px;
+}
+.texting-items input {
+  height: 45px;
+  border-radius: 50px;
+  width: 225px;
+  border: 1px solid #cdcdcd;
+  padding-left: 15px;
+}
+.texting-items input:active {
+  border: 2px solid red;
+}
+.texting-items {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  width: 225px;
+  height: 45px;
+}
+.texting-items i {
+  padding: 0 20px;
+}
+/* fatih login index css end */
+
+/* FATİH NAVBAR LOGO VE LİNKLERİN CSS KODLARI*/
+.navbar-logo-image {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+.navbar-logo-text {
+  font-size: 19px;
+  color: #cc0000;
+  margin: 0px;
+  padding: 0;
+  margin-top: 5px;
+  margin-left: 3px;
+  float: right;
+  font-weight: 500;
+}
+.navbar-nav li a {
+  margin-left: 10px;
+  font-weight: 500;
+  color: black;
+}
+.navbar-nav li a:hover {
+  text-decoration: underline;
+}
+.nav-oturum-ac {
+  color: white !important;
+  background: #e60023;
+  border-radius: 50px;
+}
+.nav-oturum-ac:hover {
+  text-decoration: none !important;
+  color: white;
+  background: #ad081b;
+}
+
+.nav-kaydol {
+  color: black;
+  background: #efefef;
+  border-radius: 50px;
+}
+.nav-kaydol:hover {
+  text-decoration: none !important;
+  background: #e2e2e2;
+}
+/* NAVBAR OTURUM AÇ BUTONUNA TIKLANDIĞINDA ÇIKAN BÖLÜMÜN CSS KODLARI */
+.navbar-login-side {
+  background: #fff;
+  width: 398px;
+  height: 620px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  z-index: 1000;
+  position: relative;
+}
+
+.show {
+  display: none;
+}
+
+.exit-button {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  padding-top: 10px;
+  padding-left: 1px;
+}
+.exit-button-side {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: absolute;
+  left: 90%;
+  top: 2%;
+}
+.exit-button-side:hover {
+  background-color: #e2e2e2;
+}
+.register-exit-button {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  padding-top: 10px;
+  padding-left: 1px;
+}
+.register-exit-button-side {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: absolute;
+  left: 90%;
+  top: 2%;
+}
+.register-exit-button-side:hover {
+  background-color: #e2e2e2;
+}
+.navbar-login-upper-side {
+  padding-top: 15px;
+}
+
+.navbar-login-upper-side h1 {
+  padding-top: 12px;
+  font-size: 30px;
+}
+.navbar-login-form-side form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.navbar-login-form-side input {
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  margin: auto;
+  border: 1px solid #767676;
+  margin-top: 2px;
+}
+.ipt {
+  border-radius: 20px !important;
+  width: 250px;
+  margin: auto;
+}
+.login-label {
+  margin-left: 87.5px;
+}
+.register-label {
+  margin-left: 87.5px;
+}
+.parola-remember {
+  margin-left: 80px;
+}
+.iptandeye {
+  position: relative;
+}
+.eye {
+  position: absolute;
+  top: -15px;
+  left: -50px;
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+.navbar-login-form-side label {
+  margin-left: -185px;
+  font-size: 14px;
+}
+.navbar-login-form-side label[for="password"] {
+  margin-left: -195px !important;
+  padding-top: 5px;
+}
+::placeholder {
+  color: #767676;
+}
+.navbar-login-form-side form a span {
+  margin-left: -92px;
+  color: black;
+
+  text-decoration: none !important;
+  font-size: 14px;
+}
+.navbar-login-form-side form a {
+  text-decoration: none;
+  margin-top: 5px;
+}
+.navbar-login-form-side form a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.navbar-login-button-side {
+  width: 398px;
+  margin: auto;
+}
+.navbar-login-button-side .navbar-login-btn {
+  background: rgb(230, 0, 35);
+  color: #fff;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+}
+.navbar-login-button-side .navbar-login-btn:hover {
+  background: #bb061b;
+}
+.navbar-login-button-side-span-div {
+  margin: 8px 0;
+}
+.navbar-login-button-side-span-div span {
+  color: black;
+  font-weight: bold;
+}
+.social-btn {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 10px;
+}
+.social-btn-icon {
+  margin-left: 15px;
+  width: 10%;
+}
+.social-btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.navbar-login-button-side-button-facebook-div .navbar-facebook-btn {
+  color: white;
+  background: rgba(25, 118, 242, 255);
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: none;
+}
+.navbar-login-button-side-button-google-div .navbar-google-btn {
+  background-color: white;
+  color: #3c4043;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-top: 11px;
+  border: 1px solid #dadce0;
+}
+.policy-ahref {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.policy-ahref:hover {
+  text-decoration: underline;
+}
+.navbar-policy-side-text-first {
+  font-size: 11px;
+  margin: 15px auto;
+  width: 290px;
+  color: #767676;
+}
+.forborder {
+  width: 120px;
+  border-top: 1px solid #767676;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.navbar-policy-side-text-second-a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 12px;
+}
+.navbar-policy-side-text-third {
+  font-size: 12px;
+  margin-top: -12px;
+}
+.navbar-policy-side-text-third a {
+  font-size: 14px;
+}
+/* NAVBAR KAYDOL BUTONUNA TIKLANDIĞINDA ÇIKAN BÖLÜMÜN CSS KODLARI */
+.navbar-register-side {
+  background: #fff;
+  width: 400px;
+  margin: auto;
+  margin-top: 70px;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  z-index: 1000;
+  position: relative;
+}
+.navbar-register-upper-side {
+  padding-top: 15px;
+}
+.navbar-register-side h1 {
+  padding-top: 12px;
+  font-size: 30px;
+}
+.navbar-register-form-side form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.navbar-register-form-side input {
+  width: 250px;
+  height: 40px;
+  border-radius: 14px;
+  margin: auto;
+  border: 1px solid #767676;
+  margin-top: 2px;
+}
+
+.navbar-register-form-side label {
+  margin-left: -185px;
+  font-size: 14px;
+}
+.navbar-register-form-side label[for="password"] {
+  margin-left: -195px !important;
+  padding-top: 5px;
+}
+.navbar-register-form-side label[for="date"] {
+  margin-left: -152px !important;
+  padding-top: 5px;
+}
+.info:hover:after {
+  display: block;
+  content: "Pinterest'in güvende kalmasına yardımcı olmak için artık doğum tarihinizi almamız gerekiyor. Doğum tarihiniz ayrıca daha kişiselleştirilmiş öneriler ve alakalı reklamlar sunmamıza yardımcı oluyor. Bu bilgileri paylaşmayız ve profilinizde görünmez.";
+  width: 200px;
+  font-size: 11px;
+  background: black;
+  color: #dfdfdf;
+  position: fixed;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+  line-height: normal;
+  text-align: left;
+  padding: 5px 10px;
+  margin-left: 20px;
+  margin-top: -90px;
+}
+::-webkit-datetime-edit {
+  padding: 0.5em;
+  color: #767676;
+}
+::-webkit-calendar-picker-indicator {
+  padding-right: 1rem;
+}
+.navbar-register-form-side form a span {
+  margin-left: -92px;
+  color: black;
+
+  text-decoration: none !important;
+  font-size: 14px;
+}
+.navbar-register-form-side form a {
+  text-decoration: none;
+  margin-top: 5px;
+}
+.navbar-register-form-side form a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.navbar-register-button-side {
+  width: 398px;
+  margin: auto;
+}
+.navbar-register-button-side-button-register-div {
+  text-align: center;
+}
+.navbar-register-button-side .navbar-register-btn {
+  background: rgb(230, 0, 35);
+  color: #fff;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+}
+.navbar-register-button-side .navbar-register-btn:hover {
+  background: #bb061b;
+}
+.navbar-register-button-side-span-div {
+  margin: 8px 0;
+}
+.navbar-register-button-side-span-div span {
+  color: black;
+  font-weight: bold;
+}
+.navbar-register-button-side-button-facebook-div .navbar-facebook-btn {
+  color: white;
+  background: rgba(25, 118, 242, 255);
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: none;
+}
+.navbar-register-button-side-button-google-div .navbar-google-btn {
+  background-color: white;
+  color: #3c4043;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-top: 11px;
+  border: 1px solid #dadce0;
+}
+.navbar-policy-side-text-businessaccount {
+  background: #e9e9e9;
+  height: 60px;
+  border-end-end-radius: 40px;
+  border-end-start-radius: 40px;
+}
+.navbar-policy-side-text-businessaccount h3 {
+  padding: 20px 20px;
+  font-size: 16px;
+}
+.showwy {
+  display: block;
+}
+.flexshowy {
+  display: flex;
+}
+/* ---fatih indexle ilgili bölm */
+
+.image-detay {
+  width: 100%; /* İçerik konteynerinin genişliği %100 olur */
+  max-width: 100%; /* Maksimum genişlik sınırlaması */
+  overflow: hidden; /* İçeriği taşan kısmı gizler */
+  height: 100%;
+}
+.image-detay img {
+  width: 100%; /* Resmin genişliği %100 olur, konteynerin genişliğine sığar */
+  height: 100%; /* Yüksekliği otomatik olarak ayarlanır */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  object-fit: cover !important;
+}
+
+/* ! pinin üzerine gelecek kaydet butonunun css kodları */
+
+.pin-button {
+  position: absolute;
+  padding: 10px 12px;
+  margin-top: 10px;
+  right: 6%;
+  background-color: #e60023;
+  border-radius: 50px;
+  color: white;
+  font-weight: 500;
+  display: none;
+  border: none;
+}
+.pin-button:hover {
+  background: #ad081b;
+}
+.imageandtext {
+  position: relative;
+}
+.pinimg:hover {
+  filter: brightness(0.5) !important;
+  transition: all 0.2s ease-in-out;
+}
+.imageandtext:hover .pin-button {
+  display: inline;
+}
+.pin-left-button {
+  position: absolute;
+  padding: 10px;
+  margin-top: 10px;
+  left: 2%;
+  color: white;
+  border-radius: 50px;
+  font-weight: 500;
+  display: none;
+  border: none;
+  background-color: unset;
+}
+.imageandtext:hover .pin-left-button {
+  display: unset;
+}
+
+/* ! yorum css */
+.comment-side-wrapper {
+  padding: 20px 40px;
+  margin: unset !important;
+  position: relative;
+  /* height: auto; */
+}
+.comment-upper-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  justify-content: center;
+}
+.comment-upper-icons button {
+  background-color: #fff;
+  border: unset;
+}
+.comment-upper-right {
+  padding: unset;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.comment-upper-left {
+  padding: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comment-upper-buttons {
+  display: flex;
+  gap: 15px;
+}
+.comment-upper-buttons button {
+  border: 0px;
+  background-color: white;
+}
+.save-btn {
+  background-color: #e60023 !important;
+  padding: 12px 15px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 500;
+}
+.save-btn:hover {
+  background-color: #ad081b;
+}
+.commentbtn {
+  font-weight: 500;
+  font-size: 20px;
+  border: unset;
+  background: unset;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.commentinput {
+  border-radius: 30px;
+  height: 51px;
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  padding: 12.75px 20px;
+  margin-left: 5px;
+  background: #e9e9e9;
+  outline: 0;
+  overflow: hidden;
+  word-break: keep-all;
+  padding-right: 50px;
+  resize: none;
+}
+.comment-text-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0px !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+.commentbtnlast {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 0px;
+  border: 0;
+  background-color: #e60023;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+}
+.commentbtnlast:hover {
+  background-color: #ad081b;
+}
+.commentlistul {
+  display: block;
+  padding: unset;
+  padding-top: 10px;
+  height: 350px;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+.commentlistdata:first-child {
+  display: flex;
+}
+.shadow {
+  border-radius: 20px;
+  padding: 0px !important;
+  max-width: 100%;
+}
+
+.hide {
+  display: none;
+  /* transition: all 0.3s ease-in-out; */
+}
+.comment-close {
+  display: inline;
+}
+.icon-wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+  transition: all 0.2s ease-in-out;
+}
+.icon-wrapper:hover {
+  background-color: #e9e9e9;
+  transition: all 0.2s ease;
+}
+
+.translate {
+  transform: rotate(270deg);
+}
+
+.detail-container {
+  width: 60%;
+}
+
+/* ! pin oluşturma sayfasının css kodları */
+.create-body {
+  background-color: #ddd;
+}
+.create-container {
+  z-index: 12;
+  padding: 40px;
+  background-color: #fff;
+  /* position: absolute; */
+  width: 75vw;
+  /* top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  height: auto;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+.create-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.create-show-pins {
+  background-color: #ddd;
+  padding: 7px 40px 7px 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.pin-save-btn {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #e60023;
+  color: #fff;
+  font-weight: 500;
+  height: 38px;
+  border: 0px;
+  padding: 0px 10px;
+}
+.create-file-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 271px;
+  height: 491px;
+  background-color: #ddd;
+  position: relative;
+  border-radius: 10px;
+}
+#file-choose {
+  position: relative;
+}
+#dosyaAdi {
+  position: absolute;
+  top: 57%;
+  width: 250px;
+  left: 11px;
+  word-break: break-all;
+  text-align: center;
+}
+.create-border {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  border: 3px dotted #efefef;
+  border-radius: 5px;
+  padding: 10px 0px;
+}
+.create-pin-header-border {
+  border-top: 1.5px solid #878787;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  width: 40vw;
+}
+
+.create-upload-content {
+  display: flex;
+  flex-direction: column;
+}
+.upload-span {
+  font-size: 15px;
+  width: 200px;
+}
+.upload-suggestion {
+  position: absolute;
+  bottom: 25px;
+  width: 200px;
+  font-size: 12px;
+}
+.create-texting-side {
+  padding: 30px;
+}
+.texting-header {
+  font-size: 40px;
+  width: 100%;
+}
+.header-input {
+  /*  width: 500px; */
+  border: none;
+  outline: none;
+  font-weight: 600;
+  background: transparent;
+  overflow-x: hidden;
+  resize: unset;
+  letter-spacing: -1px;
+  width: 40vw;
+}
+.img-and-span-wrapper {
+  align-items: center;
+}
+.img-and-span-wrapper span {
+  padding-left: 7px;
+}
+.about-area {
+  width: 39vw;
+  border: none;
+  outline: none;
+  background: transparent;
+  resize: none;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.file-upload-input {
+  display: none;
+}
+.upload-label {
+  z-index: 11111111;
+  display: flex;
+  cursor: pointer !important;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ! mypins sayfasının css kodları */
+.created-pins {
+  color: black;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.created-pins:focus {
+  text-decoration: underline;
+}
+.mypins-wrapper {
+  column-count: 5;
+}
+.sharebtn {
+  background: #efefef;
+  font-weight: 500;
+}
+.sharebtn:hover {
+  background-color: #e2e2e2;
+}
+.editbtn {
+  background: #efefef;
+  font-weight: 500;
+}
+
+.editbtn:hover {
+  background: #e2e2e2;
+}
+/* FATİH - KEŞFET SAYFASININ CSS KODLARI */
+.searchinput-container-discovery {
+  min-width: 407px;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  position: relative;
+}
+.searchinput-discovery {
+  background-color: #e9e9e9;
+  height: 48px;
+  border-radius: 50px;
+  padding-left: 42px;
+}
+
+.nav-left-side {
+  display: flex;
+  align-items: center;
+}
+.nav-left-text {
+  margin-left: -12px;
+  padding-right: 20px;
+  color: #cc0000;
+  font-weight: 500;
+}
+.nav-left-text-two {
+  color: black;
+  font-weight: 600;
+  padding-right: 20px;
+}
+.buttonlogin {
+  text-decoration: none;
+  border: none;
+  background-color: #e9e9e9;
+  padding: 10px 10px;
+  border-radius: 50px;
+  color: black;
+  margin-left: 15px;
+  margin-right: 5px;
+  font-weight: 500;
+}
+.buttonlogin:hover {
+  background-color: #e2e2e2;
+}
+.buttonregister {
+  text-decoration: none;
+  border: none;
+  background-color: #e60023;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 500;
+}
+.buttonregister:hover {
+  background-color: #ad081b;
+}
+
+.nav-right-drop {
+  margin-left: -236px;
+  width: 280px;
+}
+.nav-right-drop a:hover {
+  background: unset;
+  text-decoration: underline !important;
+}
+
+.disco-upper h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+.mid-pic-row {
+  justify-content: center;
+  padding-top: 40px;
+  width: 100%;
+  margin: unset;
+}
+
+.mid-pic {
+  width: 410px;
+  margin: 0 -5px;
+  padding: 0px;
+  padding-right: 5px;
+}
+.mid-pic img {
+  width: 100%;
+  height: 258px;
+  object-fit: cover;
+  filter: brightness(75%);
+  padding: 0px 5px;
+  border-radius: 15px;
+}
+.mid-pic img:hover {
+  filter: brightness(50%);
+  transition: all 0.2s ease-in-out;
+}
+.pic-container {
+  position: relative;
+}
+.pic-container h3 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: white;
+  cursor: pointer;
+}
+.pic-container span {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  background-color: #e2e2e2;
+  border-radius: 30px;
+  color: black;
+  font-weight: 500;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.midtext {
+  text-align: center;
+  padding-top: 60px;
+}
+.hobby-pic-row {
+  width: 100%;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 242px);
+  justify-content: center;
+  margin: unset;
+}
+.hobby-pic-row .col-3 {
+  width: 100%;
+  margin-top: 10px;
+  position: relative;
+  padding: 0;
+}
+.hobby-pic-row img {
+  width: 100%;
+  height: 104px;
+  object-fit: cover;
+  border-radius: 15px;
+  filter: brightness(70%);
+  transition: all 0.2s ease-in-out;
+  padding: 0px 5px;
+}
+.hobby-pic-row img:hover {
+  filter: brightness(50%);
+}
+.hobby-pic-row .col-3 > h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* RESPONSIVE BÖLÜMÜ */
+/* SEARCHBOX İÇERİĞİNİN RESPONSİVE CSS BÖLÜMÜ */
+@media screen and (max-width: 768px) {
+  .suggestion-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 992px) {
+  .searchbox-popular-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .opened-searchbox-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .opened-searchbox-container::-webkit-scrollbar-thumb {
+    background-color: #8b8989;
+    border: 3px solid transparent;
+    border-start-end-radius: 50px;
+    border-end-end-radius: 50px;
+    padding-right: 30px;
+    /* background-clip: padding-box; */
+  }
+  .opened-searchbox-container::-webkit-scrollbar {
+    width: 10px;
+    background-color: #e9e9e9;
+    padding-right: 30px;
+    border-start-end-radius: 50px;
+    border-end-end-radius: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .searchbox-popular-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .picture-container {
+    column-count: 5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .picture-container {
+    column-count: 3;
+  }
+}
+@media screen and (max-width: 500px) {
+  .picture-container {
+    margin: 0 auto;
+    column-count: 1;
+  }
+  .nav-eye-icon-searchbox {
+    left: 40px;
+  }
+  .searchinput {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .shadow {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .comment-image-side {
+    width: 100%;
+  }
+  .image-detay img {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+  }
+  .comment-side-wrapper {
+    width: 100%;
+  }
+}
+
+/* MEHTAP EDİT-PROFİLE SAYFASI CSS START */
+.contentbox {
+  float: right;
+  margin-right: 550px;
+  width: 35%;
+  clear: both;
+  margin-top: 20px;
+  position: relative;
+  top: -410px;
+}
+.editinput {
+  border-radius: 10px;
+  padding: 5px;
+  border-color: blue;
+  border: 1px solid rgb(201, 194, 194);
+  height: 40px;
+  width: 100%;
+}
+.abouthinput{
+  border-radius: 10px;
+  padding: 5px;
+  border-color: blue;
+  border: 1px solid rgb(201, 194, 194);
+  height: 70px;
+  width: 100%;
+}
+.webhinput{
+  border-radius: 10px;
+  padding: 5px;
+  border-color: blue;
+  border: 1px solid rgb(201, 194, 194);
+  height: 40px;
+  width: 100%;
+}
+.profilvisibility:hover {
+  border-bottom: 1px solid black;
+}
+
+/* <!-- 3.İÇERİK ( Profil Görünürlüğü )--> */
+/* Kaydırmalı düğme stilleri */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 51px;
+  height: 16px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Kaydırmalı düğme tasarımı */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: -8px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transition: .4s;
+  border-radius: 34px;
+  border: 1px solid black;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+/* Açık durum için stil */
+input:checked + .slider {
+  background-color: #02070a;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    cursor: pointer;
+    margin-right: 20px; /* İstenilen boşluk miktarını ayarlayın */
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-item:hover {
+    border-bottom: 1px solid black;
+}
+
+.clickable {
+  height: auto; /* Yüksekliği otomatik olarak ayarla */
+  max-height: 30px; /* Maksimum yükseklik belirle */
+  transition: color 0.3s;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.clickable:hover {
+  background-color: #eeebeb;
+}
+
+.content {
+    margin-top: 10px;
+}
+.content-item {
+    display: none;
+}
+/* Pano */
+.panodiv {
+  width: 600px;
+  height: 60px; 
+  padding: 3px; 
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.panodiv img {
+  width: 55px;
+  height: 53px;
+  border-radius: 11px;
+}
+
+.panodiv h6 {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+}
+
+.panodiv p {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+}
+.panodiv:hover {
+  background-color: #ebe7e7;
+}
+
+.custom-switch.small-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 480px; 
+}
+
+
+.custom-switch.small-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-switch.small-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* Düğme arkaplan rengi */
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.custom-switch.small-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px; /* Düğme yüksekliği - 4px */
+  width: 16px; /* Düğme genişliği - 4px */
+  left: 2px; /* İç içe geçme mesafesi */
+  bottom: 1px; /* İç içe geçme mesafesi */
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.custom-switch.small-switch input:checked + .slider {
+  background-color: black;
+}
+
+.custom-switch.small-switch input:checked + .slider:before {
+  -webkit-transform: translateX(16px); /* Açık durumda kaydırma */
+  -ms-transform: translateX(16px); /* Açık durumda kaydırma */
+  transform: translateX(16px); /* Açık durumda kaydırma */
+}
+
+.image-container {
+  transition: all 0.3s ease-in-out;
+}
+
+.image-container:hover {
+  background-color: #ccc;
+  transform: scale(1.02);
+}
+/* 6.İÇERİK(Sosyal İzinler) */
+.custom-radio {
+  display: none; /* Orijinal radio düğmesini gizle */
+}
+
+.custom-radio + label {
+  cursor: pointer;
+  position: relative;
+  padding-right: 30px; /* Özelleştirilmiş görünüm için sağ boşluk ayarı */
+}
+
+.custom-radio + label::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px; 
+  height: 20px; 
+  border: 2px solid #000; 
+  background-color: transparent;
+  border-radius: 50%; 
+}
+/* Radio Düğmeleri */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 17px;
+  height: 17px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: black;
+}
+
+.your-custom-class {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  width: 50px;
+  height: 25px;
+  left: 0px;
+}
+
+/* On-off düğmesinin gizlenmiş input etiketi */
+.your-custom-class input {
+  display: none;
+}
+
+/* Düğme çerçevesi */
+.your-custom-class::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #111111;
+}
+ /* MEHTAP BOTTOM SECTİON CSS */
+ .col-form {
+  flex: 0 0 25%;
+  padding: 10px;
+  background-color: #f9f9f9; 
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  right: 10%; 
+  transform: translateY(-50%);
+  height: fit-content;
+  z-index: 2;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px; 
+  height: 540px;
+  margin: 0 auto; 
+  overflow: hidden;
+}
+.col-form form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2px;
+  margin-top: 10px; 
+}
+.col-form form label {
+  width: 250px;
+  text-align: start;
+  font-size: 12px;
+}
+
+.col-form form input {
+  padding: 8px; 
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.col-form form button {
+  padding: 7px; 
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 17px;
+}
+
+.col-form .facebook-button,
+.col-form .google-button {
+  padding: 8px; 
+  border-radius: 18px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  width: 250px;
+  font-size: 12px;
+}
+.col-form .text {
+  font-size: 10px;
+  color: #666; 
+}
+.col-form .facebook-button {
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+}
+.col-form .google-button {
+  color: black;
+  background-color: #dee7e7f3; 
+  border: 1px solid rgb(204, 204, 224);
+}
+/* En alttaki footer */
+.graybox a ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center; 
+}
+
+.graybox a ul li {
+  font-size: 10px;
+  color: #111111;
+  text-align: center;
+  margin: 0 5px; 
+  position: relative; 
+}
+
+.graybox a ul li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #111111;
+}
+ /* MEHTAP BOTTOM SECTİON END CSS */
+
+
+
