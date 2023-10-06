@@ -2369,7 +2369,6 @@ p {
   
 }
 
-/* MEHTAP EDİT-PROFİLE SAYFASI CSS START */
 .contentbox {
   float: right;
   margin-right: 550px;
@@ -2670,8 +2669,6 @@ input[type="radio"]:checked {
 .your-custom-class input:checked + .your-custom-slider-class {
   left: 27px; 
 }
-
-
 
 
 
